@@ -1,0 +1,87 @@
+/* Remove default browser spacing to avoid border */
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background: #050b18;
+}
+
+.app-container {
+  display: flex;
+  min-height: 100vh;
+  background: radial-gradient(circle at center, #0f1f3d 0%, #050b18 100%);
+  color: #e6d8a8;
+  font-family: "Georgia", "Times New Roman", serif;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 260px;
+  background: linear-gradient(180deg, #0a1a33 0%, #050b18 100%);
+  border-right: 2px solid #cbb67a;
+  box-shadow: inset -2px 0 6px rgba(0, 0, 0, 0.7);
+}
+
+/* Main content */
+.main-content {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+}
+
+/* Styled Panel */
+.menu-panel {
+  background: linear-gradient(180deg, #10244a 0%, #0a1a33 100%);
+  border: 2px solid #cbb67a;
+  padding: 60px 80px;
+  text-align: center;
+  max-width: 700px;
+  width: 100%;
+
+  /* subtle glow */
+  box-shadow:
+    0 0 12px rgba(203, 182, 122, 0.25),
+    inset 0 0 10px rgba(0, 0, 0, 0.6);
+
+  position: relative;
+}
+
+/* Decorative corners */
+.menu-panel::before,
+.menu-panel::after {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #cbb67a;
+}
+
+.menu-panel::before {
+  top: -2px;
+  left: -2px;
+  border-right: none;
+  border-bottom: none;
+}
+
+.menu-panel::after {
+  bottom: -2px;
+  right: -2px;
+  border-left: none;
+  border-top: none;
+}
+
+/* Title */
+.title {
+  font-size: 42px;
+  letter-spacing: 2px;
+  margin-bottom: 16px;
+  text-shadow: 0 0 6px rgba(203, 182, 122, 0.6);
+}
+
+/* Subtitle */
+.subtitle {
+  font-size: 18px;
+  opacity: 0.8;
+}
