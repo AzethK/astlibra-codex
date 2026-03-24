@@ -1,12 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 import "../astlibra.css";
+import Sidebar from "./Sidebar";
 
 export default function MainScreen() {
+  const [active, setActive] = useState(null);
   return (
     <div className="app-container">
-      {/* Sidebar placeholder */}
-      <div className="sidebar">{/* Sidebar will go here */}</div>
-
+      <Sidebar active={active} setActive={setActive} />
       {/* Main content */}
       <div className="main-content">
         <div className="menu-panel">
