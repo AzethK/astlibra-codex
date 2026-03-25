@@ -1,20 +1,30 @@
 import React, { useState } from "react";
 import "../astlibra.css";
 import Sidebar from "./Sidebar";
+import EquipScreen from "./EquipScreen";
 
 export default function MainScreen() {
-  const [active, setActive] = useState(null);
+  const [sidebarActive, setSidebarActive] = useState(null);
+
   return (
     <div className="app-container">
-      <Sidebar active={active} setActive={setActive} />
+      <Sidebar
+        sidebarActive={sidebarActive}
+        setSidebarActive={setSidebarActive}
+      />
+
       {/* Main content */}
       <div className="main-content">
-        <div className="menu-panel">
-          <h1 className="title">Astlibra Codex</h1>
-          <p className="subtitle">
-            Select an option on the sidebar to see its contents
-          </p>
-        </div>
+        {!sidebarActive && (
+          <div className="home-panel">
+            <h1 className="title">Astlibra Codex</h1>
+            <p className="subtitle">
+              Select an option on the sidebar to see its contents
+            </p>
+          </div>
+        )}
+
+        {sidebarActive === "EQUIP" && <EquipScreen />}
       </div>
     </div>
   );

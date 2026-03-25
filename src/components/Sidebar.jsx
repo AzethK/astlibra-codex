@@ -1,10 +1,10 @@
 import React from "react";
 
-export default function Sidebar({ active, setActive }) {
+export default function Sidebar({ sidebarActive, setSidebarActive }) {
   const items = ["ITEM", "EQUIP", "SKILL", "GROW", "KARON"];
 
   const handleClick = (label) => {
-    setActive((prev) => (prev === label ? null : label));
+    setSidebarActive((prev) => (prev === label ? null : label));
   };
 
   return (
@@ -13,7 +13,7 @@ export default function Sidebar({ active, setActive }) {
         {items.map((label) => (
           <button
             key={label}
-            className={`sidebar-button ${active === label ? "active" : ""}`}
+            className={`sidebar-button ${sidebarActive === label ? "active" : ""}`}
             onClick={() => handleClick(label)}
           >
             {label}
