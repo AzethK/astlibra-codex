@@ -4,7 +4,7 @@ An all-in-one ASTLIBRA database with consumables, materials, equipment, skills, 
 # CURRENT FEATURES
 - All Weapons
 - All Shields
+- All Armors
 
 # NEXT UPCOMING FEATURES
-- All Armors
 - All Accessories
