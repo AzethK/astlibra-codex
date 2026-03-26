@@ -1,9 +1,10 @@
+const BASE = import.meta.env.BASE_URL + "assets/shields/";
 const shields = [
   {
     name: "Wooden Round Shield",
     description:
       "A circular shield made of old wood. It's a hand-me-down, but it fits the hand well.",
-    image: "src/assets/shields/wooden_round_shield.png",
+    image: BASE + "wooden_round_shield.png",
     defense: 12,
     guard: 20,
     weight: 5,
@@ -15,7 +16,7 @@ const shields = [
     name: "Leather Shield",
     description:
       "A shield covered with thick monster hide. Heavy, but offers significant protection.",
-    image: "src/assets/shields/leather_shield.png",
+    image: BASE + "leather_shield.png",
     defense: 16,
     guard: 44,
     weight: 9,
@@ -27,7 +28,7 @@ const shields = [
     name: "Buckler",
     description:
       "A small shield that can be used to thrust. Fends off enemy attacks.",
-    image: "src/assets/shields/buckler.png",
+    image: BASE + "buckler.png",
     defense: 18,
     guard: 30,
     weight: 5,
@@ -39,7 +40,7 @@ const shields = [
     name: "Line Shield",
     description:
       "A wooden shield with a fancy design. Made of extremely hard wood.",
-    image: "src/assets/shields/line_shield.png",
+    image: BASE + "line_shield.png",
     defense: 21,
     guard: 40,
     weight: 5,
@@ -51,7 +52,7 @@ const shields = [
     name: "Scutum",
     description:
       "Huge wooden shield that covers the entire body. It is extremely heavy, but offers exceptional defense.",
-    image: "src/assets/shields/scutum.png",
+    image: BASE + "scutum.png",
     defense: 24,
     guard: 50,
     weight: 12,
@@ -63,7 +64,7 @@ const shields = [
     name: "Stone Buckler",
     description:
       "A traditional-style shield, but made of stone. Has excellent durability to weight balance.",
-    image: "src/assets/shields/stone_buckler.png",
+    image: BASE + "stone_buckler.png",
     defense: 30,
     guard: 30,
     weight: 5,
@@ -75,7 +76,7 @@ const shields = [
     name: "Kite Shield",
     description:
       "A kite-shaped shield. Narrower at the bottom to not hinder leg movement.",
-    image: "src/assets/shields/kite_shield.png",
+    image: BASE + "kite_shield.png",
     defense: 29,
     guard: 55,
     weight: 5,
@@ -87,7 +88,7 @@ const shields = [
     name: "Tribal Shield",
     description:
       "A shield from a tribe which excelled at throwing projectiles. Their souls live on.",
-    image: "src/assets/shields/tribal_shield.png",
+    image: BASE + "tribal_shield.png",
     defense: 34,
     guard: 40,
     weight: 5,
@@ -98,7 +99,7 @@ const shields = [
   {
     name: "Copper Shield",
     description: "A traditional-style shield made of refined copper ore.",
-    image: "src/assets/shields/copper_shield.png",
+    image: BASE + "copper_shield.png",
     defense: 39,
     guard: 33,
     weight: 3,
@@ -110,7 +111,7 @@ const shields = [
     name: "Woodsman's Shield",
     description:
       "A medium-sized shield said to have been used by forest watchmen.",
-    image: "src/assets/shields/woodsmans_shield.png",
+    image: BASE + "woodsmans_shield.png",
     defense: 42,
     guard: 40,
     weight: 5,
@@ -122,7 +123,7 @@ const shields = [
     name: "Battle Shield",
     description:
       "This massive shield is extremely heavy, but it provides superior defense.",
-    image: "src/assets/shields/battle_shield.png",
+    image: BASE + "battle_shield.png",
     defense: 46,
     guard: 60,
     weight: 10,
@@ -134,7 +135,7 @@ const shields = [
     name: "Phoenix Shield",
     description:
       "Its phoenix design is eye-catching. The shield looks as if it's on fire, but it's not hot.",
-    image: "src/assets/shields/phoenix_shield.png",
+    image: BASE + "phoenix_shield.png",
     defense: 55,
     guard: 45,
     weight: 5,
@@ -145,7 +146,7 @@ const shields = [
   {
     name: "Iron Buckler",
     description: "A small iron shield. It is well-balanced",
-    image: "src/assets/shields/iron_buckler.png",
+    image: BASE + "iron_buckler.png",
     defense: 66,
     guard: 33,
     weight: 1,
@@ -157,7 +158,7 @@ const shields = [
     name: "Iron Tower",
     description:
       "An iron shield that's as tall as a tower. It's heavy but provides good defense",
-    image: "src/assets/shields/iron_tower.png",
+    image: BASE + "iron_tower.png",
     defense: 64,
     guard: 70,
     weight: 12,
@@ -168,7 +169,7 @@ const shields = [
   {
     name: "Jeweled Shield",
     description: "Sumptuous shield encrusted with gems.",
-    image: "src/assets/shields/jeweled_shield.png",
+    image: BASE + "jeweled_shield.png",
     defense: 72,
     guard: 40,
     weight: 2,
@@ -180,7 +181,7 @@ const shields = [
     name: "Blue Silver Shield",
     description:
       "A magnificent shield made of rare blue silver. It once belonged to an eminent knight.",
-    image: "src/assets/shields/blue_silver_shield.png",
+    image: BASE + "blue_silver_shield.png",
     defense: 78,
     guard: 50,
     weight: 6,
@@ -191,7 +192,7 @@ const shields = [
   {
     name: "Gold Buckler",
     description: "A small, extravagant shield set with gold.",
-    image: "src/assets/shields/gold_buckler.png",
+    image: BASE + "gold_buckler.png",
     defense: 92,
     guard: 33,
     weight: 1,
@@ -202,7 +203,7 @@ const shields = [
   {
     name: "Knight's Shield",
     description: "A silver shield that can only be used by knights.",
-    image: "src/assets/shields/knights_shield.png",
+    image: BASE + "knights_shield.png",
     defense: 90,
     guard: 50,
     weight: 7,
@@ -214,7 +215,7 @@ const shields = [
     name: "Necromancer",
     description:
       "A shield rumored to have been used by tropical tribesmen. Powerful magic dwells inside.",
-    image: "src/assets/shields/necromancer.png",
+    image: BASE + "necromancer.png",
     defense: 96,
     guard: 40,
     weight: 6,
@@ -226,7 +227,7 @@ const shields = [
     name: "Shield of Darkness",
     description:
       "A shield allegedly fashioned in Hell. It has an otherworldly design.",
-    image: "src/assets/shields/shield_of_darkness.png",
+    image: BASE + "shield_of_darkness.png",
     defense: 105,
     guard: 70,
     weight: 10,
@@ -238,7 +239,7 @@ const shields = [
     name: "Stone Statue's Shield",
     description:
       "An objet d'art carved from stone. It is not intended to be handled by humans.",
-    image: "src/assets/shields/stone_statues_shield.png",
+    image: BASE + "stone_statues_shield.png",
     defense: 140,
     guard: 100,
     weight: 200,
@@ -250,7 +251,7 @@ const shields = [
     name: "Snowfield Shield",
     description:
       "A shield painted with the image of a cryptid found in the Snowy Mountains. It exudes power and might",
-    image: "src/assets/shields/snowfield_shield.png",
+    image: BASE + "snowfield_shield.png",
     defense: 132,
     guard: 55,
     weight: 5,
@@ -261,7 +262,7 @@ const shields = [
   {
     name: "Mithril Shield",
     description: "Shield made from the rare metal, mithril.",
-    image: "src/assets/shields/mithril_shield.png",
+    image: BASE + "mithril_shield.png",
     defense: 141,
     guard: 55,
     weight: 6,
@@ -273,7 +274,7 @@ const shields = [
     name: "Ancient Shield",
     description:
       "A shield containing a mysterious light. Fashioned by the science of Elysium.",
-    image: "src/assets/shields/ancient_shield.png",
+    image: BASE + "ancient_shield.png",
     defense: 138,
     guard: 70,
     weight: 10,
@@ -285,7 +286,7 @@ const shields = [
     name: "Radamantus",
     description:
       "A massive. powerful shield containing the essence of Elysium.",
-    image: "src/assets/shields/radamantus.png",
+    image: BASE + "radamantus.png",
     defense: 145,
     guard: 70,
     weight: 12,
@@ -297,7 +298,7 @@ const shields = [
     name: "Lion Shield",
     description:
       "Only knights of the Royal Guard may carry this shield. A sign of rank.",
-    image: "src/assets/shields/lion_shield.png",
+    image: BASE + "lion_shield.png",
     defense: 156,
     guard: 70,
     weight: 6,
@@ -309,7 +310,7 @@ const shields = [
     name: "Gold Tower",
     description:
       "A large shield that was the trademark of a famous knight in gold armor.",
-    image: "src/assets/shields/gold_tower.png",
+    image: BASE + "gold_tower.png",
     defense: 180,
     guard: 30,
     weight: 15,
@@ -321,7 +322,7 @@ const shields = [
     name: "Griffon",
     description:
       "Shield bearing a distinctive design of an eagle with outspread wings. Allegedly, it was once used by a hero.",
-    image: "src/assets/shields/griffon.png",
+    image: BASE + "griffon.png",
     defense: 168,
     guard: 50,
     weight: 7,
@@ -333,7 +334,7 @@ const shields = [
     name: "Dragon Gods Shield",
     description:
       "Legend has it that a dragon gave this shield to a human. It hies incredible defensive capabilities.",
-    image: "src/assets/shields/dragon_gods_shield.png",
+    image: BASE + "dragon_gods_shield.png",
     defense: 1195,
     guard: 70,
     weight: 10,
@@ -345,7 +346,7 @@ const shields = [
     name: "Machine Shield",
     description:
       "A metalic shield made using futuristic technology. It is commonly sold in toy stores.",
-    image: "src/assets/shields/machine_shield.png",
+    image: BASE + "machine_shield.png",
     defense: 224,
     guard: 33,
     weight: 1,
@@ -357,7 +358,7 @@ const shields = [
     name: "Riot Shield",
     description:
       "A sturdy, bulletproof shield used by the police inthe future to quell riots.",
-    image: "src/assets/shields/riot_shield.png",
+    image: BASE + "riot_shield.png",
     defense: 250,
     guard: 88,
     weight: 7,
@@ -369,7 +370,7 @@ const shields = [
     name: "Diabolos",
     description:
       "An unbelievably hard shield made from some ultra-strong alloy of the future.",
-    image: "src/assets/shields/diabolos.png",
+    image: BASE + "diabolos.png",
     defense: 216,
     guard: 50,
     weight: 5,
@@ -381,7 +382,7 @@ const shields = [
     name: "Anastasis",
     description:
       "A beautiful shield supposedly used by a goddess. It smells good for some reason.",
-    image: "src/assets/shields/anastasis.png",
+    image: BASE + "anastasis.png",
     defense: 1240,
     guard: 90,
     weight: 10,
@@ -393,7 +394,7 @@ const shields = [
     name: "Dewprism",
     description:
       "A fragment of another world. Shines with seven-colored light.",
-    image: "src/assets/shields/dewprism.png",
+    image: BASE + "dewprism.png",
     defense: 252,
     guard: 50,
     weight: 8,
@@ -405,7 +406,7 @@ const shields = [
     name: "Divine Shield Atrocious Fate",
     description:
       "Bestowed upon one who would change the world. A shield completely wrapped in mysteries.",
-    image: "src/assets/shields/divine_shield_atrocious_fate.png",
+    image: BASE + "divine_shield_atrocious_fate.png",
     defense: 308,
     guard: 66,
     weight: 18,

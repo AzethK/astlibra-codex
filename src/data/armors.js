@@ -1,3 +1,4 @@
+const BASE = import.meta.env.BASE_URL + "assets/armors/";
 const armors = [
   {
     name: "Tree Branch",

@@ -1,9 +1,10 @@
+const BASE = import.meta.env.BASE_URL + "assets/weapons/";
 const weapons = [
   {
     name: "Tree Branch",
     description:
       "Is this the tree branch Karon picked up? It's surprisingly sturdy",
-    image: "src/assets/weapons/tree_branch.png",
+    image: BASE + "tree_branch.png",
     attack: 30,
     range: 2,
     handling: 2,
@@ -15,7 +16,7 @@ const weapons = [
     name: "Club",
     description:
       "A good weight for bashing enemies. It has a decent amount of destructive force.",
-    image: "src/assets/weapons/club.png",
+    image: BASE + "club.png",
     attack: 55,
     range: 2,
     handling: 1,
@@ -27,7 +28,7 @@ const weapons = [
     name: "Stone Dagger",
     description:
       "A dagger made of sharpened stone. Can overwhelm enemies with a series of attacks.",
-    image: "src/assets/weapons/stone_dagger.png",
+    image: BASE + "stone_dagger.png",
     attack: 37,
     range: 1,
     handling: 3,
@@ -39,7 +40,7 @@ const weapons = [
     name: "Bone Sword",
     description:
       "A sword made of hard, light, good-quality bone. Its balance of power and weight is exceptional",
-    image: "src/assets/weapons/bone_sword.png",
+    image: BASE + "bone_sword.png",
     attack: 45,
     range: 2,
     handling: 2,
@@ -51,7 +52,7 @@ const weapons = [
     name: "Rock Hammer",
     description:
       "This heavy rock hammer delivers a deadly blow. A powerful combination of centrifugal force and weight.",
-    image: "src/assets/weapons/rock_hammer.png",
+    image: BASE + "rock_hammer.png",
     attack: 59,
     range: 3,
     handling: 1,
@@ -63,7 +64,7 @@ const weapons = [
     name: "Magical Staff",
     description:
       "Can emit magic from its tip. Its strength is dependent on your magical power",
-    image: "src/assets/weapons/magical_staff.png",
+    image: BASE + "magical_staff.png",
     attack: 1,
     range: 2,
     handling: 1,
@@ -74,7 +75,7 @@ const weapons = [
   {
     name: "Red Stone Sword",
     description: "A blade carved from stone and imbued with fire spirits.",
-    image: "src/assets/weapons/red_stone_sword.png",
+    image: BASE + "red_stone_sword.png",
     attack: 66,
     range: 2,
     handling: 2,
@@ -86,7 +87,7 @@ const weapons = [
     name: "Airgetlam",
     description:
       "A magical sword forged in a place beyond the spirit world. Imbued with the spiritual power of the earth",
-    image: "src/assets/weapons/airgetlam.png",
+    image: BASE + "airgetlam.png",
     attack: 89,
     range: 2,
     handling: 1,
@@ -98,7 +99,7 @@ const weapons = [
     name: "Hammer",
     description:
       "A tool for hammering nails. Its destructive force makes it an excellent weapon.",
-    image: "src/assets/weapons/hammer.png",
+    image: BASE + "hammer.png",
     attack: 79,
     range: 1,
     handling: 1,
@@ -110,7 +111,7 @@ const weapons = [
     name: "Bronze Broadsword",
     description:
       "A broadsword favored by adventurers worldwide. It's very easy to handle.",
-    image: "src/assets/weapons/bronze_broadsword.png",
+    image: BASE + "bronze_broadsword.png",
     attack: 65,
     range: 2,
     handling: 2,
@@ -123,7 +124,7 @@ const weapons = [
     name: "Bronze Spear",
     description:
       "This polearm can attack enemies at a distance, but a shield can't be equipped when using long weapons",
-    image: "src/assets/weapons/bronze_spear.png",
+    image: BASE + "bronze_spear.png",
     attack: 66,
     range: 3,
     handling: 2,
@@ -135,7 +136,7 @@ const weapons = [
     name: "Gladius",
     description:
       "A short, wide sword made of iron. It was once a favorite of combatants.",
-    image: "src/assets/weapons/gladius.png",
+    image: BASE + "gladius.png",
     attack: 68,
     range: 1,
     handling: 3,
@@ -147,7 +148,7 @@ const weapons = [
     name: "Iron Axe",
     description:
       "An axe is designed for chopping down trees. It's also good for chopping down your enemies.",
-    image: "src/assets/weapons/iron_axe.png",
+    image: BASE + "iron_axe.png",
     attack: 107,
     range: 2,
     handling: 1,
@@ -159,7 +160,7 @@ const weapons = [
     name: "Goblin's Silver Hammer",
     description:
       "This goblin weapon is somehow made of silver, though goblins don't have such skills.",
-    image: "src/assets/weapons/goblins_silver_hammer.png",
+    image: BASE + "goblins_silver_hammer.png",
     attack: 111,
     range: 2,
     handling: 1,
@@ -171,7 +172,7 @@ const weapons = [
   {
     name: "Broadsword",
     description: "A traditional sword, refined to perfected beauty.",
-    image: "src/assets/weapons/broadsword.png",
+    image: BASE + "broadsword.png",
     attack: 94,
     range: 2,
     handling: 2,
@@ -183,7 +184,7 @@ const weapons = [
     name: "Great Stone Sword",
     description:
       "Carved from a giant rock. It requires tremendous strength to wield.",
-    image: "src/assets/weapons/great_stone_sword.png",
+    image: BASE + "great_stone_sword.png",
     attack: 100,
     range: 3,
     handling: 1,
@@ -195,7 +196,7 @@ const weapons = [
     name: "Caduceus",
     description:
       "This short staff harbors powerful earthly forces which are released when you wield it.",
-    image: "src/assets/weapons/caduceus.png",
+    image: BASE + "caduceus.png",
     attack: 1,
     range: 1,
     handling: 1,
@@ -207,7 +208,7 @@ const weapons = [
     name: "Baselard",
     description:
       "This dagger is extremely easy to hold and use. Cuts through the air wit the power of the wind attribute.",
-    image: "src/assets/weapons/baselard.png",
+    image: BASE + "baselard.png",
     attack: 89,
     range: 1,
     handling: 3,
@@ -219,7 +220,7 @@ const weapons = [
     name: "Iron Hammer",
     description:
       "A giant tool for hammering iron. Difficult to handle, but has incredible, destructive power.",
-    image: "src/assets/weapons/iron_hammer.png",
+    image: BASE + "iron_hammer.png",
     attack: 132,
     range: 3,
     handling: 1,
@@ -231,7 +232,7 @@ const weapons = [
     name: "Rapier",
     description:
       "A unique sword made for thrusting. Can perform a rapid series of attacks.",
-    image: "src/assets/weapons/rapier.png",
+    image: BASE + "rapier.png",
     attack: 121,
     range: 2,
     handling: 2,
@@ -242,7 +243,7 @@ const weapons = [
   {
     name: "Battle Axe",
     description: "As its name suggests, this axe was created for battle.",
-    image: "src/assets/weapons/battle_axe.png",
+    image: BASE + "battle_axe.png",
     attack: 162,
     range: 2,
     handling: 1,
@@ -254,7 +255,7 @@ const weapons = [
     name: "Nail Hammer",
     description:
       "This tool has various uses. Versatile enough for use in battle.",
-    image: "src/assets/weapons/nail_hammer.png",
+    image: BASE + "nail_hammer.png",
     attack: 152,
     range: 1,
     handling: 2,
@@ -266,7 +267,7 @@ const weapons = [
     name: "Partisan",
     description:
       "An extravagant spear tipped with a golden blade. Gold holds strong earth energy.",
-    image: "src/assets/weapons/partisan.png",
+    image: BASE + "partisan.png",
     attack: 126,
     range: 3,
     handling: 2,
@@ -278,7 +279,7 @@ const weapons = [
     name: "Mage's Staff",
     description:
       "A magical staff used by a high-ranking mage. Capable of magic, even if you don't know how it works.",
-    image: "src/assets/weapons/mages_staff.png",
+    image: BASE + "mages_staff.png",
     attack: 1,
     range: 2,
     handling: 1,
@@ -289,7 +290,7 @@ const weapons = [
   {
     name: "Ice Sword",
     description: "The blade is frozen and never melts. A much coveted item.",
-    image: "src/assets/weapons/ice_sword.png",
+    image: BASE + "ice_sword.png",
     attack: 150,
     range: 2,
     handling: 2,
@@ -301,7 +302,7 @@ const weapons = [
     name: "Dragon Slaying Sword Ascalon",
     description:
       "This legendary blade is said to have beheaded a dragon. It's said the sword's power of water once severed a dragon in two.",
-    image: "src/assets/weapons/dragon_slaying_sword_ascalon.png",
+    image: BASE + "dragon_slaying_sword_ascalon.png",
     attack: 194,
     range: 3,
     handling: 1,
@@ -313,7 +314,7 @@ const weapons = [
     name: "Azure Dragon Blade",
     description:
       "A huge crescent sword from the East. It is said to have cleaved a horse in two in one fell swoop.",
-    image: "src/assets/weapons/azure_dragon_blade.png",
+    image: BASE + "azure_dragon_blade.png",
     attack: 180,
     range: 3,
     handling: 1,
@@ -325,7 +326,7 @@ const weapons = [
     name: "Ancient Hammer",
     description:
       "A large mallet fashioned by fixing a wooden handle to a stone block from an ancient ruin.",
-    image: "src/assets/weapons/ancient_hammer.png",
+    image: BASE + "ancient_hammer.png",
     attack: 237,
     range: 2,
     handling: 1,
@@ -337,7 +338,7 @@ const weapons = [
     name: "Spirit Staff",
     description:
       "A magic wand appropriated from the spirit world. Such an item cannot be purchased in this world.",
-    image: "src/assets/weapons/spirit_staff.png",
+    image: BASE + "spirit_staff.png",
     attack: 1,
     range: 2,
     handling: 1,
@@ -349,7 +350,7 @@ const weapons = [
     name: "Iron Block Hammer",
     description:
       "A one-handed mallet all about maximum power. It is difficult to handle, but nothing can stand in its way.",
-    image: "src/assets/weapons/iron_block_hammer.png",
+    image: BASE + "iron_block_hammer.png",
     attack: 306,
     range: 1,
     handling: 1,
@@ -361,7 +362,7 @@ const weapons = [
     name: "Falchion",
     description:
       "An easy-to-use sword made for cutting. Cuts through enemies in a fluid motion.",
-    image: "src/assets/weapons/falchion.png",
+    image: BASE + "falchion.png",
     attack: 206,
     range: 2,
     handling: 2,
@@ -373,7 +374,7 @@ const weapons = [
     name: "Wind Hatchet Ildrakh",
     description:
       "A rare hatchet that holds the divine protection of wind. Can cut through earthly elements such as trees as easily as tofu.",
-    image: "src/assets/weapons/wind_hatchet_ildrakh.png",
+    image: BASE + "wind_hatchet_ildrakh.png",
     attack: 196,
     range: 2,
     handling: 2,
@@ -385,7 +386,7 @@ const weapons = [
     name: "Fire Dagger",
     description:
       "Dagger inscribed with a curse mark of flame. When swung, it bursts with the power of fire.",
-    image: "src/assets/weapons/fire_dagger.png",
+    image: BASE + "fire_dagger.png",
     attack: 174,
     range: 1,
     handling: 3,
@@ -397,7 +398,7 @@ const weapons = [
     name: "Icicle Spear",
     description:
       "A beautiful spear containing the power of ice. A much coveted item.",
-    image: "src/assets/weapons/icicle_spear.png",
+    image: BASE + "icicle_spear.png",
     attack: 196,
     range: 3,
     handling: 1,
@@ -409,7 +410,7 @@ const weapons = [
     name: "Cursed Sword Gram",
     description:
       "A unique design like nothing else in this world. A blade forged by devils to combat the gods.",
-    image: "src/assets/weapons/cursed_sword_gram.png",
+    image: BASE + "cursed_sword_gram.png",
     attack: 225,
     range: 2,
     handling: 2,
@@ -421,7 +422,7 @@ const weapons = [
     name: "Halberd",
     description:
       "It hacks with a heavy, broad blade. Could be used as a spear, but the tip has broken off.",
-    image: "src/assets/weapons/halberd.png",
+    image: BASE + "halberd.png",
     attack: 277,
     range: 3,
     handling: 1,
@@ -433,7 +434,7 @@ const weapons = [
     name: "Fire Hammer",
     description:
       "This huge, fire-spewing hammer is decorated with gems excavated from ancient ruins.",
-    image: "src/assets/weapons/fire_hammer.png",
+    image: BASE + "fire_hammer.png",
     attack: 264,
     range: 3,
     handling: 1,
@@ -445,7 +446,7 @@ const weapons = [
     name: "Katar",
     description:
       "A push dagger with a handgrip. Allows you to put some muscle into your attack.",
-    image: "src/assets/weapons/katar.png",
+    image: BASE + "katar.png",
     attack: 211,
     range: 1,
     handling: 3,
@@ -457,7 +458,7 @@ const weapons = [
     name: "Dark Axe",
     description:
       "A pitch black axe that stores the power of darkness. It exudes an aura of pure evil.",
-    image: "src/assets/weapons/dark_axe.png",
+    image: BASE + "dark_axe.png",
     attack: 356,
     range: 2,
     handling: 1,
@@ -469,7 +470,7 @@ const weapons = [
     name: "Breaker",
     description:
       "One-handed axe named after its specialty, pure destruction. A masterpiece.",
-    image: "src/assets/weapons/breaker.png",
+    image: BASE + "breaker.png",
     attack: 395,
     range: 1,
     handling: 1,
@@ -481,7 +482,7 @@ const weapons = [
     name: "Magical Lightning Staff",
     description:
       "This powerful staff can summon lightning. Produces lighting strikes in random locations.",
-    image: "src/assets/weapons/magical_lightning_staff.png",
+    image: BASE + "magical_lightning_staff.png",
     attack: 1,
     range: 2,
     handling: 3,
@@ -493,7 +494,7 @@ const weapons = [
     name: "Colichemarde",
     description:
       "A beautifully ornamented arpier said to be the only one of its kind",
-    image: "src/assets/weapons/colichemarde.png",
+    image: BASE + "colichemarde.png",
     attack: 285,
     range: 2,
     handling: 2,
@@ -504,7 +505,7 @@ const weapons = [
   {
     name: "Masamune",
     description: "An oriental longsword made for cutting. A lost masterpiece.",
-    image: "src/assets/weapons/masamune.png",
+    image: BASE + "masamune.png",
     attack: 280,
     range: 3,
     handling: 2,
@@ -516,7 +517,7 @@ const weapons = [
     name: "Mistilteinn",
     description:
       "A phantom-like clawed fist, as beautiful as a jewel. Its shimmering blades are captivating.",
-    image: "src/assets/weapons/mistilteinn.png",
+    image: BASE + "mistilteinn.png",
     attack: 322,
     range: 1,
     handling: 3,
@@ -528,7 +529,7 @@ const weapons = [
     name: "Great Sorcerer's Staff",
     description:
       "A special staff which only a handful of sorcerers are allowed to possess.",
-    image: "src/assets/weapons/great_sorcerers_staff.png",
+    image: BASE + "great_sorcerers_staff.png",
     attack: 1,
     range: 3,
     handling: 1,
@@ -540,7 +541,7 @@ const weapons = [
     name: "Shark Fang",
     description:
       "A giant sword of a special shape that bites like the teeth of a shark.",
-    image: "src/assets/weapons/shark_fang.png",
+    image: BASE + "shark_fang.png",
     attack: 415,
     range: 3,
     handling: 1,
@@ -552,7 +553,7 @@ const weapons = [
     name: "Thin Ice Dagger",
     description:
       "A finely crafted dagger that's as cold as ice, with an exceptionally sharp edge.",
-    image: "src/assets/weapons/thin_ice_dagger.png",
+    image: BASE + "thin_ice_dagger.png",
     attack: 343,
     range: 1,
     handling: 3,
@@ -564,7 +565,7 @@ const weapons = [
     name: "Morning Star",
     description:
       "This iron, spike-studded ball looks like it could inflict extreme pain.",
-    image: "src/assets/weapons/morning_star.png",
+    image: BASE + "morning_star.png",
     attack: 466,
     range: 2,
     handling: 1,
@@ -576,7 +577,7 @@ const weapons = [
     name: "Ogre Hammer",
     description:
       "Hammers are usually all about destructive power, but this one has been given the attributes of wing.",
-    image: "src/assets/weapons/ogre_hammer.png",
+    image: BASE + "ogre_hammer.png",
     attack: 550,
     range: 1,
     handling: 1,
@@ -588,7 +589,7 @@ const weapons = [
     name: "Storm Bringer",
     description:
       "The tale of the wind dragon giving this weapon to mortals is still remembered in verse.",
-    image: "src/assets/weapons/storm_bringer.png",
+    image: BASE + "storm_bringer.png",
     attack: 365,
     range: 2,
     handling: 2,
@@ -600,7 +601,7 @@ const weapons = [
     name: "Knight's Lance",
     description:
       "A lance that was enchanted when it was thrust into the earth. It absorbed spiritual power over the ages.",
-    image: "src/assets/weapons/knights_lance.png",
+    image: BASE + "knights_lance.png",
     attack: 350,
     range: 3,
     handling: 2,
@@ -612,7 +613,7 @@ const weapons = [
     name: "Espada Ropera",
     description:
       "A legendary rapier so venerable that an entire book exists explaining its existence.",
-    image: "src/assets/weapons/espada_ropera.png",
+    image: BASE + "espada_ropera.png",
     attack: 390,
     range: 2,
     handling: 2,
@@ -624,7 +625,7 @@ const weapons = [
     name: "Lightning Hammer Mjölnir",
     description:
       "Legend has it that a god once handled this great hammer. It generates a thunderbolt on impact.",
-    image: "src/assets/weapons/lightning_hammer_mjolnir.png",
+    image: BASE + "lightning_hammer_mjolnir.png",
     attack: 420,
     range: 3,
     handling: 1,
@@ -636,7 +637,7 @@ const weapons = [
     name: "Lævateinn",
     description:
       "Sword that contains the magical power extracted from a Fiend sealed within a volcano",
-    image: "src/assets/weapons/laevateinn.png",
+    image: BASE + "laevateinn.png",
     attack: 429,
     range: 2,
     handling: 2,
@@ -648,7 +649,7 @@ const weapons = [
     name: "Cursed Sword Tyrfing",
     description:
       "A curved blade riddled with hexes. It strikes like the tail of an animal.",
-    image: "src/assets/weapons/cursed_sword_tyrfing.png",
+    image: BASE + "cursed_sword_tyrfing.png",
     attack: 541,
     range: 3,
     handling: 1,
@@ -660,7 +661,7 @@ const weapons = [
     name: "Seraphim",
     description:
       "A uniquely shaped katar said to be fashioned from angel feathers.",
-    image: "src/assets/weapons/seraphim.png",
+    image: BASE + "seraphim.png",
     attack: 425,
     range: 1,
     handling: 3,
@@ -672,7 +673,7 @@ const weapons = [
     name: "Lance of Longinus",
     description:
       "Spear that makes a god a True God. It is a symbol of man's sins.",
-    image: "src/assets/weapons/lance_of_longinus.png",
+    image: BASE + "lance_of_longinus.png",
     attack: 421,
     range: 3,
     handling: 2,
@@ -684,7 +685,7 @@ const weapons = [
     name: "Earth Dragon Hammer Blutgang",
     description:
       "Hammer allegedly made from the tail of an earth dragon. Whether this story is true remains uncertain.",
-    image: "src/assets/weapons/earth_dragon_hammer_blutgang.png",
+    image: BASE + "earth_dragon_hammer_blutgang.png",
     attack: 690,
     range: 2,
     handling: 1,
@@ -696,7 +697,7 @@ const weapons = [
     name: "Sacred Staff Celestial",
     description:
       "Staff used by priests of the church. It is not intended for violence and is difficult to handle.",
-    image: "src/assets/weapons/sacred_staff_celestial.png",
+    image: BASE + "sacred_staff_celestial.png",
     attack: 1,
     range: 3,
     handling: 1,
@@ -708,7 +709,7 @@ const weapons = [
     name: "Dragons Jaw",
     description:
       "An oversized weapon supposedly used by hunters to dismember their prey.",
-    image: "src/assets/weapons/dragons_jaw.png",
+    image: BASE + "dragons_jaw.png",
     attack: 594,
     range: 3,
     handling: 1,
@@ -720,7 +721,7 @@ const weapons = [
     name: "Dark Sword",
     description:
       "A sword that absorbed the power of darkness and turned black. It was created by forces which oppose the gods.",
-    image: "src/assets/weapons/dark_sword.png",
+    image: BASE + "dark_sword.png",
     attack: 510,
     range: 2,
     handling: 2,
@@ -732,7 +733,7 @@ const weapons = [
     name: "Hauteclaire",
     description:
       "The ultimate rapier. Said to have caused a war because of its beauty.",
-    image: "src/assets/weapons/hauteclaire.png",
+    image: BASE + "hauteclaire.png",
     attack: 375,
     range: 2,
     handling: 3,
@@ -744,7 +745,7 @@ const weapons = [
     name: "Durandal",
     description:
       "A recreation of Ascalon, made by the power of science. A weapon of the  future. Science has surpassed legend.",
-    image: "src/assets/weapons/durandal.png",
+    image: BASE + "durandal.png",
     attack: 757,
     range: 2,
     handling: 1,
@@ -756,7 +757,7 @@ const weapons = [
     name: "Wind Staff Grídarvöl",
     description:
       "Powerful wand made using magical chemistry. It releases the power of wind.",
-    image: "src/assets/weapons/wind_staff_gridarvol.png",
+    image: BASE + "wind_staff_gridarvol.png",
     attack: 1,
     range: 3,
     handling: 1,
@@ -768,7 +769,7 @@ const weapons = [
     name: "Beast Claws",
     description:
       "Futuristic weapon made in the image of beast's claws. It reproduces their force, but even more powerful.",
-    image: "src/assets/weapons/beast_claws.png",
+    image: BASE + "beast_claws.png",
     attack: 495,
     range: 1,
     handling: 3,
@@ -780,7 +781,7 @@ const weapons = [
     name: "Labrys",
     description:
       "Axe of the gods believed to have fallen from the heavens. Did a holy war in the heavens really take place?",
-    image: "src/assets/weapons/labrys.png",
+    image: BASE + "labrys.png",
     attack: 684,
     range: 3,
     handling: 1,
@@ -792,7 +793,7 @@ const weapons = [
     name: "Earth Sword Galatine",
     description:
       "Rare blade made from ore bathed in spiritual power. This ore can only be found in very small quantities.",
-    image: "src/assets/weapons/earth_sword_galatine.png",
+    image: BASE + "earth_sword_galatine.png",
     attack: 643,
     range: 2,
     handling: 2,
@@ -804,7 +805,7 @@ const weapons = [
     name: "Nagelring",
     description:
       "Jeweled blade found buried in an ancient ruin. Exactly how to use it is unknown.",
-    image: "src/assets/weapons/nagelring.png",
+    image: BASE + "nagelring.png",
     attack: 720,
     range: 1,
     handling: 2,
@@ -816,7 +817,7 @@ const weapons = [
     name: "Great Spirit's Staff",
     description:
       "Enchanted staff signifying the highest rank in the spirit world. It is attributed to Oberon, the King of Spirits.",
-    image: "src/assets/weapons/great_spirits_staff.png",
+    image: BASE + "great_spirits_staff.png",
     attack: 1,
     range: 3,
     handling: 1,
@@ -828,7 +829,7 @@ const weapons = [
     name: "Dragon Spear Gáe Bulg",
     description:
       "The tip of this legendary spear is supposedly made from a carved dragon fang.",
-    image: "src/assets/weapons/dragon_spear_gae_bulg.png",
+    image: BASE + "dragon_spear_gae_bulg.png",
     attack: 536,
     range: 3,
     handling: 2,
@@ -840,7 +841,7 @@ const weapons = [
     name: "Mighty Blade Balmung",
     description:
       "The mighty sword of the dark knight. Can only be wielded by those chosen.",
-    image: "src/assets/weapons/mighty_blade_balmung.png",
+    image: BASE + "mighty_blade_balmung.png",
     attack: 780,
     range: 3,
     handling: 1,
@@ -852,7 +853,7 @@ const weapons = [
     name: "Ridill",
     description:
       "The ultimate single-edged sword. Said to have captivated many reigning kings.",
-    image: "src/assets/weapons/ridill.png",
+    image: BASE + "ridill.png",
     attack: 693,
     range: 2,
     handling: 3,
@@ -864,7 +865,7 @@ const weapons = [
     name: "Magical Staff Verethragna",
     description:
       "The pinnacle of magic staves, the end result of magical experimentation. Sends a fountain of powerful, dancing sparks into the air when swung.",
-    image: "src/assets/weapons/magical_staff_verethragna.png",
+    image: BASE + "magical_staff_verethragna.png",
     attack: 1,
     range: 2,
     handling: 1,
@@ -876,7 +877,7 @@ const weapons = [
     name: "Sacred Sword Excalibur",
     description:
       "The most powerful sacred sword. It vanished from history because of its beauty.",
-    image: "src/assets/weapons/sacred_sword_excalibur.png",
+    image: BASE + "sacred_sword_excalibur.png",
     attack: 660,
     range: 3,
     handling: 2,
@@ -888,7 +889,7 @@ const weapons = [
     name: "Destructive Hammer Ragnarök",
     description:
       "Giant hammer said to have been used by the gods to end their final war.",
-    image: "src/assets/weapons/destructive_hammer_ragnarok.png",
+    image: BASE + "destructive_hammer_ragnarok.png",
     attack: 990,
     range: 3,
     handling: 1,
@@ -900,7 +901,7 @@ const weapons = [
     name: "Divine Spear Gungnir",
     description:
       "The Goddess Astraea's spear. Is said to have been used to seal creatures from the cosmos deep underground.",
-    image: "src/assets/weapons/divine_spear_gungnir.png",
+    image: BASE + "divine_spear_gungnir.png",
     attack: 726,
     range: 3,
     handling: 3,
@@ -912,7 +913,7 @@ const weapons = [
     name: "Sword of Light Claíomh Solais",
     description:
       "Also known as the Crystal Sword. Its diffused light cleanses darkness",
-    image: "src/assets/weapons/sword_of_light_claiomh_solais.png",
+    image: BASE + "sword_of_light_claiomh_solais.png",
     attack: 902,
     range: 2,
     handling: 2,
@@ -924,7 +925,7 @@ const weapons = [
     name: "Magic Sword Aroundight",
     description:
       "Weapon bestowed upon mortals by the Dark Dragon Al-Khamis. It contains the power of the god that governs darkness.",
-    image: "src/assets/weapons/magic_sword_aroundight.png",
+    image: BASE + "magic_sword_aroundight.png",
     attack: 803,
     range: 3,
     handling: 3,
@@ -936,7 +937,7 @@ const weapons = [
     name: "God-Slaying Sword Anes Zesia",
     description:
       "An otherworldly sword that defies the laws of physics. Can cross dimensions and destroy spiritual beings.",
-    image: "src/assets/weapons/god_slaying_sword_anes_zesia.png",
+    image: BASE + "god_slaying_sword_anes_zesia.png",
     attack: 950,
     range: 3,
     handling: 3,
@@ -949,7 +950,7 @@ const weapons = [
     name: "Super Ultimate Laser Blade Muramasa",
     description:
       "Also known as a glowstick. Used to be very popular at idol concerts.",
-    image: "src/assets/weapons/super_ultimate_laser_blade_muramasa.png",
+    image: BASE + "super_ultimate_laser_blade_muramasa.png",
     attack: 10,
     range: 2,
     handling: 3,
