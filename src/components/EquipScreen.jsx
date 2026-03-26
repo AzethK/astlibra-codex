@@ -3,11 +3,21 @@ import weapons from "../data/weapons";
 import shields from "../data/shields";
 import armors from "../data/armors";
 import accessories from "../data/accessories";
-import WeaponModal from "./WeaponModal";
+import EquipModal from "./EquipModal";
 
 export default function EquipScreen() {
   const [selectedItem, setSelectedItem] = useState(null);
   const [activeTab, setActiveTab] = useState("WEAPONS");
+  const [closing, setClosing] = useState(false);
+
+  const closeModal = () => {
+    setClosing(true);
+
+    setTimeout(() => {
+      setSelectedItem(null);
+      setClosing(false);
+    }, 200);
+  };
 
   const tabData = {
     WEAPONS: weapons,
@@ -44,10 +54,12 @@ export default function EquipScreen() {
         ))}
       </div>
 
-      {selectedItem && activeTab === "WEAPONS" && (
-        <WeaponModal
-          weapon={selectedItem}
-          onClose={() => setSelectedItem(null)}
+      {selectedItem && (
+        <EquipModal
+          equip={selectedItem}
+          tab={activeTab}
+          closing={closing}
+          onClose={closeModal}
         />
       )}
     </div>

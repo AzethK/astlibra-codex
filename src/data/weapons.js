@@ -9,7 +9,7 @@ const weapons = [
     handling: 2,
     weight: 80,
     skill: "Swordsmith",
-    acquisition: "Starting weapon",
+    acquisition: "Frontier Cutscene",
   },
   {
     name: "Club",
@@ -950,7 +950,7 @@ const weapons = [
     description:
       "Also known as a glowstick. Used to be very popular at idol concerts.",
     image: "src/assets/weapons/super_ultimate_laser_blade_muramasa.png",
-    attack: 1,
+    attack: 10,
     range: 2,
     handling: 3,
     weight: 100,

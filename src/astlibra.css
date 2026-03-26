@@ -198,8 +198,8 @@ body {
 }
 
 .equip-card img {
-  width: 90px;
-  height: 267px;
+  max-width: 100%;
+  max-height: 100%;
   object-fit: contain;
   margin-bottom: 8px;
 
@@ -218,7 +218,7 @@ body {
 
 /* Weapon Overlay */
 
-.weapon-overlay {
+.equip-overlay {
   position: fixed;
   inset: 0;
   background: rgba(0, 0, 0, 0.75);
@@ -228,9 +228,33 @@ body {
   align-items: center;
 
   z-index: 1000;
+
+  animation: overlayOpen 0.2s ease forwards;
 }
 
-.weapon-main {
+.equip-overlay.closing {
+  animation: overlayClose 0.2s ease forwards;
+}
+
+@keyframes overlayOpen {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes overlayClose {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+.equip-main {
   display: grid;
   grid-template-columns: 160px auto;
   gap: 30px;
@@ -238,7 +262,7 @@ body {
   margin-top: 10px;
 }
 
-.weapon-image {
+.equip-image {
   width: 120px;
   height: auto;
   object-fit: contain;
@@ -246,16 +270,16 @@ body {
   animation: float 1.6s ease-in-out infinite;
 }
 
-.weapon-title {
+.equip-title {
   font-size: xx-large;
 }
 
-.weapon-description {
+.equip-description {
   word-wrap: break-word;
   overflow-wrap: break-word;
 }
 
-.weapon-stats {
+.equip-stats {
   justify-self: start;
   display: flex;
   flex-direction: column;
@@ -270,19 +294,19 @@ body {
   box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.6);
 }
 
-.weapon-extra {
+.equip-extra {
   margin-top: 14px;
   font-size: 20px;
   opacity: 0.9;
 }
 
-.weapon-skill {
+.equip-skill {
   font-weight: 800;
   cursor: pointer;
   text-decoration: underline;
 }
 
-.weapon-modal {
+.equip-modal {
   background: linear-gradient(180deg, #0f1f3d 0%, #081326 100%);
   border: 2px solid #cbb67a;
   padding: 20px;
@@ -292,21 +316,49 @@ body {
   min-width: 320px;
   max-height: 80vh;
   overflow-y: auto;
+
+  animation: modalOpen 0.2s ease forwards;
+}
+
+.equip-modal.closing {
+  animation: modalClose 0.2s ease forwards;
+}
+
+@keyframes modalOpen {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes modalClose {
+  from {
+    opacity: 1;
+    transform: scale(1);
+  }
+  to {
+    opacity: 0;
+    transform: scale(0.95);
+  }
 }
 
 @media (max-width: 600px) {
-  .weapon-modal {
+  .equip-modal {
     width: 90vw;
   }
 }
 
-.weapon-divider {
+.equip-divider {
   height: 2px;
   margin: 10px 0 14px 0;
   background: #cbb67a;
 }
 
-/* Weapon Stats */
+/* Equip Stats */
 
 .stat-line {
   display: grid;
