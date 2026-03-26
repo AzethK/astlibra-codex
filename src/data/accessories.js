@@ -1,15 +1,24 @@
 const BASE = import.meta.env.BASE_URL + "assets/accessories/";
 const accessories = [
   {
-    name: "Tree Branch",
+    name: "Wooden Ring",
     description:
-      "Is this the tree branch Karon picked up? It's surprisingly sturdy",
-    image: "src/assets/weapons/tree_branch.png",
-    attack: 30,
-    range: 2,
-    handling: 2,
-    weight: 80,
-    skill: "Swordsmith",
+      "An unusual wooden ring. Given power by the wishes it carries.",
+    image: BASE + "wooden_ring.png",
+    stats: { agility: 5 },
+    acquisition: "Starting weapon",
+  },
+  {
+    name: "Lollipop",
+    description:
+      "A sweet candy you hold in your hand to lick. It strangely never runs out, but has traces where someone has licked it.",
+    image: BASE + "lollipop.png",
+    stats: {
+      maxhp: 100,
+      defense: 30,
+      bleedres: 50,
+      effect: "Defeating Enemies Recovers HP",
+    },
     acquisition: "Starting weapon",
   },
 ];
