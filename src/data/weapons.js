@@ -21,7 +21,7 @@ const weapons = [
     handling: 1,
     weight: 90,
     skill: "Enhance Performance",
-    acquisition: "Starting weapon",
+    acquisition: "Pekkochira Weapon Shop / Rispadar Weapon Shop",
   },
   {
     name: "Stone Dagger",
@@ -33,7 +33,7 @@ const weapons = [
     handling: 3,
     weight: 65,
     skill: "Sylph",
-    acquisition: "Starting weapon",
+    acquisition: "Pekkochira Weapon Shop / Rispadar Weapon Shop",
   },
   {
     name: "Bone Sword",
@@ -45,7 +45,7 @@ const weapons = [
     handling: 2,
     weight: 95,
     skill: "Evil Vision",
-    acquisition: "Starting weapon",
+    acquisition: "Pekkochira Weapon Shop / Rispadar Weapon Shop",
   },
   {
     name: "Rock Hammer",
@@ -57,7 +57,7 @@ const weapons = [
     handling: 1,
     weight: 120,
     skill: "Wrestler",
-    acquisition: "Starting weapon",
+    acquisition: "Pekkochira Weapon Shop / Rispadar Weapon Shop",
   },
   {
     name: "Magical Staff",
@@ -69,7 +69,7 @@ const weapons = [
     handling: 1,
     weight: 120,
     skill: "Force Magnet",
-    acquisition: "Starting weapon",
+    acquisition: "Grow Tree",
   },
   {
     name: "Red Stone Sword",
@@ -80,7 +80,7 @@ const weapons = [
     handling: 2,
     weight: 90,
     skill: "Enhance Performance",
-    acquisition: "Starting weapon",
+    acquisition: "Pekkochira Formula",
   },
   {
     name: "Airgetlam",
@@ -92,7 +92,7 @@ const weapons = [
     handling: 1,
     weight: 120,
     skill: "Mind's Eye",
-    acquisition: "Starting weapon",
+    acquisition: "Pekkochira Formula",
   },
   {
     name: "Hammer",
@@ -104,7 +104,7 @@ const weapons = [
     handling: 1,
     weight: 94,
     skill: "Enhance Performance",
-    acquisition: "Starting weapon",
+    acquisition: "Bridion Swamp Mokyun Shop",
   },
   {
     name: "Bronze Broadsword",
@@ -116,7 +116,7 @@ const weapons = [
     handling: 2,
     weight: 100,
     skill: "Auto Rapid Fire",
-    acquisition: "Starting weapon",
+    acquisition: "Bridion Swamp Mokyun Shop",
   },
 
   {
@@ -129,7 +129,7 @@ const weapons = [
     handling: 2,
     weight: 108,
     skill: "Enhance Performance",
-    acquisition: "Starting weapon",
+    acquisition: "Bridion Swamp Mokyun Shop",
   },
   {
     name: "Gladius",
@@ -141,7 +141,7 @@ const weapons = [
     handling: 3,
     weight: 95,
     skill: "Kirihide",
-    acquisition: "Starting weapon",
+    acquisition: "Bridion Swamp Mokyun Shop",
   },
   {
     name: "Iron Axe",
@@ -153,19 +153,19 @@ const weapons = [
     handling: 1,
     weight: 115,
     skill: "Critical Hit",
-    acquisition: "Starting weapon",
+    acquisition: "Bridion Swamp Mokyun Shop",
   },
   {
     name: "Goblin's Silver Hammer",
     description:
-      "This goblin weapon is somehow made of silver, though goblins don't have such skils.",
+      "This goblin weapon is somehow made of silver, though goblins don't have such skills.",
     image: "src/assets/weapons/goblins_silver_hammer.png",
     attack: 111,
     range: 2,
     handling: 1,
     weight: 160,
     skill: "Seize",
-    acquisition: "Starting weapon",
+    acquisition: "Bridion Swamp Formula",
   },
 
   {
@@ -176,8 +176,8 @@ const weapons = [
     range: 2,
     handling: 2,
     weight: 108,
-    skill: "Enhhance Performance",
-    acquisition: "Starting weapon",
+    skill: "Enhance Performance",
+    acquisition: "Grow Tree",
   },
   {
     name: "Great Stone Sword",
@@ -189,7 +189,7 @@ const weapons = [
     handling: 1,
     weight: 150,
     skill: "Herculean Power",
-    acquisition: "Starting weapon",
+    acquisition: "Mokyun Shop Gacha Reward",
   },
   {
     name: "Caduceus",
@@ -201,7 +201,7 @@ const weapons = [
     handling: 1,
     weight: 126,
     skill: "Enhance Performance",
-    acquisition: "Starting weapon",
+    acquisition: "Bridion Swamp Formula",
   },
   {
     name: "Baselard",
@@ -213,7 +213,7 @@ const weapons = [
     handling: 3,
     weight: 99,
     skill: "Enhance Performance",
-    acquisition: "Starting weapon",
+    acquisition: "Belkade Volcano Mokyun Shop",
   },
   {
     name: "Iron Hammer",
@@ -225,7 +225,7 @@ const weapons = [
     handling: 1,
     weight: 121,
     skill: "Enhance Performance",
-    acquisition: "Starting weapon",
+    acquisition: "Belkade Volcano Mokyun Shop",
   },
   {
     name: "Rapier",
@@ -237,7 +237,7 @@ const weapons = [
     handling: 2,
     weight: 108,
     skill: "Enhance Performance",
-    acquisition: "Starting weapon",
+    acquisition: "Belkade Volcano Mokyun Shop",
   },
   {
     name: "Battle Axe",
@@ -248,7 +248,7 @@ const weapons = [
     handling: 1,
     weight: 145,
     skill: "Gumption",
-    acquisition: "Starting weapon",
+    acquisition: "Grow Tree",
   },
   {
     name: "Nail Hammer",
@@ -260,19 +260,19 @@ const weapons = [
     handling: 2,
     weight: 138,
     skill: "Dig, Doggy, Dig",
-    acquisition: "Starting weapon",
+    acquisition: "Belkade Volcano Mokyun Shop",
   },
   {
     name: "Partisan",
     description:
-      "An extrarvagant spear tipped with a golden blade. Gold holds strong earth energy.",
+      "An extravagant spear tipped with a golden blade. Gold holds strong earth energy.",
     image: "src/assets/weapons/partisan.png",
     attack: 126,
     range: 3,
     handling: 2,
     weight: 134,
     skill: "Enhance Performance",
-    acquisition: "Starting weapon",
+    acquisition: "Belkade Volcano Mokyun Shop",
   },
   {
     name: "Mage's Staff",
@@ -284,7 +284,7 @@ const weapons = [
     handling: 1,
     weight: 130,
     skill: "LED",
-    acquisition: "Starting weapon",
+    acquisition: "Belkade Volcano Formula",
   },
   {
     name: "Ice Sword",
@@ -295,7 +295,7 @@ const weapons = [
     handling: 2,
     weight: 160,
     skill: "Undine",
-    acquisition: "Starting weapon",
+    acquisition: "Arena Battle, Belkade Cup 'Twin Beasts' Reward",
   },
   {
     name: "Dragon Slaying Sword Ascalon",
@@ -307,7 +307,7 @@ const weapons = [
     handling: 1,
     weight: 180,
     skill: "Berserk",
-    acquisition: "Starting weapon",
+    acquisition: "Belkade Volcano Formula",
   },
   {
     name: "Azure Dragon Blade",
@@ -319,7 +319,7 @@ const weapons = [
     handling: 1,
     weight: 175,
     skill: "Snorkel",
-    acquisition: "Starting weapon",
+    acquisition: "Elizas / Sea Serpent Cave Mokyun Shop",
   },
   {
     name: "Ancient Hammer",
@@ -331,7 +331,7 @@ const weapons = [
     handling: 1,
     weight: 166,
     skill: "Enhance Performance",
-    acquisition: "Starting weapon",
+    acquisition: "Elizas / Sea Serpent Cave Mokyun Shop",
   },
   {
     name: "Spirit Staff",
@@ -343,7 +343,7 @@ const weapons = [
     handling: 1,
     weight: 160,
     skill: "Sturdy",
-    acquisition: "Starting weapon",
+    acquisition: "Elizas / Sea Serpent Cave Mokyun Shop",
   },
   {
     name: "Iron Block Hammer",
@@ -355,7 +355,7 @@ const weapons = [
     handling: 1,
     weight: 170,
     skill: "Enhance Performance",
-    acquisition: "Starting weapon",
+    acquisition: "Elizas / Sea Serpent Cave Mokyun Shop",
   },
   {
     name: "Falchion",
@@ -367,7 +367,7 @@ const weapons = [
     handling: 2,
     weight: 161,
     skill: "Enhance Performance",
-    acquisition: "Starting weapon",
+    acquisition: "Elizas / Sea Serpent Cave Mokyun Shop",
   },
   {
     name: "Wind Hatchet Ildrakh",
@@ -379,7 +379,7 @@ const weapons = [
     handling: 2,
     weight: 185,
     skill: "Eliminate",
-    acquisition: "Starting weapon",
+    acquisition: "Grow Tree",
   },
   {
     name: "Fire Dagger",
@@ -391,7 +391,7 @@ const weapons = [
     handling: 3,
     weight: 180,
     skill: "Enhance Performance",
-    acquisition: "Starting weapon",
+    acquisition: "Elizas / Sea Serpent Cave Formula",
   },
   {
     name: "Icicle Spear",
@@ -403,7 +403,7 @@ const weapons = [
     handling: 1,
     weight: 180,
     skill: "Enhance Performance",
-    acquisition: "Starting weapon",
+    acquisition: "Mokyun Shop Gacha Reward",
   },
   {
     name: "Cursed Sword Gram",
@@ -415,7 +415,7 @@ const weapons = [
     handling: 2,
     weight: 209,
     skill: "Digging Master's Finesse",
-    acquisition: "Starting weapon",
+    acquisition: "Elizas / Sea Serpent Cave Formula",
   },
   {
     name: "Halberd",
@@ -427,7 +427,7 @@ const weapons = [
     handling: 1,
     weight: 198,
     skill: "Enhance Performance",
-    acquisition: "Starting weapon",
+    acquisition: "Akrasinon / Demon King Castle Mokyun Shop",
   },
   {
     name: "Fire Hammer",
@@ -439,7 +439,7 @@ const weapons = [
     handling: 1,
     weight: 230,
     skill: "King of Destruction",
-    acquisition: "Starting weapon",
+    acquisition: "Akrasinon / Demon King Castle Mokyun Shop",
   },
   {
     name: "Katar",
@@ -451,7 +451,7 @@ const weapons = [
     handling: 3,
     weight: 188,
     skill: "Enhance Performance",
-    acquisition: "Starting weapon",
+    acquisition: "Akrasinon / Demon King Castle Mokyun Shop",
   },
   {
     name: "Dark Axe",
@@ -463,7 +463,7 @@ const weapons = [
     handling: 1,
     weight: 211,
     skill: "Enhance Performance",
-    acquisition: "Starting weapon",
+    acquisition: "Akrasinon / Demon King Castle Mokyun Shop",
   },
   {
     name: "Breaker",
@@ -475,7 +475,7 @@ const weapons = [
     handling: 1,
     weight: 240,
     skill: "Shelling",
-    acquisition: "Starting weapon",
+    acquisition: "Akrasinon / Demon King Castle Mokyun Shop",
   },
   {
     name: "Magical Lightning Staff",
@@ -487,19 +487,19 @@ const weapons = [
     handling: 3,
     weight: 144,
     skill: "Enhance Performance",
-    acquisition: "Starting weapon",
+    acquisition: "Rispadar Weapon Shop",
   },
   {
     name: "Colichemarde",
     description:
-      "A beautifulyy ornamented arpier said to be the only one of its kind",
+      "A beautifully ornamented arpier said to be the only one of its kind",
     image: "src/assets/weapons/colichemarde.png",
     attack: 285,
     range: 2,
     handling: 2,
     weight: 230,
     skill: "Stinger",
-    acquisition: "Starting weapon",
+    acquisition: "Akrasinon / Demon King Castle Formula",
   },
   {
     name: "Masamune",
@@ -510,7 +510,7 @@ const weapons = [
     handling: 2,
     weight: 220,
     skill: "Enhance Performance",
-    acquisition: "Starting weapon",
+    acquisition: "Arena Battle, Akrasinon Cup 'Poison Rain' Reward",
   },
   {
     name: "Mistilteinn",
@@ -522,7 +522,7 @@ const weapons = [
     handling: 3,
     weight: 225,
     skill: "Enhance Performance",
-    acquisition: "Starting weapon",
+    acquisition: "Akrasinon / Demon King Castle Formula",
   },
   {
     name: "Great Sorcerer's Staff",
@@ -534,7 +534,7 @@ const weapons = [
     handling: 1,
     weight: 280,
     skill: "Great Magic",
-    acquisition: "Starting weapon",
+    acquisition: "Urugut / Elysium Mokyun Shop",
   },
   {
     name: "Shark Fang",
@@ -546,7 +546,7 @@ const weapons = [
     handling: 1,
     weight: 243,
     skill: "Enhance Performance",
-    acquisition: "Starting weapon",
+    acquisition: "Urugut / Elysium Mokyun Shop",
   },
   {
     name: "Thin Ice Dagger",
@@ -558,7 +558,7 @@ const weapons = [
     handling: 3,
     weight: 233,
     skill: "Enhance Performance",
-    acquisition: "Starting weapon",
+    acquisition: "Urugut / Elysium Mokyun Shop",
   },
   {
     name: "Morning Star",
@@ -570,7 +570,7 @@ const weapons = [
     handling: 1,
     weight: 290,
     skill: "Shuriken Dagger",
-    acquisition: "Starting weapon",
+    acquisition: "Urugut / Elysium Mokyun Shop",
   },
   {
     name: "Ogre Hammer",
@@ -582,7 +582,7 @@ const weapons = [
     handling: 1,
     weight: 295,
     skill: "Hassoride",
-    acquisition: "Starting weapon",
+    acquisition: "Urugut / Elysium Mokyun Shop",
   },
   {
     name: "Storm Bringer",
@@ -594,7 +594,7 @@ const weapons = [
     handling: 2,
     weight: 290,
     skill: "Magician",
-    acquisition: "Starting weapon",
+    acquisition: "Grow Tree",
   },
   {
     name: "Knight's Lance",
@@ -606,7 +606,7 @@ const weapons = [
     handling: 2,
     weight: 269,
     skill: "Enhance Performance",
-    acquisition: "Starting weapon",
+    acquisition: "Urugut / Elysium Formula",
   },
   {
     name: "Espada Ropera",
@@ -618,7 +618,7 @@ const weapons = [
     handling: 2,
     weight: 290,
     skill: "Fine Tuning",
-    acquisition: "Starting weapon",
+    acquisition: "Mokyun Shop Gacha Reward",
   },
   {
     name: "Lightning Hammer Mjölnir",
@@ -630,7 +630,7 @@ const weapons = [
     handling: 1,
     weight: 320,
     skill: "Thunderclap",
-    acquisition: "Starting weapon",
+    acquisition: "Urugut / Elysium Formula",
   },
   {
     name: "Lævateinn",
@@ -642,7 +642,7 @@ const weapons = [
     handling: 2,
     weight: 278,
     skill: "Enhance Performance",
-    acquisition: "Starting weapon",
+    acquisition: "Anesta Town / Belkade Mining Town Mokyun Shop",
   },
   {
     name: "Cursed Sword Tyrfing",
@@ -654,7 +654,7 @@ const weapons = [
     handling: 1,
     weight: 296,
     skill: "Enhance Performance",
-    acquisition: "Starting weapon",
+    acquisition: "Anesta Town / Belkade Mining Town Mokyun Shop",
   },
   {
     name: "Seraphim",
@@ -666,7 +666,7 @@ const weapons = [
     handling: 3,
     weight: 269,
     skill: "Enhance Performance",
-    acquisition: "Starting weapon",
+    acquisition: "Anesta Town / Belkade Mining Town Mokyun Shop",
   },
   {
     name: "Lance of Longinus",
@@ -678,19 +678,19 @@ const weapons = [
     handling: 2,
     weight: 306,
     skill: "Enhance Performance",
-    acquisition: "Starting weapon",
+    acquisition: "Grow Tree",
   },
   {
-    name: "Earth_dragon_hammer_blutgang",
+    name: "Earth Dragon Hammer Blutgang",
     description:
-      "Hammer allegedly made frm the tail of an earth dragon. Whether this story is true remains uncertain.",
+      "Hammer allegedly made from the tail of an earth dragon. Whether this story is true remains uncertain.",
     image: "src/assets/weapons/earth_dragon_hammer_blutgang.png",
     attack: 690,
     range: 2,
     handling: 1,
     weight: 315,
     skill: "Enhance Performance",
-    acquisition: "Starting weapon",
+    acquisition: "Anesta Town / Belkade Mining Town Mokyun Shop",
   },
   {
     name: "Sacred Staff Celestial",
@@ -702,7 +702,7 @@ const weapons = [
     handling: 1,
     weight: 305,
     skill: "Sword Energy",
-    acquisition: "Starting weapon",
+    acquisition: "Anesta Town / Belkade Mining Town Mokyun Shop",
   },
   {
     name: "Dragons Jaw",
@@ -714,7 +714,7 @@ const weapons = [
     handling: 1,
     weight: 370,
     skill: "Master Skinner",
-    acquisition: "Starting weapon",
+    acquisition: "Anesta Town / Belkade Mining Town Formula",
   },
   {
     name: "Dark Sword",
@@ -726,7 +726,7 @@ const weapons = [
     handling: 2,
     weight: 360,
     skill: "Shadow",
-    acquisition: "Starting weapon",
+    acquisition: "Arena Battle, Anesta Cup 'Liese's Mischief' Reward",
   },
   {
     name: "Hauteclaire",
@@ -738,7 +738,7 @@ const weapons = [
     handling: 3,
     weight: 300,
     skill: "Grand Slash",
-    acquisition: "Starting weapon",
+    acquisition: "Anesta Town / Belkade Mining Town Formula",
   },
   {
     name: "Durandal",
@@ -750,7 +750,7 @@ const weapons = [
     handling: 1,
     weight: 377,
     skill: "Enhance Performance",
-    acquisition: "Starting weapon",
+    acquisition: "Tokyo / Research Facility Mokyun Shop",
   },
   {
     name: "Wind Staff Grídarvöl",
@@ -762,7 +762,7 @@ const weapons = [
     handling: 1,
     weight: 351,
     skill: "Enhance Performance",
-    acquisition: "Starting weapon",
+    acquisition: "Tokyo / Research Facility Mokyun Shop",
   },
   {
     name: "Beast Claws",
@@ -774,7 +774,7 @@ const weapons = [
     handling: 3,
     weight: 410,
     skill: "Fatal Blow",
-    acquisition: "Starting weapon",
+    acquisition: "Tokyo / Research Facility Mokyun Shop",
   },
   {
     name: "Labrys",
@@ -786,7 +786,7 @@ const weapons = [
     handling: 1,
     weight: 450,
     skill: "Shuriken Sword",
-    acquisition: "Starting weapon",
+    acquisition: "Tokyo / Research Facility Mokyun Shop",
   },
   {
     name: "Earth Sword Galatine",
@@ -798,7 +798,7 @@ const weapons = [
     handling: 2,
     weight: 387,
     skill: "Enhance Performance",
-    acquisition: "Starting weapon",
+    acquisition: "Tokyo / Research Facility Mokyun Shop",
   },
   {
     name: "Nagelring",
@@ -810,7 +810,7 @@ const weapons = [
     handling: 2,
     weight: 435,
     skill: "Thrifty",
-    acquisition: "Starting weapon",
+    acquisition: "Grow Tree",
   },
   {
     name: "Great Spirit's Staff",
@@ -822,19 +822,19 @@ const weapons = [
     handling: 1,
     weight: 400,
     skill: "Katon Arts",
-    acquisition: "Starting weapon",
+    acquisition: "Tokyo / Research Facility Formula",
   },
   {
     name: "Dragon Spear Gáe Bulg",
     description:
-      "The tip of this leendary spear is supposedly made from a carved dragon fang.",
+      "The tip of this legendary spear is supposedly made from a carved dragon fang.",
     image: "src/assets/weapons/dragon_spear_gae_bulg.png",
     attack: 536,
     range: 3,
     handling: 2,
     weight: 440,
     skill: "Dragon Spear",
-    acquisition: "Starting weapon",
+    acquisition: "Arena Battle, Tokyo Cup 'Aulacophora' Reward",
   },
   {
     name: "Mighty Blade Balmung",
@@ -846,7 +846,7 @@ const weapons = [
     handling: 1,
     weight: 460,
     skill: "Devil's Right Hand",
-    acquisition: "Starting weapon",
+    acquisition: "Tokyo / Research Facility Formula",
   },
   {
     name: "Ridill",
@@ -858,7 +858,7 @@ const weapons = [
     handling: 3,
     weight: 432,
     skill: "Enhance Performance",
-    acquisition: "Starting weapon",
+    acquisition: "God of War, Gerdaltine Reward",
   },
   {
     name: "Magical Staff Verethragna",
@@ -870,7 +870,7 @@ const weapons = [
     handling: 1,
     weight: 458,
     skill: "Enhance Performance",
-    acquisition: "Starting weapon",
+    acquisition: "Goddess of Wealth, Lieselotte Reward",
   },
   {
     name: "Sacred Sword Excalibur",
@@ -882,7 +882,7 @@ const weapons = [
     handling: 2,
     weight: 445,
     skill: "Enhance Performance",
-    acquisition: "Starting weapon",
+    acquisition: "Goddess of Courage, Beatrice Reward",
   },
   {
     name: "Destructive Hammer Ragnarök",
@@ -894,7 +894,7 @@ const weapons = [
     handling: 1,
     weight: 494,
     skill: "Enhance Performance",
-    acquisition: "Starting weapon",
+    acquisition: "God of Destruction, Adolphus Reward",
   },
   {
     name: "Divine Spear Gungnir",
@@ -906,7 +906,7 @@ const weapons = [
     handling: 3,
     weight: 477,
     skill: "Enhance Performance",
-    acquisition: "Starting weapon",
+    acquisition: "Sealed Demon, Legion Reward",
   },
   {
     name: "Sword of Light Claíomh Solais",
@@ -918,7 +918,7 @@ const weapons = [
     handling: 2,
     weight: 467,
     skill: "Enhance Performance",
-    acquisition: "Starting weapon",
+    acquisition: "Arena Battle, Maiden Cup ' i f ' Reward",
   },
   {
     name: "Magic Sword Aroundight",
@@ -930,7 +930,7 @@ const weapons = [
     handling: 3,
     weight: 486,
     skill: "Enhance Performance",
-    acquisition: "Starting weapon",
+    acquisition: "God of Darkness - Al Khamis Reward",
   },
   {
     name: "God-Slaying Sword Anes Zesia",
@@ -942,7 +942,8 @@ const weapons = [
     handling: 3,
     weight: 560,
     skill: "The Art of Summoning",
-    acquisition: "Starting weapon",
+    acquisition:
+      "Collect all Weapons, Armors and Shields then talk to Great Sage.",
   },
   {
     name: "Super Ultimate Laser Blade Muramasa",
@@ -954,7 +955,7 @@ const weapons = [
     handling: 3,
     weight: 100,
     skill: "Enhance Performance",
-    acquisition: "Starting weapon",
+    acquisition: "Give Anulis 15 'Love' in Postscript",
   },
 ];
 
