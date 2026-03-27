@@ -159,7 +159,7 @@ export default function EquipModal({ equip, onClose, closing, tab }) {
             {tab === "WEAPONS" && (
               <div className="equip-extra">
                 <p>
-                  <strong>Skill:</strong>{" "}
+                  <strong>Karon:</strong>{" "}
                   <span className="equip-skill">{equip.skill}</span>
                 </p>
                 <p>
@@ -173,7 +173,7 @@ export default function EquipModal({ equip, onClose, closing, tab }) {
           <div className="equip-extra">
             {tab != "TRINKETS" && (
               <p>
-                <strong>Skill:</strong>{" "}
+                <strong>Karon:</strong>{" "}
                 <span className="equip-skill">{equip.skill}</span>
               </p>
             )}
