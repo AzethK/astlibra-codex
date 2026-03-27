@@ -706,7 +706,7 @@ const weapons = [
     acquisition: "Anesta Town / Belkade Mining Town Mokyun Shop",
   },
   {
-    name: "Dragons Jaw",
+    name: "Dragon's Jaw",
     description:
       "An oversized weapon supposedly used by hunters to dismember their prey.",
     image: BASE + "dragons_jaw.png",

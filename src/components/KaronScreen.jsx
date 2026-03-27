@@ -50,7 +50,7 @@ export default function KaronScreen() {
           </button>
         ))}
       </div>
-      <div className="equip-grid">
+      <div className="karon-grid">
         {karons
           .filter((karon) => karon.mode.toUpperCase() === activeTab)
           .map((karon) => {
@@ -61,36 +61,44 @@ export default function KaronScreen() {
 
             return (
               <div key={karon.name} className="karon-item">
-                <div
-                  className={`karon-card 
-            ${selectedKaron?.name === karon.name ? "selected" : ""} 
-            ${isAlt ? "alt" : ""}
-          `}
-                  onClick={() => setSelectedKaron(karon)}
-                >
-                  <div className="karon-row">
-                    <h3>{displayName}</h3>
-
-                    <div className="crystal-container">
-                      {Array.from({ length: karon.cost }).map((_, i) => (
-                        <img
-                          key={i}
-                          src={`${import.meta.env.BASE_URL}assets/misc/magic_crystal.png`}
-                          className={`crystal ${i % 2 === 0 ? "even" : "odd"}`}
-                        />
-                      ))}
+                {/* Card + alt button in vertical stack */}
+                <div className="karon-main">
+                  <div className="karon-card-wrapper">
+                    <div
+                      className={`karon-card 
+          ${selectedKaron?.name === karon.name ? "selected" : ""} 
+          ${isAlt ? "alt" : ""}
+        `}
+                      onClick={() => setSelectedKaron(karon)}
+                    >
+                      <h3>{displayName}</h3>
                     </div>
+
+                    {karon.altName && (
+                      <button
+                        className={`alt-toggle ${isAlt ? "active" : ""}`}
+                        onClick={() => toggleAlt(karon.name)}
+                      >
+                        Alt
+                      </button>
+                    )}
+
+                    {!karon.altName && (
+                      <button className="alt-toggle placeholder" />
+                    )}
                   </div>
                 </div>
 
-                {karon.altName && (
-                  <button
-                    className={`alt-toggle ${isAlt ? "active" : ""}`}
-                    onClick={() => toggleAlt(karon.name)}
-                  >
-                    Alt
-                  </button>
-                )}
+                {/* Crystals aligned with the card only */}
+                <div className="crystal-container">
+                  {Array.from({ length: karon.cost }).map((_, i) => (
+                    <img
+                      key={i}
+                      src={`${import.meta.env.BASE_URL}assets/misc/magic_crystal.png`}
+                      className={`crystal ${i % 2 === 0 ? "even" : "odd"}`}
+                    />
+                  ))}
+                </div>
               </div>
             );
           })}

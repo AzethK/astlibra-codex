@@ -424,6 +424,12 @@ body {
 
 /* Karon Screen */
 
+.karon-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 20px;
+}
+
 .karon-overlay {
   position: fixed;
   top: 0;
@@ -497,6 +503,18 @@ body {
   width: 100%;
 }
 
+.karon-item {
+  display: flex;
+  align-items: start;
+  gap: 10px;
+}
+
+.karon-main {
+  width: 220px;
+  display: flex;
+  flex-direction: column;
+}
+
 .karon-info-box {
   position: fixed;
   top: 50%;
@@ -546,7 +564,7 @@ body {
 
 .crystal-container {
   display: flex;
-  gap: 0px;
+  align-items: top;
 }
 
 .crystal {
@@ -569,17 +587,24 @@ body {
 }
 
 .alt-toggle {
-  padding: 4px 8px;
-  font-size: 11px;
+  width: 100%;
+  height: 24px;
 
   background: linear-gradient(180deg, #0f1f3d 0%, #081326 100%);
   color: #e6d8a8;
-  border: 1px solid #cbb67a;
-  height: fit-content;
+  border: 2px solid #cbb67a;
+  border-top: none;
   cursor: pointer;
-  align-self: stretch;
+}
+
+.alt-toggle.placeholder {
+  visibility: hidden;
+}
+
+.alt-toggle.active {
+  background: #3d0f0f;
 }
 
 .alt-toggle:hover {
-  transform: scale(1.03);
+  transform: scale(1.01);
 }

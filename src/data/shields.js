@@ -303,7 +303,7 @@ const shields = [
     guard: 70,
     weight: 6,
     full_resistance: 0,
-    skill: "Flawlless",
+    skill: "Flawless",
     acquisition: "Anesta Town / Belkade Mining Town Mokyun Shop",
   },
   {
@@ -331,7 +331,7 @@ const shields = [
     acquisition: "Anesta Town / Belkade Mining Town Mokyun Shop",
   },
   {
-    name: "Dragon Gods Shield",
+    name: "Dragon God's Shield",
     description:
       "Legend has it that a dragon gave this shield to a human. It hies incredible defensive capabilities.",
     image: BASE + "dragon_gods_shield.png",
