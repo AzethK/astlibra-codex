@@ -1,5 +1,5 @@
-const BASE = import.meta.env.BASE_URL + "assets/accessories/";
-const accessories = [
+const BASE = import.meta.env.BASE_URL + "assets/trinkets/";
+const trinkets = [
   {
     name: "Wooden Ring",
     description:
@@ -572,4 +572,4 @@ const accessories = [
   },
 ];
 
-export default accessories;
+export default trinkets;

@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import weapons from "../data/weapons";
 import shields from "../data/shields";
 import armors from "../data/armors";
-import accessories from "../data/accessories";
+import trinkets from "../data/trinkets";
 import EquipModal from "./EquipModal";
 
 export default function EquipScreen() {
@@ -23,13 +23,13 @@ export default function EquipScreen() {
     WEAPONS: weapons,
     SHIELDS: shields,
     ARMOR: armors,
-    ACCESSORIES: accessories,
+    TRINKETS: trinkets,
   };
 
   return (
     <div className="equip-container">
       <div className="equip-tabs">
-        {["WEAPONS", "SHIELDS", "ARMOR", "ACCESSORIES"].map((tab) => (
+        {["WEAPONS", "SHIELDS", "ARMOR", "TRINKETS"].map((tab) => (
           <button
             key={tab}
             className={`equip-tab ${activeTab === tab ? "active" : ""}`}

@@ -32,8 +32,8 @@ export default function EquipModal({ equip, onClose, closing, tab }) {
     return map[key] || key.charAt(0).toUpperCase() + key.slice(1);
   };
 
-  const accessoryStats =
-    tab === "ACCESSORIES" && equip.stats ? Object.entries(equip.stats) : [];
+  const trinketStats =
+    tab === "TRINKETS" && equip.stats ? Object.entries(equip.stats) : [];
 
   return (
     <div
@@ -56,8 +56,8 @@ export default function EquipModal({ equip, onClose, closing, tab }) {
           </div>
           <div>
             <div className="equip-stats">
-              {tab === "ACCESSORIES" ?
-                accessoryStats.map(([key, value], index) => (
+              {tab === "TRINKETS" ?
+                trinketStats.map(([key, value], index) => (
                   <div className="stat-line" key={index}>
                     <span className="stat-label">{formatStatLabel(key)}:</span>
 
@@ -171,7 +171,7 @@ export default function EquipModal({ equip, onClose, closing, tab }) {
         </div>
         {tab != "WEAPONS" && (
           <div className="equip-extra">
-            {tab != "ACCESSORIES" && (
+            {tab != "TRINKETS" && (
               <p>
                 <strong>Skill:</strong>{" "}
                 <span className="equip-skill">{equip.skill}</span>
