@@ -557,6 +557,9 @@ body {
 }
 
 .karon-info-box .acquisition {
+  font-weight: 700;
+  text-decoration: underline;
+  cursor: pointer;
   margin-top: 8px;
 }
 

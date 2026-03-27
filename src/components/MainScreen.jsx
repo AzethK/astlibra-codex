@@ -1,4 +1,4 @@
-import { useLocation } from "react-router-dom";
+import { Route, Routes, useLocation } from "react-router-dom";
 import "../astlibra.css";
 import Sidebar from "./Sidebar";
 import EquipScreen from "./EquipScreen";
@@ -6,6 +6,7 @@ import KaronScreen from "./KaronScreen";
 
 export default function MainScreen() {
   const location = useLocation();
+  const path = location.pathname.toLowerCase();
   const current = location.pathname.replace("/", "").toUpperCase();
 
   return (
@@ -23,10 +24,12 @@ export default function MainScreen() {
           </div>
         )}
 
-        {/* ROUTES */}
-        {current === "EQUIP" && <EquipScreen />}
-
-        {current === "KARON" && <KaronScreen />}
+        <Routes>
+          <Route path="/equip" element={<EquipScreen />} />
+          <Route path="/equip/:itemName" element={<EquipScreen />} />
+          <Route path="/karon" element={<KaronScreen />} />
+          <Route path="/karon/:karonName" element={<KaronScreen />} />
+        </Routes>
       </div>
     </div>
   );

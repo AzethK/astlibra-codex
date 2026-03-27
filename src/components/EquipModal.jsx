@@ -1,6 +1,8 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 export default function EquipModal({ equip, onClose, closing, tab }) {
+  const navigate = useNavigate();
   const renderBars = (value, type) => {
     return [1, 2, 3].map((i) => (
       <div
@@ -160,7 +162,14 @@ export default function EquipModal({ equip, onClose, closing, tab }) {
               <div className="equip-extra">
                 <p>
                   <strong>Karon:</strong>{" "}
-                  <span className="equip-skill">{equip.skill}</span>
+                  <span
+                    className="equip-skill"
+                    onClick={() => {
+                      navigate(`/karon/${equip.skill}`);
+                    }}
+                  >
+                    {equip.skill}
+                  </span>
                 </p>
                 <p>
                   <strong>Acquisition:</strong> {equip.acquisition}
@@ -174,7 +183,14 @@ export default function EquipModal({ equip, onClose, closing, tab }) {
             {tab != "TRINKETS" && (
               <p>
                 <strong>Karon:</strong>{" "}
-                <span className="equip-skill">{equip.skill}</span>
+                <span
+                  className="equip-skill"
+                  onClick={() => {
+                    navigate(`/karon/${equip.skill}`);
+                  }}
+                >
+                  {equip.skill}
+                </span>
               </p>
             )}
             <p>

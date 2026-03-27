@@ -21,7 +21,7 @@ export default function Sidebar() {
       <div className="sidebar-inner">
         {items.map((label) => {
           const path = `/${label.toLowerCase()}`;
-          const isActive = location.pathname === path;
+          const isActive = location.pathname.startsWith(path);
 
           return (
             <button

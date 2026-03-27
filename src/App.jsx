@@ -1,11 +1,13 @@
 import React from "react";
 import MainScreen from "./components/MainScreen";
-import { HashRouter } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom";
 
 export default function App() {
   return (
     <HashRouter>
-      <MainScreen />
+      <Routes>
+        <Route path="/*" element={<MainScreen />} />
+      </Routes>
     </HashRouter>
   );
 }

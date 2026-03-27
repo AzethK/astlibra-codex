@@ -1,7 +1,10 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
+import { useNavigate, useParams } from "react-router-dom";
 import karons from "../data/karons";
 
 export default function KaronScreen() {
+  const { karonName } = useParams();
+  const navigate = useNavigate();
   const [selectedKaron, setSelectedKaron] = useState(null);
   const [activeTab, setActiveTab] = useState("BASIC");
   const [altKarons, setAltKarons] = useState({});
@@ -25,6 +28,22 @@ export default function KaronScreen() {
       selectedKaron.altName
     : selectedKaron?.name;
 
+  useEffect(() => {
+    if (!karonName) {
+      setSelectedKaron(null);
+      return;
+    }
+
+    const decodedName = decodeURIComponent(karonName);
+
+    const foundKaron = karons.find((k) => k.name === decodedName);
+
+    if (foundKaron) {
+      setSelectedKaron(foundKaron);
+      setActiveTab(foundKaron.mode.toUpperCase());
+    }
+  }, [karonName]);
+
   return (
     <div className="equip-container">
       <div className="equip-tabs">
@@ -44,6 +63,7 @@ export default function KaronScreen() {
             onClick={() => {
               setActiveTab(tab);
               setSelectedKaron(null);
+              navigate("/karon");
             }}
           >
             {tab}
@@ -69,7 +89,7 @@ export default function KaronScreen() {
           ${selectedKaron?.name === karon.name ? "selected" : ""} 
           ${isAlt ? "alt" : ""}
         `}
-                      onClick={() => setSelectedKaron(karon)}
+                      onClick={() => navigate(`/karon/${karon.name}`)}
                     >
                       <h3>{displayName}</h3>
                     </div>
@@ -106,7 +126,10 @@ export default function KaronScreen() {
 
       <div
         className={`karon-overlay ${selectedKaron ? "visible" : ""}`}
-        onClick={() => setSelectedKaron(null)}
+        onClick={() => {
+          setSelectedKaron(null);
+          navigate(`/karon/`);
+        }}
       />
 
       <div className={`karon-info-box ${selectedKaron ? "visible" : ""}`}>
@@ -114,8 +137,20 @@ export default function KaronScreen() {
           <>
             <h3>{displayName}</h3>
             <p>{displayDescription}</p>
-            <p className="acquisition">
-              Acquisition: {selectedKaron.acquisition}
+            <p>
+              Acquisition:{" "}
+              {selectedKaron.acquisition != "Starting Karon" && (
+                <span
+                  className="acquisition"
+                  onClick={() => {
+                    navigate(`/equip/${selectedKaron.acquisition}`);
+                  }}
+                >
+                  {selectedKaron.acquisition}
+                </span>
+              )}
+              {selectedKaron.acquisition === "Starting Karon" &&
+                "Starting Karon"}
             </p>
           </>
         )}
