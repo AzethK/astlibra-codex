@@ -184,7 +184,7 @@ export default function EquipModal({ equip, onClose, closing, tab }) {
         </div>
         {tab != "WEAPONS" && (
           <div className="equip-extra">
-            {tab != "TRINKETS" && (
+            {tab != "TRINKETS" && equip.skill && (
               <p>
                 <strong>Karon:</strong>{" "}
                 <span
