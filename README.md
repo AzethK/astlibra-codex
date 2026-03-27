@@ -6,6 +6,7 @@ An all-in-one ASTLIBRA database with consumables, materials, equipment, skills, 
 - All Shields
 - All Armors
 - All Trinkets
+- All Karons
   
 # NEXT UPCOMING FEATURES
-- All Karons
+- Link Equipment and Karons
