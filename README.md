@@ -7,6 +7,7 @@ An all-in-one ASTLIBRA database with consumables, materials, equipment, skills, 
 - All Armors
 - All Trinkets
 - All Karons
-  
-# NEXT UPCOMING FEATURES
 - Link Equipment and Karons
+
+# NEXT UPCOMING FEATURES
+- Skills
