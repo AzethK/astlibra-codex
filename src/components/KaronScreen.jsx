@@ -139,18 +139,20 @@ export default function KaronScreen() {
             <p>{displayDescription}</p>
             <p>
               Acquisition:{" "}
-              {selectedKaron.acquisition != "Starting Karon" && (
-                <span
-                  className="acquisition"
-                  onClick={() => {
-                    navigate(`/equip/${selectedKaron.acquisition}`);
-                  }}
-                >
-                  {selectedKaron.acquisition}
-                </span>
-              )}
-              {selectedKaron.acquisition === "Starting Karon" &&
-                "Starting Karon"}
+              <span
+                className={
+                  selectedKaron.acquisition != "Starting Karon" ?
+                    "acquisition"
+                  : ""
+                }
+                onClick={() => {
+                  selectedKaron.acquisition != "Starting Karon" ?
+                    navigate(`/equip/${selectedKaron.acquisition}`)
+                  : "";
+                }}
+              >
+                {selectedKaron.acquisition}
+              </span>
             </p>
           </>
         )}

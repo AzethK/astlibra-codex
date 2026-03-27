@@ -163,9 +163,13 @@ export default function EquipModal({ equip, onClose, closing, tab }) {
                 <p>
                   <strong>Karon:</strong>{" "}
                   <span
-                    className="equip-skill"
+                    className={
+                      equip.skill !== "Enhance Performance" ? "equip-skill" : ""
+                    }
                     onClick={() => {
-                      navigate(`/karon/${equip.skill}`);
+                      equip.skill !== "Enhance Performance" ?
+                        navigate(`/karon/${equip.skill}`)
+                      : "";
                     }}
                   >
                     {equip.skill}
