@@ -375,6 +375,15 @@ body {
 .stat-value {
   text-align: left;
   font-weight: bold;
+  color: white;
+}
+
+.stat-negative {
+  color: #ff6464;
+}
+
+.stat-effect {
+  color: #67c7fc;
 }
 
 .stat-bars {

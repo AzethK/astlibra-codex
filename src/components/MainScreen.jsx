@@ -1,21 +1,19 @@
-import React, { useState } from "react";
+import { useLocation } from "react-router-dom";
 import "../astlibra.css";
 import Sidebar from "./Sidebar";
 import EquipScreen from "./EquipScreen";
 
 export default function MainScreen() {
-  const [sidebarActive, setSidebarActive] = useState(null);
+  const location = useLocation();
+  const current = location.pathname.replace("/", "").toUpperCase();
 
   return (
     <div className="app-container">
-      <Sidebar
-        sidebarActive={sidebarActive}
-        setSidebarActive={setSidebarActive}
-      />
+      <Sidebar />
 
-      {/* Main content */}
       <div className="main-content">
-        {!sidebarActive && (
+        {/* HOME (no selection) */}
+        {!current && (
           <div className="home-panel">
             <h1 className="title">Astlibra Codex</h1>
             <p className="subtitle">
@@ -24,7 +22,10 @@ export default function MainScreen() {
           </div>
         )}
 
-        {sidebarActive === "EQUIP" && <EquipScreen />}
+        {/* ROUTES */}
+        {current === "EQUIP" && <EquipScreen />}
+
+        {/* {current === "ITEM" && <ItemScreen />} */}
       </div>
     </div>
   );

@@ -14,11 +14,18 @@ export default function EquipModal({ equip, onClose, closing, tab }) {
     const map = {
       attack: "Attack Power",
       defense: "Defense Power",
+      luck: "Luck",
       agility: "Agility",
+      adaptability: "Adaptability",
+      guard: "Guard",
       maxhp: "Max HP",
       maxst: "Max ST",
       magical_power: "Magical Power",
+      parares: "Paralysis Resistance",
+      petrires: "Petrifaction Resistance",
       bleedres: "Bleeding Resistance",
+      blindres: "Blind Resistance",
+      poisonres: "Poison Resistance",
       effect: "Effect",
     };
 
@@ -55,8 +62,31 @@ export default function EquipModal({ equip, onClose, closing, tab }) {
                     <span className="stat-label">{formatStatLabel(key)}:</span>
 
                     {typeof value === "number" ?
-                      <span className="stat-value">{value}</span>
-                    : <span className="stat-value">{value}</span>}
+                      <span
+                        className={`stat-value ${
+                          typeof value === "string" ?
+                            value.startsWith("No") ?
+                              "stat-negative"
+                            : "stat-effect"
+                          : value < 0 ? "stat-negative"
+                          : ""
+                        }`}
+                      >
+                        {value}
+                      </span>
+                    : <span
+                        className={`stat-value ${
+                          typeof value === "string" ?
+                            value.startsWith("No") ?
+                              "stat-negative"
+                            : "stat-effect"
+                          : value < 0 ? "stat-negative"
+                          : ""
+                        }`}
+                      >
+                        {value}
+                      </span>
+                    }
                   </div>
                 ))
               : <>
@@ -141,10 +171,12 @@ export default function EquipModal({ equip, onClose, closing, tab }) {
         </div>
         {tab != "WEAPONS" && (
           <div className="equip-extra">
-            <p>
-              <strong>Skill:</strong>{" "}
-              <span className="equip-skill">{equip.skill}</span>
-            </p>
+            {tab != "ACCESSORIES" && (
+              <p>
+                <strong>Skill:</strong>{" "}
+                <span className="equip-skill">{equip.skill}</span>
+              </p>
+            )}
             <p>
               <strong>Acquisition:</strong> {equip.acquisition}
             </p>

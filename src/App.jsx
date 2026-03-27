@@ -1,11 +1,11 @@
 import React from "react";
 import MainScreen from "./components/MainScreen";
-import Sidebar from "./components/Sidebar";
+import { HashRouter } from "react-router-dom";
 
 export default function App() {
   return (
-    <>
+    <HashRouter>
       <MainScreen />
-    </>
+    </HashRouter>
   );
 }
