@@ -2,6 +2,7 @@ import { useLocation } from "react-router-dom";
 import "../astlibra.css";
 import Sidebar from "./Sidebar";
 import EquipScreen from "./EquipScreen";
+import KaronScreen from "./KaronScreen";
 
 export default function MainScreen() {
   const location = useLocation();
@@ -25,7 +26,7 @@ export default function MainScreen() {
         {/* ROUTES */}
         {current === "EQUIP" && <EquipScreen />}
 
-        {/* {current === "ITEM" && <ItemScreen />} */}
+        {current === "KARON" && <KaronScreen />}
       </div>
     </div>
   );

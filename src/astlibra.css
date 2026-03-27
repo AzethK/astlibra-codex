@@ -421,3 +421,165 @@ body {
 .stat-bar.handling.filled-3 {
   background: #f0e08a;
 }
+
+/* Karon Screen */
+
+.karon-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+
+  background: rgba(0, 0, 0, 0.5);
+
+  opacity: 0;
+  transition: opacity 0.2s ease;
+  pointer-events: none;
+}
+
+.karon-overlay.visible {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.karon-card {
+  background: linear-gradient(180deg, #0f1f3d 0%, #081326 100%);
+  border: 2px solid #cbb67a;
+  padding: 10px;
+
+  display: flex;
+  flex-direction: column;
+
+  text-align: center;
+  justify-content: center;
+
+  box-shadow:
+    inset 0 0 6px rgba(0, 0, 0, 0.6),
+    0 0 6px rgba(203, 182, 122, 0.2);
+
+  transition: transform 0.15s ease;
+  margin: 0;
+  position: relative;
+}
+
+.karon-card:hover {
+  transform: scale(1.03);
+  cursor: pointer;
+}
+
+.karon-card.selected {
+  outline: 2px solid #e6d8a8;
+  box-shadow:
+    0 0 10px rgba(230, 216, 168, 0.4),
+    inset 0 0 6px rgba(0, 0, 0, 0.6);
+}
+
+.karon-card img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  margin-bottom: 8px;
+
+  transition: transform 0.2s ease;
+}
+
+.karon-card h3 {
+  font-size: 14px;
+  margin: 0;
+}
+
+.karon-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.karon-info-box {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.95);
+  font-size: 16px;
+  width: 320px;
+  max-width: 80%;
+
+  background: linear-gradient(180deg, #0f1f3d 0%, #081326 100%);
+  color: #e6d8a8;
+
+  padding: 12px;
+  border: 2px solid #cbb67a;
+
+  text-align: center;
+  z-index: 20;
+
+  opacity: 0;
+  transition: all 0.2s ease;
+
+  pointer-events: none;
+}
+
+.karon-info-box.visible {
+  opacity: 1;
+  transform: translate(-50%, -50%) scale(1);
+  pointer-events: auto;
+}
+
+.karon-info-box h3 {
+  margin: 0 0 8px 0;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.karon-info-box p {
+  margin: 4px 0;
+  font-size: 16px;
+}
+
+.karon-info-box .acquisition {
+  margin-top: 8px;
+}
+
+/* Karon Magic Crystals */
+
+.crystal-container {
+  display: flex;
+  gap: 0px;
+}
+
+.crystal {
+  width: 8px;
+  height: 20px;
+}
+
+.crystal.even {
+  transform: translateY(0px);
+}
+
+.crystal.odd {
+  transform: translateY(4px);
+}
+
+/* ALT Karon */
+
+.karon-card.alt {
+  background: linear-gradient(180deg, #3d0f0f 0%, #260808 100%);
+}
+
+.alt-toggle {
+  padding: 4px 8px;
+  font-size: 11px;
+
+  background: linear-gradient(180deg, #0f1f3d 0%, #081326 100%);
+  color: #e6d8a8;
+  border: 1px solid #cbb67a;
+  height: fit-content;
+  cursor: pointer;
+  align-self: stretch;
+}
+
+.alt-toggle:hover {
+  transform: scale(1.03);
+}
