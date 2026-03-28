@@ -106,10 +106,10 @@ const items = [
     type: "Miscellaneous",
   },
   {
-    name: "Golden Chests Key",
+    name: "Gold Chests Key",
     description:
-      "A mysterious key that opens chests dropped by enemies. Opens golden treasure chests.",
-    image: BASE + "golden_chests_key.png",
+      "A mysterious key that opens chests dropped by enemies. Opens gold treasure chests.",
+    image: BASE + "gold_chests_key.png",
     acquisition: "Combine Clay-like Gold Stones with Key Mold B",
     type: "Miscellaneous",
   },
@@ -155,7 +155,7 @@ const items = [
     name: "Numbness-relieving Medicine",
     description:
       "Heals the abnormal status Paralysis. Neutralizes Paralysis and provides lasting resistance for a while.",
-    image: BASE + "numbness_relieving Medicine.png",
+    image: BASE + "numbness_relieving_medicine.png",
     acquisition: "Loot Chest",
     type: "Medicines/Bottles",
   },
