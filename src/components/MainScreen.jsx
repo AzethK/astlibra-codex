@@ -3,6 +3,7 @@ import "../astlibra.css";
 import Sidebar from "./Sidebar";
 import EquipScreen from "./EquipScreen";
 import KaronScreen from "./KaronScreen";
+import ItemScreen from "./ItemScreen";
 
 export default function MainScreen() {
   const location = useLocation();
@@ -26,9 +27,11 @@ export default function MainScreen() {
 
         <Routes>
           <Route path="/equip" element={<EquipScreen />} />
-          <Route path="/equip/:itemName" element={<EquipScreen />} />
+          <Route path="/equip/:equipName" element={<EquipScreen />} />
           <Route path="/karon" element={<KaronScreen />} />
           <Route path="/karon/:karonName" element={<KaronScreen />} />
+          <Route path="/item" element={<ItemScreen />} />
+          <Route path="/item/:itemName" element={<ItemScreen />} />
         </Routes>
       </div>
     </div>

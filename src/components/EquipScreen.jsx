@@ -7,9 +7,9 @@ import EquipModal from "./EquipModal";
 import { useNavigate, useParams } from "react-router-dom";
 
 export default function EquipScreen() {
-  const { itemName } = useParams();
+  const { equipName } = useParams();
   const navigate = useNavigate();
-  const [selectedItem, setSelectedItem] = useState(null);
+  const [selectedEquip, setSelectedEquip] = useState(null);
   const [activeTab, setActiveTab] = useState("WEAPONS");
   const [closing, setClosing] = useState(false);
 
@@ -30,26 +30,26 @@ export default function EquipScreen() {
   };
 
   useEffect(() => {
-    if (!itemName) {
-      setSelectedItem(null);
+    if (!equipName) {
+      setSelectedEquip(null);
       return;
     }
 
-    const allItems = Object.values(tabData).flat();
-    const foundItem = allItems.find((item) => item.name === itemName);
+    const allEquips = Object.values(tabData).flat();
+    const foundEquip = allEquips.find((equip) => equip.name === equipName);
 
-    if (foundItem) {
-      setSelectedItem(foundItem);
+    if (foundEquip) {
+      setSelectedEquip(foundEquip);
 
-      const tabEntry = Object.entries(tabData).find(([_, items]) =>
-        items.some((i) => i.name === itemName),
+      const tabEntry = Object.entries(tabData).find(([_, equips]) =>
+        equips.some((e) => e.name === equipName),
       );
 
       if (tabEntry) {
         setActiveTab(tabEntry[0]);
       }
     }
-  }, [itemName]);
+  }, [equipName]);
 
   return (
     <div className="equip-container">
@@ -60,7 +60,7 @@ export default function EquipScreen() {
             className={`equip-tab ${activeTab === tab ? "active" : ""}`}
             onClick={() => {
               setActiveTab(tab);
-              setSelectedItem(null);
+              setSelectedEquip(null);
               navigate("/equip");
             }}
           >
@@ -69,23 +69,23 @@ export default function EquipScreen() {
         ))}
       </div>
       <div className="equip-grid">
-        {tabData[activeTab].map((item) => (
+        {tabData[activeTab].map((equip) => (
           <div
-            key={item.name}
+            key={equip.name}
             className="equip-card"
             onClick={() => {
-              navigate(`/equip/${item.name}`);
+              navigate(`/equip/${equip.name}`);
             }}
           >
-            <img src={item.image} alt={item.name} />
-            <h3>{item.name}</h3>
+            <img src={equip.image} alt={equip.name} />
+            <h3>{equip.name}</h3>
           </div>
         ))}
       </div>
 
-      {selectedItem && (
+      {selectedEquip && (
         <EquipModal
-          equip={selectedItem}
+          equip={selectedEquip}
           tab={activeTab}
           closing={closing}
           onClose={closeModal}

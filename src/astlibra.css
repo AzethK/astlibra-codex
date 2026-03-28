@@ -176,6 +176,13 @@ body {
   transition: transform 0.15s ease;
 }
 
+.equip-card.selected {
+  outline: 2px solid #e6d8a8;
+  box-shadow:
+    0 0 10px rgba(230, 216, 168, 0.4),
+    inset 0 0 6px rgba(0, 0, 0, 0.6);
+}
+
 .equip-card:hover {
   transform: scale(1.03);
   cursor: pointer;

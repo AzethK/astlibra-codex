@@ -37,7 +37,7 @@ const items = [
     description:
       "Sacred water collected from Yggdrasil shoots. Instantly transports you to a safe location.",
     image: BASE + "dew_from_the_world_tree.png",
-    acquisition: "Pekkochira Shop",
+    acquisition: "Pekkochira Shop / Loot Chest",
     type: "Miscellaneous",
   },
   {
@@ -102,7 +102,7 @@ const items = [
     description:
       "A mysterious key that opens chests dropped by enemies. Opens silver treasure chests.",
     image: BASE + "silver_chests_key.png",
-    acquisition: "Loot Chest",
+    acquisition: "Loot Chest / Crafting",
     type: "Miscellaneous",
   },
   {
@@ -243,7 +243,7 @@ const items = [
     description:
       "An esoteric scroll describing the Sky Sword technique. Open to view details.",
     image: BASE + "technique_scroll.png",
-    acquisition: "Pekkochira Chest",
+    acquisition: "Chest west of Pekkochira Village, near Dash tutorial",
     type: "Books/Cards",
   },
   {
@@ -424,7 +424,7 @@ const items = [
   {
     name: "18 Liter Container of Pine Resin",
     description:
-      "Filled with natura resin secreted by pine trees. Also known as a 5 gallon can.",
+      "Filled with natural resin secreted by pine trees. Also known as a 5 gallon can.",
     image: BASE + "18_liter_container_of_pine_resin.png",
     acquisition: "Pekkochira",
     type: "Valuables",
@@ -442,7 +442,6 @@ const items = [
     description:
       "Mages used these magic-filled stones by cracking them open. Required by Karon for sustained magic use.",
     image: BASE + "magical_crystals.png",
-    acquisition: "Starting item",
     type: "Collected Items",
   },
   {
