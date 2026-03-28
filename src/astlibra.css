@@ -573,6 +573,7 @@ body {
 .crystal {
   width: 8px;
   height: 20px;
+  animation: blink 1s ease-in-out infinite;
 }
 
 .crystal.even {
@@ -581,6 +582,18 @@ body {
 
 .crystal.odd {
   transform: translateY(4px);
+}
+
+@keyframes blink {
+  0% {
+    filter: brightness(100%);
+  }
+  50% {
+    filter: brightness(150%);
+  }
+  100% {
+    filter: brightness(100%);
+  }
 }
 
 /* ALT Karon */
