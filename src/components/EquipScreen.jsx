@@ -10,8 +10,9 @@ export default function EquipScreen() {
   const { equipName } = useParams();
   const navigate = useNavigate();
   const [selectedEquip, setSelectedEquip] = useState(null);
-  const [activeTab, setActiveTab] = useState("WEAPONS");
+  const [activeTab, setActiveTab] = useState("ALL");
   const [closing, setClosing] = useState(false);
+  const [searchQuery, setSearchQuery] = useState("");
 
   const closeModal = () => {
     setClosing(true);
@@ -27,7 +28,27 @@ export default function EquipScreen() {
     SHIELDS: shields,
     ARMOR: armors,
     TRINKETS: trinkets,
+    ALL: [...weapons, ...shields, ...armors, ...trinkets],
   };
+
+  let filteredItems = tabData[activeTab] || [];
+
+  if (searchQuery.trim() !== "") {
+    const query = searchQuery.toLowerCase();
+
+    filteredItems = filteredItems.filter((equip) => {
+      if (
+        equip.name.toLowerCase().includes(query) ||
+        (equip.skill &&
+          typeof equip.skill === "string" &&
+          equip.skill.toLowerCase().includes(query))
+      ) {
+        return equip.name.toLowerCase();
+      }
+
+      return false;
+    });
+  }
 
   useEffect(() => {
     if (!equipName) {
@@ -54,7 +75,7 @@ export default function EquipScreen() {
   return (
     <div className="equip-container">
       <div className="equip-tabs">
-        {["WEAPONS", "SHIELDS", "ARMOR", "TRINKETS"].map((tab) => (
+        {["ALL", "WEAPONS", "SHIELDS", "ARMOR", "TRINKETS"].map((tab) => (
           <button
             key={tab}
             className={`equip-tab ${activeTab === tab ? "active" : ""}`}
@@ -68,8 +89,16 @@ export default function EquipScreen() {
           </button>
         ))}
       </div>
+      <div className="search-box">
+        <input
+          type="text"
+          placeholder="Search Items..."
+          value={searchQuery}
+          onChange={(e) => setSearchQuery(e.target.value)}
+        />
+      </div>
       <div className="equip-grid">
-        {tabData[activeTab].map((equip) => (
+        {filteredItems.map((equip) => (
           <div
             key={equip.name}
             className="equip-card"

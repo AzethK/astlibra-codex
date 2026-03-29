@@ -6,8 +6,9 @@ export default function KaronScreen() {
   const { karonName } = useParams();
   const navigate = useNavigate();
   const [selectedKaron, setSelectedKaron] = useState(null);
-  const [activeTab, setActiveTab] = useState("BASIC");
+  const [activeTab, setActiveTab] = useState("ALL");
   const [altKarons, setAltKarons] = useState({});
+  const [searchQuery, setSearchQuery] = useState("");
 
   const toggleAlt = (karonName) => {
     setAltKarons((prev) => ({
@@ -15,6 +16,11 @@ export default function KaronScreen() {
       [karonName]: !prev[karonName],
     }));
   };
+
+  const activeItems =
+    activeTab != "ALL" ?
+      karons.filter((karon) => karon.mode.toUpperCase() === activeTab)
+    : karons;
 
   const isAlt = selectedKaron && altKarons[selectedKaron.name];
 
@@ -44,10 +50,30 @@ export default function KaronScreen() {
     }
   }, [karonName]);
 
+  let filteredItems = activeItems;
+
+  if (searchQuery.trim() !== "") {
+    const query = searchQuery.toLowerCase();
+
+    filteredItems = filteredItems.filter((karon) => {
+      if (
+        karon.name.toLowerCase().includes(query) ||
+        (karon.acquisition &&
+          typeof karon.acquisition === "string" &&
+          karon.acquisition.toLowerCase().includes(query))
+      ) {
+        return karon.name.toLowerCase();
+      }
+
+      return false;
+    });
+  }
+
   return (
     <div className="equip-container">
       <div className="equip-tabs">
         {[
+          "ALL",
           "BASIC",
           "EXPLORATORY",
           "WEAPONS",
@@ -70,58 +96,64 @@ export default function KaronScreen() {
           </button>
         ))}
       </div>
+      <div className="search-box">
+        <input
+          type="text"
+          placeholder="Search Items..."
+          value={searchQuery}
+          onChange={(e) => setSearchQuery(e.target.value)}
+        />
+      </div>
       <div className="karon-grid">
-        {karons
-          .filter((karon) => karon.mode.toUpperCase() === activeTab)
-          .map((karon) => {
-            const isAlt = altKarons[karon.name];
+        {filteredItems.map((karon) => {
+          const isAlt = altKarons[karon.name];
 
-            const displayName =
-              isAlt && karon.altName ? karon.altName : karon.name;
+          const displayName =
+            isAlt && karon.altName ? karon.altName : karon.name;
 
-            return (
-              <div key={karon.name} className="karon-item">
-                {/* Card + alt button in vertical stack */}
-                <div className="karon-main">
-                  <div className="karon-card-wrapper">
-                    <div
-                      className={`karon-card 
+          return (
+            <div key={karon.name} className="karon-item">
+              {/* Card + alt button in vertical stack */}
+              <div className="karon-main">
+                <div className="karon-card-wrapper">
+                  <div
+                    className={`karon-card 
           ${selectedKaron?.name === karon.name ? "selected" : ""} 
           ${isAlt ? "alt" : ""}
         `}
-                      onClick={() => navigate(`/karon/${karon.name}`)}
-                    >
-                      <h3>{displayName}</h3>
-                    </div>
-
-                    {karon.altName && (
-                      <button
-                        className={`alt-toggle ${isAlt ? "active" : ""}`}
-                        onClick={() => toggleAlt(karon.name)}
-                      >
-                        Alt
-                      </button>
-                    )}
-
-                    {!karon.altName && (
-                      <button className="alt-toggle placeholder" />
-                    )}
+                    onClick={() => navigate(`/karon/${karon.name}`)}
+                  >
+                    <h3>{displayName}</h3>
                   </div>
-                </div>
 
-                {/* Crystals aligned with the card only */}
-                <div className="crystal-container">
-                  {Array.from({ length: karon.cost }).map((_, i) => (
-                    <img
-                      key={i}
-                      src={`${import.meta.env.BASE_URL}assets/misc/magic_crystal.png`}
-                      className={`crystal ${i % 2 === 0 ? "even" : "odd"}`}
-                    />
-                  ))}
+                  {karon.altName && (
+                    <button
+                      className={`alt-toggle ${isAlt ? "active" : ""}`}
+                      onClick={() => toggleAlt(karon.name)}
+                    >
+                      Alt
+                    </button>
+                  )}
+
+                  {!karon.altName && (
+                    <button className="alt-toggle placeholder" />
+                  )}
                 </div>
               </div>
-            );
-          })}
+
+              {/* Crystals aligned with the card only */}
+              <div className="crystal-container">
+                {Array.from({ length: karon.cost }).map((_, i) => (
+                  <img
+                    key={i}
+                    src={`${import.meta.env.BASE_URL}assets/misc/magic_crystal.png`}
+                    className={`crystal ${i % 2 === 0 ? "even" : "odd"}`}
+                  />
+                ))}
+              </div>
+            </div>
+          );
+        })}
       </div>
 
       <div

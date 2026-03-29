@@ -7,11 +7,26 @@ export default function ItemScreen() {
   const navigate = useNavigate();
   const [selectedItem, setSelectedItem] = useState(null);
   const [activeTab, setActiveTab] = useState("ALL");
+  const [searchQuery, setSearchQuery] = useState("");
 
   const activeItems =
     activeTab != "ALL" ?
       items.filter((item) => item.type.toUpperCase() === activeTab)
     : items;
+
+  let filteredItems = activeItems;
+
+  if (searchQuery.trim() !== "") {
+    const query = searchQuery.toLowerCase();
+
+    filteredItems = filteredItems.filter((item) => {
+      if (item.name.toLowerCase().includes(query)) {
+        return item.name.toLowerCase();
+      }
+
+      return false;
+    });
+  }
 
   useEffect(() => {
     if (!itemName) {
@@ -58,8 +73,16 @@ export default function ItemScreen() {
           </button>
         ))}
       </div>
+      <div className="search-box">
+        <input
+          type="text"
+          placeholder="Search Items..."
+          value={searchQuery}
+          onChange={(e) => setSearchQuery(e.target.value)}
+        />
+      </div>
       <div className="equip-grid">
-        {activeItems.map((item) => (
+        {filteredItems.map((item) => (
           <div
             key={item.name}
             className={`equip-card ${selectedItem?.name === item.name ? "selected" : ""} `}

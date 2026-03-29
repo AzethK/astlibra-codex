@@ -631,3 +631,20 @@ body {
 .alt-toggle:hover {
   transform: scale(1.01);
 }
+
+/* SEARCH BOX */
+.search-box {
+  border: 2px solid #cbb67a;
+  margin-bottom: 20px;
+}
+
+.search-box input {
+  width: 100%;
+  padding: 8px 12px;
+  background: transparent;
+  color: #e6d8a8;
+  font-size: 20px;
+  border: none;
+  outline: none;
+  box-sizing: border-box;
+}
