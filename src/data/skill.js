@@ -28,13 +28,31 @@ const skills = [
     st: 81,
   },
   {
+    name: "Stone Shield",
+    description:
+      "Summons a Shield that blocks ranged attacks. The Shield follows you around for a while.",
+    image: BASE + "stone_shield.png",
+    acquisition: "Grow Tree - Chapter 2",
+    element: "Earth",
+    st: 90,
+  },
+  {
+    name: "Wind Tiger",
+    description:
+      "A tiger cloaked in wind delivers a vertically narrow, but horizontally wide attack.",
+    image: BASE + "wind_tiger.png",
+    acquisition: "Grow Tree - Chapter 2",
+    element: "Wind",
+    st: 95,
+  },
+  {
     name: "Thunder Spear",
     description:
       "Turns into an electricity-discharging drill that charges at the enemy. Invincible while transforming. Can be used for emergency evasion.",
     image: BASE + "thunder_spear.png",
     acquisition: "Grow Tree - Chapter 1",
     element: "Dark",
-    st: 100,
+    st: 90,
   },
   {
     name: "Moonlight",
@@ -42,8 +60,8 @@ const skills = [
       "This double-strike has a short range, but delivers a devastating attack.",
     image: BASE + "moonlight.png",
     acquisition: "Grow Tree - Chapter 1",
-    element: "Light",
-    st: 120,
+    element: "Holy",
+    st: 108,
   },
 ];
 
