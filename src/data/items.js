@@ -17,9 +17,7 @@ const items = [
     type: "Books/Cards",
     libra: {
       karma: 68,
-      effect: "Experience Earned",
-      effect: "Coins Earned",
-      effect: "Magical Power (GOOD)",
+      effects: ["Experience Earned", "Coins Earned", "Magical Power (GOOD)"],
     },
   },
   {
@@ -74,8 +72,7 @@ const items = [
     type: "Miscellaneous",
     libra: {
       karma: 10,
-      effect: "Max HP",
-      effect: "Max ST",
+      effects: ["Max HP", "Max ST"],
     },
   },
 
@@ -88,8 +85,7 @@ const items = [
     type: "Miscellaneous",
     libra: {
       karma: 29,
-      effect: "Weight Reduction",
-      effect: "Gradual Recovery",
+      effects: ["Weight Reduction", "Gradual Recovery"],
     },
   },
   {
@@ -117,8 +113,7 @@ const items = [
     type: "Miscellaneous",
     libra: {
       karma: 16,
-      effect: "Effect Duration",
-      effect: "Max HP",
+      effects: ["Effect Duration", "Max HP"],
     },
   },
   {
@@ -130,8 +125,7 @@ const items = [
     type: "Miscellaneous",
     libra: {
       karma: 36,
-      effect: "Effect Duration (GOOD)",
-      effect: "Max HP (GOOD)",
+      effects: ["Effect Duration (GOOD)", "Max HP (GOOD)"],
     },
   },
   {
@@ -143,7 +137,7 @@ const items = [
     type: "Miscellaneous",
     libra: {
       karma: 9,
-      effect: "Effect Duration",
+      effects: ["Effect Duration"],
     },
   },
   {
@@ -155,7 +149,7 @@ const items = [
     type: "Miscellaneous",
     libra: {
       karma: 19,
-      effect: "Effect Duration (GOOD)",
+      effects: ["Effect Duration (GOOD)"],
     },
   },
   {
@@ -167,7 +161,7 @@ const items = [
     type: "Miscellaneous",
     libra: {
       karma: 29,
-      effect: "Effect Duration (EPIC)",
+      effects: ["Effect Duration (EPIC)"],
     },
   },
   {
@@ -179,8 +173,7 @@ const items = [
     type: "Miscellaneous",
     libra: {
       karma: 56,
-      effect: "Effect Duration (EPIC)",
-      effect: "Weight Reduction (GOOD)",
+      effects: ["Effect Duration (EPIC)", "Weight Reduction (GOOD)"],
     },
   },
   {
@@ -192,7 +185,7 @@ const items = [
     type: "Miscellaneous",
     libra: {
       karma: 2,
-      effect: "Use Speed",
+      effects: ["Use Speed"],
     },
   },
   {
@@ -204,7 +197,7 @@ const items = [
     type: "Miscellaneous",
     libra: {
       karma: 23,
-      effect: "Experience Earned",
+      effects: ["Experience Earned"],
     },
   },
   {
@@ -216,7 +209,7 @@ const items = [
     type: "Miscellaneous",
     libra: {
       karma: 22,
-      effect: "Coins Earned",
+      effects: ["Coins Earned"],
     },
   },
   {
@@ -228,7 +221,7 @@ const items = [
     type: "Miscellaneous",
     libra: {
       karma: 26,
-      effect: "ST Gain Rate (EPIC)",
+      effects: ["ST Gain Rate (EPIC)"],
     },
   },
   {
@@ -247,7 +240,7 @@ const items = [
     type: "Miscellaneous",
     libra: {
       karma: 33,
-      effect: "Magical Power (EPIC)",
+      effects: ["Magical Power (EPIC)"],
     },
   },
   {
@@ -259,8 +252,19 @@ const items = [
     type: "Secondary Weapon",
     libra: {
       karma: 28,
-      effect: "Weight Reduction",
-      effect: "Attack Power",
+      effects: ["Weight Reduction", "Attack Power"],
+    },
+  },
+  {
+    name: "Wooden Boomerang",
+    description:
+      "With a fick of the wrist, it follows a unique trajectory. Ranged weapon that will always return.",
+    image: BASE + "wooden_boomerang.png",
+    acquisition: "Belkade Volcano Event",
+    type: "Secondary Weapon",
+    libra: {
+      karma: 24,
+      effects: ["Attack Power", "Magical Power"],
     },
   },
   {
@@ -271,7 +275,7 @@ const items = [
     type: "Secondary Weapon",
     libra: {
       karma: 21,
-      effect: "Attack Power (GOOD)",
+      effects: ["Attack Power (GOOD)"],
     },
   },
   {
@@ -282,7 +286,7 @@ const items = [
     type: "Secondary Weapon",
     libra: {
       karma: 11,
-      effect: "Attack Power",
+      effects: ["Attack Power"],
     },
   },
   {
@@ -294,8 +298,7 @@ const items = [
     type: "Secondary Weapon",
     libra: {
       karma: 34,
-      effect: "Attack Power (GOOD)",
-      effect: "Magical Power",
+      effects: ["Attack Power (GOOD)", "Magical Power"],
     },
   },
   {
@@ -322,8 +325,7 @@ const items = [
     type: "Medicines/Bottles",
     libra: {
       karma: 12,
-      effect: "Max HP",
-      effect: "HP Recovery",
+      effects: ["Max HP", "HP Recovery"],
     },
   },
   {
@@ -335,8 +337,7 @@ const items = [
     type: "Medicines/Bottles",
     libra: {
       karma: 22,
-      effect: "Max HP (Good)",
-      effect: "HP Recovery",
+      effects: ["Max HP (Good)", "HP Recovery"],
     },
   },
   {
@@ -348,7 +349,7 @@ const items = [
     type: "Medicines/Bottles",
     libra: {
       karma: 29,
-      effect: "Paralysis Resistance (EPIC)",
+      effects: ["Paralysis Resistance (EPIC)"],
     },
   },
   {
@@ -360,7 +361,7 @@ const items = [
     type: "Medicines/Bottles",
     libra: {
       karma: 30,
-      effect: "Blind Resistance (EPIC)",
+      effects: ["Blind Resistance (EPIC)"],
     },
   },
   {
@@ -372,7 +373,7 @@ const items = [
     type: "Medicines/Bottles",
     libra: {
       karma: 34,
-      effect: "Bleeding Resistance (EPIC)",
+      effects: ["Bleeding Resistance (EPIC)"],
     },
   },
   {
@@ -384,7 +385,7 @@ const items = [
     type: "Medicines/Bottles",
     libra: {
       karma: 26,
-      effect: "Petrifaction Resistance (EPIC)",
+      effects: ["Petrifaction Resistance (EPIC)"],
     },
   },
   {
@@ -396,7 +397,7 @@ const items = [
     type: "Medicines/Bottles",
     libra: {
       karma: 35,
-      effect: "Poison Resistance (EPIC)",
+      effects: ["Poison Resistance (EPIC)"],
     },
   },
   {
@@ -408,7 +409,7 @@ const items = [
     type: "Medicines/Bottles",
     libra: {
       karma: 8,
-      effect: "Adaptability",
+      effects: ["Adaptability"],
     },
   },
   {
@@ -420,7 +421,7 @@ const items = [
     type: "Food",
     libra: {
       karma: 5,
-      effect: "HP Recovery",
+      effects: ["HP Recovery"],
     },
   },
   {
@@ -432,7 +433,7 @@ const items = [
     type: "Food",
     libra: {
       karma: 15,
-      effect: "HP Recovery (GOOD)",
+      effects: ["HP Recovery (GOOD)"],
     },
   },
   {
@@ -443,22 +444,31 @@ const items = [
     type: "Food",
     libra: {
       karma: 12,
-      effect: "Max HP",
-      effect: "HP Recovery",
+      effects: ["Max HP", "HP Recovery"],
     },
   },
   {
     name: "Egg on Bread",
     description:
-      "Recovers 250 HP. Fried egg on sliced bread. Pazu's favorite foood.",
+      "Recovers 250 HP. Fried egg on sliced bread. Pazu's favorite food.",
     image: BASE + "egg_on_bread.png",
     acquisition: "Combine Bread and Egg",
     type: "Food",
     libra: {
       karma: 18,
-      effect: "Max HP",
-      effect: "HP Recovery",
-      effect: "ST Gain Rate",
+      effects: ["Max HP", "HP Recovery", "ST Gain Rate"],
+    },
+  },
+  {
+    name: "Cream Puff",
+    description:
+      "Recovers 400 HP. This soft pastry is filled with whipped cream.",
+    image: BASE + "cream_puff.png",
+    acquisition: "Combine Milk and Flour",
+    type: "Food",
+    libra: {
+      karma: 28,
+      effects: ["Max HP (GOOD)", "HP Recovery", "ST Gain Rate"],
     },
   },
   {
@@ -470,9 +480,7 @@ const items = [
     type: "Food",
     libra: {
       karma: 41,
-      effect: "Attack Power",
-      effect: "Magical Power",
-      effect: "Weight Reduction",
+      effects: ["Attack Power", "Magical Power", "Weight Reduction"],
     },
   },
   {
@@ -484,9 +492,7 @@ const items = [
     type: "Food",
     libra: {
       karma: 12,
-      effect: "Use Speed",
-      effect: "Effect Duration",
-      effect: "Guard Durability",
+      effects: ["Use Speed", "Effect Duration", "Guard Durability"],
     },
   },
   {
@@ -498,9 +504,7 @@ const items = [
     type: "Food",
     libra: {
       karma: 39,
-      effect: "Attack Power (GOOD)",
-      effect: "Guard Durability",
-      effect: "Weight Reduction",
+      effects: ["Attack Power (GOOD)", "Guard Durability", "Weight Reduction"],
     },
   },
   {
@@ -512,9 +516,51 @@ const items = [
     type: "Food",
     libra: {
       karma: 29,
-      effect: "Defense Power (GOOD)",
-      effect: "Use Speed",
-      effect: "Effect Duration",
+      effects: ["Defense Power (GOOD)", "Use Speed", "Effect Duration"],
+    },
+  },
+  {
+    name: "Soft-Serve Ice Cream",
+    description:
+      "Generates 43 [Wind] and [Water] force. A sweet, cold dessert made from milk. Condensed milk flavor.",
+    image: BASE + "soft_serve_ice_cream.png",
+    acquisition: "Combine Egg and Milk",
+    type: "Food",
+    libra: {
+      karma: 44,
+      effects: ["Use Speed (GOOD)", "Effect Duration (GOOD)", "Magical Power"],
+    },
+  },
+  {
+    name: "Mont Blanc",
+    description:
+      "Generates 46 [Earth] and [Darkness] force. No one would expect chestnuts to taste this good.",
+    image: BASE + "mont_blanc.png",
+    acquisition: "Combine Chestnut and Sponge Cake",
+    type: "Food",
+    libra: {
+      karma: 49,
+      effects: [
+        "Attack Power (GOOD)",
+        "Guard Durability (GOOD)",
+        "Weight Reduction",
+      ],
+    },
+  },
+  {
+    name: "Apple Pie",
+    description:
+      "Generates 40 [Fire] and [Holy] force. The gooey apple filling is hot and sweet.",
+    image: BASE + "apple_pie.png",
+    acquisition: "Combine Pie Dough and Apple",
+    type: "Food",
+    libra: {
+      karma: 56,
+      effects: [
+        "Magical Power (GOOD)",
+        "Weight Reduction (GOOD)",
+        "ST Gain Rate",
+      ],
     },
   },
   {
@@ -526,8 +572,7 @@ const items = [
     type: "Food Ingredients",
     libra: {
       karma: 24,
-      effect: "Paralysis Resistance",
-      effect: "Poison Resistance",
+      effects: ["Paralysis Resistance", "Poison Resistance"],
     },
   },
   {
@@ -539,8 +584,7 @@ const items = [
     type: "Food Ingredients",
     libra: {
       karma: 16,
-      effect: "Petrifaction Resistance",
-      effect: "Blind Resistance",
+      effects: ["Petrifaction Resistance", "Blind Resistance"],
     },
   },
   {
@@ -552,8 +596,7 @@ const items = [
     type: "Food Ingredients",
     libra: {
       karma: 23,
-      effect: "Bleeding Resistance",
-      effect: "Paralysis Resistance",
+      effects: ["Bleeding Resistance", "Paralysis Resistance"],
     },
   },
   {
@@ -565,9 +608,7 @@ const items = [
     type: "Food Ingredients",
     libra: {
       karma: 39,
-      effect: "Bleeding Resistance",
-      effect: "Poison Resistance",
-      effect: "Blind Resistance",
+      effects: ["Bleeding Resistance", "Poison Resistance", "Blind Resistance"],
     },
   },
   {
@@ -579,9 +620,11 @@ const items = [
     type: "Food Ingredients",
     libra: {
       karma: 29,
-      effect: "Petrifaction Resistance",
-      effect: "Paralysis Resistance",
-      effect: "Bleeding Resistance",
+      effects: [
+        "Petrifaction Resistance",
+        "Paralysis Resistance",
+        "Bleeding Resistance",
+      ],
     },
   },
   {
@@ -593,9 +636,42 @@ const items = [
     type: "Food Ingredients",
     libra: {
       karma: 48,
-      effect: "Paralysis Resistance (GOOD)",
-      effect: "Poison Resistance",
-      effect: "Bleeding Resistance",
+      effects: [
+        "Paralysis Resistance (GOOD)",
+        "Poison Resistance",
+        "Bleeding Resistance",
+      ],
+    },
+  },
+  {
+    name: "Chestnut",
+    description: "A basic food. The flesh has a unique, slightly sweet flavor.",
+    image: BASE + "chestnut.png",
+    acquisition: "Belkade Volcano",
+    type: "Food Ingredients",
+    libra: {
+      karma: 31,
+      effects: [
+        "Petrifaction Resistance (GOOD)",
+        "Paralysis Resistance",
+        "Petrifaction Resistance",
+      ],
+    },
+  },
+  {
+    name: "Apple",
+    description:
+      "A basic food. Popular for its moderate sweetness and crisp texture.",
+    image: BASE + "apple.png",
+    acquisition: "Belkade Volcano",
+    type: "Food Ingredients",
+    libra: {
+      karma: 43,
+      effects: [
+        "Bleeding Resistance (GOOD)",
+        "Blind Resistance",
+        "Paralysis Resistance",
+      ],
     },
   },
   {
@@ -689,9 +765,11 @@ const items = [
     type: "Books/Cards",
     libra: {
       karma: 55,
-      effect: "Blind Resistance (GOOD)",
-      effect: "Petrifaction Resistance (GOOD)",
-      effect: "Paralysis Resistance (GOOD)",
+      effects: [
+        "Blind Resistance (GOOD)",
+        "Petrifaction Resistance (GOOD)",
+        "Paralysis Resistance (GOOD)",
+      ],
     },
   },
   {
@@ -703,8 +781,7 @@ const items = [
     type: "Books/Cards",
     libra: {
       karma: 55,
-      effect: "Gradual Recovery (GOOD)",
-      effect: "Experience Earned (GOOD)",
+      effects: ["Gradual Recovery (GOOD)", "Experience Earned (GOOD)"],
     },
   },
   {
@@ -716,8 +793,7 @@ const items = [
     type: "Books/Cards",
     libra: {
       karma: 24,
-      effect: "Max HP",
-      effect: "Max HP (GOOD)",
+      effects: ["Max HP", "Max HP (GOOD)"],
     },
   },
   {
@@ -729,8 +805,7 @@ const items = [
     type: "Books/Cards",
     libra: {
       karma: 16,
-      effect: "Max ST",
-      effect: "Max ST (GOOD)",
+      effects: ["Max ST", "Max ST (GOOD)"],
     },
   },
   {
@@ -742,8 +817,7 @@ const items = [
     type: "Books/Cards",
     libra: {
       karma: 32,
-      effect: "Attack Power",
-      effect: "Attack Power (GOOD)",
+      effects: ["Attack Power", "Attack Power (GOOD)"],
     },
   },
   {
@@ -755,8 +829,7 @@ const items = [
     type: "Books/Cards",
     libra: {
       karma: 26,
-      effect: "Defense Power",
-      effect: "Defense Power (GOOD)",
+      effects: ["Defense Power", "Defense Power (GOOD)"],
     },
   },
   {
@@ -768,8 +841,7 @@ const items = [
     type: "Books/Cards",
     libra: {
       karma: 54,
-      effect: "Coins Earned",
-      effect: "Coins Earned (GOOD)",
+      effects: ["Coins Earned", "Coins Earned (GOOD)"],
     },
   },
   {
@@ -781,8 +853,7 @@ const items = [
     type: "Books/Cards",
     libra: {
       karma: 26,
-      effect: "Adaptability",
-      effect: "Adaptability (GOOD)",
+      effects: ["Adaptability", "Adaptability (GOOD)"],
     },
   },
   {
@@ -794,7 +865,7 @@ const items = [
     type: "Ore/Gems",
     libra: {
       karma: 8,
-      effect: "Defense Power",
+      effects: ["Defense Power"],
     },
   },
   {
@@ -806,7 +877,7 @@ const items = [
     type: "Ore/Gems",
     libra: {
       karma: 18,
-      effect: "Defense Power (GOOD)",
+      effects: ["Defense Power (GOOD)"],
     },
   },
   {
@@ -818,8 +889,7 @@ const items = [
     type: "Ore/Gems",
     libra: {
       karma: 19,
-      effect: "Effect Duration",
-      effect: "Blind Resistance",
+      effects: ["Effect Duration", "Blind Resistance"],
     },
   },
   {
@@ -831,8 +901,7 @@ const items = [
     type: "Ore/Gems",
     libra: {
       karma: 38,
-      effect: "Max ST (GOOD)",
-      effect: "Poison Resistance (GOOD)",
+      effects: ["Max ST (GOOD)", "Poison Resistance (GOOD)"],
     },
   },
   {
@@ -844,8 +913,7 @@ const items = [
     type: "Ore/Gems",
     libra: {
       karma: 52,
-      effect: "Max ST (EPIC)",
-      effect: "Paralysis Resistance (EPIC)",
+      effects: ["Max ST (EPIC)", "Paralysis Resistance (EPIC)"],
     },
   },
   {
@@ -856,7 +924,7 @@ const items = [
     type: "Ore/Gems",
     libra: {
       karma: 8,
-      effect: "Defense Power",
+      effects: ["Defense Power"],
     },
   },
   {
@@ -868,7 +936,19 @@ const items = [
     type: "Ore/Gems",
     libra: {
       karma: 8,
-      effect: "Defense Power",
+      effects: ["Defense Power"],
+    },
+  },
+  {
+    name: "Iron Ore",
+    description:
+      "Extremely hard and heavy ore containing metal. It is sometimes called kurogane in the East.",
+    image: BASE + "iron_ore.png",
+    acquisition: "Mining",
+    type: "Ore/Gems",
+    libra: {
+      karma: 9,
+      effects: ["Defense Power", "Guard Durability"],
     },
   },
   {
@@ -880,7 +960,18 @@ const items = [
     type: "Ore/Gems",
     libra: {
       karma: 11,
-      effect: "Attack Power",
+      effects: ["Attack Power"],
+    },
+  },
+  {
+    name: "Iron Ingot",
+    description: "This ingot is made from iron ore. It is also called a bar.",
+    image: BASE + "iron_ingot.png",
+    acquisition: "Combine Iron Ore and Refining Kit",
+    type: "Ore/Gems",
+    libra: {
+      karma: 11,
+      effects: ["Attack Power"],
     },
   },
   {
@@ -892,7 +983,7 @@ const items = [
     type: "Ore/Gems",
     libra: {
       karma: 22,
-      effect: "Coins Earned",
+      effects: ["Coins Earned"],
     },
   },
   {
@@ -904,8 +995,7 @@ const items = [
     type: "Ore/Gems",
     libra: {
       karma: 45,
-      effect: "Coins Earned",
-      effect: "Experience Earned",
+      effects: ["Coins Earned", "Experience Earned"],
     },
   },
   {
@@ -917,7 +1007,7 @@ const items = [
     type: "Demon Materials",
     libra: {
       karma: 7,
-      effect: "Max HP",
+      effects: ["Max HP"],
     },
   },
   {
@@ -929,7 +1019,7 @@ const items = [
     type: "Demon Materials",
     libra: {
       karma: 3,
-      effect: "Max ST",
+      effects: ["Max ST"],
     },
   },
   {
@@ -941,7 +1031,7 @@ const items = [
     type: "Demon Materials",
     libra: {
       karma: 8,
-      effect: "Adaptability",
+      effects: ["Adaptability"],
     },
   },
 
@@ -953,7 +1043,7 @@ const items = [
     type: "Demon Materials",
     libra: {
       karma: 11,
-      effect: "Attack Power",
+      effects: ["Attack Power"],
     },
   },
   {
@@ -965,7 +1055,7 @@ const items = [
     type: "Demon Materials",
     libra: {
       karma: 8,
-      effect: "Defense Power",
+      effects: ["Defense Power"],
     },
   },
   {
@@ -977,7 +1067,7 @@ const items = [
     type: "Demon Materials",
     libra: {
       karma: 10,
-      effect: "Blind Resistance",
+      effects: ["Blind Resistance"],
     },
   },
   {
@@ -989,7 +1079,7 @@ const items = [
     type: "Demon Materials",
     libra: {
       karma: 6,
-      effect: "ST Gain Rate",
+      effects: ["ST Gain Rate"],
     },
   },
   {
@@ -1000,7 +1090,7 @@ const items = [
     type: "Demon Materials",
     libra: {
       karma: 5,
-      effect: "HP Recovery",
+      effects: ["HP Recovery"],
     },
   },
   {
@@ -1012,8 +1102,7 @@ const items = [
     type: "Demon Materials",
     libra: {
       karma: 25,
-      effect: "Magical Power",
-      effect: "Gradual Recovery",
+      effects: ["Magical Power", "Gradual Recovery"],
     },
   },
   {
@@ -1025,8 +1114,7 @@ const items = [
     type: "Demon Materials",
     libra: {
       karma: 23,
-      effect: "Poison Resistance",
-      effect: "Defense Power",
+      effects: ["Poison Resistance", "Defense Power"],
     },
   },
   {
@@ -1038,8 +1126,19 @@ const items = [
     type: "Demon Materials",
     libra: {
       karma: 10,
-      effect: "Defense Power",
-      effect: "Use Speed",
+      effects: ["Defense Power", "Use Speed"],
+    },
+  },
+  {
+    name: "Lava Pebble",
+    description:
+      "A pebble drained of its evil energy. Its altered properties make it different from an ordinary pebble.",
+    image: BASE + "lava_pebble.png",
+    acquisition: "Drop from Lava Pebble (Belkade Volcano)",
+    type: "Demon Materials",
+    libra: {
+      karma: 31,
+      effects: ["Defense Power", "Experience Earned"],
     },
   },
   {
@@ -1052,23 +1151,34 @@ const items = [
     type: "Demon Materials",
     libra: {
       karma: 19,
-      effect: "HP Recovery",
-      effect: "Bleeding Resistance",
+      effects: ["HP Recovery", "Bleeding Resistance"],
     },
   },
   {
-    name: "Lava Pebble",
+    name: "Demon Horn",
     description:
-      "A pebble drained of its evil energy. Its altered properties make it different from an ordinary pebble.",
-    image: BASE + "lava_pebble.png",
-    acquisition: "Drop from Lava Pebble (Belkade Volcano)",
+      "Horns are a well known feature of demons. They can be used even if broken, as they are still tinged with evil energy.",
+    image: BASE + "demon_horn.png",
+    acquisition: "Drop from the Demon (Belkade Volcano)",
     type: "Demon Materials",
     libra: {
-      karma: 31,
-      effect: "Defense Power",
-      effect: "Experience Earned",
+      karma: 21,
+      effects: ["Gradual Recovery", "Paralysis Resistance"],
     },
   },
+  {
+    name: "Golem Fragment",
+    description:
+      "Even a fragment of evil energy is powerful enough to join and manipulate huge rocks. It has many uses.",
+    image: BASE + "golem_fragment.png",
+    acquisition: "Drop from Golem (Belkade Volcano)",
+    type: "Demon Materials",
+    libra: {
+      karma: 18,
+      effects: ["Defense Power (GOOD)"],
+    },
+  },
+
   {
     name: "Anulis' Ribbon",
     description: "A very long ribbon, worn by Anulis. It holds many memories.",
@@ -1077,8 +1187,7 @@ const items = [
     type: "Valuables",
     libra: {
       karma: 29,
-      effect: "Weight Reduction",
-      effect: "Use Speed (GOOD)",
+      effects: ["Weight Reduction", "Use Speed (GOOD)"],
     },
   },
   {
@@ -1090,9 +1199,7 @@ const items = [
     type: "Valuables",
     libra: {
       karma: 24,
-      effect: "Max HP",
-      effect: "HP Recovery",
-      effect: "Gradual Recovery",
+      effects: ["Max HP", "HP Recovery", "Gradual Recovery"],
     },
   },
   {
@@ -1120,8 +1227,7 @@ const items = [
     type: "Valuables",
     libra: {
       karma: 17,
-      effect: "Defense Power",
-      effect: "Effect Duration",
+      effects: ["Defense Power", "Effect Duration"],
     },
   },
   {
@@ -1133,9 +1239,7 @@ const items = [
     type: "Valuables",
     libra: {
       karma: 16,
-      effect: "Use Speed",
-      effect: "Magical Power",
-      effect: "Guard Durability",
+      effects: ["Use Speed", "Magical Power", "Guard Durability"],
     },
   },
   {
@@ -1147,7 +1251,7 @@ const items = [
     type: "Valuables",
     libra: {
       karma: 13,
-      effect: "Magical Power",
+      effects: ["Magical Power"],
     },
   },
   {
@@ -1159,7 +1263,7 @@ const items = [
     type: "Valuables",
     libra: {
       karma: 23,
-      effect: "Magical Power (GOOD)",
+      effects: ["Magical Power (GOOD)"],
     },
   },
   {
@@ -1171,7 +1275,7 @@ const items = [
     type: "Valuables",
     libra: {
       karma: 33,
-      effect: "Magical Power (EPIC)",
+      effects: ["Magical Power (EPIC)"],
     },
   },
   {
@@ -1183,8 +1287,7 @@ const items = [
     type: "Valuables",
     libra: {
       karma: 27,
-      effect: "Petrifaction Resistance (EPIC)",
-      effect: "Guard Durability",
+      effects: ["Petrifaction Resistance (EPIC)", "Guard Durability"],
     },
   },
   {
@@ -1196,8 +1299,7 @@ const items = [
     type: "Valuables",
     libra: {
       karma: 17,
-      effect: "Petrifaction Resistance (GOOD)",
-      effect: "Guard Durability",
+      effects: ["Petrifaction Resistance (GOOD)", "Guard Durability"],
     },
   },
   {
@@ -1209,7 +1311,7 @@ const items = [
     type: "Valuables",
     libra: {
       karma: 6,
-      effect: "Petrifaction Resistance",
+      effects: ["Petrifaction Resistance"],
     },
   },
   {

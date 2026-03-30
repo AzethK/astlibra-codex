@@ -20,7 +20,12 @@ export default function ItemScreen() {
     const query = searchQuery.toLowerCase();
 
     filteredItems = filteredItems.filter((item) => {
-      if (item.name.toLowerCase().includes(query)) {
+      if (
+        item.name.toLowerCase().includes(query) ||
+        item.libra?.effects.some((effect) =>
+          effect.toLowerCase().includes(query),
+        )
+      ) {
         return item.name.toLowerCase();
       }
 
@@ -104,23 +109,58 @@ export default function ItemScreen() {
         }}
       />
 
-      <div className={`karon-info-box ${selectedItem ? "visible" : ""}`}>
+      <div
+        className={`${selectedItem?.libra ? "expanded-info-box" : "karon-info-box"} ${selectedItem ? "visible" : ""}`}
+      >
         {selectedItem && (
           <>
-            <div className="equip-image-container">
-              <img
-                src={selectedItem.image}
-                alt={selectedItem.name}
-                className="equip-image"
-              />
+            <div className={`${selectedItem?.libra ? "item-wrapper" : ""}`}>
+              <div>
+                <div className="equip-image-container">
+                  <img
+                    src={selectedItem.image}
+                    alt={selectedItem.name}
+                    className="equip-image"
+                  />
+                </div>
+                <h3>{selectedItem.name}</h3>
+                <p>{selectedItem.description}</p>
+                {selectedItem.acquisition && (
+                  <p>
+                    Acquisition: <span>{selectedItem.acquisition}</span>
+                  </p>
+                )}
+              </div>
+              {selectedItem.libra && (
+                <div>
+                  <h3>Libra</h3>
+                  <div className="item-stats">
+                    <div className="item-stat">
+                      <div className="stat-line">
+                        <span className="item-effect-label">Karma: </span>
+                        <span className="item-effect-value">
+                          {selectedItem.libra.karma}
+                        </span>
+                      </div>
+                      {selectedItem.libra.effects.map((effect, index) => (
+                        <div key={index} className="stat-line">
+                          <span className="item-effect-label">Effect: </span>
+                          <span
+                            className={`item-effect-value ${
+                              effect.includes("GOOD") ? "libra-good"
+                              : effect.includes("EPIC") ? "libra-epic"
+                              : "libra-normal"
+                            }`}
+                          >
+                            {effect}
+                          </span>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                </div>
+              )}
             </div>
-            <h3>{selectedItem.name}</h3>
-            <p>{selectedItem.description}</p>
-            {selectedItem.acquisition && (
-              <p>
-                Acquisition: <span>{selectedItem.acquisition}</span>
-              </p>
-            )}
           </>
         )}
       </div>

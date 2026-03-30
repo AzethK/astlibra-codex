@@ -10,6 +10,15 @@ const skills = [
     st: 90,
   },
   {
+    name: "Soaring Bird",
+    description:
+      "Summons a fire bird to fly diagonally upwards. It covers a wide area of the sky.",
+    image: BASE + "soaring_bird.png",
+    acquisition: "Chapter 3",
+    element: "fire",
+    st: 126,
+  },
+  {
     name: "Cold Bullet",
     description:
       "Summons a stationary spirit to launch a concentrated attack on the ground in front of them.",
@@ -43,7 +52,16 @@ const skills = [
     image: BASE + "wind_tiger.png",
     acquisition: "Grow Tree - Chapter 2",
     element: "Wind",
-    st: 95,
+    st: 99,
+  },
+  {
+    name: "Sylphid",
+    description:
+      "Increases attack speed and movement speed for a time. The amount it increases depends on your magical power.",
+    image: BASE + "sylphid.png",
+    acquisition: "Grow Tree - Chapter 3",
+    element: "Wind",
+    st: 171,
   },
   {
     name: "Thunder Spear",
