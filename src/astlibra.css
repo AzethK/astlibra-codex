@@ -160,6 +160,7 @@ body {
 }
 
 .equip-grid {
+  margin-top: 20px;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
   gap: 20px;
@@ -432,6 +433,7 @@ body {
 /* Karon Screen */
 
 .karon-grid {
+  margin-top: 20px;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
   gap: 20px;
@@ -635,7 +637,6 @@ body {
 /* SEARCH BOX */
 .search-box {
   border: 2px solid #cbb67a;
-  margin-bottom: 20px;
 }
 
 .search-box input {
@@ -743,4 +744,226 @@ body {
 
 .libra-epic {
   color: #ff6464;
+}
+
+.libra-star {
+  color: #64eeae;
+}
+
+.libra-dupe {
+  opacity: 0.5;
+}
+
+/* Libra Scales */
+
+.libra-container {
+  width: 100%;
+  height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-wrapper {
+  position: relative;
+  width: 80%;
+  max-width: 900px;
+}
+
+.libra-image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.libra-layout {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+.effects-box {
+  width: 350px;
+  min-height: 200px;
+  background: linear-gradient(180deg, #0f1f3d, #081326);
+  border: 2px solid #cbb67a;
+  color: #e6d8a8;
+  padding: 10px;
+}
+
+/* Pans */
+
+.pan {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+}
+
+.pan-card {
+  background: linear-gradient(180deg, #0f1f3d 0%, #081326 100%);
+  min-width: 40px;
+  min-height: 40px;
+  border: 2px solid #cbb67a;
+  text-align: center;
+  box-shadow:
+    inset 0 0 6px rgba(0, 0, 0, 0.6),
+    0 0 6px rgba(203, 182, 122, 0.2);
+  transition: transform 0.15s ease;
+}
+
+.pan-card.selected {
+  outline: 2px solid #e6d8a8;
+  box-shadow:
+    0 0 10px rgba(230, 216, 168, 0.4),
+    inset 0 0 6px rgba(0, 0, 0, 0.6);
+}
+
+.pan-card:hover {
+  cursor: pointer;
+}
+
+.pan img {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+}
+
+/* Libra Modal */
+
+.libra-modal {
+  position: fixed;
+  top: 5%;
+  left: 50%;
+  transform: translateX(-50%);
+
+  width: 90vw;
+  height: 90vh;
+
+  background: #111;
+  border: 2px solid #cbb67a;
+
+  display: flex;
+  flex-direction: column;
+
+  z-index: 200;
+  background: linear-gradient(180deg, #0f1f3d 0%, #081326 100%);
+}
+
+.libra-header {
+  padding: 15px;
+  border: 2px solid #cbb67a;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.libra-filters {
+  display: flex;
+  gap: 10px;
+}
+
+.libra-grid {
+  flex: 1;
+  overflow-y: auto;
+
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 15px;
+
+  padding: 20px;
+}
+
+.libra-preview {
+  border: 2px solid #cbb67a;
+  padding: 15px;
+}
+
+.libra-dropdown {
+  background: linear-gradient(180deg, #0f1f3d 0%, #081326 100%);
+  color: #e6d8a8;
+  border: 2px solid #cbb67a;
+  padding: 6px 10px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.libra-dropdown option {
+  background: #081326;
+  color: #e6d8a8;
+}
+
+/* Libra Balance Ruler */
+.balance-container {
+  margin-top: 20px;
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.balance-ruler {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  gap: 4px;
+}
+
+.ruler-step {
+  width: 11px;
+  text-align: center;
+  opacity: 0.3;
+  transition: all 0.2s ease;
+}
+
+.ruler-step.active {
+  color: #e6d8a8;
+  opacity: 1;
+}
+
+.ruler-indicator-wrapper {
+  position: absolute;
+  bottom: 100%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: left 0.25s ease;
+}
+
+.ruler-value {
+  color: #e6d8a8;
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 2px;
+}
+
+.ruler-indicator {
+  width: 0;
+  height: 0;
+
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-top: 10px solid #e6d8a8;
+}
+
+.ruler-labels {
+  position: relative;
+  width: 300px;
+  margin-top: 4px;
+  height: 16px;
+  color: #cbb67a;
+}
+
+.ruler-labels span {
+  position: absolute;
+  transform: translateX(-50%);
+}
+
+.ruler-indicator {
+  transition: left 0.25s ease;
 }

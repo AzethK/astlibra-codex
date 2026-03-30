@@ -4,6 +4,7 @@ import Sidebar from "./Sidebar";
 import EquipScreen from "./EquipScreen";
 import KaronScreen from "./KaronScreen";
 import ItemScreen from "./ItemScreen";
+import LibraScreen from "./LibraScreen";
 
 export default function MainScreen() {
   const location = useLocation();
@@ -32,6 +33,8 @@ export default function MainScreen() {
           <Route path="/karon/:karonName" element={<KaronScreen />} />
           <Route path="/item" element={<ItemScreen />} />
           <Route path="/item/:itemName" element={<ItemScreen />} />
+
+          <Route path="/libra" element={<LibraScreen />} />
         </Routes>
       </div>
     </div>

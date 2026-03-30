@@ -352,7 +352,7 @@ const items = [
     type: "Medicines/Bottles",
     libra: {
       karma: 22,
-      effects: ["Max HP (Good)", "HP Recovery"],
+      effects: ["Max HP (GOOD)", "HP Recovery"],
     },
   },
   {
