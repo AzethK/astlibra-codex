@@ -225,7 +225,9 @@ const LibraScreen = () => {
                 rightMap,
               )}`}
             >
-              {effect}
+              {!effect.includes("GOOD") && !effect.includes("EPIC") ?
+                effect + "[★]"
+              : effect}
             </div>
           ))}
         </div>
