@@ -28,6 +28,15 @@ const skills = [
     st: 72,
   },
   {
+    name: "Killer Shark",
+    description:
+      "Attacks above, and also strikes a broad area on the ground. Has a great number of uses.",
+    image: BASE + "killer_shark.png",
+    acquisition: "Grow Tree - Chapter 3",
+    element: "Water",
+    st: 135,
+  },
+  {
     name: "Heavenly Mountain",
     description:
       "Pierces the heavens with a pillar of rock. Most effective against enemies in the air.",
@@ -71,6 +80,15 @@ const skills = [
     acquisition: "Grow Tree - Chapter 1",
     element: "Dark",
     st: 90,
+  },
+  {
+    name: "Lollipop",
+    description:
+      "Summons a demon which will follow you for a while. The demon will launch an attack for you at certain intervals.",
+    image: BASE + "lollipop.png",
+    acquisition: "Grow Tree - Chapter 3",
+    element: "Dark",
+    st: 144,
   },
   {
     name: "Moonlight",

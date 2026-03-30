@@ -9,6 +9,14 @@ const items = [
     type: "Books/Cards",
   },
   {
+    name: "Advanced Synthesis Recipes",
+    description:
+      "Contains information about item synthesis. It allows the used to synthesize advanced items.",
+    image: BASE + "advanced_synthesis_recipes.png",
+    acquisition: "Arena Battle, Elizas Cup 'Aesthetics of Destruction' Reward",
+    type: "Books/Cards",
+  },
+  {
     name: "The Book of Karon: Vol 36 (Travel)",
     description:
       "A wise man's book on traveling. Contains a lot of information. Use it as a reference guide.",
@@ -26,6 +34,13 @@ const items = [
       "Makes new equipment available in stores. You can use it to view the Formulas that you currently have.",
     image: BASE + "formula.png",
     acquisition: "Loot Chest",
+    type: "Books/Cards",
+  },
+  {
+    name: "Book of Battle Records",
+    description: "Allows you to view various battle records.",
+    image: BASE + "book_of_battle_records.png",
+    acquisition: "Mokyun Gacha Reward",
     type: "Books/Cards",
   },
   {
@@ -345,7 +360,7 @@ const items = [
     description:
       "Heals the abnormal status Paralysis. Neutralizes Paralysis and provides lasting resistance for a while.",
     image: BASE + "numbness_relieving_medicine.png",
-    acquisition: "Loot Chest",
+    acquisition: "Shop",
     type: "Medicines/Bottles",
     libra: {
       karma: 29,
@@ -410,6 +425,18 @@ const items = [
     libra: {
       karma: 8,
       effects: ["Adaptability"],
+    },
+  },
+  {
+    name: "Empty Bottle",
+    description:
+      "A empty bottle. Surprisingly expensive, as it is made of glass.",
+    image: BASE + "empty_bottle.png",
+    acquisition: "Shop",
+    type: "Medicines/Bottles",
+    libra: {
+      karma: 18,
+      effects: ["Adaptability (GOOD)"],
     },
   },
   {
@@ -568,7 +595,7 @@ const items = [
     description:
       "A basic food ingredient. Chicken eggs are used in various dishes.",
     image: BASE + "egg.png",
-    acquisition: "Pekkochira",
+    acquisition: "Shop",
     type: "Food Ingredients",
     libra: {
       karma: 24,
@@ -592,8 +619,8 @@ const items = [
     description:
       "A basic food ingredient. With its pleasant aroma, it complements sweet treats.",
     image: BASE + "butter.png",
-    acquisition: "Pekkochira",
     type: "Food Ingredients",
+    acquisition: "Shop",
     libra: {
       karma: 23,
       effects: ["Bleeding Resistance", "Paralysis Resistance"],
@@ -604,7 +631,6 @@ const items = [
     description:
       "A basic food. A slightly stinky fermented food. Its usefulness depends on how it's used.",
     image: BASE + "cheese.png",
-    acquisition: "Bridion Swamp",
     type: "Food Ingredients",
     libra: {
       karma: 39,
@@ -632,7 +658,6 @@ const items = [
     description:
       "A basic food. The best drink produced by nature, regarded as the water of the gods.",
     image: BASE + "milk.png",
-    acquisition: "Belkade Volcano",
     type: "Food Ingredients",
     libra: {
       karma: 48,
@@ -647,7 +672,6 @@ const items = [
     name: "Chestnut",
     description: "A basic food. The flesh has a unique, slightly sweet flavor.",
     image: BASE + "chestnut.png",
-    acquisition: "Belkade Volcano",
     type: "Food Ingredients",
     libra: {
       karma: 31,
@@ -663,7 +687,6 @@ const items = [
     description:
       "A basic food. Popular for its moderate sweetness and crisp texture.",
     image: BASE + "apple.png",
-    acquisition: "Belkade Volcano",
     type: "Food Ingredients",
     libra: {
       karma: 43,
@@ -671,6 +694,20 @@ const items = [
         "Bleeding Resistance (GOOD)",
         "Blind Resistance",
         "Paralysis Resistance",
+      ],
+    },
+  },
+  {
+    name: "Mochi",
+    description: "A basic food. It has a sticky, springy texture.",
+    image: BASE + "mochi.png",
+    type: "Food Ingredients",
+    libra: {
+      karma: 40,
+      effects: [
+        "Petrifaction Resistance",
+        "Paralysis Resistance (GOOD)",
+        "Poison Resistance",
       ],
     },
   },
@@ -1171,11 +1208,23 @@ const items = [
     description:
       "Even a fragment of evil energy is powerful enough to join and manipulate huge rocks. It has many uses.",
     image: BASE + "golem_fragment.png",
-    acquisition: "Drop from Golem (Belkade Volcano)",
+    acquisition: "Drop from Golem (Belkade Volcano, Elizas)",
     type: "Demon Materials",
     libra: {
       karma: 18,
       effects: ["Defense Power (GOOD)"],
+    },
+  },
+  {
+    name: "Hawk Feather",
+    description:
+      "A splendid hawk feather. It is also used for fletching. Feathers have been used as material for all kinds of things since long ago.",
+    image: BASE + "hawk_feather.png",
+    acquisition: "Drop from Hawk (Elizas)",
+    type: "Demon Materials",
+    libra: {
+      karma: 27,
+      effects: ["Weight Reduction (GOOD)"],
     },
   },
 
