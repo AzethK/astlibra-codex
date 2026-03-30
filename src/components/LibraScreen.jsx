@@ -194,21 +194,31 @@ const LibraScreen = () => {
           />
 
           {[...leftPans, ...rightPans].map((pos, index) => (
-            <button
+            <div
               key={index}
-              className="pan pan-card"
+              className="pan-card-wrapper"
               style={{
                 top: `${pos.top}%`,
                 left: `${pos.left}%`,
               }}
-              onClick={() => handlePanClick(index)}
-              onContextMenu={(e) => {
-                e.preventDefault();
-                removeItemFromPan(index);
-              }}
             >
-              {panItems[index] && <img src={panItems[index].image} />}
-            </button>
+              {panItems[index] && (
+                <span className="pan-label">
+                  {panItems[index].libra?.karma || 0}
+                </span>
+              )}
+
+              <button
+                className="pan pan-card"
+                onClick={() => handlePanClick(index)}
+                onContextMenu={(e) => {
+                  e.preventDefault();
+                  removeItemFromPan(index);
+                }}
+              >
+                {panItems[index] && <img src={panItems[index].image} />}
+              </button>
+            </div>
           ))}
         </div>
 

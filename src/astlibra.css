@@ -802,6 +802,26 @@ body {
   cursor: pointer;
 }
 
+.pan-card-wrapper {
+  position: absolute;
+}
+
+.pan-label {
+  position: absolute;
+  transform: translateX(-50%);
+  bottom: calc(100% + 6px);
+
+  font-size: 13px;
+  padding: 2px 6px;
+  background: rgba(8, 19, 38, 0.9);
+  border: 1px solid #cbb67a;
+  border-radius: 4px;
+  color: #e6d8a8;
+  white-space: nowrap;
+  margin-bottom: 20px;
+  z-index: 2;
+}
+
 .pan-card {
   background: linear-gradient(180deg, #0f1f3d 0%, #081326 100%);
   min-width: 40px;
@@ -812,6 +832,8 @@ body {
     inset 0 0 6px rgba(0, 0, 0, 0.6),
     0 0 6px rgba(203, 182, 122, 0.2);
   transition: transform 0.15s ease;
+  position: relative;
+  transform: translate(-50%, -50%);
 }
 
 .pan-card.selected {
