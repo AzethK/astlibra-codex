@@ -401,7 +401,7 @@ const karons = [
     altDescription: "When Gau is your partner, increase attack power by 5%",
     cost: 4,
     mode: "ATTRIBUTES/STATUS",
-    acquisition: "Starting Karon",
+    acquisition: "Fire Dagger",
   },
   {
     name: "Drunken Fist",

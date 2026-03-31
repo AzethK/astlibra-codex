@@ -228,6 +228,22 @@ const items = [
     },
   },
   {
+    name: "Gunpowder",
+    description:
+      "A pouch filled with gunpowder. It is highly explosive, so handle it with care.",
+    image: BASE + "gunpowder.png",
+    acquisition: "Shop",
+    type: "Miscellaneous",
+    libra: {
+      karma: 50,
+      effects: [
+        "Attack Power (GOOD)",
+        "Paralysis Resistance (GOOD)",
+        "Blind Resistance",
+      ],
+    },
+  },
+  {
     name: "Mokyun Doll",
     description:
       "Takes your place in death, resurrecting you on the spot. Cannot be used during boss battles.",
@@ -280,6 +296,18 @@ const items = [
     libra: {
       karma: 24,
       effects: ["Attack Power", "Magical Power"],
+    },
+  },
+  {
+    name: "Bomb",
+    description:
+      "Capable of destroying fragile walls. Also very powerful against enemies.",
+    image: BASE + "bomb.png",
+    acquisition: "Combine Refining Kit with Gunpowder",
+    type: "Secondary Weapon",
+    libra: {
+      karma: 19,
+      effects: ["Defense Power (GOOD)", "Guard Durability"],
     },
   },
   {
@@ -408,7 +436,7 @@ const items = [
     description:
       "Heals the abnormal status Deadly Poison. Neutralizes Deadly Poison and provides lasting resistance for a while.",
     image: BASE + "antitoxin.png",
-    acquisition: "Loot Chest",
+    acquisition: "Shop",
     type: "Medicines/Bottles",
     libra: {
       karma: 35,
@@ -819,6 +847,14 @@ const items = [
     type: "Books/Cards",
   },
   {
+    name: "Technique Scroll - Shield Charge",
+    description:
+      "An esoteric scroll describing the Shield Charge technique. Open to view details.",
+    image: BASE + "technique_scroll.png",
+    acquisition: "Elizas, chest found by bombing a wall east of the village.",
+    type: "Books/Cards",
+  },
+  {
     name: "Technique Scroll - Jump Slash",
     description:
       "An esoteric scroll describing the Jump Slash technique. Open to view details.",
@@ -860,6 +896,14 @@ const items = [
     type: "Books/Cards",
   },
   {
+    name: "[Sealed] Technique Scroll - Shield Charge",
+    description:
+      "A sealed esoteric scroll describing the Shield Charge technique. Open to view details.",
+    image: BASE + "sealed_technique_scroll.png",
+    acquisition: "Combine Technique Sealing Medal with the technique scroll",
+    type: "Books/Cards",
+  },
+  {
     name: "[Sealed] Technique Scroll - Jump Slash",
     description:
       "A sealed esoteric scroll describing the Jump Slash technique. Open to view details.",
@@ -881,6 +925,18 @@ const items = [
         "Petrifaction Resistance (GOOD)",
         "Paralysis Resistance (GOOD)",
       ],
+    },
+  },
+  {
+    name: "The Priest's Diary",
+    description:
+      "Thhe diary kept by Father Edwin. Some pages have been torn away, but you can collect them to read the full account.",
+    image: BASE + "the_priests_diary.png",
+    acquisition: "Elizas Event",
+    type: "Books/Cards",
+    libra: {
+      karma: 36,
+      effects: ["Max ST (GOOD)", "Magical Power (GOOD)"],
     },
   },
   {
@@ -1232,7 +1288,7 @@ const items = [
     name: "Tadpole",
     description: "A frog larva. It has a characteristically long tail",
     image: BASE + "tadpole.png",
-    acquisition: "Drop from Frog (Bridion Swamp)",
+    acquisition: "Drop from Frog (Bridion Swamp, Sea Serpent Cave)",
     type: "Demon Materials",
     libra: {
       karma: 5,
@@ -1336,6 +1392,7 @@ const items = [
       effects: ["Weight Reduction (GOOD)"],
     },
   },
+
   {
     name: "Turtle Shell",
     description:
@@ -1348,7 +1405,42 @@ const items = [
       effects: ["Guard Durability (GOOD)"],
     },
   },
-
+  {
+    name: "Crab Stick",
+    description:
+      "Imitation crab meat with the same color, shape and texture as real crab. Materials such as this are not always used for making equipment.",
+    image: BASE + "crab_stick.png",
+    acquisition: "Drop from Crab (Elizas)",
+    type: "Demon Materials",
+    libra: {
+      karma: 15,
+      effects: ["HP Recovery (GOOD)"],
+    },
+  },
+  {
+    name: "Sashimi",
+    description:
+      "A delicious looking slice of fish. Naturally, this isn't used as material but to motivate the creator.",
+    image: BASE + "sashimi.png",
+    acquisition: "Drop from Fish (Sea Serpent Cave)",
+    type: "Demon Materials",
+    libra: {
+      karma: 13,
+      effects: ["Max ST (GOOD)"],
+    },
+  },
+  {
+    name: "Monkfish Liver",
+    description:
+      "Monkfish liver, also known as the foie gras of the sea. This ugly fish can be eaten entirely, except for the bones, eye, and teeth..",
+    image: BASE + "monkfish_liver.png",
+    acquisition: "Drop from Monkfish (Sea Serpent Cave)",
+    type: "Demon Materials",
+    libra: {
+      karma: 22,
+      effects: ["Gradual Recovery (GOOD)"],
+    },
+  },
   {
     name: "Anulis' Ribbon",
     description: "A very long ribbon, worn by Anulis. It holds many memories.",
@@ -1501,6 +1593,34 @@ const items = [
     },
   },
   {
+    name: "Pretty Seashell",
+    description:
+      "A pretty seashell found on the beach. I chose an undamaged one with a nice shape.",
+    image: BASE + "pretty_seashell.png",
+    acquisition: "West and East Coast, Elizas",
+    type: "Valuables",
+  },
+  {
+    name: "Golden Rice Ears",
+    description:
+      "These ears of rice shine like gold. They produce rice, but are kept in homes for decorative purposes.",
+    image: BASE + "golden_rice_ears.png",
+    acquisition: "Elizas Village",
+    type: "Valuables",
+  },
+  {
+    name: "Pure White Garment",
+    description:
+      "This godly garment shines brilliantly. It's still warm and smells lovely.",
+    image: BASE + "pure_white_garment.png",
+    acquisition: "Elizas Event",
+    type: "Valuables",
+    libra: {
+      karma: 70,
+      effects: ["Max ST (EPIC)", "HP Recovery (EPIC)", "Use Speed (EPIC)"],
+    },
+  },
+  {
     name: "Bundle of Wooden Sticks",
     description:
       "Carefully selected, easy-to-grip, sturdy wooden sticks. The sticks have a variety of possible uses.",
@@ -1534,6 +1654,12 @@ const items = [
     description:
       "It gives you 5% off when you shop. With several in your possession, you'll get fantastic discounts.",
     image: BASE + "golden_ticket.png",
+    type: "Collected Items",
+  },
+  {
+    name: "Love",
+    description: "It is extremely precious and hard to come by.",
+    image: BASE + "love.png",
     type: "Collected Items",
   },
   {

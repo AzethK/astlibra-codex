@@ -14,9 +14,18 @@ const skills = [
     description:
       "Summons a fire bird to fly diagonally upwards. It covers a wide area of the sky.",
     image: BASE + "soaring_bird.png",
-    acquisition: "Chapter 3",
+    acquisition: "Grow Tree - Chapter 3",
     element: "fire",
     st: 126,
+  },
+  {
+    name: "Berserk",
+    description:
+      "Increases the power of physical attacks for a time. The amount it increases depends on your magical power.",
+    image: BASE + "berserk.png",
+    acquisition: "Grow Tree - Chapter 4",
+    element: "fire",
+    st: 189,
   },
   {
     name: "Cold Bullet",
@@ -53,6 +62,15 @@ const skills = [
     acquisition: "Grow Tree - Chapter 2",
     element: "Earth",
     st: 90,
+  },
+  {
+    name: "Assassin",
+    description:
+      "Dash behind an enemy and strike. Only the spear's tip can hit, but it's powerful.",
+    image: BASE + "assassin.png",
+    acquisition: "Grow Tree - Chapter 4",
+    element: "Earth",
+    st: 180,
   },
   {
     name: "Wind Tiger",
@@ -98,6 +116,15 @@ const skills = [
     acquisition: "Grow Tree - Chapter 1",
     element: "Holy",
     st: 108,
+  },
+  {
+    name: "Unicorn",
+    description:
+      "Summons a monster at a fixed location, which attacks a broad area with great power for a brief period.",
+    image: BASE + "unicorn.png",
+    acquisition: "Grow Tree - Chapter 4",
+    element: "Holy",
+    st: 117,
   },
 ];
 

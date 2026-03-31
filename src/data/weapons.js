@@ -391,7 +391,7 @@ const weapons = [
     range: 1,
     handling: 3,
     weight: 180,
-    skill: "Enhance Performance",
+    skill: "Efreet",
     acquisition: "Elizas / Sea Serpent Cave Formula",
   },
   {
