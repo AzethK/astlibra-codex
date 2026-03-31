@@ -499,6 +499,17 @@ const items = [
     },
   },
   {
+    name: "Dango",
+    description: "Recovers 600 HP. Its sticky texture is to die for.",
+    image: BASE + "dango.png",
+    acquisition: "Combine Mochi and Mochi",
+    type: "Food",
+    libra: {
+      karma: 38,
+      effects: ["Max HP (GOOD)", "HP Recovery (GOOD)", "ST Gain Rate"],
+    },
+  },
+  {
     name: "Plain Cookies",
     description:
       "Generates 12 [Water] and [Earth] force. Plain cookies with a nice buttery aroma.",
@@ -587,6 +598,54 @@ const items = [
         "Magical Power (GOOD)",
         "Weight Reduction (GOOD)",
         "ST Gain Rate",
+      ],
+    },
+  },
+  {
+    name: "Strawberry Au Lait",
+    description:
+      "Generates 77 [Water] and [Fire] force. Strawberry milk. Pink colored  and looks delicious.",
+    image: BASE + "strawberry_au_lait.png",
+    acquisition: "Combine Strawberry and Milk",
+    type: "Food",
+    libra: {
+      karma: 63,
+      effects: [
+        "Weight Reduction (GOOD)",
+        "Magical Power (GOOD)",
+        "Max ST (GOOD)",
+      ],
+    },
+  },
+  {
+    name: "Strawberry Crepe",
+    description:
+      "Generates 72 [Wind] and [Darkness] force. This delicious crepe is made with an abundance  of fresh strawberries.",
+    image: BASE + "strawberry_crepe.png",
+    acquisition: "Combine Pie Dough and Strawberry",
+    type: "Food",
+    libra: {
+      karma: 45,
+      effects: [
+        "ST Gain Rate (GOOD)",
+        "Guard Durability (GOOD)",
+        "Defense Power (GOOD)",
+      ],
+    },
+  },
+  {
+    name: "Shortcake",
+    description:
+      "Generates 70 [Earth] and [Holy] force. A standard cake. Simple is best for sweetness.",
+    image: BASE + "shortcake.png",
+    acquisition: "Combine Strawberry and Sponge Cake",
+    type: "Food",
+    libra: {
+      karma: 57,
+      effects: [
+        "Attack Power (GOOD)",
+        "Effect Duration(GOOD)",
+        "Max HP (GOOD)",
       ],
     },
   },
@@ -694,6 +753,21 @@ const items = [
         "Bleeding Resistance (GOOD)",
         "Blind Resistance",
         "Paralysis Resistance",
+      ],
+    },
+  },
+  {
+    name: "Strawberry",
+    description:
+      "A basic food. This freshly picked strawberry smells wonderful.",
+    image: BASE + "strawberry.png",
+    type: "Food Ingredients",
+    libra: {
+      karma: 43,
+      effects: [
+        "Paralysis Resistance",
+        "Blind Resistance (GOOD)",
+        "Bleeding Resistance",
       ],
     },
   },
@@ -989,6 +1063,18 @@ const items = [
     },
   },
   {
+    name: "Gold Ore",
+    description:
+      "This soft and pliable ore contains gold. It has a mysterious power that captivates people.",
+    image: BASE + "gold_ore.png",
+    acquisition: "Mining",
+    type: "Ore/Gems",
+    libra: {
+      karma: 19,
+      effects: ["Defense Power (GOOD)", "Guard Durability"],
+    },
+  },
+  {
     name: "Copper Ingot",
     description:
       "A lump of metal refined from copper ore. Has a higher value than the raw material.",
@@ -1009,6 +1095,17 @@ const items = [
     libra: {
       karma: 11,
       effects: ["Attack Power"],
+    },
+  },
+  {
+    name: "Gold Ingot",
+    description: "This ingot is made from gold ore. It is also called a bar.",
+    image: BASE + "gold_ingot.png",
+    acquisition: "Combine Gold Ore and Refining Kit",
+    type: "Ore/Gems",
+    libra: {
+      karma: 24,
+      effects: ["Attack Power", "Magical Power"],
     },
   },
   {
@@ -1033,6 +1130,18 @@ const items = [
     libra: {
       karma: 45,
       effects: ["Coins Earned", "Experience Earned"],
+    },
+  },
+  {
+    name: "Erameld",
+    description:
+      "A redeemable item which can be sold for a large number of coins. Symbolizes the healing power of forests and possesses healing power.",
+    image: BASE + "erameld.png",
+    acquisition: "Mining",
+    type: "Ore/Gems",
+    libra: {
+      karma: 55,
+      effects: ["Coins Earned (GOOD)", "Experience Earned"],
     },
   },
   {
@@ -1227,6 +1336,18 @@ const items = [
       effects: ["Weight Reduction (GOOD)"],
     },
   },
+  {
+    name: "Turtle Shell",
+    description:
+      "The shell of an alligator snapping turtle. The shell alegedly evolved from the turtle's ribs.",
+    image: BASE + "turtle_shell.png",
+    acquisition: "Drop from Turtle (Elizas)",
+    type: "Demon Materials",
+    libra: {
+      karma: 11,
+      effects: ["Guard Durability (GOOD)"],
+    },
+  },
 
   {
     name: "Anulis' Ribbon",
@@ -1249,6 +1370,22 @@ const items = [
     libra: {
       karma: 24,
       effects: ["Max HP", "HP Recovery", "Gradual Recovery"],
+    },
+  },
+  {
+    name: "Legendary Herb",
+    description:
+      "Medicinal herb said to grow near Astraea's Scales. It has the power to cure any disease.",
+    image: BASE + "legendary_herb.png",
+    acquisition: "Elizas event",
+    type: "Valuables",
+    libra: {
+      karma: 54,
+      effects: [
+        "Max HP (GOOD)",
+        "HP Recovery (GOOD)",
+        "Gradual Recovery (GOOD)",
+      ],
     },
   },
   {
