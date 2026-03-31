@@ -8,6 +8,9 @@ An all-in-one ASTLIBRA database with consumables, materials, equipment and skill
 - All Trinkets
 - All Karons
 - Link Equipment and Karons
+- Interactive Libra
 
 # NEXT UPCOMING FEATURES
-- Skills
+- All Items
+- All Skills
+- Mobile Support
