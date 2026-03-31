@@ -13,3 +13,4 @@ An all-in-one ASTLIBRA database with consumables, materials, equipment and skill
 # NEXT UPCOMING FEATURES
 - All Items
 - All Skills
+- Mobile Support
