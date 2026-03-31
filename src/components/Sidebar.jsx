@@ -1,9 +1,14 @@
 import { useNavigate, useLocation } from "react-router-dom";
 
-export default function Sidebar() {
+export default function Sidebar({ open }) {
   const items = ["ITEM", "EQUIP", "SKILL", "KARON", "LIBRA"];
   const navigate = useNavigate();
   const location = useLocation();
+  const isMobile = window.innerWidth <= 768;
+
+  if (!isMobile) {
+    open = true;
+  }
 
   const handleClick = (label) => {
     const path = label.toLowerCase();
@@ -17,7 +22,7 @@ export default function Sidebar() {
   };
 
   return (
-    <div className="sidebar">
+    <div className={`sidebar ${open ? "open" : ""}`}>
       <div className="sidebar-inner">
         {items.map((label) => {
           const path = `/${label.toLowerCase()}`;

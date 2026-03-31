@@ -1277,7 +1277,7 @@ const items = [
     description:
       "Formerly a flower, now drained of its evil energy. Don't look at the roots.",
     image: BASE + "mandragora.png",
-    acquisition: "Drop from plant monster (Bridion Swamp, Belkade Volcano)",
+    acquisition: "Drop from Mandragora (Bridion Swamp, Belkade Volcano)",
     type: "Demon Materials",
     libra: {
       karma: 6,
@@ -1373,7 +1373,8 @@ const items = [
     description:
       "Even a fragment of evil energy is powerful enough to join and manipulate huge rocks. It has many uses.",
     image: BASE + "golem_fragment.png",
-    acquisition: "Drop from Golem (Belkade Volcano, Elizas)",
+    acquisition:
+      "Drop from Golem, the boulders it summons also drop it (Belkade Volcano, Elizas)",
     type: "Demon Materials",
     libra: {
       karma: 18,

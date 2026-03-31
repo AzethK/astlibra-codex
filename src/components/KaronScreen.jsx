@@ -99,7 +99,7 @@ export default function KaronScreen() {
       <div className="search-box">
         <input
           type="text"
-          placeholder="Search Items..."
+          placeholder="Search Karon..."
           value={searchQuery}
           onChange={(e) => setSearchQuery(e.target.value)}
         />

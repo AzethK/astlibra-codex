@@ -125,8 +125,13 @@ export default function LibraModal({ onSelectItem, onClose }) {
             <div
               key={item.name}
               className="equip-card"
-              onClick={() => onSelectItem(item)}
-              onMouseEnter={() => setHoveredItem(item)}
+              onClick={() => {
+                if (hoveredItem?.name === item.name) {
+                  onSelectItem(item);
+                } else {
+                  setHoveredItem(item);
+                }
+              }}
             >
               <img src={item.image} alt={item.name} />
               <h3>{item.name}</h3>

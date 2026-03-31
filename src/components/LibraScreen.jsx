@@ -5,6 +5,7 @@ const LibraScreen = () => {
   const [activePan, setActivePan] = useState(null);
   const [panItems, setPanItems] = useState(Array(10).fill(null));
   const [modalOpen, setModalOpen] = useState(false);
+  const isMobile = window.innerWidth <= 768;
 
   const handlePanClick = (index) => {
     setActivePan(index);
@@ -167,6 +168,7 @@ const LibraScreen = () => {
       <div className="libra-layout">
         {/* LEFT BOX */}
         <div className="effects-box left-box">
+          {isMobile && <h3>Left Pans</h3>}
           <h3>Karma: {getKarma(leftItems)}</h3>
           {leftEffects.map((effect, index) => (
             <div
@@ -224,6 +226,7 @@ const LibraScreen = () => {
 
         {/* RIGHT BOX */}
         <div className="effects-box right-box">
+          {isMobile && <h3>Right Pans</h3>}
           <h3>Karma: {getKarma(rightItems)}</h3>
           {rightEffects.map((effect, index) => (
             <div

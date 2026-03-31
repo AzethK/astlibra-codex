@@ -92,7 +92,7 @@ export default function EquipScreen() {
       <div className="search-box">
         <input
           type="text"
-          placeholder="Search Items..."
+          placeholder="Search Equipment..."
           value={searchQuery}
           onChange={(e) => setSearchQuery(e.target.value)}
         />
