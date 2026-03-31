@@ -78,7 +78,12 @@ export default function LibraModal({ onSelectItem, onClose }) {
       <div className="karon-overlay visible" onClick={onClose} />
 
       <div className="libra-modal" onClick={(e) => e.stopPropagation()}>
-        <div className="libra-header">
+        <div
+          className="libra-header"
+          onClick={() => {
+            setHoveredItem(null);
+          }}
+        >
           <h2>Choose Item</h2>
 
           <div className="search-box">

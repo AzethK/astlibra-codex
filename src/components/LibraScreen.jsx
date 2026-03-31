@@ -136,7 +136,11 @@ const LibraScreen = () => {
   return (
     <div className="libra-container">
       <div className="title">Libra</div>
-      <h4>Left-click buttons to assign items, right-click to remove</h4>
+      <h4>
+        {isMobile ?
+          `Tab buttons to assign items, long tap to remove`
+        : `Left-click buttons to assign items, right-click to remove`}
+      </h4>
       <div className="balance-container">
         <div className="balance-ruler">
           {steps.map((_, index) => (
