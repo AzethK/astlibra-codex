@@ -172,7 +172,7 @@ const trinkets = [
       "A mysterious trinket that doubles a woman's beauty when worn.",
     image: BASE + "floral_wreath.png",
     stats: { maxhp: 50, maxst: 20 },
-    acquisition: "Arkasinon / Demon King's Castle",
+    acquisition: "Akrasinon / Demon King's Castle",
   },
   {
     name: "Cross",
@@ -180,7 +180,7 @@ const trinkets = [
       "An object used when praying to the gods. It offers protection against calamities.",
     image: BASE + "cross.png",
     stats: { bleedres: 30, blindres: 30, petrires: 30, parares: 30 },
-    acquisition: "Arkasinon / Demon King's Castle",
+    acquisition: "Akrasinon / Demon King's Castle",
   },
   {
     name: "Phoenix Feather",
@@ -204,7 +204,7 @@ const trinkets = [
       "Ring that reinforces defense, guard, and HP. However, it slightly decreases attack.",
     image: BASE + "ring_of_protection.png",
     stats: { maxhp: 50, atk: -20, def: 20, guard: 20 },
-    acquisition: "Arkasinon / Demon King's Castle",
+    acquisition: "Akrasinon / Demon King's Castle",
   },
   {
     name: "Long-Haired Wig",

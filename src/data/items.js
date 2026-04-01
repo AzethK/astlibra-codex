@@ -311,6 +311,16 @@ const items = [
     },
   },
   {
+    name: "Gunpowder Bullet",
+    description: "A bullet filled with gunpowder.",
+    image: BASE + "gunpowder_bullet.png",
+    type: "Secondary Weapon",
+    libra: {
+      karma: 39,
+      effects: ["Defense Power (EPIC)", "Guard Durability (GOOD)"],
+    },
+  },
+  {
     name: "Quiver",
     description: "Holds 20 wooden arrows. Use it to gain arrows.",
     image: BASE + "quiver.png",
@@ -352,6 +362,22 @@ const items = [
     type: "Secondary Weapon",
   },
   {
+    name: "Yggdrasil Bow",
+    description:
+      "Legendary bow supposedly carved from the World Tree. It feels warm with life despite being made of wood.",
+    image: BASE + "yggdrasil_bow.png",
+    acquisition: "Akrasinon, Levin's hut",
+    type: "Secondary Weapon",
+  },
+  {
+    name: "Torch Bow",
+    description:
+      "Launches arrows strapped with torches. Can set things ablaze. Athough it is powerful, it consumes a torch each time it is fired.",
+    image: BASE + "torch_bow.png",
+    acquisition: "Combine Yggdrasil Bow and Torch",
+    type: "Secondary Weapon",
+  },
+  {
     name: "Crossbow",
     description:
       "Takes time to load, but fires arrows in a straight line. The angle of the crossbow can be changed with the up and down buttons.",
@@ -371,6 +397,7 @@ const items = [
       effects: ["Max HP", "HP Recovery"],
     },
   },
+
   {
     name: "Nectar",
     description:
@@ -381,6 +408,18 @@ const items = [
     libra: {
       karma: 22,
       effects: ["Max HP (GOOD)", "HP Recovery"],
+    },
+  },
+  {
+    name: "Amrita",
+    description:
+      "Recovers 1,200 HP. Expensive, but immediately restores your health.",
+    image: BASE + "amrita.png",
+    acquisition: "Combine Sapodilla Fruit and Empty Bottle",
+    type: "Medicines/Bottles",
+    libra: {
+      karma: 32,
+      effects: ["Max HP (GOOD)", "HP Recovery (GOOD)"],
     },
   },
   {
@@ -400,7 +439,7 @@ const items = [
     description:
       "Heals the abnormal status Blind. Neutralizes Blind and provides lasting resistance for a while.",
     image: BASE + "eye_medicine.png",
-    acquisition: "Loot Chest",
+    acquisition: "Shop",
     type: "Medicines/Bottles",
     libra: {
       karma: 30,
@@ -492,6 +531,17 @@ const items = [
     },
   },
   {
+    name: "Sapodilla Fruit",
+    description: "Recovers 900 HP. Is this...edible?",
+    image: BASE + "sapodilla_fruit.png",
+    acquisition: "Shop",
+    type: "Food",
+    libra: {
+      karma: 20,
+      effects: ["HP Recovery", "HP Recovery (GOOD)"],
+    },
+  },
+  {
     name: "Sponge Cake",
     description: "Recovers 150 HP. Tastes delicious by itself.",
     image: BASE + "sponge_cake.png",
@@ -535,6 +585,18 @@ const items = [
     libra: {
       karma: 38,
       effects: ["Max HP (GOOD)", "HP Recovery (GOOD)", "ST Gain Rate"],
+    },
+  },
+  {
+    name: "Chocolate Cream Puff",
+    description:
+      "Recovers 800 HP. This chocolate cream puff is topped with chocolate chips.",
+    image: BASE + "chocolate_cream_puff.png",
+    acquisition: "Combine Cream Puff and Chocolate",
+    type: "Food",
+    libra: {
+      karma: 48,
+      effects: ["Max HP (GOOD)", "HP Recovery (GOOD)", "ST Gain Rate (GOOD)"],
     },
   },
   {
@@ -597,6 +659,7 @@ const items = [
       effects: ["Use Speed (GOOD)", "Effect Duration (GOOD)", "Magical Power"],
     },
   },
+
   {
     name: "Mont Blanc",
     description:
@@ -675,6 +738,42 @@ const items = [
         "Effect Duration(GOOD)",
         "Max HP (GOOD)",
       ],
+    },
+  },
+  {
+    name: "Soft-Serve Chocolate Ice Cream",
+    description:
+      "Generates 110 [Wind] and [Earth] force. This chocolate-favored ice cream neutraizes sweetness.",
+    image: BASE + "soft_serve_chocolate_ice_cream.png",
+    acquisition: "Combine Soft-Serve Ice Cream and Chocolate",
+    type: "Food",
+    libra: {
+      karma: 34,
+      effects: ["Attack Power (EPIC)", "Use Speed", "Guard Durability"],
+    },
+  },
+  {
+    name: "Chocolate Chip Cookie",
+    description:
+      "Generates 121 [Fire] and [Holy] force. This cookie features chocolate chips. Slightly sweet.",
+    image: BASE + "chocolate_chip_cookie.png",
+    acquisition: "Combine Plain Cookies and Chocolate",
+    type: "Food",
+    libra: {
+      karma: 43,
+      effects: ["Defense Power (EPIC)", "Effect Duration", "ST Gain Rate"],
+    },
+  },
+  {
+    name: "Chocolate Pie",
+    description:
+      "Generates 116 [Darkness] and [Water] force. The crust is flaky and the chocolate is sweet.",
+    image: BASE + "chocolate_pie.png",
+    acquisition: "Combine Pie Dough and Chocolate",
+    type: "Food",
+    libra: {
+      karma: 63,
+      effects: ["Magical Power (EPIC)", "Weight Reduction", "Magical Power"],
     },
   },
   {
@@ -775,6 +874,7 @@ const items = [
       "A basic food. Popular for its moderate sweetness and crisp texture.",
     image: BASE + "apple.png",
     type: "Food Ingredients",
+    acquisition: "Shop",
     libra: {
       karma: 43,
       effects: [
@@ -810,6 +910,21 @@ const items = [
         "Petrifaction Resistance",
         "Paralysis Resistance (GOOD)",
         "Poison Resistance",
+      ],
+    },
+  },
+  {
+    name: "Chocolate",
+    description:
+      "A basic food. Very sweet, slightly bitter, and melts in your mouth.",
+    image: BASE + "chocolate.png",
+    type: "Food Ingredients",
+    libra: {
+      karma: 74,
+      effects: [
+        "Poison Resistance (EPIC)",
+        "Blind Resistance (GOOD)",
+        "Paralysis Resistance (GOOD)",
       ],
     },
   },
@@ -852,6 +967,14 @@ const items = [
       "An esoteric scroll describing the Shield Charge technique. Open to view details.",
     image: BASE + "technique_scroll.png",
     acquisition: "Elizas, chest found by bombing a wall east of the village.",
+    type: "Books/Cards",
+  },
+  {
+    name: "Technique Scroll - Air Blade",
+    description:
+      "An esoteric scroll describing the Air Blade technique. Open to view details.",
+    image: BASE + "technique_scroll.png",
+    acquisition: "Akrasinon, chest in dark area with water.",
     type: "Books/Cards",
   },
   {
@@ -904,6 +1027,14 @@ const items = [
     type: "Books/Cards",
   },
   {
+    name: "[Sealed] Technique Scroll - Air Blade",
+    description:
+      "A sealed esoteric scroll describing the Air Blade technique. Open to view details.",
+    image: BASE + "sealed_technique_scroll.png",
+    acquisition: "Combine Technique Sealing Medal with the technique scroll",
+    type: "Books/Cards",
+  },
+  {
     name: "[Sealed] Technique Scroll - Jump Slash",
     description:
       "A sealed esoteric scroll describing the Jump Slash technique. Open to view details.",
@@ -950,6 +1081,14 @@ const items = [
       karma: 55,
       effects: ["Gradual Recovery (GOOD)", "Experience Earned (GOOD)"],
     },
+  },
+  {
+    name: "Well Epistle",
+    description:
+      "This roll of paper is old and looks like it's about to crumble. It describes the well and the sluice.",
+    image: BASE + "well_epistle.png",
+    acquisition: "Arkasinon, on top of a table in a ruined building",
+    type: "Books/Cards",
   },
   {
     name: "Physical Fitness Card",
@@ -1131,6 +1270,18 @@ const items = [
     },
   },
   {
+    name: "High-carbon Steel Ore",
+    description:
+      "An ore with high levels of impurities called vanadium. It is extremely rare, and difficut to obtain.",
+    image: BASE + "high_carbon_steel_ore.png",
+    acquisition: "Mining",
+    type: "Ore/Gems",
+    libra: {
+      karma: 29,
+      effects: ["Defense Power (GOOD)", "Guard Durability (GOOD)"],
+    },
+  },
+  {
     name: "Copper Ingot",
     description:
       "A lump of metal refined from copper ore. Has a higher value than the raw material.",
@@ -1162,6 +1313,18 @@ const items = [
     libra: {
       karma: 24,
       effects: ["Attack Power", "Magical Power"],
+    },
+  },
+  {
+    name: "Damascus Ingot",
+    description:
+      "A dark ingot with a distinctive wood grain pattern. It is not only hard but has high aesthetic value.",
+    image: BASE + "damascus_ingot.png",
+    acquisition: "Combine High-Carbon Steel Ore and Refining Kit",
+    type: "Ore/Gems",
+    libra: {
+      karma: 34,
+      effects: ["Attack Power (GOOD)", "Magical Power"],
     },
   },
   {
@@ -1198,6 +1361,18 @@ const items = [
     libra: {
       karma: 55,
       effects: ["Coins Earned (GOOD)", "Experience Earned"],
+    },
+  },
+  {
+    name: "Sirpphae",
+    description:
+      "A redeemable item which can be sold for a large number of coins. A blue gem symbolizing tranquility.",
+    image: BASE + "sirpphae.png",
+    acquisition: "Mining",
+    type: "Ore/Gems",
+    libra: {
+      karma: 65,
+      effects: ["Coins Earned (GOOD)", "Experience Earned (GOOD)"],
     },
   },
   {
@@ -1443,6 +1618,78 @@ const items = [
     },
   },
   {
+    name: "Claystones",
+    description:
+      "These stones were taken from a magicallly manipulated mud golem. They spring up inexhaustibly as the Demon King's soldiers.",
+    image: BASE + "claystones.png",
+    acquisition: "Drop from Mud Golem (Akrasinon)",
+    type: "Demon Materials",
+    libra: {
+      karma: 25,
+      effects: ["Defense Power (GOOD)", "Max HP"],
+    },
+  },
+  {
+    name: "Minotaur's Axe",
+    description:
+      "An axe used by a Minotaur. It is made of steel. Its handle is too short for you to equip it.",
+    image: BASE + "minotaurs_axe.png",
+    acquisition: "Drop from Minotaurs (Akrasinon)",
+    type: "Demon Materials",
+    libra: {
+      karma: 13,
+      effects: ["Guard Durability (GOOD)", "Use Speed"],
+    },
+  },
+  {
+    name: "Mammon's Feet",
+    description:
+      "Seeing the demon's upper body, it's hard to imagine that these magnificent feet came from the same being. They're Commander-class in the Demon King's army.",
+    image: BASE + "mammons_feet.png",
+    acquisition: "Drop from Mammon (Akrasinon)",
+    type: "Demon Materials",
+    libra: {
+      karma: 28,
+      effects: ["ST Gain Rate (GOOD)", "Gradual Recovery"],
+    },
+  },
+  {
+    name: "Lizard Scales",
+    description:
+      "Lizardmen fight surprisingly well in close combat. They are aquatic but very durable.",
+    image: BASE + "lizard_scales.png",
+    acquisition: "Drop from Lizardman (Akrasinon)",
+    type: "Demon Materials",
+    libra: {
+      karma: 36,
+      effects: ["Effect Duration (GOOD)", "Weight Reduction"],
+    },
+  },
+  {
+    name: "Gargoyle's Wings",
+    description:
+      "Along with goblins, gargoyles are the most common of demons. They possess an evil intelligence.",
+    image: BASE + "gargoyles_wings.png",
+    acquisition: "Drop from Gargoyle (Akrasinon)",
+    type: "Demon Materials",
+    libra: {
+      karma: 40,
+      effects: ["Poison Resistance (GOOD)", "Poison Resistance"],
+    },
+  },
+  {
+    name: "Heat Exhaust Organ",
+    description:
+      "An elder lizard's heat exhaust organ. They use it to transform the air into ice and attack.",
+    image: BASE + "heat_exhaust_organ.png",
+    acquisition: "Drop from Elder Lizard (Akrasinon)",
+    type: "Demon Materials",
+    libra: {
+      karma: 25,
+      effects: ["Blind Resistance (GOOD)", "HP Recovery"],
+    },
+  },
+  {
     name: "Anulis' Ribbon",
     description: "A very long ribbon, worn by Anulis. It holds many memories.",
     image: BASE + "anulis_ribbon.png",
@@ -1508,6 +1755,14 @@ const items = [
       karma: 17,
       effects: ["Defense Power", "Effect Duration"],
     },
+  },
+  {
+    name: "Bundle of Wooden Sticks",
+    description:
+      "Carefully selected, easy-to-grip, sturdy wooden sticks. The sticks have a variety of possible uses.",
+    image: BASE + "bundle_of_wooden_sticks.png",
+    acquisition: "Cave of Libra",
+    type: "Valuables",
   },
   {
     name: "Wonder Drug Fruit",
@@ -1593,6 +1848,7 @@ const items = [
       effects: ["Petrifaction Resistance"],
     },
   },
+
   {
     name: "Pretty Seashell",
     description:
@@ -1622,13 +1878,70 @@ const items = [
     },
   },
   {
-    name: "Bundle of Wooden Sticks",
+    name: "Apples from the King's Castle",
     description:
-      "Carefully selected, easy-to-grip, sturdy wooden sticks. The sticks have a variety of possible uses.",
-    image: BASE + "bundle_of_wooden_sticks.png",
-    acquisition: "Cave of Libra",
+      "These apples were left inside Akrasinon Castle. They've been touched with magic and retain a tinge of power.",
+    image: BASE + "apples_from_the_kings_castle.png",
+    acquisition: "Akrasinon Castle, on the table.",
+    type: "Valuables",
+    libra: {
+      karma: 54,
+      effects: [
+        "HP Recovery (GOOD)",
+        "Max HP (GOOD)",
+        "Gradual Recovery (GOOD)",
+      ],
+    },
+  },
+  {
+    name: "Red Gem",
+    description:
+      "This round stone was set at the bottom of a dish of apples. It's used to manipulate one of Akrasinon Castle's mechanisms.",
+    image: BASE + "red_gem.png",
+    acquisition: "Akrasinon Castle, take all of the apples from the table.",
     type: "Valuables",
   },
+  {
+    name: "Blue Gem",
+    description:
+      "This round stone was set in the bronze statue's eye. It's used to manipulate one of Akrasinon Castle's mechanisms.",
+    image: BASE + "blue_gem.png",
+    acquisition: "Akrasinon Castle, destroy statue with glowing eye.",
+    type: "Valuables",
+  },
+  {
+    name: "Green Gem",
+    description:
+      "This round stone was suspended from the ceiling. It's used to manipulate one of Akrasinon Castle's mechanisms.",
+    image: BASE + "green_gem.png",
+    acquisition:
+      "Akrasinon Castle, on the ceiling near the entrance, shoot it.",
+    type: "Valuables",
+  },
+  {
+    name: "Girl's Earrings",
+    description:
+      "These earrings were dropped by the fairy-tale girl. They exude powerful, hidden magic.",
+    image: BASE + "girls_earrings.png",
+    acquisition: "Akrasinon, in dark area with water.",
+    type: "Valuables",
+  },
+  {
+    name: "Sluice Key",
+    description:
+      "A large, oddly-shaped key. It is inserted into a device and turned to open the sluice.",
+    image: BASE + "sluice_key.png",
+    acquisition: "Akrasinon, above demon tree.",
+    type: "Valuables",
+  },
+  {
+    name: "Ancient Key",
+    description: "Its ancient technology allows you to open sealed doors",
+    image: BASE + "ancient_key.png",
+    acquisition: "Akrasinon, drop from Wyvern miniboss.",
+    type: "Valuables",
+  },
+
   {
     name: "Magical Crystals",
     description:

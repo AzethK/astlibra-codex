@@ -90,7 +90,7 @@ const karons = [
       "The item on the right end of shortcut set B can be used immediately by pressing UP + Attack button. (Only while on the ground).",
     cost: 3,
     mode: "BASIC",
-    acquisition: "Starting Karon",
+    acquisition: "Akrasinon Event",
   },
   {
     name: "Snorkel",

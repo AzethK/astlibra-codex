@@ -500,7 +500,7 @@ const weapons = [
     handling: 2,
     weight: 230,
     skill: "Stinger",
-    acquisition: "Akrasinon / Demon King Castle Formula",
+    acquisition: "Akrasinon / Demon King's Castle Formula",
   },
   {
     name: "Masamune",
@@ -523,7 +523,7 @@ const weapons = [
     handling: 3,
     weight: 225,
     skill: "Enhance Performance",
-    acquisition: "Akrasinon / Demon King Castle Formula",
+    acquisition: "Akrasinon / Demon King's Castle Formula",
   },
   {
     name: "Great Sorcerer's Staff",

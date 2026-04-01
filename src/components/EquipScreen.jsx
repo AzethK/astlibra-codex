@@ -41,7 +41,8 @@ export default function EquipScreen() {
         equip.name.toLowerCase().includes(query) ||
         (equip.skill &&
           typeof equip.skill === "string" &&
-          equip.skill.toLowerCase().includes(query))
+          equip.skill.toLowerCase().includes(query)) ||
+        equip.acquisition.toLowerCase().includes(query)
       ) {
         return equip.name.toLowerCase();
       }

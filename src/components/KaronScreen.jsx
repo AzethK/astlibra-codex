@@ -173,12 +173,18 @@ export default function KaronScreen() {
               Acquisition:{" "}
               <span
                 className={
-                  selectedKaron.acquisition != "Starting Karon" ?
+                  (
+                    selectedKaron.acquisition != "Starting Karon" &&
+                    selectedKaron.acquisition != "Akrasinon Event"
+                  ) ?
                     "acquisition"
                   : ""
                 }
                 onClick={() => {
-                  selectedKaron.acquisition != "Starting Karon" ?
+                  (
+                    selectedKaron.acquisition != "Starting Karon" &&
+                    selectedKaron.acquisition != "Akrasinon Event"
+                  ) ?
                     navigate(`/equip/${selectedKaron.acquisition}`)
                   : "";
                 }}

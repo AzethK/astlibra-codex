@@ -24,7 +24,8 @@ export default function ItemScreen() {
         item.name.toLowerCase().includes(query) ||
         item.libra?.effects.some((effect) =>
           effect.toLowerCase().includes(query),
-        )
+        ) ||
+        item.acquisition?.toLowerCase().includes(query)
       ) {
         return item.name.toLowerCase();
       }
