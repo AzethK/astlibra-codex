@@ -107,7 +107,18 @@ export default function EquipScreen() {
               navigate(`/equip/${equip.name}`);
             }}
           >
-            <img src={equip.image} alt={equip.name} />
+            {equip.element && (
+              <img
+                src={equip.element}
+                alt="Element"
+                className="equip-element-icon"
+              />
+            )}
+            <img
+              src={equip.image}
+              alt={equip.name}
+              className="equip-card-image"
+            />
             <h3>{equip.name}</h3>
           </div>
         ))}

@@ -1,4 +1,6 @@
 const BASE = import.meta.env.BASE_URL + "assets/weapons/";
+const BASE_ELEMENT = import.meta.env.BASE_URL + "assets/elements/";
+
 const weapons = [
   {
     name: "Tree Branch",
@@ -29,6 +31,7 @@ const weapons = [
     description:
       "A dagger made of sharpened stone. Can overwhelm enemies with a series of attacks.",
     image: BASE + "stone_dagger.png",
+    element: BASE_ELEMENT + "wind.png",
     attack: 37,
     range: 1,
     handling: 3,
@@ -41,6 +44,7 @@ const weapons = [
     description:
       "A sword made of hard, light, good-quality bone. Its balance of power and weight is exceptional",
     image: BASE + "bone_sword.png",
+    element: BASE_ELEMENT + "holy.png",
     attack: 45,
     range: 2,
     handling: 2,
@@ -65,6 +69,7 @@ const weapons = [
     description:
       "Can emit magic from its tip. Its strength is dependent on your magical power",
     image: BASE + "magical_staff.png",
+    element: BASE_ELEMENT + "earth.png",
     attack: 1,
     range: 2,
     handling: 1,
@@ -76,6 +81,7 @@ const weapons = [
     name: "Red Stone Sword",
     description: "A blade carved from stone and imbued with fire spirits.",
     image: BASE + "red_stone_sword.png",
+    element: BASE_ELEMENT + "fire.png",
     attack: 66,
     range: 2,
     handling: 2,
@@ -88,6 +94,7 @@ const weapons = [
     description:
       "A magical sword forged in a place beyond the spirit world. Imbued with the spiritual power of the earth",
     image: BASE + "airgetlam.png",
+    element: BASE_ELEMENT + "earth.png",
     attack: 89,
     range: 2,
     handling: 1,
@@ -161,6 +168,7 @@ const weapons = [
     description:
       "This goblin weapon is somehow made of silver, though goblins don't have such skills.",
     image: BASE + "goblins_silver_hammer.png",
+    element: BASE_ELEMENT + "dark.png",
     attack: 111,
     range: 2,
     handling: 1,
@@ -197,6 +205,7 @@ const weapons = [
     description:
       "This short staff harbors powerful earthly forces which are released when you wield it.",
     image: BASE + "caduceus.png",
+    element: BASE_ELEMENT + "earth.png",
     attack: 1,
     range: 1,
     handling: 1,
@@ -209,6 +218,7 @@ const weapons = [
     description:
       "This dagger is extremely easy to hold and use. Cuts through the air wit the power of the wind attribute.",
     image: BASE + "baselard.png",
+    element: BASE_ELEMENT + "wind.png",
     attack: 89,
     range: 1,
     handling: 3,
@@ -233,6 +243,7 @@ const weapons = [
     description:
       "A unique sword made for thrusting. Can perform a rapid series of attacks.",
     image: BASE + "rapier.png",
+    element: BASE_ELEMENT + "holy.png",
     attack: 121,
     range: 2,
     handling: 2,
@@ -268,6 +279,7 @@ const weapons = [
     description:
       "An extravagant spear tipped with a golden blade. Gold holds strong earth energy.",
     image: BASE + "partisan.png",
+    element: BASE_ELEMENT + "earth.png",
     attack: 126,
     range: 3,
     handling: 2,
@@ -280,6 +292,7 @@ const weapons = [
     description:
       "A magical staff used by a high-ranking mage. Capable of magic, even if you don't know how it works.",
     image: BASE + "mages_staff.png",
+    element: BASE_ELEMENT + "holy.png",
     attack: 1,
     range: 2,
     handling: 1,
@@ -291,6 +304,7 @@ const weapons = [
     name: "Ice Sword",
     description: "The blade is frozen and never melts. A much coveted item.",
     image: BASE + "ice_sword.png",
+    element: BASE_ELEMENT + "water.png",
     attack: 150,
     range: 2,
     handling: 2,
@@ -303,6 +317,7 @@ const weapons = [
     description:
       "This legendary blade is said to have beheaded a dragon. It's said the sword's power of water once severed a dragon in two.",
     image: BASE + "dragon_slaying_sword_ascalon.png",
+    element: BASE_ELEMENT + "water.png",
     attack: 194,
     range: 3,
     handling: 1,
@@ -327,6 +342,7 @@ const weapons = [
     description:
       "A large mallet fashioned by fixing a wooden handle to a stone block from an ancient ruin.",
     image: BASE + "ancient_hammer.png",
+    element: BASE_ELEMENT + "earth.png",
     attack: 237,
     range: 2,
     handling: 1,
@@ -339,6 +355,7 @@ const weapons = [
     description:
       "A magic wand appropriated from the spirit world. Such an item cannot be purchased in this world.",
     image: BASE + "spirit_staff.png",
+    element: BASE_ELEMENT + "water.png",
     attack: 1,
     range: 2,
     handling: 1,
@@ -375,6 +392,7 @@ const weapons = [
     description:
       "A rare hatchet that holds the divine protection of wind. Can cut through earthly elements such as trees as easily as tofu.",
     image: BASE + "wind_hatchet_ildrakh.png",
+    element: BASE_ELEMENT + "wind.png",
     attack: 196,
     range: 2,
     handling: 2,
@@ -387,6 +405,7 @@ const weapons = [
     description:
       "Dagger inscribed with a curse mark of flame. When swung, it bursts with the power of fire.",
     image: BASE + "fire_dagger.png",
+    element: BASE_ELEMENT + "fire.png",
     attack: 174,
     range: 1,
     handling: 3,
@@ -399,6 +418,7 @@ const weapons = [
     description:
       "A beautiful spear containing the power of ice. A much coveted item.",
     image: BASE + "icicle_spear.png",
+    element: BASE_ELEMENT + "water.png",
     attack: 196,
     range: 3,
     handling: 1,
@@ -411,6 +431,7 @@ const weapons = [
     description:
       "A unique design like nothing else in this world. A blade forged by devils to combat the gods.",
     image: BASE + "cursed_sword_gram.png",
+    element: BASE_ELEMENT + "fire.png",
     attack: 225,
     range: 2,
     handling: 2,
@@ -423,6 +444,7 @@ const weapons = [
     description:
       "It hacks with a heavy, broad blade. Could be used as a spear, but the tip has broken off.",
     image: BASE + "halberd.png",
+    element: BASE_ELEMENT + "wind.png",
     attack: 277,
     range: 3,
     handling: 1,
@@ -435,6 +457,8 @@ const weapons = [
     description:
       "This huge, fire-spewing hammer is decorated with gems excavated from ancient ruins.",
     image: BASE + "fire_hammer.png",
+    element: BASE_ELEMENT + "fire.png",
+
     attack: 264,
     range: 3,
     handling: 1,
@@ -459,6 +483,7 @@ const weapons = [
     description:
       "A pitch black axe that stores the power of darkness. It exudes an aura of pure evil.",
     image: BASE + "dark_axe.png",
+    element: BASE_ELEMENT + "dark.png",
     attack: 356,
     range: 2,
     handling: 1,
@@ -483,6 +508,7 @@ const weapons = [
     description:
       "This powerful staff can summon lightning. Produces lighting strikes in random locations.",
     image: BASE + "magical_lightning_staff.png",
+    element: BASE_ELEMENT + "dark.png",
     attack: 1,
     range: 2,
     handling: 3,
@@ -495,6 +521,7 @@ const weapons = [
     description:
       "A beautifully ornamented arpier said to be the only one of its kind",
     image: BASE + "colichemarde.png",
+    element: BASE_ELEMENT + "holy.png",
     attack: 285,
     range: 2,
     handling: 2,
@@ -518,6 +545,7 @@ const weapons = [
     description:
       "A phantom-like clawed fist, as beautiful as a jewel. Its shimmering blades are captivating.",
     image: BASE + "mistilteinn.png",
+    element: BASE_ELEMENT + "dark.png",
     attack: 322,
     range: 1,
     handling: 3,
@@ -530,6 +558,7 @@ const weapons = [
     description:
       "A special staff which only a handful of sorcerers are allowed to possess.",
     image: BASE + "great_sorcerers_staff.png",
+    element: BASE_ELEMENT + "fire.png",
     attack: 1,
     range: 3,
     handling: 1,
@@ -554,6 +583,7 @@ const weapons = [
     description:
       "A finely crafted dagger that's as cold as ice, with an exceptionally sharp edge.",
     image: BASE + "thin_ice_dagger.png",
+    element: BASE_ELEMENT + "water.png",
     attack: 343,
     range: 1,
     handling: 3,
@@ -578,6 +608,7 @@ const weapons = [
     description:
       "Hammers are usually all about destructive power, but this one has been given the attributes of wing.",
     image: BASE + "ogre_hammer.png",
+    element: BASE_ELEMENT + "wind.png",
     attack: 550,
     range: 1,
     handling: 1,
@@ -590,6 +621,7 @@ const weapons = [
     description:
       "The tale of the wind dragon giving this weapon to mortals is still remembered in verse.",
     image: BASE + "storm_bringer.png",
+    element: BASE_ELEMENT + "wind.png",
     attack: 365,
     range: 2,
     handling: 2,
@@ -602,6 +634,7 @@ const weapons = [
     description:
       "A lance that was enchanted when it was thrust into the earth. It absorbed spiritual power over the ages.",
     image: BASE + "knights_lance.png",
+    element: BASE_ELEMENT + "earth.png",
     attack: 350,
     range: 3,
     handling: 2,
@@ -626,6 +659,7 @@ const weapons = [
     description:
       "Legend has it that a god once handled this great hammer. It generates a thunderbolt on impact.",
     image: BASE + "lightning_hammer_mjolnir.png",
+    element: BASE_ELEMENT + "dark.png",
     attack: 420,
     range: 3,
     handling: 1,
@@ -638,6 +672,7 @@ const weapons = [
     description:
       "Sword that contains the magical power extracted from a Fiend sealed within a volcano",
     image: BASE + "laevateinn.png",
+    element: BASE_ELEMENT + "fire.png",
     attack: 429,
     range: 2,
     handling: 2,
@@ -662,6 +697,7 @@ const weapons = [
     description:
       "A uniquely shaped katar said to be fashioned from angel feathers.",
     image: BASE + "seraphim.png",
+    element: BASE_ELEMENT + "holy.png",
     attack: 425,
     range: 1,
     handling: 3,
@@ -674,6 +710,7 @@ const weapons = [
     description:
       "Spear that makes a god a True God. It is a symbol of man's sins.",
     image: BASE + "lance_of_longinus.png",
+    element: BASE_ELEMENT + "holy.png",
     attack: 421,
     range: 3,
     handling: 2,
@@ -686,6 +723,7 @@ const weapons = [
     description:
       "Hammer allegedly made from the tail of an earth dragon. Whether this story is true remains uncertain.",
     image: BASE + "earth_dragon_hammer_blutgang.png",
+    element: BASE_ELEMENT + "earth.png",
     attack: 690,
     range: 2,
     handling: 1,
@@ -698,6 +736,7 @@ const weapons = [
     description:
       "Staff used by priests of the church. It is not intended for violence and is difficult to handle.",
     image: BASE + "sacred_staff_celestial.png",
+    element: BASE_ELEMENT + "holy.png",
     attack: 1,
     range: 3,
     handling: 1,
@@ -722,6 +761,7 @@ const weapons = [
     description:
       "A sword that absorbed the power of darkness and turned black. It was created by forces which oppose the gods.",
     image: BASE + "dark_sword.png",
+    element: BASE_ELEMENT + "dark.png",
     attack: 510,
     range: 2,
     handling: 2,
@@ -734,6 +774,7 @@ const weapons = [
     description:
       "The ultimate rapier. Said to have caused a war because of its beauty.",
     image: BASE + "hauteclaire.png",
+    element: BASE_ELEMENT + "wind.png",
     attack: 375,
     range: 2,
     handling: 3,
@@ -758,6 +799,7 @@ const weapons = [
     description:
       "Powerful wand made using magical chemistry. It releases the power of wind.",
     image: BASE + "wind_staff_gridarvol.png",
+    element: BASE_ELEMENT + "wind.png",
     attack: 1,
     range: 3,
     handling: 1,
@@ -782,6 +824,7 @@ const weapons = [
     description:
       "Axe of the gods believed to have fallen from the heavens. Did a holy war in the heavens really take place?",
     image: BASE + "labrys.png",
+    element: BASE_ELEMENT + "holy.png",
     attack: 684,
     range: 3,
     handling: 1,
@@ -794,6 +837,7 @@ const weapons = [
     description:
       "Rare blade made from ore bathed in spiritual power. This ore can only be found in very small quantities.",
     image: BASE + "earth_sword_galatine.png",
+    element: BASE_ELEMENT + "earth.png",
     attack: 643,
     range: 2,
     handling: 2,
@@ -806,6 +850,7 @@ const weapons = [
     description:
       "Jeweled blade found buried in an ancient ruin. Exactly how to use it is unknown.",
     image: BASE + "nagelring.png",
+    element: BASE_ELEMENT + "water.png",
     attack: 720,
     range: 1,
     handling: 2,
@@ -818,6 +863,7 @@ const weapons = [
     description:
       "Enchanted staff signifying the highest rank in the spirit world. It is attributed to Oberon, the King of Spirits.",
     image: BASE + "great_spirits_staff.png",
+    element: BASE_ELEMENT + "water.png",
     attack: 1,
     range: 3,
     handling: 1,
@@ -842,6 +888,7 @@ const weapons = [
     description:
       "The mighty sword of the dark knight. Can only be wielded by those chosen.",
     image: BASE + "mighty_blade_balmung.png",
+    element: BASE_ELEMENT + "fire.png",
     attack: 780,
     range: 3,
     handling: 1,
@@ -866,6 +913,7 @@ const weapons = [
     description:
       "The pinnacle of magic staves, the end result of magical experimentation. Sends a fountain of powerful, dancing sparks into the air when swung.",
     image: BASE + "magical_staff_verethragna.png",
+    element: BASE_ELEMENT + "fire.png",
     attack: 1,
     range: 2,
     handling: 1,
@@ -878,6 +926,7 @@ const weapons = [
     description:
       "The most powerful sacred sword. It vanished from history because of its beauty.",
     image: BASE + "sacred_sword_excalibur.png",
+    element: BASE_ELEMENT + "water.png",
     attack: 660,
     range: 3,
     handling: 2,
@@ -914,6 +963,7 @@ const weapons = [
     description:
       "Also known as the Crystal Sword. Its diffused light cleanses darkness",
     image: BASE + "sword_of_light_claiomh_solais.png",
+    element: BASE_ELEMENT + "holy.png",
     attack: 902,
     range: 2,
     handling: 2,
@@ -926,6 +976,7 @@ const weapons = [
     description:
       "Weapon bestowed upon mortals by the Dark Dragon Al-Khamis. It contains the power of the god that governs darkness.",
     image: BASE + "magic_sword_aroundight.png",
+    element: BASE_ELEMENT + "dark.png",
     attack: 803,
     range: 3,
     handling: 3,

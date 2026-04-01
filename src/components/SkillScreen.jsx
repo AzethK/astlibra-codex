@@ -57,7 +57,16 @@ export default function SkillScreen() {
             }}
           >
             <img src={skill.image} alt={skill.name} />
-            <h3>{skill.name}</h3>
+            <h3
+              style={{
+                display: "flex",
+                alignItems: "center",
+                gap: "6px",
+                justifyContent: "center",
+              }}
+            >
+              <img src={skill.element} alt="Element" /> {skill.name}
+            </h3>
           </div>
         ))}
       </div>

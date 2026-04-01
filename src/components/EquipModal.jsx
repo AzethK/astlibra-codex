@@ -54,6 +54,13 @@ export default function EquipModal({ equip, onClose, closing, tab }) {
 
         <div className="equip-main">
           <div className="equip-image-container">
+            {equip.element && (
+              <img
+                src={equip.element}
+                alt="Element"
+                className="equip-element-icon"
+              />
+            )}
             <img src={equip.image} alt={equip.name} className="equip-image" />
           </div>
           <div>
