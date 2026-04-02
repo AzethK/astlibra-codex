@@ -1,5 +1,5 @@
 # Astlibra Codex
-An all-in-one ASTLIBRA database with consumables, materials, equipment and skills
+An all-in-one ASTLIBRA Revision database with items, materials, equipment and skills
 
 # CURRENT FEATURES
 - All Weapons
