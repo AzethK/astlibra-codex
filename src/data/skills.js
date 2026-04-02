@@ -15,7 +15,7 @@ const skills = [
     description:
       "Summons a fire bird to fly diagonally upwards. It covers a wide area of the sky.",
     image: BASE + "soaring_bird.png",
-    acquisition: "Grow Tree - Chapter 3",
+    acquisition: "Grow Tree",
     element: BASE_ELEMENT + "fire.png",
     st: 126,
   },
@@ -24,7 +24,7 @@ const skills = [
     description:
       "Increases the power of physical attacks for a time. The amount it increases depends on your magical power.",
     image: BASE + "berserk.png",
-    acquisition: "Grow Tree - Chapter 4",
+    acquisition: "Grow Tree",
     element: BASE_ELEMENT + "fire.png",
     st: 189,
   },
@@ -33,7 +33,7 @@ const skills = [
     description:
       "Summons a stationary spirit to launch a concentrated attack on the ground in front of them.",
     image: BASE + "cold_bullet.png",
-    acquisition: "Grow Tree - Chapter 1",
+    acquisition: "Grow Tree",
     element: BASE_ELEMENT + "water.png",
     st: 72,
   },
@@ -42,16 +42,25 @@ const skills = [
     description:
       "Attacks above, and also strikes a broad area on the ground. Has a great number of uses.",
     image: BASE + "killer_shark.png",
-    acquisition: "Grow Tree - Chapter 3",
+    acquisition: "Grow Tree",
     element: BASE_ELEMENT + "water.png",
     st: 135,
+  },
+  {
+    name: "Turtle Shield",
+    description:
+      "Increases defensive power for a time. The amount it increases depends on your magical power.",
+    image: BASE + "turtle_shield.png",
+    acquisition: "Grow Tree",
+    element: BASE_ELEMENT + "water.png",
+    st: 171,
   },
   {
     name: "Heavenly Mountain",
     description:
       "Pierces the heavens with a pillar of rock. Most effective against enemies in the air.",
     image: BASE + "heavenly_mountain.png",
-    acquisition: "Grow Tree - Chapter 1",
+    acquisition: "Grow Tree",
     element: BASE_ELEMENT + "earth.png",
     st: 81,
   },
@@ -60,7 +69,7 @@ const skills = [
     description:
       "Summons a Shield that blocks ranged attacks. The Shield follows you around for a while.",
     image: BASE + "stone_shield.png",
-    acquisition: "Grow Tree - Chapter 2",
+    acquisition: "Grow Tree",
     element: BASE_ELEMENT + "earth.png",
     st: 90,
   },
@@ -69,7 +78,7 @@ const skills = [
     description:
       "Dash behind an enemy and strike. Only the spear's tip can hit, but it's powerful.",
     image: BASE + "assassin.png",
-    acquisition: "Grow Tree - Chapter 4",
+    acquisition: "Grow Tree",
     element: BASE_ELEMENT + "earth.png",
     st: 180,
   },
@@ -78,7 +87,7 @@ const skills = [
     description:
       "A tiger cloaked in wind delivers a vertically narrow, but horizontally wide attack.",
     image: BASE + "wind_tiger.png",
-    acquisition: "Grow Tree - Chapter 2",
+    acquisition: "Grow Tree",
     element: BASE_ELEMENT + "wind.png",
     st: 99,
   },
@@ -87,16 +96,25 @@ const skills = [
     description:
       "Increases attack speed and movement speed for a time. The amount it increases depends on your magical power.",
     image: BASE + "sylphid.png",
-    acquisition: "Grow Tree - Chapter 3",
+    acquisition: "Grow Tree",
     element: BASE_ELEMENT + "wind.png",
     st: 171,
+  },
+  {
+    name: "Random Shots",
+    description:
+      "Can target anything on screen to attack, and always hits. If there are fewer enemies, the attack is more concentrated.",
+    image: BASE + "random_shots.png",
+    acquisition: "Grow Tree",
+    element: BASE_ELEMENT + "wind.png",
+    st: 180,
   },
   {
     name: "Thunder Spear",
     description:
       "Turns into an electricity-discharging drill that charges at the enemy. Invincible while transforming. Can be used for emergency evasion.",
     image: BASE + "thunder_spear.png",
-    acquisition: "Grow Tree - Chapter 1",
+    acquisition: "Grow Tree",
     element: BASE_ELEMENT + "dark.png",
     st: 90,
   },
@@ -105,16 +123,25 @@ const skills = [
     description:
       "Summons a demon which will follow you for a while. The demon will launch an attack for you at certain intervals.",
     image: BASE + "lollipop.png",
-    acquisition: "Grow Tree - Chapter 3",
+    acquisition: "Grow Tree",
     element: BASE_ELEMENT + "dark.png",
     st: 144,
+  },
+  {
+    name: "Thunderbolt",
+    description:
+      "Although its path is erratic, it generates thunderbolts that penetrate the enemy and hit far and wide.",
+    image: BASE + "thunderbolt.png",
+    acquisition: "Grow Tree",
+    element: BASE_ELEMENT + "dark.png",
+    st: 180,
   },
   {
     name: "Moonlight",
     description:
       "This double-strike has a short range, but delivers a devastating attack.",
     image: BASE + "moonlight.png",
-    acquisition: "Grow Tree - Chapter 1",
+    acquisition: "Grow Tree",
     element: BASE_ELEMENT + "holy.png",
     st: 108,
   },
@@ -123,7 +150,7 @@ const skills = [
     description:
       "Summons a monster at a fixed location, which attacks a broad area with great power for a brief period.",
     image: BASE + "unicorn.png",
-    acquisition: "Grow Tree - Chapter 4",
+    acquisition: "Grow Tree",
     element: BASE_ELEMENT + "holy.png",
     st: 117,
   },

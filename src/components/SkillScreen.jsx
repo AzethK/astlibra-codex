@@ -94,9 +94,14 @@ export default function SkillScreen() {
                 </div>
                 <h3>{selectedSkill.name}</h3>
                 <p>{selectedSkill.description}</p>
+                <p>
+                  <strong>ST Cost: </strong>
+                  {selectedSkill.st}
+                </p>
                 {selectedSkill.acquisition && (
                   <p>
-                    Acquisition: <span>{selectedSkill.acquisition}</span>
+                    <strong>Acquisition: </strong>
+                    <span>{selectedSkill.acquisition}</span>
                   </p>
                 )}
               </div>

@@ -44,6 +44,14 @@ const items = [
     type: "Books/Cards",
   },
   {
+    name: "Treasure Encyclopaedia",
+    description:
+      "Contains information about items obtained from treasure chests.",
+    image: BASE + "treasure_encyclopaedia.png",
+    acquisition: "Arena Battle, Urugut Cup, 'Snipe' Reward",
+    type: "Books/Cards",
+  },
+  {
     name: "The Book of Mythology",
     description: "Contains stories about the gods",
     image: BASE + "the_book_of_mythology.png",
@@ -386,6 +394,14 @@ const items = [
     type: "Secondary Weapon",
   },
   {
+    name: "Double Crossbow",
+    description:
+      "Takes time to load, but can fire two arrows at once. Consumes 2 arrows and attacks at a distance.",
+    image: BASE + "double_crossbow.png",
+    acquisition: "Mokyun Gacha Reward",
+    type: "Secondary Weapon",
+  },
+  {
     name: "Soma",
     description:
       "Recovers 300 HP. Expensive, but immediately restores your health.",
@@ -507,6 +523,30 @@ const items = [
     },
   },
   {
+    name: "Small Water-filled Bottle",
+    description:
+      "A small bottle of delicious water. Heals more gently than restorative remedies.",
+    image: BASE + "small_water_filled_bottle.png",
+    acquisition: "Use Small Empty Bottle on water",
+    type: "Medicines/Bottles",
+    libra: {
+      karma: 20,
+      effects: ["Adaptability", "Gradual Recovery"],
+    },
+  },
+  {
+    name: "Water-filled Bottle",
+    description:
+      "A bottle of delicious water. Heals more gently than restorative remedies.",
+    image: BASE + "water_filled_bottle.png",
+    acquisition: "Shop",
+    type: "Use Empty Bottle on water",
+    libra: {
+      karma: 40,
+      effects: ["Adaptability (GOOD)", "Gradual Recovery (GOOD)"],
+    },
+  },
+  {
     name: "Goji Berries",
     description:
       "Recovers 100 HP. Has a hard, bitter shell, but is rich in nutrients.",
@@ -597,6 +637,18 @@ const items = [
     libra: {
       karma: 48,
       effects: ["Max HP (GOOD)", "HP Recovery (GOOD)", "ST Gain Rate (GOOD)"],
+    },
+  },
+  {
+    name: "Hamburger",
+    description:
+      "Recovers 1200 HP. The fluffy bun is filled with a generous serving of meat.",
+    image: BASE + "hamburger.png",
+    acquisition: "Combine Flour and Beef",
+    type: "Food",
+    libra: {
+      karma: 38,
+      effects: ["Max HP (EPIC)", "HP Recovery", "ST Gain Rate"],
     },
   },
   {
@@ -777,6 +829,50 @@ const items = [
     },
   },
   {
+    name: "Hot Chocolate",
+    description:
+      "Generates 152 [Water] and [Earth] force. A comforting beverage.",
+    image: BASE + "hot_chocolate.png",
+    acquisition: "Combine Milk and Cocoa",
+    type: "Food",
+    libra: {
+      karma: 49,
+      effects: ["Use Speed (EPIC)", "Attack Power (GOOD)", "ST Gain Rate"],
+    },
+  },
+  {
+    name: "Chocolate Cookie",
+    description:
+      "Generates 145 [Fire] and [Wind] force. Its bitter taste is meant for grown-ups. Enjoy it with a sweet beverage.",
+    image: BASE + "chocolate_cookie.png",
+    acquisition: "Combine Plain Cookies and Cocoa",
+    type: "Food",
+    libra: {
+      karma: 60,
+      effects: [
+        "Effect Duration (EPIC)",
+        "Defense Power (GOOD)",
+        "Magical Power",
+      ],
+    },
+  },
+  {
+    name: "Meat Pie",
+    description:
+      "Generates 159 [Darkness] and [Holy] force. A marriage between confection and meat. It is filling.",
+    image: BASE + "meat_pie.png",
+    acquisition: "Combine Beef and Pie Dough",
+    type: "Food",
+    libra: {
+      karma: 50,
+      effects: [
+        "Weight Reduction (EPIC)",
+        "Use Speed (GOOD)",
+        "Guard Durability",
+      ],
+    },
+  },
+  {
     name: "Egg",
     description:
       "A basic food ingredient. Chicken eggs are used in various dishes.",
@@ -845,6 +941,7 @@ const items = [
       "A basic food. The best drink produced by nature, regarded as the water of the gods.",
     image: BASE + "milk.png",
     type: "Food Ingredients",
+    acquisition: "Shop",
     libra: {
       karma: 48,
       effects: [
@@ -929,6 +1026,34 @@ const items = [
     },
   },
   {
+    name: "Cocoa",
+    description: "A basic food. A bittersweet, free-flowing powder.",
+    image: BASE + "cocoa.png",
+    type: "Food Ingredients",
+    libra: {
+      karma: 64,
+      effects: [
+        "Paralysis Resistance (EPIC)",
+        "Poison Resistance (GOOD)",
+        "Blind Resistance",
+      ],
+    },
+  },
+  {
+    name: "Beef",
+    description: "A basic food. Meat purloined from a cow.",
+    image: BASE + "beef.png",
+    type: "Food Ingredients",
+    libra: {
+      karma: 61,
+      effects: [
+        "Poison Resistance (EPIC)",
+        "Blind Resistance (GOOD)",
+        "Petrifaction Resistance",
+      ],
+    },
+  },
+  {
     name: "Technique Scroll - Sky Sword",
     description:
       "An esoteric scroll describing the Sky Sword technique. Open to view details.",
@@ -975,6 +1100,14 @@ const items = [
       "An esoteric scroll describing the Air Blade technique. Open to view details.",
     image: BASE + "technique_scroll.png",
     acquisition: "Akrasinon, chest in dark area with water.",
+    type: "Books/Cards",
+  },
+  {
+    name: "Technique Scroll - Air Surf",
+    description:
+      "An esoteric scroll describing the Air Surf technique. Open to view details.",
+    image: BASE + "technique_scroll.png",
+    acquisition: "Elysium, chest under the ground.",
     type: "Books/Cards",
   },
   {
@@ -1030,6 +1163,14 @@ const items = [
     name: "[Sealed] Technique Scroll - Air Blade",
     description:
       "A sealed esoteric scroll describing the Air Blade technique. Open to view details.",
+    image: BASE + "sealed_technique_scroll.png",
+    acquisition: "Combine Technique Sealing Medal with the technique scroll",
+    type: "Books/Cards",
+  },
+  {
+    name: "[Sealed] Technique Scroll - Air Surf",
+    description:
+      "A sealed esoteric scroll describing the Air Surf technique. Open to view details.",
     image: BASE + "sealed_technique_scroll.png",
     acquisition: "Combine Technique Sealing Medal with the technique scroll",
     type: "Books/Cards",
@@ -1282,6 +1423,18 @@ const items = [
     },
   },
   {
+    name: "Magical Silver Ore",
+    description:
+      "This mysterious ore doesn't inhibit magical power (telekinesis). This rare ore is used in items such as artifacts.",
+    image: BASE + "magical_silver_ore.png",
+    acquisition: "Mining",
+    type: "Ore/Gems",
+    libra: {
+      karma: 39,
+      effects: ["Defense Power (GOOD)", "Guard Durability (EPIC)"],
+    },
+  },
+  {
     name: "Copper Ingot",
     description:
       "A lump of metal refined from copper ore. Has a higher value than the raw material.",
@@ -1325,6 +1478,18 @@ const items = [
     libra: {
       karma: 34,
       effects: ["Attack Power (GOOD)", "Magical Power"],
+    },
+  },
+  {
+    name: "Mithril",
+    description:
+      "A magical metal that is harder than steel and ighter than a feather. It is compatible with magic and holds a sacred power.",
+    image: BASE + "mithril.png",
+    acquisition: "Combine Magical Silver Ore and Refining Kit",
+    type: "Ore/Gems",
+    libra: {
+      karma: 44,
+      effects: ["Attack Power (GOOD)", "Magical Power (GOOD)"],
     },
   },
   {
@@ -1690,6 +1855,112 @@ const items = [
     },
   },
   {
+    name: "Slime Jelly",
+    description: "A piece of snow slime. It's cold.",
+    image: BASE + "slime_jelly.png",
+    acquisition: "Drop from Snow Slime (Urugut Mountains)",
+    type: "Demon Materials",
+    libra: {
+      karma: 36,
+      effects: ["Max HP (GOOD)", "Paralysis Resistance (GOOD)"],
+    },
+  },
+  {
+    name: "Penguin's Egg",
+    description: "A battle penguin's egg. It is a famous delicacy.",
+    image: BASE + "penguins_egg.png",
+    acquisition: "Drop from Penguin (Urugut Mountains)",
+    type: "Demon Materials",
+    libra: {
+      karma: 31,
+      effects: ["Blind Resistance (GOOD)", "Guard Durability (GOOD)"],
+    },
+  },
+  {
+    name: "Clean Ice",
+    description:
+      "Pure and crystal-clear ice. Said to contain a soul. The nucleus of Snow Spirits",
+    image: BASE + "clean_ice.png",
+    acquisition: "Drop from Snow Spirit (Urugut Mountains)",
+    type: "Demon Materials",
+    libra: {
+      karma: 34,
+      effects: ["Adaptability (GOOD)", "Petrifaction Resistance (GOOD)"],
+    },
+  },
+  {
+    name: "Yeti's Fur",
+    description:
+      "The fur of a yeti, seen in the Snowy Mountains. It is thicka nd often used to make warm clothes.",
+    image: BASE + "yetis_fur.png",
+    acquisition: "Drop from Yeti (Urugut Mountains)",
+    type: "Demon Materials",
+    libra: {
+      karma: 45,
+      effects: ["Attack Power (GOOD)", "Bleeding Resistance (GOOD)"],
+    },
+  },
+  {
+    name: "Shield of Rispadar",
+    description:
+      "Shields like this one are supplied to the soldiers of Rispadar. It's very long, making it difficult for you to handle.",
+    image: BASE + "shield_of_rispadar.png",
+    acquisition: "Drop from Rispadar Soldier (Urugut Mountains)",
+    type: "Demon Materials",
+    libra: {
+      karma: 51,
+      effects: ["Defense Power (GOOD)", "Experience Obtained (GOOD)"],
+    },
+  },
+  {
+    name: "Slice of Ancient Fish",
+    description:
+      "Fish in ancient times floated in the air. The flesh's color is creepy.",
+    image: BASE + "slice_of_ancient_fish.png",
+    acquisition: "Drop from Ancient Fish (Elysium)",
+    type: "Demon Materials",
+    libra: {
+      karma: 46,
+      effects: ["Paralysis Resistance (GOOD)", "Weight Reduction (GOOD)"],
+    },
+  },
+  {
+    name: "Godly Wings",
+    description:
+      "Part of one of Elysium's unmanned weapons. They are likely decorative as they're not useful for flying.",
+    image: BASE + "godly_wings.png",
+    acquisition: "Drop from Elysium Angel Weapon (Elysium)",
+    type: "Demon Materials",
+    libra: {
+      karma: 47,
+      effects: ["HP Recovery (GOOD)", "Coins Earned (GOOD)"],
+    },
+  },
+  {
+    name: "Mirror Fragment",
+    description:
+      "It's a mystery why this mirror-shaped weapon was made. This is a piece of broken mirror.",
+    image: BASE + "mirror_fragment.png",
+    acquisition: "Drop from Elysium Mirror Weapon (Elysium)",
+    type: "Demon Materials",
+    libra: {
+      karma: 38,
+      effects: ["Gradual Recovery (GOOD)", "ST Gain Rate (GOOD)"],
+    },
+  },
+  {
+    name: "Magical Jar",
+    description:
+      "This jar was made by an ancient amgical civilization. It is filled with magical powers.",
+    image: BASE + "magical_jar.png",
+    acquisition: "Drop from Elysium Tank Weapon (Elysium)",
+    type: "Demon Materials",
+    libra: {
+      karma: 43,
+      effects: ["Magical Power (GOOD)", "Blind Resistance (GOOD)"],
+    },
+  },
+  {
     name: "Anulis' Ribbon",
     description: "A very long ribbon, worn by Anulis. It holds many memories.",
     image: BASE + "anulis_ribbon.png",
@@ -1763,6 +2034,10 @@ const items = [
     image: BASE + "bundle_of_wooden_sticks.png",
     acquisition: "Cave of Libra",
     type: "Valuables",
+    libra: {
+      karma: 17,
+      effects: ["Attack Power", "ST Gain Rate"],
+    },
   },
   {
     name: "Wonder Drug Fruit",
@@ -1939,6 +2214,47 @@ const items = [
     description: "Its ancient technology allows you to open sealed doors",
     image: BASE + "ancient_key.png",
     acquisition: "Akrasinon, drop from Wyvern miniboss.",
+    type: "Valuables",
+  },
+  {
+    name: "Iron Bars Key",
+    description: "This key can open iron bars.",
+    image: BASE + "iron_bars_key.png",
+    acquisition: "Chapter 6 Event.",
+    type: "Valuables",
+  },
+  {
+    name: "Red Rune",
+    description:
+      "A key to the ancient ruins. It opens the  door to the King's throne.",
+    image: BASE + "red_rune.png",
+    acquisition:
+      "Elysium, light the 2 unlit torches near the beginning, need to use Pine Resin and obtain sticks by breaking barrels further in the area.",
+    type: "Valuables",
+  },
+  {
+    name: "Blue Rune",
+    description:
+      "A key to the ancient ruins. It opens the  door to the King's throne.",
+    image: BASE + "blue_rune.png",
+    acquisition: "Elysium, fill the pot with water.",
+    type: "Valuables",
+  },
+  {
+    name: "Purple Rune",
+    description:
+      "A key to the ancient ruins. It opens the  door to the King's throne.",
+    image: BASE + "purple_rune.png",
+    acquisition: "Elysium, hit it with a throwing knife.",
+    type: "Valuables",
+  },
+  {
+    name: "Green Rune",
+    description:
+      "A key to the ancient ruins. It opens the  door to the King's throne.",
+    image: BASE + "green_rune.png",
+    acquisition:
+      "Elysium, hidden area, blocked by a barrier, go under the ground to get.",
     type: "Valuables",
   },
 
