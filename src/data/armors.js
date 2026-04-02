@@ -22,6 +22,8 @@ const armors = [
     magical_power: 0,
     skill: "Coin Magnet",
     acquisition: "Pekkochira Weapon Shop / Rispadar Weapon Shop",
+    materials: ["Stones"],
+    materialAmount: [1],
   },
   {
     name: "Leather Armor",
@@ -34,6 +36,8 @@ const armors = [
     magical_power: 0,
     skill: "Enhance Performance",
     acquisition: "Pekkochira Weapon Shop / Rispadar Weapon Shop",
+    materials: ["Stones", "Cobweb", "Slime's Eyeball"],
+    materialAmount: [2, 1, 2],
   },
   {
     name: "Oboro",
@@ -46,6 +50,8 @@ const armors = [
     magical_power: 3,
     skill: "Second Wind",
     acquisition: "Pekkochira Weapon Shop / Rispadar Weapon Shop",
+    materials: ["Stones", "Bat Wings", "Beautiful Bones"],
+    materialAmount: [3, 2, 1],
   },
   {
     name: "Champion's Armor",
@@ -58,6 +64,8 @@ const armors = [
     magical_power: 0,
     skill: "Burst Armor",
     acquisition: "Pekkochira Formula",
+    materials: ["Pie Dough", "Beautiful Bones", "Clay-like Gold Stones"],
+    materialAmount: [1, 1, 1],
   },
   {
     name: "Hunter's Clothes",
@@ -69,6 +77,8 @@ const armors = [
     magical_power: 0,
     skill: "Breather",
     acquisition: "Bridion Swamp Mokyun Shop",
+    materials: ["Copper Ingot", "Revolting Meat", "Mandragora"],
+    materialAmount: [1, 1, 1],
   },
   {
     name: "Ivory Armor",
@@ -81,6 +91,8 @@ const armors = [
     magical_power: 0,
     skill: "Karon's Nose",
     acquisition: "Bridion Swamp Mokyun Shop",
+    materials: ["Copper Ingot", "Revolting Meat", "Poinsettia"],
+    materialAmount: [1, 2, 1],
   },
   {
     name: "Ceremonial Armor",
@@ -93,6 +105,8 @@ const armors = [
     magical_power: 1,
     skill: "Drunken Fist",
     acquisition: "Bridion Swamp Mokyun Shop",
+    materials: ["Copper Ingot", "Filthy Fang", "Tadpole"],
+    materialAmount: [2, 2, 3],
   },
   {
     name: "Elven Armor",
@@ -105,6 +119,8 @@ const armors = [
     magical_power: 4,
     skill: "Icarus Wings",
     acquisition: "Bridion Swamp Formula",
+    materials: ["Cheesecake", "Poinsettia", "Copper Ingot"],
+    materialAmount: [1, 1, 1],
   },
   {
     name: "Scale Mail",
@@ -117,6 +133,8 @@ const armors = [
     magical_power: 0,
     skill: "Tank",
     acquisition: "Belkade Volcano Mokyun Shop",
+    materials: ["Copper Ingot", "Putrid Gill", "Charcoal"],
+    materialAmount: [2, 1, 1],
   },
   {
     name: "Reinforced Leather Armor",
@@ -129,6 +147,8 @@ const armors = [
     magical_power: 0,
     skill: "Enhance Performance",
     acquisition: "Belkade Volcano Mokyun Shop",
+    materials: ["Iron Ingot", "Lava Pebble", "Demon Horn"],
+    materialAmount: [1, 2, 1],
   },
   {
     name: "Samurai Armor",
@@ -141,6 +161,8 @@ const armors = [
     magical_power: 0,
     skill: "Bushido",
     acquisition: "Belkade Volcano Mokyun Shop",
+    materials: ["Iron Ingot", "Putrid Gill", "Golem Fragment"],
+    materialAmount: [2, 3, 1],
   },
   {
     name: "Dark Witch's Dress",
@@ -165,6 +187,8 @@ const armors = [
     magical_power: 0,
     skill: "The Art of Thievery",
     acquisition: "Belkade Volcano Formula",
+    materials: ["Mont Blanc", "Golem Fragment", "Iron Ingot"],
+    materialAmount: [2, 1, 1],
   },
   {
     name: "Iron Armor",
@@ -176,6 +200,8 @@ const armors = [
     magical_power: 0,
     skill: "Enhance Performance",
     acquisition: "Elizas / Sea Serpent Cave Mokyun Shop",
+    materials: ["Iron Ingot", "Hawk Feather"],
+    materialAmount: [1, 1],
   },
   {
     name: "Warlord's Armor",
@@ -188,6 +214,8 @@ const armors = [
     magical_power: 0,
     skill: "Lion Heart",
     acquisition: "Elizas / Sea Serpent Cave Mokyun Shop",
+    materials: ["Gold Ingot", "Turtle Shell", "Crab Stick"],
+    materialAmount: [1, 2, 2],
   },
   {
     name: "Kingsguard's Armor",
@@ -200,6 +228,8 @@ const armors = [
     magical_power: 0,
     skill: "Enhance Performance",
     acquisition: "Elizas / Sea Serpent Cave Mokyun Shop",
+    materials: ["Gold Ingot", "Sashimi", "Monkfish Liver"],
+    materialAmount: [2, 1, 2],
   },
   {
     name: "Emelas",
@@ -224,6 +254,8 @@ const armors = [
     magical_power: 5,
     skill: "Energy Drain",
     acquisition: "Elizas / Sea Serpent Cave Formula",
+    materials: ["Dango", "Crab Stick", "Gold Ingot"],
+    materialAmount: [2, 1, 1],
   },
   {
     name: "Elemental Garb",
@@ -236,6 +268,8 @@ const armors = [
     magical_power: 10,
     skill: "Spirit's Blessings",
     acquisition: "Akrasinon / Demon King's Castle Mokyun Shop",
+    materials: ["Gold Ingot", "Mammon's Feet"],
+    materialAmount: [2, 1],
   },
   {
     name: "Red Dragon Armor",
@@ -248,6 +282,8 @@ const armors = [
     magical_power: 0,
     skill: "Enhance Performance",
     acquisition: "Akrasinon / Demon King's Castle Mokyun Shop",
+    materials: ["Damascus Ingot", "Lizard Scales", "Gargoyle's Wings"],
+    materialAmount: [2, 1, 2],
   },
   {
     name: "Shinobi's Attire",
@@ -260,6 +296,8 @@ const armors = [
     magical_power: 3,
     skill: "Cicada Shell",
     acquisition: "Akrasinon / Demon King's Castle Mokyun Shop",
+    materials: ["Damascus Ingot", "Minotaur's Axe", "Heat Exhaust Organ"],
+    materialAmount: [2, 2, 1],
   },
   {
     name: "The Earth",
@@ -284,6 +322,8 @@ const armors = [
     magical_power: 0,
     skill: "Jump Boots",
     acquisition: "Akrasinon / Demon King's Castle Formula",
+    materials: ["Chocolate Cream Puff", "Heat Exhaust Organ", "Damascus Ingot"],
+    materialAmount: [2, 2, 1],
   },
   {
     name: "Damascus Armor",
@@ -296,6 +336,8 @@ const armors = [
     magical_power: 0,
     skill: "Enhance Performance",
     acquisition: "Urugut / Elysium Mokyun Shop",
+    materials: ["Damascus Ingot", "Slime Jelly", "Penguin's Egg"],
+    materialAmount: [2, 2, 1],
   },
   {
     name: "White Silver Armor",
@@ -308,6 +350,8 @@ const armors = [
     magical_power: 11,
     skill: "Enhance Performance",
     acquisition: "Urugut / Elysium Mokyun Shop",
+    materials: ["Mithril", "Clean Ice", "Godly Wings"],
+    materialAmount: [1, 1, 2],
   },
   {
     name: "Post-Apocalypse Mail",
@@ -320,6 +364,8 @@ const armors = [
     magical_power: 0,
     skill: "Chicken Heart",
     acquisition: "Urugut / Elysium Mokyun Shop",
+    materials: ["Mithril", "Mirror Fragment", "Magical Jar"],
+    materialAmount: [2, 1, 1],
   },
   {
     name: "Thanatos",
@@ -332,6 +378,8 @@ const armors = [
     magical_power: 5,
     skill: "Ultimate Medicine",
     acquisition: "Urugut / Elysium Formula",
+    materials: ["Meat Pie", "Magical Jar", "Mithril"],
+    materialAmount: [2, 1, 1],
   },
   {
     name: "Steel Armor",

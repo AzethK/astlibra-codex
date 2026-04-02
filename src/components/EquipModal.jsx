@@ -213,6 +213,24 @@ export default function EquipModal({ equip, onClose, closing, tab }) {
             </p>
           </div>
         )}
+        {equip.materials && (
+          <div className="equip-extra">
+            <strong>Materials:</strong>
+            {equip.materials.map((material, index) => (
+              <span key={index}>
+                |{equip.materialAmount[index]}x {""}
+                <span
+                  className="equip-skill"
+                  onClick={() => navigate(`/item/${material}`)}
+                  style={{ cursor: "pointer" }}
+                >
+                  {material}
+                </span>
+                |{" "}
+              </span>
+            ))}
+          </div>
+        )}
       </div>
     </div>
   );

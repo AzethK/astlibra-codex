@@ -1557,7 +1557,7 @@ const items = [
     description:
       "Solid and well-shaped. Can be used to make all manner of things.",
     image: BASE + "wooden_log.png",
-    acquisition: "Pekkochira",
+    acquisition: "Trees",
     type: "Demon Materials",
     libra: {
       karma: 3,

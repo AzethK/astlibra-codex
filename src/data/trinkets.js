@@ -7,6 +7,8 @@ const trinkets = [
     image: BASE + "wooden_ring.png",
     stats: { agility: 5 },
     acquisition: "Pekkochira Weapon Shop / Rispadar Weapon Shop",
+    materials: ["Wooden Log"],
+    materialAmount: [2],
   },
   {
     name: "Pretty Ring",
@@ -14,6 +16,8 @@ const trinkets = [
     image: BASE + "pretty_ring.png",
     stats: { atk: 5 },
     acquisition: "Pekkochira Weapon Shop / Rispadar Weapon Shop",
+    materials: ["Slime's Eyeball", "Cobweb"],
+    materialAmount: [1, 1],
   },
   {
     name: "Bone Necklace",
@@ -22,6 +26,8 @@ const trinkets = [
     image: BASE + "bone_necklace.png",
     stats: { def: 5, guard: 2, agility: 6 },
     acquisition: "Pekkochira Weapon Shop / Rispadar Weapon Shop",
+    materials: ["Beautiful Bones", "Bat Wings"],
+    materialAmount: [1, 1],
   },
   {
     name: "Fang Amulet",
@@ -37,6 +43,8 @@ const trinkets = [
     image: BASE + "dragon_cup.png",
     stats: { agility: 5, luck: 2, adaptability: 5, effect: "ST Increased +" },
     acquisition: "Pekkochira Formula",
+    materials: ["Plain Cookies", "Cobweb", "Clay-like Silver Stones"],
+    materialAmount: [1, 1, 1],
   },
   {
     name: "Iron Ring",
@@ -44,6 +52,8 @@ const trinkets = [
     image: BASE + "iron_ring.png",
     stats: { maxhp: 10, defense: 4, guard: 5, agility: -5 },
     acquisition: "Bridion Swamp Mokyun Shop",
+    materials: ["Revolting Meat", "Mandragora"],
+    materialAmount: [2, 1],
   },
   {
     name: "Ball and Chain",
@@ -52,6 +62,8 @@ const trinkets = [
     image: BASE + "ball_and_chain.png",
     stats: { def: 6, guard: 30, agility: -30, adaptability: 10 },
     acquisition: "Bridion Swamp Mokyun Shop",
+    materials: ["Stones", "Mandragora"],
+    materialAmount: [10, 1],
   },
   {
     name: "Ring of Flames",
@@ -59,6 +71,8 @@ const trinkets = [
     image: BASE + "ring_of_flames.png",
     stats: { maxhp: 20, magical_power: 6 },
     acquisition: "Bridion Swamp Mokyun Shop",
+    materials: ["Mandragora", "Tadpole"],
+    materialAmount: [2, 1],
   },
   {
     name: "Indio Decoration",
@@ -66,7 +80,7 @@ const trinkets = [
       "A good luck charm passed down in a cetain tribe. It offers promising effects.",
     image: BASE + "indio_decoration.png",
     stats: { agility: 2, parares: 40, luck: 5 },
-    acquisition: "Bridion Swamp Mokyun Shop",
+    acquisition: "Arena Battle, Bridion Cup, 'Goblin Army' Reward",
   },
   {
     name: "Dragon Harp",
@@ -75,6 +89,8 @@ const trinkets = [
     image: BASE + "dragon_harp.png",
     stats: { agility: 5, luck: 5, adaptability: 2, effect: "Combo Duration +" },
     acquisition: "Bridion Swamp Formula",
+    materials: ["Egg on Bread", "Tadpole", "Copper Ore"],
+    materialAmount: [2, 1, 1],
   },
   {
     name: "Pure White Feather",
@@ -83,6 +99,8 @@ const trinkets = [
     image: BASE + "pure_white_feather.png",
     stats: { maxst: 10, magical_power: 8, petrires: 20 },
     acquisition: "Belkade Volcano Mokyun Shop",
+    materials: ["Iron Ingot", "Demon Horn"],
+    materialAmount: [2, 1],
   },
   {
     name: "Screw Ring",
@@ -91,6 +109,8 @@ const trinkets = [
     image: BASE + "screw_ring.png",
     stats: { maxhp: 20, def: 5, guard: 10 },
     acquisition: "Belkade Volcano Mokyun Shop",
+    materials: ["Iron Ore", "Lava Pebble"],
+    materialAmount: [2, 2],
   },
   {
     name: "Blue Gem Pendant",
@@ -99,6 +119,8 @@ const trinkets = [
     image: BASE + "blue_gem_pendant.png",
     stats: { def: 8, bleedres: 20, blindres: 20, parares: 20 },
     acquisition: "Belkade Volcano Mokyun Shop",
+    materials: ["Iron Ingot", "Putrid Gill"],
+    materialAmount: [1, 2],
   },
   {
     name: "Power Ring",
@@ -120,6 +142,8 @@ const trinkets = [
       effect: "Ranged Attack Power +",
     },
     acquisition: "Belkade Volcano Formula",
+    materials: ["Apple Pie", "Putrid Gill", "Iron Ore"],
+    materialAmount: [1, 1, 1],
   },
   {
     name: "Gold Necklace",
@@ -128,6 +152,8 @@ const trinkets = [
     image: BASE + "gold_necklace.png",
     stats: { maxhp: 60 },
     acquisition: "Elizas / Sea Serpent Cave Mokyun Shop",
+    materials: ["Iron Ingot", "Hawk Feather"],
+    materialAmount: [1, 2],
   },
   {
     name: "Dragon Staff",
@@ -141,6 +167,8 @@ const trinkets = [
       effect: "Ranged Attack Defense +",
     },
     acquisition: "Elizas / Sea Serpent Cave Formula",
+    materials: ["Strawberry Au Lait", "Hawk Feather", "Gold Ore"],
+    materialAmount: [1, 1, 1],
   },
   {
     name: "Ring of Prayer",
@@ -149,6 +177,8 @@ const trinkets = [
     image: BASE + "ring_of_prayer.png",
     stats: { maxst: 20, magical_power: 15 },
     acquisition: "Elizas / Sea Serpent Cave Mokyun Shop",
+    materials: ["Iron Ingot", "Crab Stick"],
+    materialAmount: [1, 2],
   },
   {
     name: "Serpent God's Ring",
@@ -157,6 +187,8 @@ const trinkets = [
     image: BASE + "serpent_gods_ring.png",
     stats: { def: 8, guard: 10, adaptability: 20 },
     acquisition: "Elizas / Sea Serpent Cave Mokyun Shop",
+    materials: ["Gold Ingot", "Sashimi"],
+    materialAmount: [1, 2],
   },
   {
     name: "Emerald Earring",
@@ -173,6 +205,8 @@ const trinkets = [
     image: BASE + "floral_wreath.png",
     stats: { maxhp: 50, maxst: 20 },
     acquisition: "Akrasinon / Demon King's Castle",
+    materials: ["Gold Ingot", "Claystones"],
+    materialAmount: [1, 2],
   },
   {
     name: "Cross",
@@ -181,6 +215,8 @@ const trinkets = [
     image: BASE + "cross.png",
     stats: { bleedres: 30, blindres: 30, petrires: 30, parares: 30 },
     acquisition: "Akrasinon / Demon King's Castle",
+    materials: ["Gold Ingot", "Lizard Scales"],
+    materialAmount: [1, 2],
   },
   {
     name: "Phoenix Feather",
@@ -197,6 +233,8 @@ const trinkets = [
     image: BASE + "dragon_leather_boots.png",
     stats: { agility: 10, luck: 2, adaptability: 2, effect: "Midair Jump +" },
     acquisition: "Akrasinon / Demon King's Castle Formula",
+    materials: ["Chocolate Pie", "Minotaur's Axe", "High-carbon Steel Ore"],
+    materialAmount: [1, 1, 1],
   },
   {
     name: "Ring of Protection",
@@ -205,6 +243,8 @@ const trinkets = [
     image: BASE + "ring_of_protection.png",
     stats: { maxhp: 50, atk: -20, def: 20, guard: 20 },
     acquisition: "Akrasinon / Demon King's Castle",
+    materials: ["Damascus Ingot", "Gargoyle's Wings"],
+    materialAmount: [1, 2],
   },
   {
     name: "Long-Haired Wig",
@@ -219,6 +259,8 @@ const trinkets = [
     image: BASE + "teardrop.png",
     stats: { agility: 5, petrires: 30, parares: 30, adaptability: 10 },
     acquisition: "Urugut Mountains / Elysium Mokyun Shop",
+    materials: ["Damascus Ingot", "Slime Jelly", "Penguin's Egg"],
+    materialAmount: [1, 1, 1],
   },
   {
     name: "Gold Bracelet",
@@ -226,6 +268,8 @@ const trinkets = [
     image: BASE + "gold_bracelet.png",
     stats: { maxhp: 100, luck: 20 },
     acquisition: "Urugut Mountains / Elysium Mokyun Shop",
+    materials: ["Mithril", "Yeti's Fur", "Shield of Rispadar"],
+    materialAmount: [1, 1, 1],
   },
   {
     name: "Ancient Ring",
@@ -241,6 +285,8 @@ const trinkets = [
     image: BASE + "ancient_necklace.png",
     stats: { def: 20, magical_power: 25, bleedres: 20 },
     acquisition: "Urugut Mountains / Elysium Mokyun Shop",
+    materials: ["Mithril", "Slice of Ancient Fish", "Mirror Fragment"],
+    materialAmount: [1, 1, 1],
   },
   {
     name: "Flower Ring",
@@ -248,6 +294,8 @@ const trinkets = [
     image: BASE + "flower_ring.png",
     stats: { atk: 25, agility: 10, luck: 10 },
     acquisition: "Urugut Mountains / Elysium Formula",
+    materials: ["Chocolate Cookie", "Yeti's Fur", "Magical Silver Ore"],
+    materialAmount: [1, 1, 1],
   },
   {
     name: "Tanzanite Ring",

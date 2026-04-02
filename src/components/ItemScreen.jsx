@@ -16,6 +16,22 @@ export default function ItemScreen() {
 
   let filteredItems = activeItems;
 
+  useEffect(() => {
+    if (!itemName) {
+      setSelectedItem(null);
+      return;
+    }
+
+    const decodedName = decodeURIComponent(itemName);
+
+    const foundItem = items.find((k) => k.name === decodedName);
+
+    if (foundItem) {
+      setSelectedItem(foundItem);
+      setActiveTab(foundItem.type.toUpperCase());
+    }
+  }, [itemName]);
+
   if (searchQuery.trim() !== "") {
     const query = searchQuery.toLowerCase();
 
@@ -33,22 +49,6 @@ export default function ItemScreen() {
       return false;
     });
   }
-
-  useEffect(() => {
-    if (!itemName) {
-      setSelectedItem(null);
-      return;
-    }
-
-    const decodedName = decodeURIComponent(itemName);
-
-    const foundItem = items.find((k) => k.name === decodedName);
-
-    if (foundItem) {
-      setSelectedItem(foundItem);
-      if (activeTab != "ALL") setActiveTab(foundItem.type.toUpperCase());
-    }
-  }, [itemName]);
 
   return (
     <div className="equip-container">

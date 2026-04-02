@@ -23,6 +23,8 @@ const shields = [
     full_resistance: 0,
     skill: "Enhance Performance",
     acquisition: "Pekkochira Weapon Shop / Rispadar Weapon Shop",
+    materials: ["Stones", "Wooden Log", "Slime's Eyeball"],
+    materialAmount: [1, 2, 1],
   },
   {
     name: "Buckler",
@@ -35,6 +37,8 @@ const shields = [
     full_resistance: 0,
     skill: "Spirit World Notification",
     acquisition: "Pekkochira Weapon Shop / Rispadar Weapon Shop",
+    materials: ["Bat Wings", "Cobweb", "Slime's Eyeball"],
+    materialAmount: [2, 1, 1],
   },
   {
     name: "Line Shield",
@@ -47,6 +51,8 @@ const shields = [
     full_resistance: 10,
     skill: "Gladiator",
     acquisition: "Pekkochira Formula",
+    materials: ["Sponge Cake", "Bat Wings", "Key Mold A"],
+    materialAmount: [1, 1, 1],
   },
   {
     name: "Scutum",
@@ -59,6 +65,8 @@ const shields = [
     full_resistance: 0,
     skill: "Super Armor",
     acquisition: "Bridion Swamp Mokyun Shop",
+    materials: ["Wooden Log", "Revolting Meat"],
+    materialAmount: [10, 1],
   },
   {
     name: "Stone Buckler",
@@ -71,6 +79,8 @@ const shields = [
     full_resistance: 0,
     skill: "Gnome",
     acquisition: "Bridion Swamp Mokyun Shop",
+    materials: ["Stones", "Copper Ore", "Tadpole"],
+    materialAmount: [10, 2, 1],
   },
   {
     name: "Kite Shield",
@@ -83,6 +93,8 @@ const shields = [
     full_resistance: 11,
     skill: "Enhance Performance",
     acquisition: "Bridion Swamp Mokyun Shop",
+    materials: ["Copper Ingot", "Filthy Fang", "Tadpole"],
+    materialAmount: [2, 1, 2],
   },
   {
     name: "Tribal Shield",
@@ -95,6 +107,8 @@ const shields = [
     full_resistance: 20,
     skill: "Ranged Master",
     acquisition: "Bridion Swamp Formula",
+    materials: ["Pancakes", "Poinsettia", "Copper Ingot"],
+    materialAmount: [2, 1, 1],
   },
   {
     name: "Copper Shield",
@@ -106,6 +120,8 @@ const shields = [
     full_resistance: 0,
     skill: "Enhance Performance",
     acquisition: "Belkade Volcano Mokyun Shop",
+    materials: ["Copper Ore", "Lava Pebble", "Charcoal"],
+    materialAmount: [6, 1, 1],
   },
   {
     name: "Woodsman's Shield",
@@ -118,6 +134,8 @@ const shields = [
     full_resistance: 5,
     skill: "Ice Crash",
     acquisition: "Belkade Volcano Mokyun Shop",
+    materials: ["Iron Ingot", "Putrid Gill", "Lava Pebble"],
+    materialAmount: [1, 2, 2],
   },
   {
     name: "Battle Shield",
@@ -130,6 +148,8 @@ const shields = [
     full_resistance: 0,
     skill: "Auto-Guard",
     acquisition: "Belkade Volcano Mokyun Shop",
+    materials: ["Iron Ingot", "Golem Fragment", "Lava Pebble"],
+    materialAmount: [2, 1, 6],
   },
   {
     name: "Phoenix Shield",
@@ -142,6 +162,8 @@ const shields = [
     full_resistance: 10,
     skill: "Recovery Guard",
     acquisition: "Belkade Volcano Formula",
+    materials: ["Apple Pie", "Demon Horn", "Iron Ingot"],
+    materialAmount: [1, 2, 1],
   },
   {
     name: "Iron Buckler",
@@ -153,6 +175,8 @@ const shields = [
     full_resistance: 0,
     skill: "Enhance Performance",
     acquisition: "Elizas / Sea Serpent Cave Mokyun Shop",
+    materials: ["Iron Ingot", "Turtle Shell"],
+    materialAmount: [1, 1],
   },
   {
     name: "Iron Tower",
@@ -165,6 +189,8 @@ const shields = [
     full_resistance: 10,
     skill: "Double Reflect",
     acquisition: "Elizas / Sea Serpent Cave Mokyun Shop",
+    materials: ["Gold Ingot", "Hawk Feather", "Crab Stick"],
+    materialAmount: [1, 3, 1],
   },
   {
     name: "Jeweled Shield",
@@ -176,6 +202,8 @@ const shields = [
     full_resistance: 0,
     skill: "Redirection",
     acquisition: "Elizas / Sea Serpent Cave Mokyun Shop",
+    materials: ["Gold Ingot", "Turtle Shell", "Sashimi"],
+    materialAmount: [2, 2, 1],
   },
   {
     name: "Blue Silver Shield",
@@ -188,6 +216,8 @@ const shields = [
     full_resistance: 15,
     skill: "Gun Hammer",
     acquisition: "Elizas / Sea Serpent Cave Formula",
+    materials: ["Strawberry Crepe", "Sashimi", "Gold Ingot"],
+    materialAmount: [2, 1, 1],
   },
   {
     name: "Gold Buckler",
@@ -199,6 +229,8 @@ const shields = [
     full_resistance: 11,
     skill: "Enhance Performance",
     acquisition: "Akrasinon / Demon King's Castle Mokyun Shop",
+    materials: ["Gold Ingot", "Minotaur's Axe"],
+    materialAmount: [1, 1],
   },
   {
     name: "Knight's Shield",
@@ -210,6 +242,8 @@ const shields = [
     full_resistance: 0,
     skill: "Luna",
     acquisition: "Akrasinon / Demon King's Castle Mokyun Shop",
+    materials: ["Damascus Ingot", "Claystones", "Mammon's Feet"],
+    materialAmount: [1, 2, 1],
   },
   {
     name: "Necromancer",
@@ -222,6 +256,8 @@ const shields = [
     full_resistance: 15,
     skill: "Item Magnet",
     acquisition: "Akrasinon / Demon King's Castle Mokyun Shop",
+    materials: ["Damascus Ingot", "Lizard Scales", "Heat Exhaust Organ"],
+    materialAmount: [2, 2, 1],
   },
   {
     name: "Shield of Darkness",
@@ -234,6 +270,12 @@ const shields = [
     full_resistance: 20,
     skill: "Item Master",
     acquisition: "Akrasinon / Demon King's Castle Formula",
+    materials: [
+      "Soft-Serve Chocolate Ice Cream",
+      "Heat Exhaust Organ",
+      "Damascus Ingot",
+    ],
+    materialAmount: [2, 1, 1],
   },
   {
     name: "Stone Statue's Shield",
@@ -258,6 +300,8 @@ const shields = [
     full_resistance: 11,
     skill: "Enhance Performance",
     acquisition: "Urugut Mountain / Elysium Mokyun Shop",
+    materials: ["Damascus Ingot", "Penguin's Egg", "Clean Ice"],
+    materialAmount: [1, 1, 1],
   },
   {
     name: "Mithril Shield",
@@ -269,6 +313,8 @@ const shields = [
     full_resistance: 0,
     skill: "Enhance Performance",
     acquisition: "Urugut Mountain / Elysium Mokyun Shop",
+    materials: ["Mithril", "Slice of Ancient Fish", "Mirror Fragment"],
+    materialAmount: [1, 2, 1],
   },
   {
     name: "Ancient Shield",
@@ -281,6 +327,8 @@ const shields = [
     full_resistance: 10,
     skill: "Extra Guard",
     acquisition: "Urugut Mountain / Elysium Mokyun Shop",
+    materials: ["Mithril", "Godly Wings", "Magical Jar"],
+    materialAmount: [2, 2, 1],
   },
   {
     name: "Radamantus",
@@ -293,6 +341,8 @@ const shields = [
     full_resistance: 20,
     skill: "Artisan",
     acquisition: "Urugut Mountain / Elysium Formula",
+    materials: ["Hot Chocolate", "Mirror Fragment", "Mithril"],
+    materialAmount: [2, 1, 1],
   },
   {
     name: "Lion Shield",

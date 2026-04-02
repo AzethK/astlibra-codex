@@ -25,6 +25,8 @@ const weapons = [
     weight: 90,
     skill: "Enhance Performance",
     acquisition: "Pekkochira Weapon Shop / Rispadar Weapon Shop",
+    materials: ["Wooden Log"],
+    materialAmount: [1],
   },
   {
     name: "Stone Dagger",
@@ -38,6 +40,8 @@ const weapons = [
     weight: 65,
     skill: "Sylph",
     acquisition: "Pekkochira Weapon Shop / Rispadar Weapon Shop",
+    materials: ["Stones"],
+    materialAmount: [2],
   },
   {
     name: "Bone Sword",
@@ -51,6 +55,8 @@ const weapons = [
     weight: 95,
     skill: "Evil Vision",
     acquisition: "Pekkochira Weapon Shop / Rispadar Weapon Shop",
+    materials: ["Beautiful Bones", "Bat Wings"],
+    materialAmount: [2, 2],
   },
   {
     name: "Rock Hammer",
@@ -63,6 +69,8 @@ const weapons = [
     weight: 120,
     skill: "Wrestler",
     acquisition: "Pekkochira Weapon Shop / Rispadar Weapon Shop",
+    materials: ["Stones", "Cobweb", "Bat Wings"],
+    materialAmount: [5, 2, 1],
   },
   {
     name: "Magical Staff",
@@ -88,6 +96,8 @@ const weapons = [
     weight: 90,
     skill: "Enhance Performance",
     acquisition: "Pekkochira Formula",
+    materials: ["Plain Cookies", "Wooden Log", "Stones"],
+    materialAmount: [1, 2, 3],
   },
   {
     name: "Airgetlam",
@@ -101,6 +111,8 @@ const weapons = [
     weight: 120,
     skill: "Mind's Eye",
     acquisition: "Pekkochira Formula",
+    materials: ["Sponge Cake", "Beautiful Bones", "Copper Ore"],
+    materialAmount: [2, 2, 1],
   },
   {
     name: "Hammer",
@@ -113,6 +125,8 @@ const weapons = [
     weight: 94,
     skill: "Enhance Performance",
     acquisition: "Bridion Swamp Mokyun Shop",
+    materials: ["Copper Ore", "Mandragora"],
+    materialAmount: [1, 1],
   },
   {
     name: "Bronze Broadsword",
@@ -125,6 +139,8 @@ const weapons = [
     weight: 100,
     skill: "Auto Rapid Fire",
     acquisition: "Bridion Swamp Mokyun Shop",
+    materials: ["Copper Ingot", "Revolting Meat", "Mandragora"],
+    materialAmount: [1, 1, 1],
   },
 
   {
@@ -138,6 +154,8 @@ const weapons = [
     weight: 108,
     skill: "Enhance Performance",
     acquisition: "Bridion Swamp Mokyun Shop",
+    materials: ["Copper Ingot", "Mandragora", "Tadpole"],
+    materialAmount: [1, 2, 2],
   },
   {
     name: "Gladius",
@@ -150,6 +168,8 @@ const weapons = [
     weight: 95,
     skill: "Kirihide",
     acquisition: "Bridion Swamp Mokyun Shop",
+    materials: ["Copper Ingot", "Tadpole", "Poinsettia"],
+    materialAmount: [2, 1, 2],
   },
   {
     name: "Iron Axe",
@@ -162,6 +182,8 @@ const weapons = [
     weight: 115,
     skill: "Critical Hit",
     acquisition: "Bridion Swamp Mokyun Shop",
+    materials: ["Copper Ingot", "Filthy Fang", "Poinsettia"],
+    materialAmount: [2, 2, 1],
   },
   {
     name: "Goblin's Silver Hammer",
@@ -175,6 +197,8 @@ const weapons = [
     weight: 160,
     skill: "Seize",
     acquisition: "Bridion Swamp Formula",
+    materials: ["Key Mold A", "Tadpole", "Copper Ore"],
+    materialAmount: [5, 1, 1],
   },
 
   {
@@ -212,6 +236,8 @@ const weapons = [
     weight: 126,
     skill: "Enhance Performance",
     acquisition: "Bridion Swamp Formula",
+    materials: ["Cheesecake", "Filthy Fang", "Copper Ingot"],
+    materialAmount: [1, 1, 1],
   },
   {
     name: "Baselard",
@@ -225,6 +251,8 @@ const weapons = [
     weight: 99,
     skill: "Enhance Performance",
     acquisition: "Belkade Volcano Mokyun Shop",
+    materials: ["Copper Ingot", "Charcoal"],
+    materialAmount: [2, 1],
   },
   {
     name: "Iron Hammer",
@@ -237,6 +265,8 @@ const weapons = [
     weight: 121,
     skill: "Enhance Performance",
     acquisition: "Belkade Volcano Mokyun Shop",
+    materials: ["Copper Ingot", "Lava Pebble", "Putrid Gill"],
+    materialAmount: [2, 1, 1],
   },
   {
     name: "Rapier",
@@ -250,6 +280,8 @@ const weapons = [
     weight: 108,
     skill: "Enhance Performance",
     acquisition: "Belkade Volcano Mokyun Shop",
+    materials: ["Iron Ingot", "Charcoal", "Lava Pebble"],
+    materialAmount: [1, 2, 1],
   },
   {
     name: "Battle Axe",
@@ -273,6 +305,8 @@ const weapons = [
     weight: 138,
     skill: "Dig, Doggy, Dig",
     acquisition: "Belkade Volcano Mokyun Shop",
+    materials: ["Iron Ingot", "Putrid Gill", "Charcoal"],
+    materialAmount: [1, 2, 4],
   },
   {
     name: "Partisan",
@@ -286,6 +320,8 @@ const weapons = [
     weight: 134,
     skill: "Enhance Performance",
     acquisition: "Belkade Volcano Mokyun Shop",
+    materials: ["Iron Ingot", "Demon Horn", "Golem Fragment"],
+    materialAmount: [2, 1, 1],
   },
   {
     name: "Mage's Staff",
@@ -299,6 +335,8 @@ const weapons = [
     weight: 130,
     skill: "LED",
     acquisition: "Belkade Volcano Formula",
+    materials: ["Soft-Serve Ice Cream", "Lava Pebble", "Iron Ore"],
+    materialAmount: [1, 1, 1],
   },
   {
     name: "Ice Sword",
@@ -324,6 +362,8 @@ const weapons = [
     weight: 180,
     skill: "Berserk",
     acquisition: "Belkade Volcano Formula",
+    materials: ["Cream Puff", "Golem Fragment", "Iron Ingot"],
+    materialAmount: [2, 1, 1],
   },
   {
     name: "Azure Dragon Blade",
@@ -336,6 +376,8 @@ const weapons = [
     weight: 175,
     skill: "Snorkel",
     acquisition: "Elizas / Sea Serpent Cave Mokyun Shop",
+    materials: ["Iron Ingot", "Hawk Feather"],
+    materialAmount: [1, 1],
   },
   {
     name: "Ancient Hammer",
@@ -349,6 +391,8 @@ const weapons = [
     weight: 166,
     skill: "Enhance Performance",
     acquisition: "Elizas / Sea Serpent Cave Mokyun Shop",
+    materials: ["Iron Ingot", "Hawk Feather", "Turtle Shell"],
+    materialAmount: [1, 2, 1],
   },
   {
     name: "Spirit Staff",
@@ -362,6 +406,8 @@ const weapons = [
     weight: 160,
     skill: "Sturdy",
     acquisition: "Elizas / Sea Serpent Cave Mokyun Shop",
+    materials: ["Iron Ingot", "Hawk Feather", "Turtle Shell"],
+    materialAmount: [2, 5, 1],
   },
   {
     name: "Iron Block Hammer",
@@ -374,6 +420,8 @@ const weapons = [
     weight: 170,
     skill: "Enhance Performance",
     acquisition: "Elizas / Sea Serpent Cave Mokyun Shop",
+    materials: ["Gold Ingot", "Crab Stick", "Sashimi"],
+    materialAmount: [1, 1, 1],
   },
   {
     name: "Falchion",
@@ -386,6 +434,8 @@ const weapons = [
     weight: 161,
     skill: "Enhance Performance",
     acquisition: "Elizas / Sea Serpent Cave Mokyun Shop",
+    materials: ["Gold Ingot", "Sashimi", "Monkfish Liver"],
+    materialAmount: [2, 2, 1],
   },
   {
     name: "Wind Hatchet Ildrakh",
@@ -412,6 +462,8 @@ const weapons = [
     weight: 180,
     skill: "Efreet",
     acquisition: "Elizas / Sea Serpent Cave Formula",
+    materials: ["Strawberry Au Lait", "Turtle Shell", "Gold Ore"],
+    materialAmount: [2, 1, 1],
   },
   {
     name: "Icicle Spear",
@@ -438,6 +490,8 @@ const weapons = [
     weight: 209,
     skill: "Digging Master's Finesse",
     acquisition: "Elizas / Sea Serpent Cave Formula",
+    materials: ["Shortcake", "Monkfish Liver", "Gold Ingot"],
+    materialAmount: [2, 1, 1],
   },
   {
     name: "Halberd",
@@ -451,6 +505,8 @@ const weapons = [
     weight: 198,
     skill: "Enhance Performance",
     acquisition: "Akrasinon / Demon King Castle Mokyun Shop",
+    materials: ["Gold Ingot", "Claystones"],
+    materialAmount: [1, 1],
   },
   {
     name: "Fire Hammer",
@@ -465,6 +521,8 @@ const weapons = [
     weight: 230,
     skill: "King of Destruction",
     acquisition: "Akrasinon / Demon King Castle Mokyun Shop",
+    materials: ["Gold Ingot", "Claystones", "Minotaur's Axe"],
+    materialAmount: [2, 2, 1],
   },
   {
     name: "Katar",
@@ -477,6 +535,8 @@ const weapons = [
     weight: 188,
     skill: "Enhance Performance",
     acquisition: "Akrasinon / Demon King Castle Mokyun Shop",
+    materials: ["Damascus Ingot", "Minotaur's Axe", "Mammon's Feet"],
+    materialAmount: [1, 2, 1],
   },
   {
     name: "Dark Axe",
@@ -490,6 +550,8 @@ const weapons = [
     weight: 211,
     skill: "Enhance Performance",
     acquisition: "Akrasinon / Demon King Castle Mokyun Shop",
+    materials: ["Damascus Ingot", "Mammon's Feet", "Lizard Scales"],
+    materialAmount: [2, 1, 2],
   },
   {
     name: "Breaker",
@@ -502,6 +564,8 @@ const weapons = [
     weight: 240,
     skill: "Shelling",
     acquisition: "Akrasinon / Demon King Castle Mokyun Shop",
+    materials: ["Damascus Ingot", "Gargoyle's Wings", "Heat Exhaust Organ"],
+    materialAmount: [2, 2, 1],
   },
   {
     name: "Magical Lightning Staff",
@@ -528,6 +592,8 @@ const weapons = [
     weight: 230,
     skill: "Stinger",
     acquisition: "Akrasinon / Demon King's Castle Formula",
+    materials: ["Chocolate Pie", "Mammon's Feet", "Lizard Scales"],
+    materialAmount: [1, 1, 1],
   },
   {
     name: "Masamune",
@@ -552,6 +618,12 @@ const weapons = [
     weight: 225,
     skill: "Enhance Performance",
     acquisition: "Akrasinon / Demon King's Castle Formula",
+    materials: [
+      "Chocolate Chip Cookie",
+      "Heat Exhaust Organ",
+      "Damascus Ingot",
+    ],
+    materialAmount: [2, 1, 1],
   },
   {
     name: "Great Sorcerer's Staff",
@@ -565,6 +637,8 @@ const weapons = [
     weight: 280,
     skill: "Great Magic",
     acquisition: "Urugut / Elysium Mokyun Shop",
+    materials: ["Damascus Ingot", "Slime Jelly"],
+    materialAmount: [1, 2],
   },
   {
     name: "Shark Fang",
@@ -577,6 +651,8 @@ const weapons = [
     weight: 243,
     skill: "Enhance Performance",
     acquisition: "Urugut / Elysium Mokyun Shop",
+    materials: ["Damascus Ingot", "Penguin's Egg", "Clean Ice"],
+    materialAmount: [2, 2, 1],
   },
   {
     name: "Thin Ice Dagger",
@@ -590,6 +666,8 @@ const weapons = [
     weight: 233,
     skill: "Enhance Performance",
     acquisition: "Urugut / Elysium Mokyun Shop",
+    materials: ["Mithril", "Yeti's Fur", "Slice of Ancient Fish"],
+    materialAmount: [1, 2, 1],
   },
   {
     name: "Morning Star",
@@ -602,6 +680,8 @@ const weapons = [
     weight: 290,
     skill: "Shuriken Dagger",
     acquisition: "Urugut / Elysium Mokyun Shop",
+    materials: ["Mithril", "Slice of Ancient Fish", "Godly Wings"],
+    materialAmount: [2, 1, 2],
   },
   {
     name: "Ogre Hammer",
@@ -615,6 +695,8 @@ const weapons = [
     weight: 295,
     skill: "Hassoride",
     acquisition: "Urugut / Elysium Mokyun Shop",
+    materials: ["Mithril", "Magical Jar", "Shield of Rispadar"],
+    materialAmount: [2, 1, 1],
   },
   {
     name: "Storm Bringer",
@@ -641,6 +723,8 @@ const weapons = [
     weight: 269,
     skill: "Enhance Performance",
     acquisition: "Urugut / Elysium Formula",
+    materials: ["Chocolate Cookie", "Godly Wings", "Magical Silver Ore"],
+    materialAmount: [1, 1, 1],
   },
   {
     name: "Espada Ropera",
@@ -666,6 +750,8 @@ const weapons = [
     weight: 320,
     skill: "Thunderclap",
     acquisition: "Urugut / Elysium Formula",
+    materials: ["Hamburger", "Shield of Rispadar", "Mithril"],
+    materialAmount: [2, 1, 1],
   },
   {
     name: "Lævateinn",
