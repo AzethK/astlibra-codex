@@ -17,6 +17,14 @@ const items = [
     type: "Books/Cards",
   },
   {
+    name: "Baker's Recipes",
+    description:
+      "Contains knowledge of bread and cake making. It allows the user to synthesize foods that cannot be made normally.",
+    image: BASE + "bakers_recipes.png",
+    acquisition: "Arena Battle, Anesta Cup 'Block the Way' Reward",
+    type: "Books/Cards",
+  },
+  {
     name: "The Book of Karon: Vol 36 (Travel)",
     description:
       "A wise man's book on traveling. Contains a lot of information. Use it as a reference guide.",
@@ -439,6 +447,17 @@ const items = [
     },
   },
   {
+    name: "Ambrosia",
+    description: "Recovers 3,000 HP. A mysterious remedy.",
+    image: BASE + "ambrosia.png",
+    acquisition: "Combine Tufted Fruit and Empty Bottle",
+    type: "Medicines/Bottles",
+    libra: {
+      karma: 52,
+      effects: ["Max HP (EPIC)", "HP Recovery (EPIC)"],
+    },
+  },
+  {
     name: "Numbness-relieving Medicine",
     description:
       "Heals the abnormal status Paralysis. Neutralizes Paralysis and provides lasting resistance for a while.",
@@ -523,6 +542,18 @@ const items = [
     },
   },
   {
+    name: "Large Empty Bottle",
+    description:
+      "A large empty bottle. Surprisingly expensive, as it is made of glass.",
+    image: BASE + "large_empty_bottle.png",
+    acquisition: "Shop",
+    type: "Medicines/Bottles",
+    libra: {
+      karma: 28,
+      effects: ["Adaptability (EPIC)"],
+    },
+  },
+  {
     name: "Small Water-filled Bottle",
     description:
       "A small bottle of delicious water. Heals more gently than restorative remedies.",
@@ -579,6 +610,18 @@ const items = [
     libra: {
       karma: 20,
       effects: ["HP Recovery", "HP Recovery (GOOD)"],
+    },
+  },
+  {
+    name: "Tufted Fruit",
+    description:
+      "Recovers 2,000 HP. It's hairy and difficult to eat, but the inside is juicy.",
+    image: BASE + "tufted_fruit.png",
+    acquisition: "Shop",
+    type: "Food",
+    libra: {
+      karma: 40,
+      effects: ["HP Recovery (GOOD)", "HP Recovery (EPIC)"],
     },
   },
   {
@@ -642,13 +685,25 @@ const items = [
   {
     name: "Hamburger",
     description:
-      "Recovers 1200 HP. The fluffy bun is filled with a generous serving of meat.",
+      "Recovers 1,200 HP. The fluffy bun is filled with a generous serving of meat.",
     image: BASE + "hamburger.png",
     acquisition: "Combine Flour and Beef",
     type: "Food",
     libra: {
       karma: 38,
       effects: ["Max HP (EPIC)", "HP Recovery", "ST Gain Rate"],
+    },
+  },
+  {
+    name: "Red Bean Manju",
+    description:
+      "Recovers 1,800 HP. The fluffy dango and sweet red bean jam are a match made in heaven.",
+    image: BASE + "red_bean_manju.png",
+    acquisition: "Combine Flour and Red Bean Jam",
+    type: "Food",
+    libra: {
+      karma: 48,
+      effects: ["Max HP (EPIC)", "HP Recovery (GOOD)", "ST Gain Rate"],
     },
   },
   {
@@ -873,6 +928,108 @@ const items = [
     },
   },
   {
+    name: "Soft Serve Matcha Ice Cream",
+    description:
+      "Generates 220 [Wind] and [Holy] force. Matcha-flavored ice cream. The sweetness and bitterness never get old.",
+    image: BASE + "soft_serve_matcha_ice_cream.png",
+    acquisition: "Combine Soft Serve Ice Cream and Tea Leaves",
+    type: "Food",
+    libra: {
+      karma: 66,
+      effects: [
+        "Attack Power (EPIC)",
+        "Magical Power (GOOD)",
+        "Use Speed (GOOD)",
+      ],
+    },
+  },
+  {
+    name: "Matcha Au Lait",
+    description:
+      "Generates 213 [Water] and [Darkness] force. Made of milk and green tea powder. Sweetness is not enough to satisfy.",
+    image: BASE + "matcha_au_lait.png",
+    acquisition: "Combine Milk and Tea Leaves",
+    type: "Food",
+    libra: {
+      karma: 67,
+      effects: [
+        "Use Speed (EPIC)",
+        "Weight Reduction (GOOD)",
+        "Defense Power (GOOD)",
+      ],
+    },
+  },
+  {
+    name: "Mochi Rolled in Bean Jam",
+    description:
+      "Generates 209 [Earth] and [Fire] force. This sticky mochi is rolled in sweet red bean jam.",
+    image: BASE + "mochi_rolled_in_bean_jam.png",
+    acquisition: "Combine Dango and Tea Leaves",
+    type: "Food",
+    libra: {
+      karma: 59,
+      effects: [
+        "ST Gain Rate (EPIC)",
+        "Guard Durability (GOOD)",
+        "Gradual Recovery (GOOD)",
+      ],
+    },
+  },
+  {
+    name: "Delicious Cake",
+    description:
+      "Recovers 3,000 HP. Cures all abnormal statuses. For those on the plump side who are not satisfied by shortcakes.",
+    image: BASE + "delicious_cake.png",
+    acquisition: "Combine Shortcake and Shortcake",
+    type: "Food",
+    libra: {
+      karma: 40,
+      effects: ["Petrifaction Resistance (GOOD)", "Bleeding Resistance (GOOD)"],
+    },
+  },
+  {
+    name: "Decorative Cake",
+    description: "This item offers nothing. It looks too good to eat.",
+    image: BASE + "decorative_cake.png",
+    acquisition: "Combine Delicious Cake and Delicious Cake",
+    type: "Food",
+    libra: {
+      karma: 86,
+      effects: [
+        "Defense Power (EPIC)",
+        "Guard Durability (EPIC)",
+        "Weight Reduction (EPIC)",
+      ],
+    },
+  },
+  {
+    name: "Chocolate Cake",
+    description:
+      "Recovers 800 HP. Cures all abnormal statuses. A magical synthesis of chocolate and cake. It's super tasty.",
+    image: BASE + "chocolate_cake.png",
+    acquisition: "Combine Chocolate and Shortcake",
+    type: "Food",
+    libra: {
+      karma: 64,
+      effects: [
+        "Poison Resistance (GOOD)",
+        "Blind Resistance (GOOD)",
+        "Paralysis Resistance (GOOD)",
+      ],
+    },
+  },
+  {
+    name: "Sachertorte",
+    description: "This item offers nothing. It looks too good to eat.",
+    image: BASE + "sachertorte.png",
+    acquisition: "Combine Chocolate Cake and Chocolate Cake",
+    type: "Food",
+    libra: {
+      karma: 30,
+      effects: ["Attack Power", "Magical Power", "ST Gain Rate"],
+    },
+  },
+  {
     name: "Egg",
     description:
       "A basic food ingredient. Chicken eggs are used in various dishes.",
@@ -1050,6 +1207,35 @@ const items = [
         "Poison Resistance (EPIC)",
         "Blind Resistance (GOOD)",
         "Petrifaction Resistance",
+      ],
+    },
+  },
+  {
+    name: "Tea Leaves",
+    description: "Basic food. It tastes bitter when chewed, so what is it for?",
+    image: BASE + "tea_leaves.png",
+    type: "Food Ingredients",
+    libra: {
+      karma: 78,
+      effects: [
+        "Bleeding Resistance (EPIC)",
+        "Paralysis Resistance (EPIC)",
+        "Poison Resistance",
+      ],
+    },
+  },
+  {
+    name: "Red Bean Jam",
+    description:
+      "A basic food. Smooth and delicately sweet, enjoyed by the elderly.",
+    image: BASE + "red_bean_jam.png",
+    type: "Food Ingredients",
+    libra: {
+      karma: 66,
+      effects: [
+        "Blind Resistance (EPIC)",
+        "Petrifaction Resistance (EPIC)",
+        "Blind Resistance",
       ],
     },
   },
@@ -1435,6 +1621,18 @@ const items = [
     },
   },
   {
+    name: "Adamantine",
+    description:
+      "Known as the hardest rare metal in the world. Its name comes from adamas (diamond).",
+    image: BASE + "adamantine.png",
+    acquisition: "Mining",
+    type: "Ore/Gems",
+    libra: {
+      karma: 39,
+      effects: ["Defense Power (EPIC)", "Guard Durability (GOOD)"],
+    },
+  },
+  {
     name: "Copper Ingot",
     description:
       "A lump of metal refined from copper ore. Has a higher value than the raw material.",
@@ -1493,6 +1691,18 @@ const items = [
     },
   },
   {
+    name: "Adamantite",
+    description:
+      "Its legendary hardness surpasses the norm. It is doubtful that it can be processed any further.",
+    image: BASE + "adamantite.png",
+    acquisition: "Combine Adamantine and Refining Kit",
+    type: "Ore/Gems",
+    libra: {
+      karma: 44,
+      effects: ["Attack Power (EPIC)", "Magical Power (GOOD)"],
+    },
+  },
+  {
     name: "Atega",
     description:
       "A redeemable item which can be sold for a large number of coins. A gem of good fortune, symbolizing wealth and gold.",
@@ -1538,6 +1748,18 @@ const items = [
     libra: {
       karma: 65,
       effects: ["Coins Earned (GOOD)", "Experience Earned (GOOD)"],
+    },
+  },
+  {
+    name: "Byru",
+    description:
+      "A redeemable item which can be sold for a large number of coins. Symbolizes passion and ambition, has the power to ensure victory.",
+    image: BASE + "byru.png",
+    acquisition: "Mining",
+    type: "Ore/Gems",
+    libra: {
+      karma: 75,
+      effects: ["Coins Earned (EPIC)", "Experience Earned (GOOD)"],
     },
   },
   {
@@ -1951,13 +2173,49 @@ const items = [
   {
     name: "Magical Jar",
     description:
-      "This jar was made by an ancient amgical civilization. It is filled with magical powers.",
+      "This jar was made by an ancient magical civilization. It is filled with magical powers.",
     image: BASE + "magical_jar.png",
     acquisition: "Drop from Elysium Tank Weapon (Elysium)",
     type: "Demon Materials",
     libra: {
       karma: 43,
       effects: ["Magical Power (GOOD)", "Blind Resistance (GOOD)"],
+    },
+  },
+  {
+    name: "Grasshopper's Wings",
+    description:
+      "These insect wings are made of a mysteriously thin, yet strong material. They possibly come from another world.",
+    image: BASE + "grasshoppers_wings.png",
+    acquisition: "Drop from Grasshopper (Anesta Village)",
+    type: "Demon Materials",
+    libra: {
+      karma: 37,
+      effects: ["Weight Reduction (EPIC)"],
+    },
+  },
+  {
+    name: "Insect Feet",
+    description:
+      "These feet are made of a hard, mysterious substance called chicken matter. They might belong to a creature that flew here from another world.",
+    image: BASE + "insect_feet.png",
+    acquisition: "Drop from Insect (Anesta Village)",
+    type: "Demon Materials",
+    libra: {
+      karma: 28,
+      effects: ["Defense Power (EPIC)"],
+    },
+  },
+  {
+    name: "Bewitched Tree Branch",
+    description:
+      "Part of a tree that rotted over the years and turned demonic. Sometimes it wiggles.",
+    image: BASE + "bewitched_tree_branch.png",
+    acquisition: "Drop from Bewitched Tree (Anesta Village)",
+    type: "Demon Materials",
+    libra: {
+      karma: 33,
+      effects: ["Magical Power (EPIC)"],
     },
   },
   {

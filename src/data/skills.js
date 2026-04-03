@@ -83,6 +83,15 @@ const skills = [
     st: 180,
   },
   {
+    name: "Circle of Disaster",
+    description:
+      "Generates a large circle of rocks that will converge at the center. It can be powerful if all the rocks hit the target.",
+    image: BASE + "circle_of_disaster.png",
+    acquisition: "Grow Tree",
+    element: BASE_ELEMENT + "earth.png",
+    st: 216,
+  },
+  {
     name: "Wind Tiger",
     description:
       "A tiger cloaked in wind delivers a vertically narrow, but horizontally wide attack.",

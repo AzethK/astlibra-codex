@@ -385,6 +385,11 @@ body {
   margin-top: 14px;
   font-size: 20px;
   opacity: 0.9;
+  height: 100%;
+}
+
+.equip-extra div {
+  align-items: center;
 }
 
 .equip-skill {
@@ -1278,4 +1283,23 @@ body {
   object-fit: contain;
   align-self: start;
   animation: blink 1.8s ease-in-out infinite;
+}
+
+/* Material Image */
+
+.material-card {
+  background: linear-gradient(180deg, #0f1f3d 0%, #081326 100%);
+  width: 60px;
+  height: 60px;
+  border: 2px solid #cbb67a;
+
+  box-shadow:
+    inset 0 0 6px rgba(0, 0, 0, 0.6),
+    0 0 6px rgba(203, 182, 122, 0.2);
+}
+
+.material-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }

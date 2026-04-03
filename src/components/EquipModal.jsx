@@ -1,5 +1,6 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
+import items from "../data/items";
 
 export default function EquipModal({ equip, onClose, closing, tab }) {
   const navigate = useNavigate();
@@ -219,13 +220,13 @@ export default function EquipModal({ equip, onClose, closing, tab }) {
             {equip.materials.map((material, index) => (
               <span key={index}>
                 |{equip.materialAmount[index]}x {""}
-                <span
-                  className="equip-skill"
+                <button
+                  className="material-card"
                   onClick={() => navigate(`/item/${material}`)}
                   style={{ cursor: "pointer" }}
                 >
-                  {material}
-                </span>
+                  <img src={items.find((i) => i.name === material).image} />
+                </button>
                 |{" "}
               </span>
             ))}
