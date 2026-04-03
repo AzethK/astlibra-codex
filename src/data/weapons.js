@@ -765,6 +765,8 @@ const weapons = [
     weight: 278,
     skill: "Enhance Performance",
     acquisition: "Anesta Town / Belkade Mining Town Mokyun Shop",
+    materials: ["Mithril", "Grasshopper's Wings"],
+    materialAmount: [1, 1],
   },
   {
     name: "Cursed Sword Tyrfing",
@@ -777,6 +779,8 @@ const weapons = [
     weight: 296,
     skill: "Enhance Performance",
     acquisition: "Anesta Town / Belkade Mining Town Mokyun Shop",
+    materials: ["Mithril", "Grasshopper's Wings", "Insect Feet"],
+    materialAmount: [2, 1, 2],
   },
   {
     name: "Seraphim",
@@ -790,6 +794,8 @@ const weapons = [
     weight: 269,
     skill: "Enhance Performance",
     acquisition: "Anesta Town / Belkade Mining Town Mokyun Shop",
+    materials: ["Adamantite", "Bewitched Tree Branch", "Beastly Tree's Fungi"],
+    materialAmount: [1, 1, 1],
   },
   {
     name: "Lance of Longinus",
@@ -816,6 +822,8 @@ const weapons = [
     weight: 315,
     skill: "Enhance Performance",
     acquisition: "Anesta Town / Belkade Mining Town Mokyun Shop",
+    materials: ["Adamantite", "Tough Leg Meat", "Dual Attribute Core"],
+    materialAmount: [2, 2, 1],
   },
   {
     name: "Sacred Staff Celestial",
@@ -829,6 +837,8 @@ const weapons = [
     weight: 305,
     skill: "Sword Energy",
     acquisition: "Anesta Town / Belkade Mining Town Mokyun Shop",
+    materials: ["Adamantite", "Dual Attribute Core", "Spider Butt"],
+    materialAmount: [2, 2, 1],
   },
   {
     name: "Dragon's Jaw",
@@ -841,6 +851,12 @@ const weapons = [
     weight: 370,
     skill: "Master Skinner",
     acquisition: "Anesta Town / Belkade Mining Town Formula",
+    materials: [
+      "Mochi Rolled in Bean Jam",
+      "Grasshopper's Wings",
+      "Adamantine",
+    ],
+    materialAmount: [1, 5, 1],
   },
   {
     name: "Dark Sword",
@@ -867,6 +883,8 @@ const weapons = [
     weight: 300,
     skill: "Grand Slash",
     acquisition: "Anesta Town / Belkade Mining Town Formula",
+    materials: ["Red Bean Manju", "Spider Butt", "Adamantite"],
+    materialAmount: [2, 1, 2],
   },
   {
     name: "Durandal",
@@ -879,6 +897,8 @@ const weapons = [
     weight: 377,
     skill: "Enhance Performance",
     acquisition: "Tokyo / Research Facility Mokyun Shop",
+    materials: ["Adamantite", "Bolts", "Cable"],
+    materialAmount: [1, 1, 1],
   },
   {
     name: "Wind Staff Grídarvöl",
@@ -892,6 +912,8 @@ const weapons = [
     weight: 351,
     skill: "Enhance Performance",
     acquisition: "Tokyo / Research Facility Mokyun Shop",
+    materials: ["Adamantite", "Gear", "Battery"],
+    materialAmount: [2, 2, 1],
   },
   {
     name: "Beast Claws",

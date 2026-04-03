@@ -392,6 +392,8 @@ const armors = [
     magical_power: 0,
     skill: "Enhance Performance",
     acquisition: "Anesta / Belkade Mining Town Mokyun Shop",
+    materials: ["Mithril", "Grasshopper's Wings", "Insect Feet"],
+    materialAmount: [2, 1, 1],
   },
   {
     name: "Gold Ceremonial Habit",
@@ -404,6 +406,8 @@ const armors = [
     magical_power: 22,
     skill: "Enhance Performance",
     acquisition: "Anesta / Belkade Mining Town Mokyun Shop",
+    materials: ["Adamantite", "Beastly Tree's Fungi", "Tough Leg Meat"],
+    materialAmount: [1, 1, 1],
   },
   {
     name: "Velvet Dragoon",
@@ -416,6 +420,8 @@ const armors = [
     magical_power: 0,
     skill: "Air Tackle",
     acquisition: "Anesta / Belkade Mining Town Mokyun Shop",
+    materials: ["Adamantite", "Dual Attribute Core", "Spider Butt"],
+    materialAmount: [2, 1, 2],
   },
   {
     name: "Chronos",
@@ -428,6 +434,8 @@ const armors = [
     magical_power: 10,
     skill: "Origin",
     acquisition: "Anesta / Belkade Mining Town Formula",
+    materials: ["Matcha Au Lait", "Bewitched Tree Branch", "Adamantite"],
+    materialAmount: [2, 1, 1],
   },
   {
     name: "Machine Armor",

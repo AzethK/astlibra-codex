@@ -455,7 +455,7 @@ body {
 
 .stat-line {
   display: grid;
-  grid-template-columns: 140px auto;
+  grid-template-columns: 115px auto;
   align-items: center;
   margin: 6px 0;
 }
@@ -747,13 +747,14 @@ body {
 .item-wrapper {
   display: grid;
   grid-template-columns: 0.5fr 0.5fr;
-  align-items: start;
   margin-top: 10px;
   align-items: stretch;
   overflow: hidden;
+  width: 100%;
 }
 
 .item-wrapper > div {
+  min-width: 0;
   display: flex;
   flex-direction: column;
 }

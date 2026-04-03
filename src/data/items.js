@@ -410,6 +410,14 @@ const items = [
     type: "Secondary Weapon",
   },
   {
+    name: "Shotgun",
+    description:
+      "Takes a long time to load but fires explosive rounds. Consumes 5 gunpowder bullets to attack a wide area.",
+    image: BASE + "shotgun.png",
+    acquisition: "Mokyun Gacha Reward",
+    type: "Secondary Weapon",
+  },
+  {
     name: "Soma",
     description:
       "Recovers 300 HP. Expensive, but immediately restores your health.",
@@ -1030,6 +1038,36 @@ const items = [
     },
   },
   {
+    name: "Valentine Cake",
+    description: "This item offers nothing. It looks too good to eat.",
+    image: BASE + "valentine_cake.png",
+    acquisition: "Combine Sachertorte and Love",
+    type: "Food",
+    libra: {
+      karma: 60,
+      effects: [
+        "Attack Power (GOOD)",
+        "Magical Power (GOOD)",
+        "ST Gain Rate (GOOD)",
+      ],
+    },
+  },
+  {
+    name: "Valentine Present",
+    description: "This item offers nothing. It looks too good to eat.",
+    image: BASE + "valentine_present.png",
+    acquisition: "Combine Valentine Cake and Decorative Box",
+    type: "Food",
+    libra: {
+      karma: 90,
+      effects: [
+        "Attack Power (EPIC)",
+        "Magical Power (EPIC)",
+        "ST Gain Rate (EPIC)",
+      ],
+    },
+  },
+  {
     name: "Egg",
     description:
       "A basic food ingredient. Chicken eggs are used in various dishes.",
@@ -1144,6 +1182,7 @@ const items = [
       "A basic food. This freshly picked strawberry smells wonderful.",
     image: BASE + "strawberry.png",
     type: "Food Ingredients",
+    acquisition: "Shop",
     libra: {
       karma: 43,
       effects: [
@@ -1240,6 +1279,21 @@ const items = [
     },
   },
   {
+    name: "Sugar",
+    description:
+      "A basic food. The granules are sweet, but it's hard to eat on its own.",
+    image: BASE + "sugar.png",
+    type: "Food Ingredients",
+    libra: {
+      karma: 91,
+      effects: [
+        "Petrifaction Resistance (EPIC)",
+        "Poison Resistance (EPIC)",
+        "Blind Resistance (EPIC)",
+      ],
+    },
+  },
+  {
     name: "Technique Scroll - Sky Sword",
     description:
       "An esoteric scroll describing the Sky Sword technique. Open to view details.",
@@ -1292,6 +1346,14 @@ const items = [
     name: "Technique Scroll - Air Surf",
     description:
       "An esoteric scroll describing the Air Surf technique. Open to view details.",
+    image: BASE + "technique_scroll.png",
+    acquisition: "Elysium, chest under the ground.",
+    type: "Books/Cards",
+  },
+  {
+    name: "Technique Scroll - Tornado Slash",
+    description:
+      "An esoteric scroll describing the Tornado Slash technique. Open to view details.",
     image: BASE + "technique_scroll.png",
     acquisition: "Elysium, chest under the ground.",
     type: "Books/Cards",
@@ -1357,6 +1419,14 @@ const items = [
     name: "[Sealed] Technique Scroll - Air Surf",
     description:
       "A sealed esoteric scroll describing the Air Surf technique. Open to view details.",
+    image: BASE + "sealed_technique_scroll.png",
+    acquisition: "Combine Technique Sealing Medal with the technique scroll",
+    type: "Books/Cards",
+  },
+  {
+    name: "[Sealed] Technique Scroll - Tornado Slash",
+    description:
+      "A sealed esoteric scroll describing the Tornado Slash technique. Open to view details.",
     image: BASE + "sealed_technique_scroll.png",
     acquisition: "Combine Technique Sealing Medal with the technique scroll",
     type: "Books/Cards",
@@ -2219,6 +2289,103 @@ const items = [
     },
   },
   {
+    name: "Beastly Tree's Fungi",
+    description:
+      "Supposedly, a tree that grows by sucking the blood of dead animals could become a beast itself. This is a mushroom that only grows on such things.",
+    image: BASE + "beastly_trees_fungi.png",
+    acquisition: "Drop from Beastly Tree (Anesta Village)",
+    type: "Demon Materials",
+    libra: {
+      karma: 23,
+      effects: ["ST Gain Rate (EPIC)"],
+    },
+  },
+
+  {
+    name: "Tough Leg Meat",
+    description:
+      "The tough leg muscles lift heavy torsos up into the air. Their springing power is used in a variety of commodities.",
+    image: BASE + "tough_leg_meat.png",
+    acquisition: "Drop from Purple Frog (Belkade Mining Town)",
+    type: "Demon Materials",
+    libra: {
+      karma: 27,
+      effects: ["Max HP (EPIC)"],
+    },
+  },
+  {
+    name: "Dual Attribute Core",
+    description:
+      "A crystal that successfully combines two opposing attributes. Widely used in energy applications.",
+    image: BASE + "dual_attribute_core.png",
+    acquisition: "Drop from Dual Attribute Doll (Belkade Mining Town)",
+    type: "Demon Materials",
+    libra: {
+      karma: 23,
+      effects: ["Max ST (EPIC)"],
+    },
+  },
+  {
+    name: "Spider Butt",
+    description:
+      "This plump arachnid butt is filled with spider silk. They say some people enjoy eating it.",
+    image: BASE + "spider_butt.png",
+    acquisition: "Drop from Arachne (Belkade Mining Town)",
+    type: "Demon Materials",
+    libra: {
+      karma: 22,
+      effects: ["Use Speed (EPIC)"],
+    },
+  },
+  {
+    name: "Bolts",
+    description:
+      "Metallic parts used to hold the machines of the future together. They say there is a world where these are used as currency.",
+    image: BASE + "bolts.png",
+    acquisition: "Drop from Tank (Tokyo)",
+    type: "Demon Materials",
+    libra: {
+      karma: 46,
+      effects: ["Poison Resistance (EPIC)", "Attack Power"],
+    },
+  },
+  {
+    name: "Cable",
+    description:
+      "It is like a blood vessel for conducting electricity. The mechanism for transmitting energy is no different from human blood.",
+    image: BASE + "cable.png",
+    acquisition: "Drop from Flying Machine (Blue) (Tokyo)",
+    type: "Demon Materials",
+    libra: {
+      karma: 47,
+      effects: ["Bleeding Resistance (EPIC)", "Magical Power"],
+    },
+  },
+  {
+    name: "Gear",
+    description:
+      "Part of a mysterious mechanism which exerts its mighty power when joining a large object with a smaller one.",
+    image: BASE + "gear.png",
+    acquisition: "Drop from Machine Crab (Tokyo)",
+    type: "Demon Materials",
+    libra: {
+      karma: 37,
+      effects: ["Blind Resistance (EPIC)", "Max HP"],
+    },
+  },
+  {
+    name: "Battery",
+    description:
+      "A curious box that can store energy. For some reason it only contains water.",
+    image: BASE + "battery.png",
+    acquisition: "Drop from Flying Machine (Black) (Tokyo)",
+    type: "Demon Materials",
+    libra: {
+      karma: 31,
+      effects: ["Petrifaction Resistance (EPIC)", "HP Recovery"],
+    },
+  },
+  {
     name: "Anulis' Ribbon",
     description: "A very long ribbon, worn by Anulis. It holds many memories.",
     image: BASE + "anulis_ribbon.png",
@@ -2479,6 +2646,22 @@ const items = [
     description: "This key can open iron bars.",
     image: BASE + "iron_bars_key.png",
     acquisition: "Chapter 6 Event.",
+    type: "Valuables",
+  },
+  {
+    name: "Herb",
+    description:
+      "An herb that can be found in the prairie. It makes an excellent sleeping aid.",
+    image: BASE + "herb.png",
+    acquisition: "Anesta Village, drop from miniboss",
+    type: "Valuables",
+  },
+  {
+    name: "Sleeping Aid",
+    description:
+      "A powdered remedy made from a concentrated mixture of herbs. Inhale it and you will fall unconscious and not awaken until the next day.",
+    image: BASE + "sleeping_aid.png",
+    acquisition: "Combine Herb and Gunpowder",
     type: "Valuables",
   },
   {

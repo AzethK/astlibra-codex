@@ -14,6 +14,7 @@ export default function EquipModal({ equip, onClose, closing, tab }) {
     ));
   };
   const [selectedMaterial, setSelectedMaterial] = useState(null);
+  const [itemClosing, setItemClosing] = useState(false);
 
   const formatStatLabel = (key) => {
     const map = {
@@ -224,11 +225,19 @@ export default function EquipModal({ equip, onClose, closing, tab }) {
                 |{equip.materialAmount[index]}x {""}
                 <button
                   className="material-card"
-                  onClick={() =>
-                    setSelectedMaterial(
-                      selectedMaterial === material ? null : material,
-                    )
-                  }
+                  onClick={() => {
+                    if (selectedMaterial === material) {
+                      setItemClosing(true);
+
+                      setTimeout(() => {
+                        setSelectedMaterial(null);
+                        setItemClosing(false);
+                      }, 100);
+                    } else {
+                      setItemClosing(false);
+                      setSelectedMaterial(material);
+                    }
+                  }}
                   style={{ cursor: "pointer" }}
                 >
                   <img src={items.find((i) => i.name === material).image} />
@@ -240,10 +249,16 @@ export default function EquipModal({ equip, onClose, closing, tab }) {
         )}
       </div>
       {selectedMaterial && (
-        <div className="equip-modal" onClick={(e) => e.stopPropagation()}>
+        <div
+          className={`equip-modal ${itemClosing ? "closing" : ""}`}
+          onClick={(e) => e.stopPropagation()}
+        >
           <ItemModal
             item={items.find((i) => i.name === selectedMaterial)}
-            onClose={() => setSelectedMaterial(null)}
+            onClose={() => {
+              setItemClosing(true);
+              setSelectedMaterial(null);
+            }}
           />
         </div>
       )}

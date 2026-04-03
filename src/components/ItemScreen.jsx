@@ -97,7 +97,11 @@ export default function ItemScreen() {
               navigate(`/item/${item.name}`);
             }}
           >
-            <img src={item.image} alt={item.name} />
+            <img
+              src={item.image}
+              alt={item.name}
+              className="equip-card-image"
+            />
             <h3>{item.name}</h3>
           </div>
         ))}

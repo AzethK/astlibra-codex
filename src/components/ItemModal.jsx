@@ -17,26 +17,24 @@ export default function ItemModal({ item }) {
         <div>
           <h3>Libra</h3>
           <div className="item-stats">
-            <div className="item-stat">
-              <div className="stat-line">
-                <span className="item-effect-label">Karma: </span>
-                <span className="item-effect-value">{item.libra.karma}</span>
-              </div>
-              {item.libra.effects.map((effect, index) => (
-                <div key={index} className="stat-line">
-                  <span className="item-effect-label">Effect: </span>
-                  <span
-                    className={`item-effect-value ${
-                      effect.includes("GOOD") ? "libra-good"
-                      : effect.includes("EPIC") ? "libra-epic"
-                      : "libra-normal"
-                    }`}
-                  >
-                    {effect}
-                  </span>
-                </div>
-              ))}
+            <div className="stat-line">
+              <span className="item-effect-label">Karma: </span>
+              <span className="item-effect-value">{item.libra.karma}</span>
             </div>
+            {item.libra.effects.map((effect, index) => (
+              <div key={index} className="stat-line">
+                <span className="item-effect-label">Effect: </span>
+                <span
+                  className={`item-effect-value ${
+                    effect.includes("GOOD") ? "libra-good"
+                    : effect.includes("EPIC") ? "libra-epic"
+                    : "libra-normal"
+                  }`}
+                >
+                  {effect}
+                </span>
+              </div>
+            ))}
           </div>
         </div>
       )}

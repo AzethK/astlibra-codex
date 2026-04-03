@@ -355,6 +355,8 @@ const shields = [
     full_resistance: 0,
     skill: "Flawless",
     acquisition: "Anesta Town / Belkade Mining Town Mokyun Shop",
+    materials: ["Mithril", "Insect Feet", "Bewitched Tree Branch"],
+    materialAmount: [1, 1, 1],
   },
   {
     name: "Gold Tower",
@@ -367,6 +369,8 @@ const shields = [
     full_resistance: 20,
     skill: "Rapid Repair",
     acquisition: "Anesta Town / Belkade Mining Town Mokyun Shop",
+    materials: ["Adamantite", "Beastly Tree's Fungi", "Dual Attribute Core"],
+    materialAmount: [1, 1, 1],
   },
   {
     name: "Griffon",
@@ -379,6 +383,8 @@ const shields = [
     full_resistance: 0,
     skill: "Bash Tornado",
     acquisition: "Anesta Town / Belkade Mining Town Mokyun Shop",
+    materials: ["Adamantite", "Tough Leg Meat", "Spider Butt"],
+    materialAmount: [2, 1, 1],
   },
   {
     name: "Dragon God's Shield",
@@ -391,6 +397,8 @@ const shields = [
     full_resistance: 10,
     skill: "Full Burst",
     acquisition: "Anesta Town / Belkade Mining Town Mokyun Shop",
+    materials: ["Soft Serve Matcha Ice Cream", "Insect Feet", "Adamantite"],
+    materialAmount: [2, 1, 1],
   },
   {
     name: "Machine Shield",

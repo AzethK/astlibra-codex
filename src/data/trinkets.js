@@ -247,11 +247,19 @@ const trinkets = [
     materialAmount: [1, 2],
   },
   {
+    name: "Shiro's Transformation Earrings",
+    description:
+      "These earrings are always worn by Shiro. They turn her into a slender woman.",
+    stats: { effect: "Change appearance to Shiro" },
+    image: BASE + "girls_earrings.png",
+    acquisition: "Belkade Mining Town Event",
+  },
+  {
     name: "Long-Haired Wig",
     description: "A feminine wig. It can make some men look like women.",
     image: BASE + "long_haired_wig.png",
     stats: { guard: 10, agility: 10, luck: 10 },
-    acquisition: "Elizas Inn Cutscene",
+    acquisition: "Elizas Inn Event",
   },
   {
     name: "Teardrop",
@@ -303,6 +311,8 @@ const trinkets = [
     image: BASE + "tanzanite_ring.png",
     stats: { maxst: 10, magical_power: 10, adaptability: 30 },
     acquisition: "Anesta / Belkade Mining Town Mokyun Shop",
+    materials: ["Mithril", "Grasshopper's Wings", "Insect Feet"],
+    materialAmount: [1, 1, 1],
   },
   {
     name: "Power Gloves",
@@ -310,6 +320,8 @@ const trinkets = [
     image: BASE + "power_gloves.png",
     stats: { atk: 35, bleedres: 20, petrires: 10 },
     acquisition: "Anesta / Belkade Mining Town Mokyun Shop",
+    materials: ["Mithril", "Bewitched Tree Branch", "Beastly Tree's Fungi"],
+    materialAmount: [1, 1, 1],
   },
   {
     name: "Elemental Cloth",
@@ -325,6 +337,8 @@ const trinkets = [
     image: BASE + "devils_ring.png",
     stats: { maxhp: 100, maxst: 20, parares: 10 },
     acquisition: "Anesta / Belkade Mining Town Mokyun Shop",
+    materials: ["Adamantite", "Dual Attribute Core", "Tough Leg Meat"],
+    materialAmount: [1, 1, 1],
   },
   {
     name: "Dragoness Ring",
@@ -333,6 +347,8 @@ const trinkets = [
     image: BASE + "dragoness_ring.png",
     stats: { maxhp: 100, atk: 15, def: 15, guard: 10 },
     acquisition: "Anesta / Belkade Mining Town Formula",
+    materials: ["Mochi Rolled in Bean Jam", "Spider Butt", "Adamantine"],
+    materialAmount: [1, 1, 1],
   },
   {
     name: "Halloween Belt",
