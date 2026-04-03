@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import items from "../data/items";
+import ItemModal from "./ItemModal";
 
 export default function ItemScreen() {
   const { itemName } = useParams();
@@ -113,57 +114,7 @@ export default function ItemScreen() {
       <div
         className={`${selectedItem?.libra ? "expanded-info-box" : "karon-info-box"} ${selectedItem ? "visible" : ""}`}
       >
-        {selectedItem && (
-          <>
-            <div className={`${selectedItem?.libra ? "item-wrapper" : ""}`}>
-              <div>
-                <div className="equip-image-container">
-                  <img
-                    src={selectedItem.image}
-                    alt={selectedItem.name}
-                    className="equip-image"
-                  />
-                </div>
-                <h3>{selectedItem.name}</h3>
-                <p>{selectedItem.description}</p>
-                {selectedItem.acquisition && (
-                  <p>
-                    Acquisition: <span>{selectedItem.acquisition}</span>
-                  </p>
-                )}
-              </div>
-              {selectedItem.libra && (
-                <div>
-                  <h3>Libra</h3>
-                  <div className="item-stats">
-                    <div className="item-stat">
-                      <div className="stat-line">
-                        <span className="item-effect-label">Karma: </span>
-                        <span className="item-effect-value">
-                          {selectedItem.libra.karma}
-                        </span>
-                      </div>
-                      {selectedItem.libra.effects.map((effect, index) => (
-                        <div key={index} className="stat-line">
-                          <span className="item-effect-label">Effect: </span>
-                          <span
-                            className={`item-effect-value ${
-                              effect.includes("GOOD") ? "libra-good"
-                              : effect.includes("EPIC") ? "libra-epic"
-                              : "libra-normal"
-                            }`}
-                          >
-                            {effect}
-                          </span>
-                        </div>
-                      ))}
-                    </div>
-                  </div>
-                </div>
-              )}
-            </div>
-          </>
-        )}
+        {selectedItem && <ItemModal item={selectedItem} />}
       </div>
     </div>
   );

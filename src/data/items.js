@@ -2127,7 +2127,7 @@ const items = [
     description:
       "Shields like this one are supplied to the soldiers of Rispadar. It's very long, making it difficult for you to handle.",
     image: BASE + "shield_of_rispadar.png",
-    acquisition: "Drop from Rispadar Soldier (Urugut Mountains)",
+    acquisition: "Drop from Rispadar Soldier (Urugut Mountains, Elysium)",
     type: "Demon Materials",
     libra: {
       karma: 51,

@@ -1,6 +1,7 @@
-import React from "react";
+import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import items from "../data/items";
+import ItemModal from "./ItemModal";
 
 export default function EquipModal({ equip, onClose, closing, tab }) {
   const navigate = useNavigate();
@@ -12,6 +13,7 @@ export default function EquipModal({ equip, onClose, closing, tab }) {
       />
     ));
   };
+  const [selectedMaterial, setSelectedMaterial] = useState(null);
 
   const formatStatLabel = (key) => {
     const map = {
@@ -222,7 +224,11 @@ export default function EquipModal({ equip, onClose, closing, tab }) {
                 |{equip.materialAmount[index]}x {""}
                 <button
                   className="material-card"
-                  onClick={() => navigate(`/item/${material}`)}
+                  onClick={() =>
+                    setSelectedMaterial(
+                      selectedMaterial === material ? null : material,
+                    )
+                  }
                   style={{ cursor: "pointer" }}
                 >
                   <img src={items.find((i) => i.name === material).image} />
@@ -233,6 +239,14 @@ export default function EquipModal({ equip, onClose, closing, tab }) {
           </div>
         )}
       </div>
+      {selectedMaterial && (
+        <div className="equip-modal" onClick={(e) => e.stopPropagation()}>
+          <ItemModal
+            item={items.find((i) => i.name === selectedMaterial)}
+            onClose={() => setSelectedMaterial(null)}
+          />
+        </div>
+      )}
     </div>
   );
 }
