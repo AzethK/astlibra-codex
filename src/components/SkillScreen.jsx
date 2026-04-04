@@ -7,6 +7,14 @@ export default function SkillScreen() {
   const navigate = useNavigate();
   const [selectedSkill, setSelectedSkill] = useState(null);
   const [searchQuery, setSearchQuery] = useState("");
+  const [altSkills, setAltSkills] = useState({});
+
+  const toggleAlt = (skillName) => {
+    setAltSkills((prev) => ({
+      ...prev,
+      [skillName]: !prev[skillName],
+    }));
+  };
 
   let filteredItems = skills;
 
@@ -37,6 +45,21 @@ export default function SkillScreen() {
     }
   }, [skillName]);
 
+  const isAlt = selectedSkill && altSkills[selectedSkill.name];
+
+  const displayDescription =
+    isAlt && selectedSkill?.altDescription ?
+      selectedSkill.altDescription
+    : selectedSkill?.description;
+
+  const displayName =
+    isAlt && selectedSkill?.altName ?
+      selectedSkill.altName
+    : selectedSkill?.name;
+
+  const displaySt =
+    isAlt && selectedSkill?.altSt ? selectedSkill.altSt : selectedSkill?.st;
+
   return (
     <div className="equip-container">
       <div className="search-box">
@@ -48,27 +71,50 @@ export default function SkillScreen() {
         />
       </div>
       <div className="equip-grid">
-        {filteredItems.map((skill) => (
-          <div
-            key={skill.name}
-            className="skill-card"
-            onClick={() => {
-              navigate(`/skill/${skill.name}`);
-            }}
-          >
-            <img src={skill.image} alt={skill.name} />
-            <h3
-              style={{
-                display: "flex",
-                alignItems: "center",
-                gap: "6px",
-                justifyContent: "center",
-              }}
-            >
-              <img src={skill.element} alt="Element" /> {skill.name}
-            </h3>
-          </div>
-        ))}
+        {filteredItems.map((skill) => {
+          const isAlt = altSkills[skill.name];
+
+          const displayName =
+            isAlt && skill.altName ? skill.altName : skill.name;
+
+          return (
+            <div className="karon-card-wrapper">
+              <div
+                key={skill.name}
+                className={`skill-card 
+          ${selectedSkill?.name === skill.name ? "selected" : ""} 
+          ${isAlt ? "alt" : ""}
+        `}
+                onClick={() => {
+                  navigate(`/skill/${skill.name}`);
+                }}
+              >
+                <img src={skill.image} alt={skill.name} />
+                <h3
+                  style={{
+                    display: "flex",
+                    alignItems: "center",
+                    gap: "6px",
+                    justifyContent: "center",
+                  }}
+                >
+                  <img src={skill.element} alt="Element" /> {displayName}
+                </h3>
+              </div>
+
+              {skill.altName && (
+                <button
+                  className={`alt-toggle ${isAlt ? "active" : ""}`}
+                  onClick={() => toggleAlt(skill.name)}
+                >
+                  Alt
+                </button>
+              )}
+
+              {!skill.altName && <button className="alt-toggle placeholder" />}
+            </div>
+          );
+        })}
       </div>
       <div
         className={`karon-overlay ${selectedSkill ? "visible" : ""}`}
@@ -92,11 +138,11 @@ export default function SkillScreen() {
                     className="skill-image"
                   />
                 </div>
-                <h3>{selectedSkill.name}</h3>
-                <p>{selectedSkill.description}</p>
+                <h3>{displayName}</h3>
+                <p>{displayDescription}</p>
                 <p>
                   <strong>ST Cost: </strong>
-                  {selectedSkill.st}
+                  {displaySt}
                 </p>
                 {selectedSkill.acquisition && (
                   <p>

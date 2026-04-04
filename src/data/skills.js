@@ -122,10 +122,14 @@ const skills = [
     name: "Sylphid",
     description:
       "Increases attack speed and movement speed for a time. The amount it increases depends on your magical power.",
+    altName: "Nymph",
+    altDescription:
+      "Summons a wind spirit which will follow you for a while. Fires arc-shaped gales of wind at regular intervals.",
     image: BASE + "sylphid.png",
     acquisition: "Grow Tree",
     element: BASE_ELEMENT + "wind.png",
     st: 171,
+    altSt: 342,
   },
   {
     name: "Random Shots",
@@ -149,10 +153,14 @@ const skills = [
     name: "Thunder Spear",
     description:
       "Turns into an electricity-discharging drill that charges at the enemy. Invincible while transforming. Can be used for emergency evasion.",
+    altName: "Magnetic",
+    altDescription:
+      "Attacks by drawing in balls of lightning from the surroundings. Highly powerful if used skillfully.",
     image: BASE + "thunder_spear.png",
     acquisition: "Grow Tree",
     element: BASE_ELEMENT + "dark.png",
     st: 90,
+    altSt: 270,
   },
   {
     name: "Lollipop",
@@ -171,6 +179,19 @@ const skills = [
     acquisition: "Grow Tree",
     element: BASE_ELEMENT + "dark.png",
     st: 180,
+  },
+  {
+    name: "Purple Flash",
+    description:
+      "Placed where the skill is activated, it remains there and attacks the area multiple times. Easily useful in various situations.",
+    altName: "Thunder and Lightning",
+    altDescription:
+      "Launches a medium-range discharge attack after a short build-up. Has a wide hit range and instantly strikes with high power.",
+    image: BASE + "purple_flash.png",
+    acquisition: "Grow Tree",
+    element: BASE_ELEMENT + "dark.png",
+    st: 252,
+    altSt: 333,
   },
   {
     name: "Moonlight",

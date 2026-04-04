@@ -196,7 +196,7 @@ const items = [
     description:
       "Crushes rocks and excavates minerals when used at mining points.",
     image: BASE + "iron_pickaxe.png",
-    acquisition: "Loot Chest",
+    acquisition: "Shop",
     type: "Miscellaneous",
     libra: {
       karma: 29,
@@ -208,11 +208,27 @@ const items = [
     description:
       "Crushes rocks and excavates minerals when used at mining points.",
     image: BASE + "crystal_pickaxe.png",
-    acquisition: "Loot Chest",
+    acquisition: "Shop",
     type: "Miscellaneous",
     libra: {
       karma: 56,
       effects: ["Effect Duration (EPIC)", "Weight Reduction (GOOD)"],
+    },
+  },
+  {
+    name: "Demon God's Pickaxe",
+    description:
+      "Crushes rocks and excavates minerals when used at mining points.",
+    image: BASE + "demon_gods_pickaxe.png",
+    acquisition: "Shop",
+    type: "Miscellaneous",
+    libra: {
+      karma: 68,
+      effects: [
+        "Experience Earned",
+        "Weight Reduction (EPIC)",
+        "Defense Power",
+      ],
     },
   },
   {
@@ -402,6 +418,15 @@ const items = [
     type: "Secondary Weapon",
   },
   {
+    name: "Spirit Bow Ushas",
+    description:
+      "Fires at a set trajectory that aims upwards. Consumes 20 arrows and briefly delivers tremendous firepower.",
+    image: BASE + "spirit_bow_ushas.png",
+    acquisition:
+      "West of the Belkade Cave, area with a massive pit, use Zero Gravity / Air Surf to get to the chest",
+    type: "Secondary Weapon",
+  },
+  {
     name: "Crossbow",
     description:
       "Takes time to load, but fires arrows in a straight line. The angle of the crossbow can be changed with the up and down buttons.",
@@ -510,7 +535,7 @@ const items = [
     description:
       "Heals the abnormal status Bleeding. Neutralizes Bleeding and provides lasting resistance for a while.",
     image: BASE + "hemostatic.png",
-    acquisition: "Bakery",
+    acquisition: "Shop",
     type: "Medicines/Bottles",
     libra: {
       karma: 34,
@@ -522,7 +547,7 @@ const items = [
     description:
       "Prevents Petrifaction for a while. Items cannot be used when petrified, so protect yourself beforehand.",
     image: BASE + "holy_water.png",
-    acquisition: "Bakery",
+    acquisition: "Shop",
     type: "Medicines/Bottles",
     libra: {
       karma: 26,
@@ -1463,6 +1488,15 @@ const items = [
     type: "Books/Cards",
   },
   {
+    name: "Technique Scroll - Zero Gravity",
+    description:
+      "An esoteric scroll describing the Zero Gravity technique. Open to view details.",
+    image: BASE + "technique_scroll.png",
+    acquisition:
+      "Research Lab, go up the elevator and follow the path to the left, go up and go through the red door, open the chest.",
+    type: "Books/Cards",
+  },
+  {
     name: "Technique Scroll - Jump Slash",
     description:
       "An esoteric scroll describing the Jump Slash technique. Open to view details.",
@@ -1531,6 +1565,14 @@ const items = [
     name: "[Sealed] Technique Scroll - Tornado Slash",
     description:
       "A sealed esoteric scroll describing the Tornado Slash technique. Open to view details.",
+    image: BASE + "sealed_technique_scroll.png",
+    acquisition: "Combine Technique Sealing Medal with the technique scroll",
+    type: "Books/Cards",
+  },
+  {
+    name: "[Sealed] Technique Scroll - Zero Gravity",
+    description:
+      "A sealed esoteric scroll describing the Zero Gravity technique. Open to view details.",
     image: BASE + "sealed_technique_scroll.png",
     acquisition: "Combine Technique Sealing Medal with the technique scroll",
     type: "Books/Cards",
@@ -1640,6 +1682,18 @@ const items = [
     },
   },
   {
+    name: "Magical Power Card",
+    description:
+      "A mysterious card that increases your magical power when used. Depicts the witch, Morgan le Fay.",
+    image: BASE + "magical_power_card.png",
+    acquisition: "Loot Chest",
+    type: "Books/Cards",
+    libra: {
+      karma: 36,
+      effects: ["Magical Power", "Magical Power (GOOD)"],
+    },
+  },
+  {
     name: "Good Fortune Card",
     description:
       "A mysterious card that increases your luck when used. Depicts Fate, the goddess of destiny.",
@@ -1649,6 +1703,18 @@ const items = [
     libra: {
       karma: 54,
       effects: ["Coins Earned", "Coins Earned (GOOD)"],
+    },
+  },
+  {
+    name: "Agility Card",
+    description:
+      "A mysterious card that increases your agility when used. Depicts Le Hoot, the goddess of breath.",
+    image: BASE + "agility_card.png",
+    acquisition: "Loot Chest",
+    type: "Books/Cards",
+    libra: {
+      karma: 44,
+      effects: ["Weight Reduction", "Weight Reduction (GOOD)"],
     },
   },
   {
@@ -1971,6 +2037,22 @@ const items = [
       karma: 85,
       effects: ["Coins Earned (EPIC)", "Experience Earned (EPIC)"],
     },
+  },
+  {
+    name: "Piece Gem [Luck]",
+    description:
+      "Piece Gems can be set within the empty slots on a Board. Luck increased by (Depends on enhancement)",
+    image: BASE + "piece_gem_luck.png",
+    acquisition: "Postscript, Frontier Spring, east ground pickup ",
+    type: "Ore/Gems",
+  },
+  {
+    name: "Piece Gem [Weapon Attributes]",
+    description:
+      "Piece Gems can be set within the empty slots on a Board. Weapon's attribute will be changed to (Depends on enhancement)",
+    image: BASE + "piece_gem_luck.png",
+    acquisition: "Postscript, Frontier Spring, east ground pickup ",
+    type: "Ore/Gems",
   },
   {
     name: "Slime's Eyeball",
