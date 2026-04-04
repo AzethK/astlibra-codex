@@ -94,7 +94,7 @@ export default function ItemScreen() {
             key={item.name}
             className={`equip-card ${selectedItem?.name === item.name ? "selected" : ""} `}
             onClick={() => {
-              setSelectedItem(item);
+              navigate(`/item/${item.name}`);
             }}
           >
             <img
