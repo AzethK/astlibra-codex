@@ -138,7 +138,11 @@ export default function LibraModal({ onSelectItem, onClose }) {
                 }
               }}
             >
-              <img src={item.image} alt={item.name} />
+              <img
+                src={item.image}
+                alt={item.name}
+                className="equip-card-image"
+              />
               <h3>{item.name}</h3>
             </div>
           ))}

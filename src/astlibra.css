@@ -224,11 +224,7 @@ body {
 
 @media (max-width: 768px) {
   .equip-grid {
-    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
-  }
-
-  .karon-grid {
-    grid-template-columns: 1fr; /* stack cards */
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
   }
 }
 
@@ -242,6 +238,14 @@ body {
     inset 0 0 6px rgba(0, 0, 0, 0.6),
     0 0 6px rgba(203, 182, 122, 0.2);
   transition: transform 0.15s ease;
+}
+
+@media (max-width: 768px) {
+  .karon-item {
+    display: flex;
+    align-items: start;
+    gap: 10px;
+  }
 }
 
 .equip-card.selected {
@@ -376,9 +380,17 @@ body {
   padding: 10px;
 
   width: fit-content;
+  min-width: 0;
 
   background: rgba(0, 0, 0, 0.25);
   box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.6);
+}
+
+@media (max-width: 768px) {
+  .equip-main {
+    grid-template-columns: 120px 1fr;
+    gap: 15px;
+  }
 }
 
 .equip-extra {
@@ -440,7 +452,7 @@ body {
 
 @media (max-width: 768px) {
   .equip-modal {
-    width: 95vw;
+    width: 90vw;
     max-height: 90vh;
   }
 }
@@ -522,6 +534,12 @@ body {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
   gap: 20px;
+}
+
+@media (max-width: 768px) {
+  .karon-grid {
+    gap: 10px;
+  }
 }
 
 .karon-overlay {
@@ -1100,7 +1118,7 @@ body {
 
 @media (max-width: 768px) {
   .libra-grid {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
     gap: 10px;
     padding: 10px;
   }

@@ -4,6 +4,7 @@ import items from "../data/items";
 import ItemModal from "./ItemModal";
 
 export default function EquipModal({ equip, onClose, closing, tab }) {
+  const isMobile = window.innerWidth <= 768;
   const equipModalRef = useRef(null);
   const [modalPosition, setModalPosition] = useState(null);
   const navigate = useNavigate();
@@ -276,11 +277,28 @@ export default function EquipModal({ equip, onClose, closing, tab }) {
       {selectedMaterial && modalPosition && (
         <div
           className={`equip-modal ${itemClosing ? "closing" : ""}`}
-          style={{
-            position: "fixed",
-            top: modalPosition.top,
-            left: modalPosition.left,
-          }}
+          onClick={
+            isMobile ?
+              (e) => {
+                e.stopPropagation();
+                setItemClosing(true);
+                setSelectedMaterial(null);
+              }
+            : (e) => e.stopPropagation()
+          }
+          style={
+            isMobile ?
+              {
+                position: "fixed",
+                bottom: modalPosition.bottom,
+              }
+            : {
+                position: "fixed",
+
+                top: modalPosition.top,
+                left: modalPosition.left,
+              }
+          }
         >
           <ItemModal
             item={items.find((i) => i.name === selectedMaterial)}

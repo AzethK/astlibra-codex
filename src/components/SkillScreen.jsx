@@ -78,9 +78,8 @@ export default function SkillScreen() {
             isAlt && skill.altName ? skill.altName : skill.name;
 
           return (
-            <div className="karon-card-wrapper">
+            <div className="karon-card-wrapper" key={skill.name}>
               <div
-                key={skill.name}
                 className={`skill-card 
           ${selectedSkill?.name === skill.name ? "selected" : ""} 
           ${isAlt ? "alt" : ""}
