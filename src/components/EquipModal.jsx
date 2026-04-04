@@ -1,9 +1,11 @@
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import items from "../data/items";
 import ItemModal from "./ItemModal";
 
 export default function EquipModal({ equip, onClose, closing, tab }) {
+  const equipModalRef = useRef(null);
+  const [modalPosition, setModalPosition] = useState(null);
   const navigate = useNavigate();
   const renderBars = (value, type) => {
     return [1, 2, 3].map((i) => (
@@ -15,6 +17,28 @@ export default function EquipModal({ equip, onClose, closing, tab }) {
   };
   const [selectedMaterial, setSelectedMaterial] = useState(null);
   const [itemClosing, setItemClosing] = useState(false);
+
+  // Get Equip Modal position to align the material modal
+  useEffect(() => {
+    const updatePosition = () => {
+      if (equipModalRef.current) {
+        const rect = equipModalRef.current.getBoundingClientRect();
+        setModalPosition({
+          top: rect.top,
+          left: rect.right + 10,
+        });
+      }
+    };
+
+    updatePosition();
+    window.addEventListener("resize", updatePosition);
+    window.addEventListener("scroll", updatePosition);
+
+    return () => {
+      window.removeEventListener("resize", updatePosition);
+      window.removeEventListener("scroll", updatePosition);
+    };
+  }, [selectedMaterial]);
 
   const formatStatLabel = (key) => {
     const map = {
@@ -47,6 +71,7 @@ export default function EquipModal({ equip, onClose, closing, tab }) {
       onClick={onClose}
     >
       <div
+        ref={equipModalRef}
         className={`equip-modal ${closing ? "closing" : ""}`}
         onClick={(e) => e.stopPropagation()}
       >
@@ -248,10 +273,14 @@ export default function EquipModal({ equip, onClose, closing, tab }) {
           </div>
         )}
       </div>
-      {selectedMaterial && (
+      {selectedMaterial && modalPosition && (
         <div
           className={`equip-modal ${itemClosing ? "closing" : ""}`}
-          onClick={(e) => e.stopPropagation()}
+          style={{
+            position: "fixed",
+            top: modalPosition.top,
+            left: modalPosition.left,
+          }}
         >
           <ItemModal
             item={items.find((i) => i.name === selectedMaterial)}

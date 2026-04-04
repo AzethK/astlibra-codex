@@ -411,6 +411,8 @@ const shields = [
     full_resistance: 11,
     skill: "Enhance Performance",
     acquisition: "Tokyo / Research Lab Mokyun Shop",
+    materials: ["Adamantite", "Cable", "Gear"],
+    materialAmount: [1, 1, 1],
   },
   {
     name: "Riot Shield",
@@ -423,6 +425,8 @@ const shields = [
     full_resistance: 0,
     skill: "Enhance Performance",
     acquisition: "Tokyo / Research Lab Mokyun Shop",
+    materials: ["Orichalcum", "Battery", "Screws"],
+    materialAmount: [1, 1, 2],
   },
   {
     name: "Diabolos",
@@ -435,6 +439,8 @@ const shields = [
     full_resistance: 0,
     skill: "Demon Rage",
     acquisition: "Tokyo / Research Lab Mokyun Shop",
+    materials: ["Orichalcum", "Heart", "Spring"],
+    materialAmount: [2, 2, 1],
   },
   {
     name: "Anastasis",
@@ -447,6 +453,8 @@ const shields = [
     full_resistance: 20,
     skill: "Maxwell",
     acquisition: "Tokyo / Research Lab Formula",
+    materials: ["Jam Cookie", "Spring", "Orichalcum"],
+    materialAmount: [2, 1, 1],
   },
   {
     name: "Dewprism",

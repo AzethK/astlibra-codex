@@ -447,6 +447,8 @@ const armors = [
     magical_power: 0,
     skill: "Enhance Performance",
     acquisition: "Tokyo / Research Lab Mokyun Shop",
+    materials: ["Adamantite", "Cable", "Gear"],
+    materialAmount: [2, 1, 1],
   },
   {
     name: "Armor of Darkness",
@@ -459,6 +461,8 @@ const armors = [
     magical_power: 0,
     skill: "Darkness",
     acquisition: "Tokyo / Research Lab Mokyun Shop",
+    materials: ["Orichalcum", "Battery", "Screws"],
+    materialAmount: [1, 2, 1],
   },
   {
     name: "Hero's Armor",
@@ -471,6 +475,8 @@ const armors = [
     magical_power: 5,
     skill: "Gale",
     acquisition: "Tokyo / Research Lab Mokyun Shop",
+    materials: ["Orichalcum", "Heart", "Spring"],
+    materialAmount: [2, 2, 1],
   },
   {
     name: "Soul Armor",
@@ -483,6 +489,8 @@ const armors = [
     magical_power: 30,
     skill: "Magical Power Conversion",
     acquisition: "Tokyo / Research Lab Formula",
+    materials: ["Jam Roll", "Nuclear Power Reactor", "Orichalcum"],
+    materialAmount: [2, 1, 1],
   },
   {
     name: "Stardust Armor",

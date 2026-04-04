@@ -357,6 +357,8 @@ const trinkets = [
     image: BASE + "halloween_belt.png",
     stats: { maxhp: 100, atk: 20, bleedres: 40, parares: 40 },
     acquisition: "Tokyo / Research Lab Mokyun Shop",
+    materials: ["Adamantite", "Cable", "Gear"],
+    materialAmount: [1, 1, 1],
   },
   {
     name: "Magic Gloves",
@@ -365,6 +367,8 @@ const trinkets = [
     image: BASE + "magic_gloves.png",
     stats: { magical_power: 50 },
     acquisition: "Tokyo / Research Lab Mokyun Shop",
+    materials: ["Orichalcum", "Battery", "Heart"],
+    materialAmount: [1, 1, 1],
   },
   {
     name: "Gold Pocket Watch",
@@ -379,6 +383,8 @@ const trinkets = [
     image: BASE + "magic_ore_ring.png",
     stats: { maxhp: 50, def: 20, magical_power: 10, petrires: 40 },
     acquisition: "Tokyo / Research Lab Mokyun Shop",
+    materials: ["Orichalcum", "Screws", "Spring"],
+    materialAmount: [1, 1, 1],
   },
   {
     name: "Magic Scale",
@@ -387,6 +393,8 @@ const trinkets = [
     image: BASE + "magic_scale.png",
     stats: { maxhp: 200, def: 30, guard: 20, luck: 5 },
     acquisition: "Tokyo / Research Lab Formula",
+    materials: ["Delicious Cake", "Battery", "Hihi-Irokane"],
+    materialAmount: [2, 1, 1],
   },
   {
     name: "Hero's Hair Ornament",

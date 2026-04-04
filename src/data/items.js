@@ -25,6 +25,14 @@ const items = [
     type: "Books/Cards",
   },
   {
+    name: "Alchemy Recipes",
+    description:
+      "Contains information about special item synthesis. It allows the user to perform out-of-the-norm synthesis.",
+    image: BASE + "alchemy_recipes.png",
+    acquisition: "Mokyun Gacha Reward",
+    type: "Books/Cards",
+  },
+  {
     name: "The Book of Karon: Vol 36 (Travel)",
     description:
       "A wise man's book on traveling. Contains a lot of information. Use it as a reference guide.",
@@ -418,6 +426,14 @@ const items = [
     type: "Secondary Weapon",
   },
   {
+    name: "Laser Gun",
+    description:
+      "Takes a long time to load but fires energy bullets. Consumes 10 gunpowder bullets for a super rapidfire attack.",
+    image: BASE + "laser_gun.png",
+    acquisition: "Mokyun Gacha Reward",
+    type: "Secondary Weapon",
+  },
+  {
     name: "Soma",
     description:
       "Recovers 300 HP. Expensive, but immediately restores your health.",
@@ -715,6 +731,18 @@ const items = [
     },
   },
   {
+    name: "Jam Roll",
+    description:
+      "Recovers 2,400 HP. It is a bread roll filled with jam. Tear off a bit and enjoy.",
+    image: BASE + "jam_roll.png",
+    acquisition: "Combine Bread and Strawberry Jam",
+    type: "Food",
+    libra: {
+      karma: 58,
+      effects: ["Max HP (EPIC)", "HP Recovery (GOOD)", "ST Gain Rate (GOOD)"],
+    },
+  },
+  {
     name: "Plain Cookies",
     description:
       "Generates 12 [Water] and [Earth] force. Plain cookies with a nice buttery aroma.",
@@ -980,6 +1008,82 @@ const items = [
         "ST Gain Rate (EPIC)",
         "Guard Durability (GOOD)",
         "Gradual Recovery (GOOD)",
+      ],
+    },
+  },
+  {
+    name: "Strawberry Jam",
+    description:
+      "Recovers 50 ST. This sweet and tangy jam contains bits of strawberry.",
+    image: BASE + "strawberry_jam.png",
+    acquisition: "Combine Strawberry and Sugar",
+    type: "Food",
+    libra: {
+      karma: 98,
+      effects: [
+        "Poison Resistance (EPIC)",
+        "Bleeding Resistance (EPIC)",
+        "Paralysis Resistance (EPIC)",
+      ],
+    },
+  },
+  {
+    name: "Cotton Candy",
+    description:
+      "Recovers 250 HP. Sweet and melts in your mouth. It's tasty, mokyu.",
+    image: BASE + "cotton_candy.png",
+    acquisition: "Combine Sugar and Sugar",
+    type: "Food",
+    libra: {
+      karma: 85,
+      effects: [
+        "Paralysis Resistance (EPIC)",
+        "Petrifaction Resistance (EPIC)",
+        "Blind Resistance (EPIC)",
+      ],
+    },
+  },
+  {
+    name: "Strawberry Ice Cream",
+    description:
+      "Recovers 322 [Earth] and [Fire] force. Strawberry-flavored ice cream is everyone's favorite.",
+    image: BASE + "strawberry_ice_cream.png",
+    acquisition: "Combine Strawberry Jam and Soft-Serve Ice Cream",
+    type: "Food",
+    libra: {
+      karma: 63,
+      effects: [
+        "Guard Durability (EPIC)",
+        "Effect Duration (EPIC)",
+        "Magical Power",
+      ],
+    },
+  },
+  {
+    name: "Jam Cookie",
+    description:
+      "Recovers 316 [Earth] and [Water] force. Crumbly cookie and sweet jam is a golden combination.",
+    image: BASE + "jam_cookie.png",
+    acquisition: "Combine Strawberry Jam and Plain Cookies",
+    type: "Food",
+    libra: {
+      karma: 51,
+      effects: ["Defense Power (EPIC)", "Use Speed (EPIC)", "Guard Durability"],
+    },
+  },
+  {
+    name: "Candied Apple",
+    description:
+      "Recovers 307 [Darkness] and [Water] force. This is the ultimate candy, combining a crunchy texture and crisp apple.",
+    image: BASE + "candied_apple.png",
+    acquisition: "Combine Apple and Cotton Candy",
+    type: "Food",
+    libra: {
+      karma: 74,
+      effects: [
+        "Attack Power (EPIC)",
+        "Weight Reduction (EPIC)",
+        "ST Gain Rate",
       ],
     },
   },
@@ -1703,6 +1807,18 @@ const items = [
     },
   },
   {
+    name: "Hihi-Irokane",
+    description:
+      "A legendary ore of the East. It is reputed to be a living metal that never changes.",
+    image: BASE + "hihi_irokane.png",
+    acquisition: "Mining",
+    type: "Ore/Gems",
+    libra: {
+      karma: 49,
+      effects: ["Defense Power (EPIC)", "Guard Durability (EPIC)"],
+    },
+  },
+  {
     name: "Copper Ingot",
     description:
       "A lump of metal refined from copper ore. Has a higher value than the raw material.",
@@ -1773,6 +1889,18 @@ const items = [
     },
   },
   {
+    name: "Orichalcum",
+    description:
+      "This ultimate metal ingot emits a strange aura. It is cold to the touch. Legends state that it possesses a will of its own.",
+    image: BASE + "orichalcum.png",
+    acquisition: "Combine Hihi-Irokane and Refining Kit",
+    type: "Ore/Gems",
+    libra: {
+      karma: 64,
+      effects: ["Attack Power (EPIC)", "Magical Power (EPIC)"],
+    },
+  },
+  {
     name: "Atega",
     description:
       "A redeemable item which can be sold for a large number of coins. A gem of good fortune, symbolizing wealth and gold.",
@@ -1830,6 +1958,18 @@ const items = [
     libra: {
       karma: 75,
       effects: ["Coins Earned (EPIC)", "Experience Earned (GOOD)"],
+    },
+  },
+  {
+    name: "Daimond",
+    description:
+      "A redeemable item which can be sold for a large number of coins. A gem of chaos and brilliance, symbolizing fate.",
+    image: BASE + "daimond.png",
+    acquisition: "Mining",
+    type: "Ore/Gems",
+    libra: {
+      karma: 85,
+      effects: ["Coins Earned (EPIC)", "Experience Earned (EPIC)"],
     },
   },
   {
@@ -2386,6 +2526,54 @@ const items = [
     },
   },
   {
+    name: "Screws",
+    description:
+      "High-performance screws, incomparable to those of the past. They're called screws because they are screwed in.",
+    image: BASE + "screws.png",
+    acquisition: "Drop from Flying Machine 3 (Research Lab)",
+    type: "Demon Materials",
+    libra: {
+      karma: 35,
+      effects: ["Paralysis Resistance (EPIC)", "ST Gain Rate"],
+    },
+  },
+  {
+    name: "Heart",
+    description:
+      "A creature's heart taken out of a machine. Its self-cleaning organics are superior to machines.",
+    image: BASE + "heart.png",
+    acquisition: "Drop from Red Crab (Research Lab)",
+    type: "Demon Materials",
+    libra: {
+      karma: 55,
+      effects: ["Gradual Recovery (EPIC)", "Experience Earned"],
+    },
+  },
+  {
+    name: "Spring",
+    description:
+      "Piece of metal that bounces back when you push it. It will not bounce back if you hold it down.",
+    image: BASE + "spring.png",
+    acquisition: "Drop from Machine Phantom (Research Lab)",
+    type: "Demon Materials",
+    libra: {
+      karma: 31,
+      effects: ["Effect Duration (EPIC)", "Use Speed"],
+    },
+  },
+  {
+    name: "Nuclear Power Reactor",
+    description:
+      "The heart of a machine that continues to generate energy. One of these can supply a town's electricity for ten years.",
+    image: BASE + "nuclear_power_reactor.png",
+    acquisition: "Drop from Mech (Research Lab)",
+    type: "Demon Materials",
+    libra: {
+      karma: 50,
+      effects: ["Coins Earned (EPIC)", "Adaptability"],
+    },
+  },
+  {
     name: "Anulis' Ribbon",
     description: "A very long ribbon, worn by Anulis. It holds many memories.",
     image: BASE + "anulis_ribbon.png",
@@ -2649,6 +2837,13 @@ const items = [
     type: "Valuables",
   },
   {
+    name: "Security Card",
+    description: "A researcher's ID. It opens doors to high security rooms.",
+    image: BASE + "security_card.png",
+    acquisition: "Chapter 8 Event.",
+    type: "Valuables",
+  },
+  {
     name: "Herb",
     description:
       "An herb that can be found in the prairie. It makes an excellent sleeping aid.",
@@ -2725,6 +2920,87 @@ const items = [
     description:
       "It gives you 5% off when you shop. With several in your possession, you'll get fantastic discounts.",
     image: BASE + "golden_ticket.png",
+    type: "Collected Items",
+  },
+  {
+    name: "Red Stone",
+    description: "A bright red stone. Its usage is not yet known.",
+    image: BASE + "red_stone.png",
+    acquisition: "Master Magical Staff Verethragna / Magic Sword Aroundight",
+    type: "Collected Items",
+  },
+  {
+    name: "Blue Stone",
+    description: "A bright blue stone. Its usage is not yet known.",
+    image: BASE + "blue_stone.png",
+    acquisition: "Master Divine Spear Gungnir",
+    type: "Collected Items",
+  },
+  {
+    name: "Green Stone",
+    description: "A bright green stone. Its usage is not yet known.",
+    image: BASE + "green_stone.png",
+    acquisition: "Master Divine Spear Gungnir",
+    type: "Collected Items",
+  },
+  {
+    name: "Yellow Stone",
+    description: "A bright yellow stone. Its usage is not yet known.",
+    image: BASE + "yellow_stone.png",
+    acquisition: "Master Ridill / Saced Sword Excalibur",
+    type: "Collected Items",
+  },
+  {
+    name: "Purple Stone",
+    description: "A purple gem. Its usage is not yet known.",
+    image: BASE + "purple_stone.png",
+    acquisition: "Combine Red Stone and Blue Stone",
+    type: "Collected Items",
+  },
+  {
+    name: "Yellow-green Gem",
+    description: "A shiny yellow-green gem. Its usage is not yet known.",
+    image: BASE + "yellow_green_gem.png",
+    acquisition: "Combine Green Stone and Yellow Stone",
+    type: "Collected Items",
+  },
+  {
+    name: "Red-yellow Gem",
+    description:
+      "A beautiful gem of mixed red and yellow. Its usage is not yet known.",
+    image: BASE + "red_yellow_gem.png",
+    acquisition: "Combine Yellow Stone and Red Stone",
+    type: "Collected Items",
+  },
+  {
+    name: "White Gem",
+    description: "A white, strangely opaque gem. Its usage is not yet known.",
+    image: BASE + "white_gem.png",
+    acquisition: "Master Sword of Light Claíomh Solais",
+    type: "Collected Items",
+  },
+  {
+    name: "Dark Gem",
+    description:
+      "A dark, faintly glowing substance of mixed purple and green. Its usage is not yet known.",
+    image: BASE + "dark_gem.png",
+    acquisition: "Combine Yellow-green Gem and Purple Stone",
+    type: "Collected Items",
+  },
+  {
+    name: "Sun Stone",
+    description:
+      "A dazzling gem with an orange fire at its center. Its usage is not yet known.",
+    image: BASE + "sun_stone.png",
+    acquisition: "Combine Red-yellow Gem and White Gem",
+    type: "Collected Items",
+  },
+  {
+    name: "Alexandrite",
+    description:
+      "This rare gem only appears in legends. Its usage is not yet known.",
+    image: BASE + "alexandrite.png",
+    acquisition: "Combine Dark Gem and Sun Stone",
     type: "Collected Items",
   },
   {

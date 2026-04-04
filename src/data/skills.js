@@ -29,6 +29,15 @@ const skills = [
     st: 189,
   },
   {
+    name: "Blaze",
+    description:
+      "Spews a short range, fan-shaped fire breath. The angle changes with each breath, but it's powerful.",
+    image: BASE + "blaze.png",
+    acquisition: "Grow Tree",
+    element: BASE_ELEMENT + "fire.png",
+    st: 234,
+  },
+  {
     name: "Cold Bullet",
     description:
       "Summons a stationary spirit to launch a concentrated attack on the ground in front of them.",
@@ -54,6 +63,15 @@ const skills = [
     acquisition: "Grow Tree",
     element: BASE_ELEMENT + "water.png",
     st: 171,
+  },
+  {
+    name: "Mermaid Bubble",
+    description:
+      "Fires huge bubbles that can eliminate enemy bullets. The bubbles shrink when hit by an enemy or enemy bullet.",
+    image: BASE + "mermaid_bubble.png",
+    acquisition: "Grow Tree",
+    element: BASE_ELEMENT + "water.png",
+    st: 225,
   },
   {
     name: "Heavenly Mountain",
@@ -119,6 +137,15 @@ const skills = [
     st: 180,
   },
   {
+    name: "Whirlwind",
+    description:
+      "Attacks at a fixed distance. It is difficult to determine where it hits, but it's very powerful.",
+    image: BASE + "whirlwind.png",
+    acquisition: "Grow Tree",
+    element: BASE_ELEMENT + "wind.png",
+    st: 243,
+  },
+  {
     name: "Thunder Spear",
     description:
       "Turns into an electricity-discharging drill that charges at the enemy. Invincible while transforming. Can be used for emergency evasion.",
@@ -162,6 +189,24 @@ const skills = [
     acquisition: "Grow Tree",
     element: BASE_ELEMENT + "holy.png",
     st: 117,
+  },
+  {
+    name: "Angel",
+    description:
+      "Summons a holy spirit which will follow you for a while. It fires penetrating lasers at regular intervals.",
+    image: BASE + "angel.png",
+    acquisition: "Grow Tree",
+    element: BASE_ELEMENT + "holy.png",
+    st: 180,
+  },
+  {
+    name: "Sword Waltz",
+    description:
+      "Slices through enemies with its sword dance. The range is particular, but it covers a wide area and hits hard.",
+    image: BASE + "sword_waltz.png",
+    acquisition: "Grow Tree",
+    element: BASE_ELEMENT + "holy.png",
+    st: 207,
   },
 ];
 
