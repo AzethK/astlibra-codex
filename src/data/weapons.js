@@ -1113,7 +1113,7 @@ const weapons = [
     weight: 560,
     skill: "The Art of Summoning",
     acquisition:
-      "Collect all Weapons, Armors and Shields then talk to Great Sage.",
+      "Collect all Weapons (Muramasa not included), Armors and Shields then talk to Great Sage.",
   },
   {
     name: "Super Ultimate Laser Blade Muramasa",
