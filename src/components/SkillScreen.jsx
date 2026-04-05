@@ -22,7 +22,10 @@ export default function SkillScreen() {
     const query = searchQuery.toLowerCase();
 
     filteredItems = filteredItems.filter((skill) => {
-      if (skill.name.toLowerCase().includes(query)) {
+      if (
+        skill.name.toLowerCase().includes(query) ||
+        skill.altName?.toLowerCase().includes(query)
+      ) {
         return skill.name.toLowerCase();
       }
 
@@ -65,7 +68,7 @@ export default function SkillScreen() {
       <div className="search-box">
         <input
           type="text"
-          placeholder="Search Skills..."
+          placeholder="Search skill name..."
           value={searchQuery}
           onChange={(e) => setSearchQuery(e.target.value)}
         />

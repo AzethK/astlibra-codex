@@ -83,7 +83,7 @@ export default function ItemScreen() {
       <div className="search-box">
         <input
           type="text"
-          placeholder="Search Items..."
+          placeholder="Search item name or location..."
           value={searchQuery}
           onChange={(e) => setSearchQuery(e.target.value)}
         />

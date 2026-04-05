@@ -627,6 +627,18 @@ const items = [
     },
   },
   {
+    name: "Large Water-filled Bottle",
+    description:
+      "A large bottle of delicious water. Heals more gently than restorative remedies.",
+    image: BASE + "large_water_filled_bottle.png",
+    acquisition: "Shop",
+    type: "Use Large Empty Bottle on water",
+    libra: {
+      karma: 60,
+      effects: ["Adaptability (EPIC)", "Gradual Recovery (EPIC)"],
+    },
+  },
+  {
     name: "Goji Berries",
     description:
       "Recovers 100 HP. Has a hard, bitter shell, but is rich in nutrients.",
@@ -671,6 +683,18 @@ const items = [
     libra: {
       karma: 40,
       effects: ["HP Recovery (GOOD)", "HP Recovery (EPIC)"],
+    },
+  },
+  {
+    name: "Dogu Fruit",
+    description:
+      "Recovers 2,000 HP. Contrary to its toxic appearance, this fruit-like medicine is good for the body.",
+    image: BASE + "dogu_fruit.png",
+    acquisition: "Shop",
+    type: "Food",
+    libra: {
+      karma: 42,
+      effects: ["HP Recovery (EPIC)", "Weight Reduction"],
     },
   },
   {
@@ -2039,6 +2063,67 @@ const items = [
     },
   },
   {
+    name: "Large Piece Gem Fragment",
+    description: "A fragment used to enhance a Piece Gem",
+    image: BASE + "large_piece_gem_fragment.png",
+    acquisition: "Postscript, Loot Chest",
+    type: "Ore/Gems",
+  },
+  {
+    name: "Piece Gem [Health]",
+    description:
+      "Piece Gems can be set within the empty slots on a Board. Maximum HP increased by (Depends on enhancement)",
+    image: BASE + "piece_gem_health.png",
+    acquisition:
+      "Postscript, Research Lab, ground pickup on lava next to computer.",
+    type: "Ore/Gems",
+  },
+  {
+    name: "Piece Gem [Stamina]",
+    description:
+      "Piece Gems can be set within the empty slots on a Board. Maximum ST increased by (Depends on enhancement)",
+    image: BASE + "piece_gem_stamina.png",
+    acquisition:
+      "Postscript, Akrasinon, ground pickup where the demon tree's roots were.",
+    type: "Ore/Gems",
+  },
+  {
+    name: "Piece Gem [Attack power]",
+    description:
+      "Piece Gems can be set within the empty slots on a Board. Attack power increased by (Depends on enhancement)",
+    image: BASE + "piece_gem_attack_power.png",
+    acquisition:
+      "Postscript, Belkade Volcado, hug the right wall when going down the pit where you'd use the boomerang.",
+    type: "Ore/Gems",
+  },
+  {
+    name: "Piece Gem [Defense power]",
+    description:
+      "Piece Gems can be set within the empty slots on a Board. Defense power increased by (Depends on enhancement)",
+    image: BASE + "piece_gem_defense_power.png",
+    acquisition:
+      "Postscript, Bridion Swamp, east, ground pickup next to the water",
+    type: "Ore/Gems",
+  },
+  {
+    name: "Piece Gem [Magical power]",
+    description:
+      "Piece Gems can be set within the empty slots on a Board. Magical power increased by (Depends on enhancement)",
+    image: BASE + "piece_gem_magical_power.png",
+    acquisition:
+      "Postscript, Elysium, ground pickup next to pot that you had to fill with water",
+    type: "Ore/Gems",
+  },
+  {
+    name: "Piece Gem [Agility]",
+    description:
+      "Piece Gems can be set within the empty slots on a Board. Agility increased by (Depends on enhancement)",
+    image: BASE + "piece_gem_agility.png",
+    acquisition:
+      "Postscript, Bridion Swamp, west of Mokyun Shop, ground pickup ",
+    type: "Ore/Gems",
+  },
+  {
     name: "Piece Gem [Luck]",
     description:
       "Piece Gems can be set within the empty slots on a Board. Luck increased by (Depends on enhancement)",
@@ -2047,11 +2132,56 @@ const items = [
     type: "Ore/Gems",
   },
   {
+    name: "Piece Gem [Adaptability]",
+    description:
+      "Piece Gems can be set within the empty slots on a Board. Adaptability increased by (Depends on enhancement)",
+    image: BASE + "piece_gem_adaptability.png",
+    acquisition:
+      "Postscript, Belkade Volcano, ground pickup where you'd use the boomerang",
+    type: "Ore/Gems",
+  },
+  {
+    name: "Piece Gem [Guard Durability]",
+    description:
+      "Piece Gems can be set within the empty slots on a Board. Guard defense power increased by (Depends on enhancement)",
+    image: BASE + "piece_gem_guard_durability.png",
+    acquisition:
+      "Postscript, Elizas, next to the door in the church shortcut to the shrine",
+    type: "Ore/Gems",
+  },
+  {
+    name: "Piece Gem [Weight Reduction]",
+    description:
+      "Piece Gems can be set within the empty slots on a Board. Weight reduced by (Depends on enhancement)",
+    image: BASE + "piece_gem_weight_reduction.png",
+    acquisition:
+      "Postscript, Sea Serpent cave, ground pickup below the bridges",
+    type: "Ore/Gems",
+  },
+  {
+    name: "Piece Gem [Walking Speed]",
+    description:
+      "Piece Gems can be set within the empty slots on a Board. Walking speed increased by (Depends on enhancement)",
+    image: BASE + "piece_gem_walking_speed.png",
+    acquisition:
+      "Postscript, Akrasinon Castle, right side of where the miniboss was",
+    type: "Ore/Gems",
+  },
+  {
+    name: "Piece Gem [Stat Point Cap]",
+    description:
+      "Piece Gems can be set within the empty slots on a Board. When allocating character stat points, the point stat cap before diminishing returns is raised by (Depends on enhancement)",
+    image: BASE + "piece_gem_stat_point_cap.png",
+    acquisition:
+      "Postscript, Elysium, ground pickup at the end of path on the door left of the one that was locked by runes",
+    type: "Ore/Gems",
+  },
+  {
     name: "Piece Gem [Weapon Attributes]",
     description:
       "Piece Gems can be set within the empty slots on a Board. Weapon's attribute will be changed to (Depends on enhancement)",
-    image: BASE + "piece_gem_luck.png",
-    acquisition: "Postscript, Frontier Spring, east ground pickup ",
+    image: BASE + "piece_gem_weapon_attributes.png",
+    acquisition: "Postscript, Cave of Libra, next to Blue Orb ",
     type: "Ore/Gems",
   },
   {
@@ -2656,6 +2786,21 @@ const items = [
     },
   },
   {
+    name: "Primordial Fragment",
+    description: "The oldest form of life.",
+    image: BASE + "primordial_fragment.png",
+    acquisition: "Mokyun Gacha Reward",
+    type: "Demon Materials",
+    libra: {
+      karma: 92,
+      effects: [
+        "Gradual Recovery (EPIC)",
+        "Effect Duration (EPIC)",
+        "Attack Power (EPIC)",
+      ],
+    },
+  },
+  {
     name: "Anulis' Ribbon",
     description: "A very long ribbon, worn by Anulis. It holds many memories.",
     image: BASE + "anulis_ribbon.png",
@@ -2926,22 +3071,6 @@ const items = [
     type: "Valuables",
   },
   {
-    name: "Herb",
-    description:
-      "An herb that can be found in the prairie. It makes an excellent sleeping aid.",
-    image: BASE + "herb.png",
-    acquisition: "Anesta Village, drop from miniboss",
-    type: "Valuables",
-  },
-  {
-    name: "Sleeping Aid",
-    description:
-      "A powdered remedy made from a concentrated mixture of herbs. Inhale it and you will fall unconscious and not awaken until the next day.",
-    image: BASE + "sleeping_aid.png",
-    acquisition: "Combine Herb and Gunpowder",
-    type: "Valuables",
-  },
-  {
     name: "Red Rune",
     description:
       "A key to the ancient ruins. It opens the  door to the King's throne.",
@@ -2973,6 +3102,38 @@ const items = [
     image: BASE + "green_rune.png",
     acquisition:
       "Elysium, hidden area, blocked by a barrier, go under the ground to get.",
+    type: "Valuables",
+  },
+  {
+    name: "Herb",
+    description:
+      "An herb that can be found in the prairie. It makes an excellent sleeping aid.",
+    image: BASE + "herb.png",
+    acquisition: "Anesta Village, drop from miniboss",
+    type: "Valuables",
+  },
+  {
+    name: "Sleeping Aid",
+    description:
+      "A powdered remedy made from a concentrated mixture of herbs. Inhale it and you will fall unconscious and not awaken until the next day.",
+    image: BASE + "sleeping_aid.png",
+    acquisition: "Combine Herb and Gunpowder",
+    type: "Valuables",
+  },
+  {
+    name: "Metal and Glass Plank",
+    description:
+      "A fancy plank received from Nagumo. When the surface is touched, it emits light and shows pictures.",
+    image: BASE + "metal_and_glass_plank.png",
+    acquisition: "Postscript Event",
+    type: "Valuables",
+  },
+  {
+    name: "Anulis' Brain",
+    description:
+      "This specimen jar contains Anulis' brain. It has a beautiful color.",
+    image: BASE + "anulis_brain.png",
+    acquisition: "Postscript Event",
     type: "Valuables",
   },
 

@@ -96,7 +96,7 @@ export default function EquipScreen() {
       <div className="search-box">
         <input
           type="text"
-          placeholder="Search Equipment..."
+          placeholder="Search equipment name, material, location, skill..."
           value={searchQuery}
           onChange={(e) => setSearchQuery(e.target.value)}
         />
