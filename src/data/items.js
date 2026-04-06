@@ -45,64 +45,6 @@ const items = [
     },
   },
   {
-    name: "Formula",
-    description:
-      "Makes new equipment available in stores. You can use it to view the Formulas that you currently have.",
-    image: BASE + "formula.png",
-    acquisition: "Loot Chest",
-    type: "Books/Cards",
-  },
-  {
-    name: "Book of Battle Records",
-    description: "Allows you to view various battle records.",
-    image: BASE + "book_of_battle_records.png",
-    acquisition: "Mokyun Gacha Reward",
-    type: "Books/Cards",
-  },
-  {
-    name: "Treasure Encyclopaedia",
-    description:
-      "Contains information about items obtained from treasure chests.",
-    image: BASE + "treasure_encyclopaedia.png",
-    acquisition: "Arena Battle, Urugut Cup, 'Snipe' Reward",
-    type: "Books/Cards",
-  },
-  {
-    name: "The Book of Mythology",
-    description: "Contains stories about the gods",
-    image: BASE + "the_book_of_mythology.png",
-    acquisition: "Rispadar Clothes Shop",
-    type: "Books/Cards",
-  },
-  {
-    name: "Fairy Tales of the World",
-    description: "Contains folklore from across the world.",
-    image: BASE + "fairy_tales_of_the_world.png",
-    acquisition: "Rispadar Clothes Shop",
-    type: "Books/Cards",
-  },
-  {
-    name: "Introduction to Wizardry",
-    description: "Contains information related to magic.",
-    image: BASE + "introduction_to_wizardry.png",
-    acquisition: "Rispadar Clothes Shop",
-    type: "Books/Cards",
-  },
-  {
-    name: "Guidebook",
-    description: "Contains information about various locations.",
-    image: BASE + "guidebook.png",
-    acquisition: "Rispadar Clothes Shop",
-    type: "Books/Cards",
-  },
-  {
-    name: "Self-Made Item Book",
-    description: "Used to record items that have been acquired previously.",
-    image: BASE + "self_made_item_book.png",
-    acquisition: "Rispadar Clothes Shop",
-    type: "Books/Cards",
-  },
-  {
     name: "Camping Set",
     description:
       "Contains various tools for camping. Most of the tools are handmade.",
@@ -114,7 +56,6 @@ const items = [
       effects: ["Max HP", "Max ST"],
     },
   },
-
   {
     name: "Dew from the World Tree",
     description:
@@ -128,14 +69,6 @@ const items = [
     },
   },
   {
-    name: "World Tree Blossom",
-    description:
-      "Can be used to travel to any previous save crystal. Can only be used at certain times, but has infinite uses.",
-    image: BASE + "world_tree_blossom.png",
-    acquisition: "East of the Rispadar Bar",
-    type: "Miscellaneous",
-  },
-  {
     name: "Pekkochira Drops",
     description:
       "Can be used to return immediately to the Pekkochira Village. You can use it as many times as you want.",
@@ -143,6 +76,15 @@ const items = [
     acquisition: "Next to Cave of Libra",
     type: "Miscellaneous",
   },
+  {
+    name: "World Tree Blossom",
+    description:
+      "Can be used to travel to any previous save crystal. Can only be used at certain times, but has infinite uses.",
+    image: BASE + "world_tree_blossom.png",
+    acquisition: "East of the Rispadar Bar",
+    type: "Miscellaneous",
+  },
+
   {
     name: "Torch",
     description:
@@ -284,23 +226,28 @@ const items = [
     },
   },
   {
-    name: "Mokyun Doll",
+    name: "Key Mold A",
     description:
-      "Takes your place in death, resurrecting you on the spot. Cannot be used during boss battles.",
-    image: BASE + "mokyun_doll.png",
-    acquisition: "Mokyun Gacha Reward",
-    type: "Miscellaneous",
+      "A key-shaped mold. Press in clay to make a shape. The clay must have an appropriate viscosity to fit the mold.",
+    image: BASE + "key_mold_a.png",
+    acquisition: "Loot Chest",
+    type: "Ore/Gems",
     libra: {
-      karma: 26,
-      effects: ["ST Gain Rate (EPIC)"],
+      karma: 8,
+      effects: ["Defense Power"],
     },
   },
   {
-    name: "Trinkets Slot +1",
+    name: "Key Mold B",
     description:
-      "Adds an additional slot for equipping trinkets. A very valuable item.",
-    type: "Miscellaneous",
-    image: BASE + "trinkets_slot_+1.png",
+      "A key-shaped mold. Press in clay to make a shape. The clay must have an appropriate viscosity to fit the mold.",
+    image: BASE + "key_mold_b.png",
+    acquisition: "Loot Chest",
+    type: "Ore/Gems",
+    libra: {
+      karma: 18,
+      effects: ["Defense Power (GOOD)"],
+    },
   },
   {
     name: "Reset Potion",
@@ -314,6 +261,26 @@ const items = [
       effects: ["Magical Power (EPIC)"],
     },
   },
+  {
+    name: "Trinkets Slot +1",
+    description:
+      "Adds an additional slot for equipping trinkets. A very valuable item.",
+    type: "Miscellaneous",
+    image: BASE + "trinkets_slot_+1.png",
+  },
+  {
+    name: "Mokyun Doll",
+    description:
+      "Takes your place in death, resurrecting you on the spot. Cannot be used during boss battles.",
+    image: BASE + "mokyun_doll.png",
+    acquisition: "Mokyun Gacha Reward / Shop",
+    type: "Miscellaneous",
+    libra: {
+      karma: 26,
+      effects: ["ST Gain Rate (EPIC)"],
+    },
+  },
+
   {
     name: "Throwing Knives",
     description:
@@ -383,18 +350,6 @@ const items = [
     },
   },
   {
-    name: "Vijaya",
-    description:
-      "Consumed on use, but causes tremendous damage over a wide area. Less powerful when fighting a boss.",
-    image: BASE + "vijaya.png",
-    acquisition: "Loot Chest",
-    type: "Secondary Weapon",
-    libra: {
-      karma: 34,
-      effects: ["Attack Power (GOOD)", "Magical Power"],
-    },
-  },
-  {
     name: "Wooden Bow",
     description: "A sturdy wooden bow. Uses arrows to attack distant targets",
     image: BASE + "wooden_bow.png",
@@ -458,6 +413,20 @@ const items = [
     acquisition: "Mokyun Gacha Reward",
     type: "Secondary Weapon",
   },
+
+  {
+    name: "Vijaya",
+    description:
+      "Consumed on use, but causes tremendous damage over a wide area. Less powerful when fighting a boss.",
+    image: BASE + "vijaya.png",
+    acquisition: "Loot Chest",
+    type: "Secondary Weapon",
+    libra: {
+      karma: 34,
+      effects: ["Attack Power (GOOD)", "Magical Power"],
+    },
+  },
+
   {
     name: "Soma",
     description:
@@ -619,8 +588,8 @@ const items = [
     description:
       "A bottle of delicious water. Heals more gently than restorative remedies.",
     image: BASE + "water_filled_bottle.png",
-    acquisition: "Shop",
-    type: "Use Empty Bottle on water",
+    acquisition: "Use Empty Bottle on water",
+    type: "Medicines/Bottles",
     libra: {
       karma: 40,
       effects: ["Adaptability (GOOD)", "Gradual Recovery (GOOD)"],
@@ -631,8 +600,8 @@ const items = [
     description:
       "A large bottle of delicious water. Heals more gently than restorative remedies.",
     image: BASE + "large_water_filled_bottle.png",
-    acquisition: "Shop",
-    type: "Use Large Empty Bottle on water",
+    acquisition: "Use Large Empty Bottle on water",
+    type: "Medicines/Bottles",
     libra: {
       karma: 60,
       effects: ["Adaptability (EPIC)", "Gradual Recovery (EPIC)"],
@@ -1447,6 +1416,65 @@ const items = [
     },
   },
   {
+    name: "Formula",
+    description:
+      "Makes new equipment available in stores. You can use it to view the Formulas that you currently have.",
+    image: BASE + "formula.png",
+    acquisition: "Loot Chest",
+    type: "Books/Cards",
+  },
+  {
+    name: "Book of Battle Records",
+    description: "Allows you to view various battle records.",
+    image: BASE + "book_of_battle_records.png",
+    acquisition: "Mokyun Gacha Reward",
+    type: "Books/Cards",
+  },
+  {
+    name: "Treasure Encyclopaedia",
+    description:
+      "Contains information about items obtained from treasure chests.",
+    image: BASE + "treasure_encyclopaedia.png",
+    acquisition: "Arena Battle, Urugut Cup, 'Snipe' Reward",
+    type: "Books/Cards",
+  },
+  {
+    name: "The Book of Mythology",
+    description: "Contains stories about the gods",
+    image: BASE + "the_book_of_mythology.png",
+    acquisition: "Rispadar Clothes Shop",
+    type: "Books/Cards",
+  },
+  {
+    name: "Fairy Tales of the World",
+    description: "Contains folklore from across the world.",
+    image: BASE + "fairy_tales_of_the_world.png",
+    acquisition: "Rispadar Clothes Shop",
+    type: "Books/Cards",
+  },
+  {
+    name: "Introduction to Wizardry",
+    description: "Contains information related to magic.",
+    image: BASE + "introduction_to_wizardry.png",
+    acquisition: "Rispadar Clothes Shop",
+    type: "Books/Cards",
+  },
+  {
+    name: "Guidebook",
+    description: "Contains information about various locations.",
+    image: BASE + "guidebook.png",
+    acquisition: "Rispadar Clothes Shop",
+    type: "Books/Cards",
+  },
+  {
+    name: "Self-Made Item Book",
+    description: "Used to record items that have been acquired previously.",
+    image: BASE + "self_made_item_book.png",
+    acquisition: "Rispadar Clothes Shop",
+    type: "Books/Cards",
+  },
+
+  {
     name: "Technique Scroll - Sky Sword",
     description:
       "An esoteric scroll describing the Sky Sword technique. Open to view details.",
@@ -1530,6 +1558,22 @@ const items = [
     type: "Books/Cards",
   },
   {
+    name: "Technique Sealing Medal",
+    description:
+      "When used with a technique scroll, it seals the technique. The seal can be disassembled to regain the medal.",
+    image: BASE + "technique_sealing_medal.png",
+    acquisition: "Rispadar Clothes Shop",
+    type: "Books/Cards",
+    libra: {
+      karma: 55,
+      effects: [
+        "Blind Resistance (GOOD)",
+        "Petrifaction Resistance (GOOD)",
+        "Paralysis Resistance (GOOD)",
+      ],
+    },
+  },
+  {
     name: "[Sealed] Technique Scroll - Sky Sword",
     description:
       "A sealed esoteric scroll describing the Sky Sword technique. Open to view details.",
@@ -1609,22 +1653,7 @@ const items = [
     acquisition: "Combine Technique Sealing Medal with the technique scroll",
     type: "Books/Cards",
   },
-  {
-    name: "Technique Sealing Medal",
-    description:
-      "When used with a technique scroll, it seals the technique. The seal can be disassembled to regain the medal.",
-    image: BASE + "technique_sealing_medal.png",
-    acquisition: "Rispadar Clothes Shop",
-    type: "Books/Cards",
-    libra: {
-      karma: 55,
-      effects: [
-        "Blind Resistance (GOOD)",
-        "Petrifaction Resistance (GOOD)",
-        "Paralysis Resistance (GOOD)",
-      ],
-    },
-  },
+
   {
     name: "The Priest's Diary",
     description:
@@ -1753,30 +1782,7 @@ const items = [
       effects: ["Adaptability", "Adaptability (GOOD)"],
     },
   },
-  {
-    name: "Key Mold A",
-    description:
-      "A key-shaped mold. Press in clay to make a shape. The clay must have an appropriate viscosity to fit the mold.",
-    image: BASE + "key_mold_a.png",
-    acquisition: "Loot Chest",
-    type: "Ore/Gems",
-    libra: {
-      karma: 8,
-      effects: ["Defense Power"],
-    },
-  },
-  {
-    name: "Key Mold B",
-    description:
-      "A key-shaped mold. Press in clay to make a shape. The clay must have an appropriate viscosity to fit the mold.",
-    image: BASE + "key_mold_b.png",
-    acquisition: "Loot Chest",
-    type: "Ore/Gems",
-    libra: {
-      karma: 18,
-      effects: ["Defense Power (GOOD)"],
-    },
-  },
+
   {
     name: "Refining Kit",
     description:
@@ -2063,10 +2069,17 @@ const items = [
     },
   },
   {
+    name: "Piece Gem Fragment",
+    description: "A fragment used to enhance a Piece Gem",
+    image: BASE + "piece_gem_fragment.png",
+    acquisition: "Postscript, Mining",
+    type: "Ore/Gems",
+  },
+  {
     name: "Large Piece Gem Fragment",
     description: "A fragment used to enhance a Piece Gem",
     image: BASE + "large_piece_gem_fragment.png",
-    acquisition: "Postscript, Loot Chest",
+    acquisition: "Postscript, Mining",
     type: "Ore/Gems",
   },
   {
@@ -2174,6 +2187,23 @@ const items = [
     image: BASE + "piece_gem_stat_point_cap.png",
     acquisition:
       "Postscript, Elysium, ground pickup at the end of path on the door left of the one that was locked by runes",
+    type: "Ore/Gems",
+  },
+  {
+    name: "Piece Gem [Change [Possession Skill]]",
+    description:
+      "Piece Gems can be set within the empty slots on a Board. Possession Skill (Depends on enhancement) changes to (Depends on enhancement)",
+    image: BASE + "piece_gem_change_possession_skill.png",
+    acquisition:
+      "Postscript, Anesta Village, ground pickup where the boss would be.",
+    type: "Ore/Gems",
+  },
+  {
+    name: "Piece Gem [Change Karon Magic]",
+    description:
+      "Piece Gems can be set within the empty slots on a Board. Karon's magic (Depends on enhancement) changes to (Depends on enhancement)",
+    image: BASE + "piece_gem_change_karon_magic.png",
+    acquisition: "Postscript, Anesta Village, next to Anulis' Grave",
     type: "Ore/Gems",
   },
   {
@@ -2854,6 +2884,10 @@ const items = [
     image: BASE + "blue_orb.png",
     acquisition: "Cave of Libra",
     type: "Valuables",
+    libra: {
+      karma: 32,
+      effects: ["Attack Power", "Defense Power", "Magical Power"],
+    },
   },
   {
     name: "18 Liter Container of Pine Resin",
@@ -2928,6 +2962,18 @@ const items = [
     },
   },
   {
+    name: "Goblin's Stone Plate",
+    description:
+      "Stone plate that can open the goblins' secret doors. How it works is unknown.",
+    image: BASE + "goblins_stone_plate.png",
+    acquisition: "Combine both Stone Plate Fragments",
+    type: "Valuables",
+    libra: {
+      karma: 6,
+      effects: ["Petrifaction Resistance"],
+    },
+  },
+  {
     name: "Stone Plate Fragment (Upper)",
     description:
       "A piece of the stone plate broken by the goblin. By itself, it's completely useless.",
@@ -2949,18 +2995,6 @@ const items = [
     libra: {
       karma: 17,
       effects: ["Petrifaction Resistance (GOOD)", "Guard Durability"],
-    },
-  },
-  {
-    name: "Goblin's Stone Plate",
-    description:
-      "Stone plate that can open the goblins' secret doors. How it works is unknown.",
-    image: BASE + "goblins_stone_plate.png",
-    acquisition: "Combine both Stone Plate Fragments",
-    type: "Valuables",
-    libra: {
-      karma: 6,
-      effects: ["Petrifaction Resistance"],
     },
   },
 
@@ -3129,11 +3163,27 @@ const items = [
     type: "Valuables",
   },
   {
+    name: "Translocation Stone",
+    description:
+      "This stone contains the Great Sage's magic. Can transport you to an active magic circle, or activate a circle.",
+    image: BASE + "translocation_stone.png",
+    acquisition: "Postscript Event",
+    type: "Valuables",
+  },
+  {
     name: "Anulis' Brain",
     description:
       "This specimen jar contains Anulis' brain. It has a beautiful color.",
     image: BASE + "anulis_brain.png",
     acquisition: "Postscript Event",
+    type: "Valuables",
+  },
+  {
+    name: "Bread?",
+    description:
+      "This so-called bread was made by Anulis. Instinct tells you it's not safe to eat.",
+    image: BASE + "bread_.png",
+    acquisition: "Postscript, give Love to Anulis",
     type: "Valuables",
   },
 
@@ -3257,6 +3307,15 @@ const items = [
     description: "An empty, splendid-looking box.",
     image: BASE + "decorative_box.png",
     type: "Collected Items",
+    acquisition: "Arena Battle, Pekkochira Cup, 'The Principle of Geo' reward",
+  },
+  {
+    name: "Battery (Muramasa)",
+    description:
+      "The battery of a glowstick. When equipped, Muramasa will fire beams of white light when swung.",
+    image: BASE + "battery_muramasa.png",
+    type: "Collected Items",
+    acquisition: "Master Super Ultimate Laser Blade Muramasa",
   },
 ];
 

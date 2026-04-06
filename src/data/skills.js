@@ -174,10 +174,14 @@ const skills = [
     name: "Circle of Disaster",
     description:
       "Generates a large circle of rocks that will converge at the center. It can be powerful if all the rocks hit the target.",
+    altName: "Rock Disaster",
+    altDescription:
+      "Randomly generates rocks which fly towards their nearest enemy. It has an extremely high hit rate.",
     image: BASE + "circle_of_disaster.png",
     acquisition: "Grow Tree",
     element: BASE_ELEMENT + "earth.png",
     st: 216,
+    altSt: 306,
   },
   {
     name: "Tyrant's Tentacle Blades",
@@ -196,10 +200,14 @@ const skills = [
     name: "Wind Tiger",
     description:
       "A tiger cloaked in wind delivers a vertically narrow, but horizontally wide attack.",
+    altName: "Sky Tiger Fang & Claw",
+    altDescription:
+      "This combo targets enemies in the air at mid-range. Can be performed in various situations and is also very powerful.",
     image: BASE + "wind_tiger.png",
     acquisition: "Grow Tree",
     element: BASE_ELEMENT + "wind.png",
     st: 99,
+    altSt: 207,
   },
   {
     name: "Sylphid",
@@ -306,6 +314,19 @@ const skills = [
     altSt: 333,
   },
   {
+    name: "Dark Flare",
+    description:
+      "Summons Al-Khamis, the Dragon King. It takes time to activate but can inflict great damage to a wide area.",
+    altName: "Dark Scales",
+    altDescription:
+      "Follows the enemy for a short time and attacks continuously. Lays waste in a medium radius with a barrage of bullets.",
+    image: BASE + "dark_flare.png",
+    acquisition: "Grow Tree",
+    element: BASE_ELEMENT + "dark.png",
+    st: 432,
+    altSt: 468,
+  },
+  {
     name: "Moonlight",
     description:
       "This double-strike has a short range, but delivers a devastating attack.",
@@ -356,6 +377,19 @@ const skills = [
     element: BASE_ELEMENT + "holy.png",
     st: 207,
     altSt: 342,
+  },
+  {
+    name: "Valkyrie Strike",
+    description:
+      "Summons Astraea, the Goddess of Fate. Inflicts significant damage to the designated area after a brtief moment.",
+    altName: "Astroberry Jam",
+    altDescription:
+      "Causes meteorites to fall, inflicting heavy damage over a wide area. Landing every hit is difficult, but it has the strongest firepower.",
+    image: BASE + "valkyrie_strike.png",
+    acquisition: "Grow Tree",
+    element: BASE_ELEMENT + "holy.png",
+    st: 378,
+    altSt: 414,
   },
 ];
 

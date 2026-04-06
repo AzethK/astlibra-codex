@@ -76,7 +76,14 @@ export default function EquipModal({ equip, onClose, closing, tab }) {
         className={`equip-modal ${closing ? "closing" : ""}`}
         onClick={(e) => e.stopPropagation()}
       >
-        <h2 className="equip-title">{equip.name}</h2>
+        <div>
+          {isMobile && (
+            <button className="equip-menu-button" onClick={onClose}>
+              X
+            </button>
+          )}
+          <h2 className="equip-title">{equip.name}</h2>
+        </div>
 
         <div className="equip-divider" />
 

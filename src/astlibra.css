@@ -122,6 +122,18 @@ body {
     color: #e6d8a8;
     padding: 6px 10px;
   }
+  .equip-menu-button {
+    display: block;
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    z-index: 1100;
+
+    background: #0f1f3d;
+    border: 2px solid #cbb67a;
+    color: #e6d8a8;
+    padding: 6px 10px;
+  }
 }
 
 /* Main content */
@@ -388,7 +400,7 @@ body {
 
 @media (max-width: 768px) {
   .equip-main {
-    grid-template-columns: 120px 1fr;
+    grid-template-columns: 1fr 0.5fr;
     gap: 15px;
   }
 }
@@ -452,7 +464,7 @@ body {
 
 @media (max-width: 768px) {
   .equip-modal {
-    width: 90vw;
+    width: 30vw;
     max-height: 90vh;
   }
 }

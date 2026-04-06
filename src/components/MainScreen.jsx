@@ -33,7 +33,6 @@ export default function MainScreen() {
             <h1 className="title">Astlibra Codex</h1>
             <p className="subtitle">
               Select an option on the sidebar to see its contents
-              <p>(Be aware that items and skills are still being added)</p>
             </p>
           </div>
         )}
