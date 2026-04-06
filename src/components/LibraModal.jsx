@@ -17,8 +17,8 @@ export default function LibraModal({ onSelectItem, onClose }) {
 
   const cleanEffectName = (effect) => {
     return effect
-      .replace(/^[A-Z]+:\s*/i, "") // remove "GOOD: " prefix
-      .replace(/\s*\((GOOD|EPIC|BAD)\)/i, "") // remove "(GOOD)" suffix
+      .replace(/^[A-Z]+:\s*/i, "")
+      .replace(/\s*\((GOOD|EPIC)\)/i, "")
       .trim();
   };
 
