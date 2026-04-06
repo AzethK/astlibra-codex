@@ -160,7 +160,7 @@ export default function KaronScreen() {
         className={`karon-overlay ${selectedKaron ? "visible" : ""}`}
         onClick={() => {
           setSelectedKaron(null);
-          navigate(`/karon/`);
+          navigate(`/karon`);
         }}
       />
 

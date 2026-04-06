@@ -122,7 +122,7 @@ export default function SkillScreen() {
         className={`karon-overlay ${selectedSkill ? "visible" : ""}`}
         onClick={() => {
           setSelectedSkill(null);
-          navigate(`/skill/`);
+          navigate(`/skill`);
         }}
       />
 

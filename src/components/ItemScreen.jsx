@@ -111,7 +111,7 @@ export default function ItemScreen() {
         className={`karon-overlay ${selectedItem ? "visible" : ""}`}
         onClick={() => {
           setSelectedItem(null);
-          navigate(`/item/`);
+          navigate(`/item`);
         }}
       />
 
