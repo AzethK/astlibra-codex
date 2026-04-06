@@ -9,8 +9,5 @@ An all-in-one ASTLIBRA Revision database with items, materials, equipment and sk
 - All Karons
 - Link Equipment and Karons
 - Interactive Libra
-
-# NEXT UPCOMING FEATURES
 - All Items
 - All Skills
-- Mobile Support
