@@ -102,7 +102,7 @@ const items = [
     description:
       "A glass container with a plate of oil. Illuminates the darkness for a long duration.",
     image: BASE + "lantern.png",
-    acquisition: "Loot Chest",
+    acquisition: "Shop",
     type: "Miscellaneous",
     libra: {
       karma: 36,
@@ -190,7 +190,7 @@ const items = [
     description:
       "A mysterious key that opens chests dropped by enemies. Opens silver treasure chests.",
     image: BASE + "silver_chests_key.png",
-    acquisition: "Loot Chest / Crafting",
+    acquisition: "Combine Clay-like Gold Stones with Key Mold A",
     type: "Miscellaneous",
     libra: {
       karma: 23,
@@ -657,7 +657,7 @@ const items = [
   {
     name: "Dogu Fruit",
     description:
-      "Recovers 2,000 HP. Contrary to its toxic appearance, this fruit-like medicine is good for the body.",
+      "Recovers 4,000 HP. Contrary to its toxic appearance, this fruit-like medicine is good for the body.",
     image: BASE + "dogu_fruit.png",
     acquisition: "Shop",
     type: "Food",
