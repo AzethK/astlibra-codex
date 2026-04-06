@@ -2362,8 +2362,7 @@ const items = [
     description:
       "This gill is grotesque in appearance, and reeks. It's supposed to be a delicacy, but that doesn't bear thinking on.",
     image: BASE + "putrid_gill.png",
-    acquisition:
-      "Drop from the flying fish worm enemies (I don't know what these are meant to be) (Belkade Volcano)",
+    acquisition: "Drop from Flying Creature (Belkade Volcano)",
     type: "Demon Materials",
     libra: {
       karma: 19,
@@ -2375,7 +2374,7 @@ const items = [
     description:
       "Horns are a well known feature of demons. They can be used even if broken, as they are still tinged with evil energy.",
     image: BASE + "demon_horn.png",
-    acquisition: "Drop from the Demon (Belkade Volcano)",
+    acquisition: "Drop from Demon (Belkade Volcano)",
     type: "Demon Materials",
     libra: {
       karma: 21,
