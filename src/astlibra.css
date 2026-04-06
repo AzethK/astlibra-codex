@@ -1117,6 +1117,10 @@ body {
     padding: 4px 8px;
     font-size: 12px;
   }
+
+  .libra-modal {
+    height: 85vh;
+  }
 }
 
 .libra-filters {

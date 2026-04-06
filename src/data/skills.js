@@ -345,7 +345,7 @@ const skills = [
       "Summons a monster at a fixed location, which attacks a broad area with great power for a brief period.",
     altName: "Qilin",
     altDescription:
-      "Jumps around and makes thrustng attacks with its horn. Inflicts major damage both at mid-range and in the air.",
+      "Jumps around and makes thrusting attacks with its horn. Inflicts major damage both at mid-range and in the air.",
     image: BASE + "unicorn.png",
     acquisition: "Grow Tree",
     element: BASE_ELEMENT + "holy.png",
