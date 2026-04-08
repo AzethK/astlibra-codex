@@ -66,6 +66,7 @@ const armors = [
     acquisition: "Pekkochira Formula",
     materials: ["Pie Dough", "Beautiful Bones", "Clay-like Gold Stones"],
     materialAmount: [1, 1, 1],
+    rarity: "rare",
   },
   {
     name: "Hunter's Clothes",
@@ -121,6 +122,7 @@ const armors = [
     acquisition: "Bridion Swamp Formula",
     materials: ["Cheesecake", "Poinsettia", "Copper Ingot"],
     materialAmount: [1, 1, 1],
+    rarity: "rare",
   },
   {
     name: "Scale Mail",
@@ -189,6 +191,7 @@ const armors = [
     acquisition: "Belkade Volcano Formula",
     materials: ["Mont Blanc", "Golem Fragment", "Iron Ingot"],
     materialAmount: [2, 1, 1],
+    rarity: "rare",
   },
   {
     name: "Iron Armor",
@@ -242,6 +245,7 @@ const armors = [
     magical_power: 10,
     skill: "Strong Constitution",
     acquisition: "Sea Serpent Cave Chest",
+    rarity: "rare",
   },
   {
     name: "Nexagram",
@@ -256,6 +260,7 @@ const armors = [
     acquisition: "Elizas / Sea Serpent Cave Formula",
     materials: ["Dango", "Crab Stick", "Gold Ingot"],
     materialAmount: [2, 1, 1],
+    rarity: "rare",
   },
   {
     name: "Elemental Garb",
@@ -310,6 +315,7 @@ const armors = [
     magical_power: 5,
     skill: "Mach Spike",
     acquisition: "Demon King's Castle Chest",
+    rarity: "rare",
   },
   {
     name: "Armor of the Rightful King",
@@ -324,6 +330,7 @@ const armors = [
     acquisition: "Akrasinon / Demon King's Castle Formula",
     materials: ["Chocolate Cream Puff", "Heat Exhaust Organ", "Damascus Ingot"],
     materialAmount: [2, 2, 1],
+    rarity: "rare",
   },
   {
     name: "Damascus Armor",
@@ -380,6 +387,7 @@ const armors = [
     acquisition: "Urugut / Elysium Formula",
     materials: ["Meat Pie", "Magical Jar", "Mithril"],
     materialAmount: [2, 1, 1],
+    rarity: "legendary",
   },
   {
     name: "Steel Armor",
@@ -436,6 +444,7 @@ const armors = [
     acquisition: "Anesta / Belkade Mining Town Formula",
     materials: ["Matcha Au Lait", "Bewitched Tree Branch", "Adamantite"],
     materialAmount: [2, 1, 1],
+    rarity: "legendary",
   },
   {
     name: "Machine Armor",
@@ -477,6 +486,7 @@ const armors = [
     acquisition: "Tokyo / Research Lab Mokyun Shop",
     materials: ["Orichalcum", "Heart", "Spring"],
     materialAmount: [2, 2, 1],
+    rarity: "rare",
   },
   {
     name: "Soul Armor",
@@ -491,6 +501,7 @@ const armors = [
     acquisition: "Tokyo / Research Lab Formula",
     materials: ["Jam Roll", "Nuclear Power Reactor", "Orichalcum"],
     materialAmount: [2, 1, 1],
+    rarity: "legendary",
   },
   {
     name: "Stardust Armor",
@@ -503,6 +514,7 @@ const armors = [
     magical_power: 10,
     skill: "Gravity Daze",
     acquisition: "God of Courage, Beatrice Reward",
+    rarity: "legendary",
   },
   {
     name: "Soul Balance Collibra",
@@ -515,6 +527,7 @@ const armors = [
     magical_power: 22,
     skill: "Enhance Performance",
     acquisition: "Rispadar Bakery",
+    rarity: "legendary",
   },
 ];
 

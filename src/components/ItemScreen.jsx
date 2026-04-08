@@ -92,7 +92,7 @@ export default function ItemScreen() {
         {filteredItems.map((item) => (
           <div
             key={item.name}
-            className={`equip-card ${selectedItem?.name === item.name ? "selected" : ""} `}
+            className={`equip-card ${selectedItem?.name === item.name ? "selected" : ""} ${item.rarity || ""}`}
             onClick={() => {
               navigate(`/item/${encodeURIComponent(item.name)}`);
             }}

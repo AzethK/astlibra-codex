@@ -15,6 +15,7 @@ const items = [
     image: BASE + "advanced_synthesis_recipes.png",
     acquisition: "Arena Battle, Elizas Cup 'Aesthetics of Destruction' Reward",
     type: "Books/Cards",
+    rarity: "rare",
   },
   {
     name: "Baker's Recipes",
@@ -23,6 +24,7 @@ const items = [
     image: BASE + "bakers_recipes.png",
     acquisition: "Arena Battle, Anesta Cup 'Block the Way' Reward",
     type: "Books/Cards",
+    rarity: "rare",
   },
   {
     name: "Alchemy Recipes",
@@ -31,6 +33,7 @@ const items = [
     image: BASE + "alchemy_recipes.png",
     acquisition: "Mokyun Gacha Reward",
     type: "Books/Cards",
+    rarity: "rare",
   },
   {
     name: "The Book of Karon: Vol 36 (Travel)",
@@ -75,6 +78,7 @@ const items = [
     image: BASE + "pekkochira_drops.png",
     acquisition: "Next to Cave of Libra",
     type: "Miscellaneous",
+    rarity: "rare",
   },
   {
     name: "World Tree Blossom",
@@ -83,6 +87,7 @@ const items = [
     image: BASE + "world_tree_blossom.png",
     acquisition: "East of the Rispadar Bar",
     type: "Miscellaneous",
+    rarity: "legendary",
   },
 
   {
@@ -267,6 +272,7 @@ const items = [
       "Adds an additional slot for equipping trinkets. A very valuable item.",
     type: "Miscellaneous",
     image: BASE + "trinkets_slot_+1.png",
+    rarity: "legendary",
   },
   {
     name: "Mokyun Doll",
@@ -279,6 +285,7 @@ const items = [
       karma: 26,
       effects: ["ST Gain Rate (EPIC)"],
     },
+    rarity: "legendary",
   },
 
   {
@@ -363,6 +370,7 @@ const items = [
     image: BASE + "yggdrasil_bow.png",
     acquisition: "Akrasinon, Levin's hut",
     type: "Secondary Weapon",
+    rarity: "rare",
   },
   {
     name: "Torch Bow",
@@ -380,6 +388,7 @@ const items = [
     acquisition:
       "West of the Belkade Cave, area with a massive pit, use Zero Gravity / Air Surf to get to the chest",
     type: "Secondary Weapon",
+    rarity: "legendary",
   },
   {
     name: "Crossbow",
@@ -396,6 +405,7 @@ const items = [
     image: BASE + "double_crossbow.png",
     acquisition: "Mokyun Gacha Reward",
     type: "Secondary Weapon",
+    rarity: "rare",
   },
   {
     name: "Shotgun",
@@ -404,6 +414,7 @@ const items = [
     image: BASE + "shotgun.png",
     acquisition: "Mokyun Gacha Reward",
     type: "Secondary Weapon",
+    rarity: "rare",
   },
   {
     name: "Laser Gun",
@@ -412,6 +423,7 @@ const items = [
     image: BASE + "laser_gun.png",
     acquisition: "Mokyun Gacha Reward",
     type: "Secondary Weapon",
+    rarity: "rare",
   },
 
   {
@@ -425,6 +437,7 @@ const items = [
       karma: 34,
       effects: ["Attack Power (GOOD)", "Magical Power"],
     },
+    rarity: "rare",
   },
 
   {
@@ -582,6 +595,7 @@ const items = [
       karma: 20,
       effects: ["Adaptability", "Gradual Recovery"],
     },
+    rarity: "rare",
   },
   {
     name: "Water-filled Bottle",
@@ -594,6 +608,7 @@ const items = [
       karma: 40,
       effects: ["Adaptability (GOOD)", "Gradual Recovery (GOOD)"],
     },
+    rarity: "rare",
   },
   {
     name: "Large Water-filled Bottle",
@@ -606,6 +621,7 @@ const items = [
       karma: 60,
       effects: ["Adaptability (EPIC)", "Gradual Recovery (EPIC)"],
     },
+    rarity: "rare",
   },
   {
     name: "Goji Berries",
@@ -1422,6 +1438,7 @@ const items = [
     image: BASE + "formula.png",
     acquisition: "Loot Chest",
     type: "Books/Cards",
+    rarity: "rare",
   },
   {
     name: "Book of Battle Records",
@@ -1429,6 +1446,7 @@ const items = [
     image: BASE + "book_of_battle_records.png",
     acquisition: "Mokyun Gacha Reward",
     type: "Books/Cards",
+    rarity: "rare",
   },
   {
     name: "Treasure Encyclopaedia",
@@ -1437,6 +1455,7 @@ const items = [
     image: BASE + "treasure_encyclopaedia.png",
     acquisition: "Arena Battle, Urugut Cup, 'Snipe' Reward",
     type: "Books/Cards",
+    rarity: "rare",
   },
   {
     name: "The Book of Mythology",
@@ -1444,6 +1463,7 @@ const items = [
     image: BASE + "the_book_of_mythology.png",
     acquisition: "Rispadar Clothes Shop",
     type: "Books/Cards",
+    rarity: "rare",
   },
   {
     name: "Fairy Tales of the World",
@@ -1451,6 +1471,7 @@ const items = [
     image: BASE + "fairy_tales_of_the_world.png",
     acquisition: "Rispadar Clothes Shop",
     type: "Books/Cards",
+    rarity: "rare",
   },
   {
     name: "Introduction to Wizardry",
@@ -1458,6 +1479,7 @@ const items = [
     image: BASE + "introduction_to_wizardry.png",
     acquisition: "Rispadar Clothes Shop",
     type: "Books/Cards",
+    rarity: "rare",
   },
   {
     name: "Guidebook",
@@ -1465,6 +1487,7 @@ const items = [
     image: BASE + "guidebook.png",
     acquisition: "Rispadar Clothes Shop",
     type: "Books/Cards",
+    rarity: "rare",
   },
   {
     name: "Self-Made Item Book",
@@ -1472,6 +1495,7 @@ const items = [
     image: BASE + "self_made_item_book.png",
     acquisition: "Rispadar Clothes Shop",
     type: "Books/Cards",
+    rarity: "rare",
   },
 
   {
@@ -1481,6 +1505,7 @@ const items = [
     image: BASE + "technique_scroll.png",
     acquisition: "Chest west of Pekkochira Village, near Dash tutorial",
     type: "Books/Cards",
+    rarity: "rare",
   },
   {
     name: "Technique Scroll - Armor Slash",
@@ -1489,6 +1514,7 @@ const items = [
     image: BASE + "technique_scroll.png",
     acquisition: "Starting item",
     type: "Books/Cards",
+    rarity: "rare",
   },
   {
     name: "Technique Scroll - Counter Bash",
@@ -1498,6 +1524,7 @@ const items = [
     acquisition:
       "Belkade Volcado, chest found by dropping down from the screen west of the entrance",
     type: "Books/Cards",
+    rarity: "rare",
   },
   {
     name: "Technique Scroll - Backstep",
@@ -1506,6 +1533,7 @@ const items = [
     image: BASE + "technique_scroll.png",
     acquisition: "Cave of Libra, chest near Wolf",
     type: "Books/Cards",
+    rarity: "rare",
   },
   {
     name: "Technique Scroll - Shield Charge",
@@ -1514,6 +1542,7 @@ const items = [
     image: BASE + "technique_scroll.png",
     acquisition: "Elizas, chest found by bombing a wall east of the village.",
     type: "Books/Cards",
+    rarity: "rare",
   },
   {
     name: "Technique Scroll - Air Blade",
@@ -1522,6 +1551,7 @@ const items = [
     image: BASE + "technique_scroll.png",
     acquisition: "Akrasinon, chest in dark area with water.",
     type: "Books/Cards",
+    rarity: "rare",
   },
   {
     name: "Technique Scroll - Air Surf",
@@ -1530,6 +1560,7 @@ const items = [
     image: BASE + "technique_scroll.png",
     acquisition: "Elysium, chest under the ground.",
     type: "Books/Cards",
+    rarity: "rare",
   },
   {
     name: "Technique Scroll - Tornado Slash",
@@ -1538,6 +1569,7 @@ const items = [
     image: BASE + "technique_scroll.png",
     acquisition: "Elysium, chest under the ground.",
     type: "Books/Cards",
+    rarity: "rare",
   },
   {
     name: "Technique Scroll - Zero Gravity",
@@ -1547,6 +1579,7 @@ const items = [
     acquisition:
       "Research Lab, go up the elevator and follow the path to the left, go up and go through the red door, open the chest.",
     type: "Books/Cards",
+    rarity: "rare",
   },
   {
     name: "Technique Scroll - Jump Slash",
@@ -1556,6 +1589,7 @@ const items = [
     acquisition:
       "Cave east of Bridion Swamp Mokyun Shop, chest on the top of the screen",
     type: "Books/Cards",
+    rarity: "rare",
   },
   {
     name: "Technique Sealing Medal",
@@ -1580,6 +1614,7 @@ const items = [
     image: BASE + "sealed_technique_scroll.png",
     acquisition: "Combine Technique Sealing Medal with the technique scroll",
     type: "Books/Cards",
+    rarity: "rare",
   },
   {
     name: "[Sealed] Technique Scroll - Armor Slash",
@@ -1588,6 +1623,7 @@ const items = [
     image: BASE + "sealed_technique_scroll.png",
     acquisition: "Combine Technique Sealing Medal with the technique scroll",
     type: "Books/Cards",
+    rarity: "rare",
   },
   {
     name: "[Sealed] Technique Scroll - Counter Bash",
@@ -1596,6 +1632,7 @@ const items = [
     image: BASE + "sealed_technique_scroll.png",
     acquisition: "Combine Technique Sealing Medal with the technique scroll",
     type: "Books/Cards",
+    rarity: "rare",
   },
   {
     name: "[Sealed] Technique Scroll - Backstep",
@@ -1604,6 +1641,7 @@ const items = [
     image: BASE + "sealed_technique_scroll.png",
     acquisition: "Combine Technique Sealing Medal with the technique scroll",
     type: "Books/Cards",
+    rarity: "rare",
   },
   {
     name: "[Sealed] Technique Scroll - Shield Charge",
@@ -1612,6 +1650,7 @@ const items = [
     image: BASE + "sealed_technique_scroll.png",
     acquisition: "Combine Technique Sealing Medal with the technique scroll",
     type: "Books/Cards",
+    rarity: "rare",
   },
   {
     name: "[Sealed] Technique Scroll - Air Blade",
@@ -1620,6 +1659,7 @@ const items = [
     image: BASE + "sealed_technique_scroll.png",
     acquisition: "Combine Technique Sealing Medal with the technique scroll",
     type: "Books/Cards",
+    rarity: "rare",
   },
   {
     name: "[Sealed] Technique Scroll - Air Surf",
@@ -1628,6 +1668,7 @@ const items = [
     image: BASE + "sealed_technique_scroll.png",
     acquisition: "Combine Technique Sealing Medal with the technique scroll",
     type: "Books/Cards",
+    rarity: "rare",
   },
   {
     name: "[Sealed] Technique Scroll - Tornado Slash",
@@ -1636,6 +1677,7 @@ const items = [
     image: BASE + "sealed_technique_scroll.png",
     acquisition: "Combine Technique Sealing Medal with the technique scroll",
     type: "Books/Cards",
+    rarity: "rare",
   },
   {
     name: "[Sealed] Technique Scroll - Zero Gravity",
@@ -1644,6 +1686,7 @@ const items = [
     image: BASE + "sealed_technique_scroll.png",
     acquisition: "Combine Technique Sealing Medal with the technique scroll",
     type: "Books/Cards",
+    rarity: "rare",
   },
   {
     name: "[Sealed] Technique Scroll - Jump Slash",
@@ -1652,6 +1695,7 @@ const items = [
     image: BASE + "sealed_technique_scroll.png",
     acquisition: "Combine Technique Sealing Medal with the technique scroll",
     type: "Books/Cards",
+    rarity: "rare",
   },
 
   {
@@ -1697,6 +1741,7 @@ const items = [
       karma: 24,
       effects: ["Max HP", "Max HP (GOOD)"],
     },
+    rarity: "rare",
   },
   {
     name: "Stamina Card",
@@ -1709,6 +1754,7 @@ const items = [
       karma: 16,
       effects: ["Max ST", "Max ST (GOOD)"],
     },
+    rarity: "rare",
   },
   {
     name: "Attack Power Card",
@@ -1721,6 +1767,7 @@ const items = [
       karma: 32,
       effects: ["Attack Power", "Attack Power (GOOD)"],
     },
+    rarity: "rare",
   },
   {
     name: "Defense Power Card",
@@ -1733,6 +1780,7 @@ const items = [
       karma: 26,
       effects: ["Defense Power", "Defense Power (GOOD)"],
     },
+    rarity: "rare",
   },
   {
     name: "Magical Power Card",
@@ -1745,6 +1793,7 @@ const items = [
       karma: 36,
       effects: ["Magical Power", "Magical Power (GOOD)"],
     },
+    rarity: "rare",
   },
   {
     name: "Good Fortune Card",
@@ -1757,6 +1806,7 @@ const items = [
       karma: 54,
       effects: ["Coins Earned", "Coins Earned (GOOD)"],
     },
+    rarity: "rare",
   },
   {
     name: "Agility Card",
@@ -1769,6 +1819,7 @@ const items = [
       karma: 44,
       effects: ["Weight Reduction", "Weight Reduction (GOOD)"],
     },
+    rarity: "rare",
   },
   {
     name: "Adaption Card",
@@ -1781,6 +1832,7 @@ const items = [
       karma: 26,
       effects: ["Adaptability", "Adaptability (GOOD)"],
     },
+    rarity: "rare",
   },
 
   {
@@ -2043,6 +2095,7 @@ const items = [
       karma: 65,
       effects: ["Coins Earned (GOOD)", "Experience Earned (GOOD)"],
     },
+    rarity: "rare",
   },
   {
     name: "Byru",
@@ -2055,6 +2108,7 @@ const items = [
       karma: 75,
       effects: ["Coins Earned (EPIC)", "Experience Earned (GOOD)"],
     },
+    rarity: "rare",
   },
   {
     name: "Daimond",
@@ -2067,6 +2121,7 @@ const items = [
       karma: 85,
       effects: ["Coins Earned (EPIC)", "Experience Earned (EPIC)"],
     },
+    rarity: "legendary",
   },
   {
     name: "Piece Gem Fragment",
@@ -2081,6 +2136,7 @@ const items = [
     image: BASE + "large_piece_gem_fragment.png",
     acquisition: "Postscript, Mining",
     type: "Ore/Gems",
+    rarity: "rare",
   },
   {
     name: "Piece Gem [Health]",
@@ -2090,6 +2146,7 @@ const items = [
     acquisition:
       "Postscript, Research Lab, ground pickup on lava next to computer.",
     type: "Ore/Gems",
+    rarity: "legendary",
   },
   {
     name: "Piece Gem [Stamina]",
@@ -2099,6 +2156,7 @@ const items = [
     acquisition:
       "Postscript, Akrasinon, ground pickup where the demon tree's roots were.",
     type: "Ore/Gems",
+    rarity: "legendary",
   },
   {
     name: "Piece Gem [Attack power]",
@@ -2108,6 +2166,7 @@ const items = [
     acquisition:
       "Postscript, Belkade Volcado, hug the right wall when going down the pit where you'd use the boomerang.",
     type: "Ore/Gems",
+    rarity: "legendary",
   },
   {
     name: "Piece Gem [Defense power]",
@@ -2117,6 +2176,7 @@ const items = [
     acquisition:
       "Postscript, Bridion Swamp, east, ground pickup next to the water",
     type: "Ore/Gems",
+    rarity: "legendary",
   },
   {
     name: "Piece Gem [Magical power]",
@@ -2126,6 +2186,7 @@ const items = [
     acquisition:
       "Postscript, Elysium, ground pickup next to pot that you had to fill with water",
     type: "Ore/Gems",
+    rarity: "legendary",
   },
   {
     name: "Piece Gem [Agility]",
@@ -2135,6 +2196,7 @@ const items = [
     acquisition:
       "Postscript, Bridion Swamp, west of Mokyun Shop, ground pickup ",
     type: "Ore/Gems",
+    rarity: "legendary",
   },
   {
     name: "Piece Gem [Luck]",
@@ -2143,6 +2205,7 @@ const items = [
     image: BASE + "piece_gem_luck.png",
     acquisition: "Postscript, Frontier Spring, east ground pickup ",
     type: "Ore/Gems",
+    rarity: "legendary",
   },
   {
     name: "Piece Gem [Adaptability]",
@@ -2152,6 +2215,7 @@ const items = [
     acquisition:
       "Postscript, Belkade Volcano, ground pickup where you'd use the boomerang",
     type: "Ore/Gems",
+    rarity: "legendary",
   },
   {
     name: "Piece Gem [Guard Durability]",
@@ -2161,6 +2225,7 @@ const items = [
     acquisition:
       "Postscript, Elizas, next to the door in the church shortcut to the shrine",
     type: "Ore/Gems",
+    rarity: "legendary",
   },
   {
     name: "Piece Gem [Weight Reduction]",
@@ -2170,6 +2235,7 @@ const items = [
     acquisition:
       "Postscript, Sea Serpent cave, ground pickup below the bridges",
     type: "Ore/Gems",
+    rarity: "legendary",
   },
   {
     name: "Piece Gem [Walking Speed]",
@@ -2179,6 +2245,7 @@ const items = [
     acquisition:
       "Postscript, Akrasinon Castle, right side of where the miniboss was",
     type: "Ore/Gems",
+    rarity: "legendary",
   },
   {
     name: "Piece Gem [Stat Point Cap]",
@@ -2188,6 +2255,7 @@ const items = [
     acquisition:
       "Postscript, Elysium, ground pickup at the end of path on the door left of the one that was locked by runes",
     type: "Ore/Gems",
+    rarity: "legendary",
   },
   {
     name: "Piece Gem [Change [Possession Skill]]",
@@ -2197,6 +2265,7 @@ const items = [
     acquisition:
       "Postscript, Anesta Village, ground pickup where the boss would be.",
     type: "Ore/Gems",
+    rarity: "legendary",
   },
   {
     name: "Piece Gem [Change Karon Magic]",
@@ -2205,6 +2274,7 @@ const items = [
     image: BASE + "piece_gem_change_karon_magic.png",
     acquisition: "Postscript, Anesta Village, next to Anulis' Grave",
     type: "Ore/Gems",
+    rarity: "legendary",
   },
   {
     name: "Piece Gem [Weapon Attributes]",
@@ -2213,6 +2283,7 @@ const items = [
     image: BASE + "piece_gem_weapon_attributes.png",
     acquisition: "Postscript, Cave of Libra, next to Blue Orb ",
     type: "Ore/Gems",
+    rarity: "legendary",
   },
   {
     name: "Slime's Eyeball",
@@ -2867,6 +2938,7 @@ const items = [
         "Gradual Recovery (GOOD)",
       ],
     },
+    rarity: "legendary",
   },
   {
     name: "Red Orb",
@@ -3024,6 +3096,7 @@ const items = [
       karma: 70,
       effects: ["Max ST (EPIC)", "HP Recovery (EPIC)", "Use Speed (EPIC)"],
     },
+    rarity: "rare",
   },
   {
     name: "Apples from the King's Castle",
@@ -3040,6 +3113,7 @@ const items = [
         "Gradual Recovery (GOOD)",
       ],
     },
+    rarity: "rare",
   },
   {
     name: "Red Gem",
@@ -3073,6 +3147,7 @@ const items = [
     image: BASE + "girls_earrings.png",
     acquisition: "Akrasinon, in dark area with water.",
     type: "Valuables",
+    rarity: "rare",
   },
   {
     name: "Sluice Key",
@@ -3160,6 +3235,7 @@ const items = [
     image: BASE + "metal_and_glass_plank.png",
     acquisition: "Postscript Event",
     type: "Valuables",
+    rarity: "rare",
   },
   {
     name: "Translocation Stone",
@@ -3168,6 +3244,7 @@ const items = [
     image: BASE + "translocation_stone.png",
     acquisition: "Postscript Event",
     type: "Valuables",
+    rarity: "rare",
   },
   {
     name: "Anulis' Brain",
@@ -3176,6 +3253,7 @@ const items = [
     image: BASE + "anulis_brain.png",
     acquisition: "Postscript Event",
     type: "Valuables",
+    rarity: "rare",
   },
   {
     name: "Bread?",
@@ -3184,6 +3262,7 @@ const items = [
     image: BASE + "bread_.png",
     acquisition: "Postscript, give Love to Anulis",
     type: "Valuables",
+    rarity: "rare",
   },
 
   {
@@ -3192,6 +3271,7 @@ const items = [
       "Mages used these magic-filled stones by cracking them open. Required by Karon for sustained magic use.",
     image: BASE + "magical_crystals.png",
     type: "Collected Items",
+    rarity: "rare",
   },
   {
     name: "Small Metal",
@@ -3199,6 +3279,7 @@ const items = [
       "Small lumps of metal composed of rare materials. Can be used as tokens for the Gachapon machine.",
     image: BASE + "small_metal.png",
     type: "Collected Items",
+    rarity: "rare",
   },
   {
     name: "Scale Pans",
@@ -3206,6 +3287,7 @@ const items = [
       "Pans for a set of scales. Increases the number of items placeable on the scales.",
     image: BASE + "scale_pans.png",
     type: "Collected Items",
+    rarity: "legendary",
   },
   {
     name: "Golden Ticket",
@@ -3213,6 +3295,7 @@ const items = [
       "It gives you 5% off when you shop. With several in your possession, you'll get fantastic discounts.",
     image: BASE + "golden_ticket.png",
     type: "Collected Items",
+    rarity: "rare",
   },
   {
     name: "Red Stone",
@@ -3248,6 +3331,7 @@ const items = [
     image: BASE + "purple_stone.png",
     acquisition: "Combine Red Stone and Blue Stone",
     type: "Collected Items",
+    rarity: "rare",
   },
   {
     name: "Yellow-green Gem",
@@ -3255,6 +3339,7 @@ const items = [
     image: BASE + "yellow_green_gem.png",
     acquisition: "Combine Green Stone and Yellow Stone",
     type: "Collected Items",
+    rarity: "rare",
   },
   {
     name: "Red-yellow Gem",
@@ -3263,6 +3348,7 @@ const items = [
     image: BASE + "red_yellow_gem.png",
     acquisition: "Combine Yellow Stone and Red Stone",
     type: "Collected Items",
+    rarity: "rare",
   },
   {
     name: "White Gem",
@@ -3270,6 +3356,7 @@ const items = [
     image: BASE + "white_gem.png",
     acquisition: "Master Sword of Light Claíomh Solais",
     type: "Collected Items",
+    rarity: "rare",
   },
   {
     name: "Dark Gem",
@@ -3278,6 +3365,7 @@ const items = [
     image: BASE + "dark_gem.png",
     acquisition: "Combine Yellow-green Gem and Purple Stone",
     type: "Collected Items",
+    rarity: "rare",
   },
   {
     name: "Sun Stone",
@@ -3286,6 +3374,7 @@ const items = [
     image: BASE + "sun_stone.png",
     acquisition: "Combine Red-yellow Gem and White Gem",
     type: "Collected Items",
+    rarity: "rare",
   },
   {
     name: "Alexandrite",
@@ -3294,12 +3383,14 @@ const items = [
     image: BASE + "alexandrite.png",
     acquisition: "Combine Dark Gem and Sun Stone",
     type: "Collected Items",
+    rarity: "legendary",
   },
   {
     name: "Love",
     description: "It is extremely precious and hard to come by.",
     image: BASE + "love.png",
     type: "Collected Items",
+    rarity: "legendary",
   },
   {
     name: "Decorative Box",
@@ -3307,6 +3398,7 @@ const items = [
     image: BASE + "decorative_box.png",
     type: "Collected Items",
     acquisition: "Arena Battle, Pekkochira Cup, 'The Principle of Geo' reward",
+    rarity: "rare",
   },
   {
     name: "Battery (Muramasa)",
@@ -3315,6 +3407,7 @@ const items = [
     image: BASE + "battery_muramasa.png",
     type: "Collected Items",
     acquisition: "Master Super Ultimate Laser Blade Muramasa",
+    rarity: "legendary",
   },
 ];
 

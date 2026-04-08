@@ -129,7 +129,7 @@ export default function LibraModal({ onSelectItem, onClose }) {
           {finalItems.map((item) => (
             <div
               key={item.name}
-              className="equip-card"
+              className={`equip-card ${item.rarity || ""}`}
               onClick={() => {
                 if (hoveredItem?.name === item.name) {
                   onSelectItem(item);

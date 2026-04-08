@@ -98,6 +98,7 @@ const weapons = [
     acquisition: "Pekkochira Formula",
     materials: ["Plain Cookies", "Wooden Log", "Stones"],
     materialAmount: [1, 2, 3],
+    rarity: "rare",
   },
   {
     name: "Airgetlam",
@@ -113,6 +114,7 @@ const weapons = [
     acquisition: "Pekkochira Formula",
     materials: ["Sponge Cake", "Beautiful Bones", "Copper Ore"],
     materialAmount: [2, 2, 1],
+    rarity: "legendary",
   },
   {
     name: "Hammer",
@@ -199,6 +201,7 @@ const weapons = [
     acquisition: "Bridion Swamp Formula",
     materials: ["Key Mold A", "Tadpole", "Copper Ore"],
     materialAmount: [5, 1, 1],
+    rarity: "rare",
   },
 
   {
@@ -238,6 +241,7 @@ const weapons = [
     acquisition: "Bridion Swamp Formula",
     materials: ["Cheesecake", "Filthy Fang", "Copper Ingot"],
     materialAmount: [1, 1, 1],
+    rarity: "legendary",
   },
   {
     name: "Baselard",
@@ -337,6 +341,7 @@ const weapons = [
     acquisition: "Belkade Volcano Formula",
     materials: ["Soft-Serve Ice Cream", "Lava Pebble", "Iron Ore"],
     materialAmount: [1, 1, 1],
+    rarity: "rare",
   },
   {
     name: "Ice Sword",
@@ -349,6 +354,7 @@ const weapons = [
     weight: 160,
     skill: "Undine",
     acquisition: "Arena Battle, Belkade Cup 'Twin Beasts' Reward",
+    rarity: "rare",
   },
   {
     name: "Dragon Slaying Sword Ascalon",
@@ -364,6 +370,7 @@ const weapons = [
     acquisition: "Belkade Volcano Formula",
     materials: ["Cream Puff", "Golem Fragment", "Iron Ingot"],
     materialAmount: [2, 1, 1],
+    rarity: "legendary",
   },
   {
     name: "Azure Dragon Blade",
@@ -464,6 +471,7 @@ const weapons = [
     acquisition: "Elizas / Sea Serpent Cave Formula",
     materials: ["Strawberry Au Lait", "Turtle Shell", "Gold Ore"],
     materialAmount: [2, 1, 1],
+    rarity: "rare",
   },
   {
     name: "Icicle Spear",
@@ -477,6 +485,7 @@ const weapons = [
     weight: 180,
     skill: "Enhance Performance",
     acquisition: "Mokyun Shop Gacha Reward",
+    rarity: "rare",
   },
   {
     name: "Cursed Sword Gram",
@@ -492,6 +501,7 @@ const weapons = [
     acquisition: "Elizas / Sea Serpent Cave Formula",
     materials: ["Shortcake", "Monkfish Liver", "Gold Ingot"],
     materialAmount: [2, 1, 1],
+    rarity: "legendary",
   },
   {
     name: "Halberd",
@@ -594,6 +604,7 @@ const weapons = [
     acquisition: "Akrasinon / Demon King's Castle Formula",
     materials: ["Chocolate Pie", "Mammon's Feet", "Lizard Scales"],
     materialAmount: [1, 1, 1],
+    rarity: "rare",
   },
   {
     name: "Masamune",
@@ -605,6 +616,7 @@ const weapons = [
     weight: 220,
     skill: "Enhance Performance",
     acquisition: "Arena Battle, Akrasinon Cup 'Poison Rain' Reward",
+    rarity: "rare",
   },
   {
     name: "Mistilteinn",
@@ -624,6 +636,7 @@ const weapons = [
       "Damascus Ingot",
     ],
     materialAmount: [2, 1, 1],
+    rarity: "legendary",
   },
   {
     name: "Great Sorcerer's Staff",
@@ -710,6 +723,7 @@ const weapons = [
     weight: 290,
     skill: "Magician",
     acquisition: "Grow Tree",
+    rarity: "rare",
   },
   {
     name: "Knight's Lance",
@@ -725,6 +739,7 @@ const weapons = [
     acquisition: "Urugut / Elysium Formula",
     materials: ["Chocolate Cookie", "Godly Wings", "Magical Silver Ore"],
     materialAmount: [1, 1, 1],
+    rarity: "rare",
   },
   {
     name: "Espada Ropera",
@@ -737,6 +752,7 @@ const weapons = [
     weight: 290,
     skill: "Fine Tuning",
     acquisition: "Mokyun Shop Gacha Reward",
+    rarity: "rare",
   },
   {
     name: "Lightning Hammer Mjölnir",
@@ -752,6 +768,7 @@ const weapons = [
     acquisition: "Urugut / Elysium Formula",
     materials: ["Hamburger", "Shield of Rispadar", "Mithril"],
     materialAmount: [2, 1, 1],
+    rarity: "legendary",
   },
   {
     name: "Lævateinn",
@@ -857,6 +874,7 @@ const weapons = [
       "Adamantine",
     ],
     materialAmount: [1, 5, 1],
+    rarity: "rare",
   },
   {
     name: "Dark Sword",
@@ -870,6 +888,7 @@ const weapons = [
     weight: 360,
     skill: "Shadow",
     acquisition: "Arena Battle, Anesta Cup 'Liese's Mischief' Reward",
+    rarity: "rare",
   },
   {
     name: "Hauteclaire",
@@ -885,6 +904,7 @@ const weapons = [
     acquisition: "Anesta Town / Belkade Mining Town Formula",
     materials: ["Red Bean Manju", "Spider Butt", "Adamantite"],
     materialAmount: [2, 1, 2],
+    rarity: "legendary",
   },
   {
     name: "Durandal",
@@ -971,6 +991,7 @@ const weapons = [
     weight: 435,
     skill: "Thrifty",
     acquisition: "Grow Tree",
+    rarity: "rare",
   },
   {
     name: "Great Spirit's Staff",
@@ -986,6 +1007,7 @@ const weapons = [
     acquisition: "Tokyo / Research Lab Formula",
     materials: ["Chocolate Cake", "Screws", "Hihi-Irokane"],
     materialAmount: [2, 1, 1],
+    rarity: "rare",
   },
   {
     name: "Dragon Spear Gáe Bulg",
@@ -998,6 +1020,7 @@ const weapons = [
     weight: 440,
     skill: "Dragon Spear",
     acquisition: "Arena Battle, Tokyo Cup 'Aulacophora' Reward",
+    rarity: "rare",
   },
   {
     name: "Mighty Blade Balmung",
@@ -1013,6 +1036,7 @@ const weapons = [
     acquisition: "Tokyo / Research Lab Formula",
     materials: ["Candied Apple", "Heart", "Orichalcum"],
     materialAmount: [2, 1, 1],
+    rarity: "legendary",
   },
   {
     name: "Ridill",
@@ -1025,6 +1049,7 @@ const weapons = [
     weight: 432,
     skill: "Enhance Performance",
     acquisition: "God of War, Gerdaltine Reward",
+    rarity: "legendary",
   },
   {
     name: "Magical Staff Verethragna",
@@ -1038,6 +1063,7 @@ const weapons = [
     weight: 458,
     skill: "Enhance Performance",
     acquisition: "Goddess of Wealth, Lieselotte Reward",
+    rarity: "legendary",
   },
   {
     name: "Sacred Sword Excalibur",
@@ -1051,6 +1077,7 @@ const weapons = [
     weight: 445,
     skill: "Enhance Performance",
     acquisition: "Goddess of Courage, Beatrice Reward",
+    rarity: "legendary",
   },
   {
     name: "Destructive Hammer Ragnarök",
@@ -1063,6 +1090,7 @@ const weapons = [
     weight: 494,
     skill: "Enhance Performance",
     acquisition: "God of Destruction, Adolphus Reward",
+    rarity: "legendary",
   },
   {
     name: "Divine Spear Gungnir",
@@ -1075,6 +1103,7 @@ const weapons = [
     weight: 477,
     skill: "Enhance Performance",
     acquisition: "Sealed Demon, Legion Reward",
+    rarity: "legendary",
   },
   {
     name: "Sword of Light Claíomh Solais",
@@ -1088,6 +1117,7 @@ const weapons = [
     weight: 467,
     skill: "Enhance Performance",
     acquisition: "Arena Battle, Maiden Cup 'if' Reward",
+    rarity: "legendary",
   },
   {
     name: "Magic Sword Aroundight",
@@ -1101,6 +1131,7 @@ const weapons = [
     weight: 486,
     skill: "Enhance Performance",
     acquisition: "God of Darkness - Al Khamis Reward",
+    rarity: "legendary",
   },
   {
     name: "God-Slaying Sword Anes Zesia",
@@ -1114,6 +1145,7 @@ const weapons = [
     skill: "The Art of Summoning",
     acquisition:
       "Collect all Weapons (Muramasa not included), Armors and Shields then talk to Great Sage.",
+    rarity: "legendary",
   },
   {
     name: "Super Ultimate Laser Blade Muramasa",
@@ -1126,6 +1158,7 @@ const weapons = [
     weight: 100,
     skill: "Enhance Performance",
     acquisition: "Give Anulis 15 'Love' in Postscript",
+    rarity: "legendary",
   },
 ];
 

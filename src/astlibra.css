@@ -267,6 +267,15 @@ body {
   }
 }
 
+/* Item rarity backgrounds */
+.rare {
+  background: linear-gradient(180deg, #1f3346 0%, rgb(13, 22, 37) 100%);
+}
+
+.legendary {
+  background: linear-gradient(180deg, #440f15 0%, #110304 100%);
+}
+
 .equip-card.selected {
   outline: 2px solid #e6d8a8;
   box-shadow:

@@ -45,7 +45,8 @@ export default function EquipScreen() {
         equip.acquisition.toLowerCase().includes(query) ||
         equip?.materials?.some((material) =>
           material.toLowerCase().includes(query.toLowerCase()),
-        )
+        ) ||
+        equip?.rarity?.toLowerCase().includes(query.toLowerCase())
       ) {
         return equip.name.toLowerCase();
       }
@@ -96,7 +97,7 @@ export default function EquipScreen() {
       <div className="search-box">
         <input
           type="text"
-          placeholder="Search equipment name, material, location, skill..."
+          placeholder="Search equipment name, material, location, skill, rarity..."
           value={searchQuery}
           onChange={(e) => setSearchQuery(e.target.value)}
         />
@@ -105,7 +106,7 @@ export default function EquipScreen() {
         {filteredItems.map((equip) => (
           <div
             key={equip.name}
-            className="equip-card"
+            className={`equip-card ${equip.rarity || ""}`}
             onClick={() => {
               navigate(`/equip/${equip.name}`);
             }}

@@ -45,6 +45,7 @@ const trinkets = [
     acquisition: "Pekkochira Formula",
     materials: ["Plain Cookies", "Cobweb", "Clay-like Silver Stones"],
     materialAmount: [1, 1, 1],
+    rarity: "rare",
   },
   {
     name: "Iron Ring",
@@ -91,6 +92,7 @@ const trinkets = [
     acquisition: "Bridion Swamp Formula",
     materials: ["Egg on Bread", "Tadpole", "Copper Ore"],
     materialAmount: [2, 1, 1],
+    rarity: "rare",
   },
   {
     name: "Pure White Feather",
@@ -144,6 +146,7 @@ const trinkets = [
     acquisition: "Belkade Volcano Formula",
     materials: ["Apple Pie", "Putrid Gill", "Iron Ore"],
     materialAmount: [1, 1, 1],
+    rarity: "rare",
   },
   {
     name: "Gold Necklace",
@@ -169,6 +172,7 @@ const trinkets = [
     acquisition: "Elizas / Sea Serpent Cave Formula",
     materials: ["Strawberry Au Lait", "Hawk Feather", "Gold Ore"],
     materialAmount: [1, 1, 1],
+    rarity: "rare",
   },
   {
     name: "Ring of Prayer",
@@ -189,6 +193,7 @@ const trinkets = [
     acquisition: "Elizas / Sea Serpent Cave Mokyun Shop",
     materials: ["Gold Ingot", "Sashimi"],
     materialAmount: [1, 2],
+    rarity: "rare",
   },
   {
     name: "Emerald Earring",
@@ -225,6 +230,7 @@ const trinkets = [
     image: BASE + "phoenix_feather.png",
     stats: { maxst: 40, magical_power: 20 },
     acquisition: "Mokyun Shop Gacha Reward",
+    rarity: "rare",
   },
   {
     name: "Dragon Leather Boots",
@@ -235,6 +241,7 @@ const trinkets = [
     acquisition: "Akrasinon / Demon King's Castle Formula",
     materials: ["Chocolate Pie", "Minotaur's Axe", "High-carbon Steel Ore"],
     materialAmount: [1, 1, 1],
+    rarity: "rare",
   },
   {
     name: "Ring of Protection",
@@ -286,6 +293,7 @@ const trinkets = [
     image: BASE + "ancient_ring.png",
     stats: { maxst: 20, guard: 20, blindres: 20 },
     acquisition: "Arena Battle, Urugut Cup 'Instant Firepower' Reward.",
+    rarity: "rare",
   },
   {
     name: "Ancient Necklace",
@@ -304,6 +312,7 @@ const trinkets = [
     acquisition: "Urugut Mountains / Elysium Formula",
     materials: ["Chocolate Cookie", "Yeti's Fur", "Magical Silver Ore"],
     materialAmount: [1, 1, 1],
+    rarity: "legendary",
   },
   {
     name: "Tanzanite Ring",
@@ -330,6 +339,7 @@ const trinkets = [
     image: BASE + "elemental_cloth.png",
     stats: { bleedres: 40, blindres: 40, petrires: 40, parares: 40 },
     acquisition: "Arena Battle, Anesta Cup 'Stinger' Reward.",
+    rarity: "rare",
   },
   {
     name: "Devil's Ring",
@@ -349,6 +359,7 @@ const trinkets = [
     acquisition: "Anesta / Belkade Mining Town Formula",
     materials: ["Mochi Rolled in Bean Jam", "Spider Butt", "Adamantine"],
     materialAmount: [1, 1, 1],
+    rarity: "legendary",
   },
   {
     name: "Halloween Belt",
@@ -376,6 +387,7 @@ const trinkets = [
     image: BASE + "gold_pocket_watch.png",
     stats: { maxst: 30, agility: 20, poisonres: 40, luck: 10 },
     acquisition: "Arena Battle, Tokyo Cup 'Harem' Reward.",
+    rarity: "rare",
   },
   {
     name: "Magic Ore Ring",
@@ -395,6 +407,7 @@ const trinkets = [
     acquisition: "Tokyo / Research Lab Formula",
     materials: ["Delicious Cake", "Battery", "Hihi-Irokane"],
     materialAmount: [2, 1, 1],
+    rarity: "rare",
   },
   {
     name: "Hero's Hair Ornament",
@@ -403,6 +416,7 @@ const trinkets = [
     image: BASE + "heros_hair_ornament.png",
     stats: { atk: 50, def: 50, agility: 10 },
     acquisition: "Arena Battle, Maiden Cup 'There Are Three' Reward",
+    rarity: "legendary",
   },
   {
     name: "Dark Matter",
@@ -411,6 +425,7 @@ const trinkets = [
     image: BASE + "dark_matter.png",
     stats: { maxst: 50, magical_power: 30, luck: 10 },
     acquisition: "Arena Battle, Maiden Cup 'Great Monster War' Reward.",
+    rarity: "legendary",
   },
   {
     name: "Glorious",
@@ -419,6 +434,7 @@ const trinkets = [
     image: BASE + "glorious.png",
     stats: { maxhp: 300, def: 50, guard: 30, magical_power: 10 },
     acquisition: "Arena Battle, Maiden Cup 'Barrier' Reward.",
+    rarity: "legendary",
   },
   {
     name: "Ability Goggles",
@@ -427,6 +443,7 @@ const trinkets = [
     image: BASE + "ability_goggles.png",
     stats: { effect: "Stat Piece Chance+" },
     acquisition: "Mokyun Shop Gacha Reward",
+    rarity: "rare",
   },
   {
     name: "Special Goggles",
@@ -435,6 +452,7 @@ const trinkets = [
     image: BASE + "special_goggles.png",
     stats: { effect: "Special Piece Chance+" },
     acquisition: "Arena Battle, Bonus Cup 'Hydroponics' Reward",
+    rarity: "rare",
   },
   {
     name: "Tablet of Rebellion",
@@ -443,6 +461,7 @@ const trinkets = [
     image: BASE + "tablet_of_rebellion.png",
     stats: { effect: "Board Drop Chance-" },
     acquisition: "Arena Battle, Bonus Cup 'Revenger' Reward",
+    rarity: "rare",
   },
   {
     name: "Tablet of Detection",
@@ -451,6 +470,7 @@ const trinkets = [
     image: BASE + "tablet_of_detection.png",
     stats: { effect: "Board Drop Chance+" },
     acquisition: "Mokyun Shop Gacha Reward",
+    rarity: "rare",
   },
   {
     name: "Bandit's Gloves",
@@ -459,6 +479,7 @@ const trinkets = [
     image: BASE + "bandits_gloves.png",
     stats: { luck: 20, effect: "Item Drop Chance+" },
     acquisition: "Mokyun Shop Gacha Reward",
+    rarity: "legendary",
   },
   {
     name: "Thorn Badge",
@@ -472,6 +493,7 @@ const trinkets = [
       effect: "Thrust Attack Power+",
     },
     acquisition: "Arena Battle, Bonus Cup 'Final Fight' Reward.",
+    rarity: "rare",
   },
   {
     name: "Stone Badge",
@@ -485,6 +507,7 @@ const trinkets = [
       effect: "Blunt Attack Power+",
     },
     acquisition: "Mokyun Shop Gacha Reward",
+    rarity: "rare",
   },
 
   {
@@ -499,6 +522,7 @@ const trinkets = [
       effect: "Wand/Staff Speed+",
     },
     acquisition: "Arena Battle, Bonus Cup 'The Elite of the Elites' Reward",
+    rarity: "rare",
   },
   {
     name: "Laurel Badge",
@@ -511,6 +535,7 @@ const trinkets = [
       effect: "All Recovery Effects+",
     },
     acquisition: "Arena Battle, Bonus Cup 'Godzi Godzilla' Reward",
+    rarity: "rare",
   },
   {
     name: "Hawk Ring",
@@ -519,6 +544,7 @@ const trinkets = [
     image: BASE + "hawk_ring.png",
     stats: { agility: 40, effect: "Forward Step" },
     acquisition: "Arena Battle, Bonus Cup 'Push Sumo' Reward",
+    rarity: "rare",
   },
   {
     name: "Pure Gold Anchor",
@@ -535,6 +561,7 @@ const trinkets = [
     image: BASE + "turtle_shell.png",
     stats: { def: 80, agility: -50, poisonres: 50 },
     acquisition: "Snowdrift in Urugut Mountains",
+    rarity: "rare",
   },
   {
     name: "Adamant Shell",
@@ -543,6 +570,7 @@ const trinkets = [
     image: BASE + "adamant_shell.png",
     stats: { maxhp: 800, def: 80, guard: 80, agility: -100 },
     acquisition: "God of Destruction, Adolphus Reward",
+    rarity: "legendary",
   },
   {
     name: "Music Box of Courage",
@@ -551,6 +579,7 @@ const trinkets = [
     image: BASE + "music_box_of_courage.png",
     stats: { luck: 30, effect: "No Experience Points Gained" },
     acquisition: "Rispadar Item Shop Chest",
+    rarity: "rare",
   },
   {
     name: "Lion's Hair",
@@ -559,6 +588,7 @@ const trinkets = [
     image: BASE + "lions_hair.png",
     stats: { atk: 100, agility: 20 },
     acquisition: "God of Darkness, Al Khamis Reward",
+    rarity: "legendary",
   },
   {
     name: "Lollipop",
@@ -572,6 +602,7 @@ const trinkets = [
       effect: "Defeating Enemies Recovers HP",
     },
     acquisition: "Goddess of Mischief, Lieselotte Reward",
+    rarity: "legendary",
   },
   {
     name: "Reflecting Ring",
@@ -580,6 +611,7 @@ const trinkets = [
     image: BASE + "reflecting_ring.png",
     stats: { maxhp: 500, guard: 20, effect: "Increase reflective power" },
     acquisition: "Arena Battle Bonus Cup 'All Stars' Reward",
+    rarity: "legendary",
   },
   {
     name: "Pegasus Feather Boots",
@@ -588,6 +620,7 @@ const trinkets = [
     image: BASE + "pegasus_feather_boots.png",
     stats: { atk: 5, def: 5, agility: 5, effect: "Immune to Terrain Damage" },
     acquisition: "Belkade Volcano Wind Dragon Boss Reward",
+    rarity: "legendary",
   },
   {
     name: "Eternal Gallia Shin",
@@ -596,6 +629,7 @@ const trinkets = [
     image: BASE + "eternal_gallia_shin.png",
     stats: { maxhp: 100, guard: 20, agility: 15, effect: "Continuous Dash" },
     acquisition: "Elysium Chest",
+    rarity: "legendary",
   },
   {
     name: "Kaiser Ring",
@@ -604,6 +638,7 @@ const trinkets = [
     image: BASE + "kaiser_ring.png",
     stats: { atk: 200, effect: "Increase additional attack power" },
     acquisition: "Mokyun Shop Gacha Reward",
+    rarity: "legendary",
   },
   {
     name: "Coin Emblem",
@@ -612,6 +647,7 @@ const trinkets = [
     image: BASE + "coin_emblem.png",
     stats: { luck: 20, effect: "Coins Earned +" },
     acquisition: "Rispadar Chest - Destroy the rocks outside your home",
+    rarity: "legendary",
   },
   {
     name: "Force Emblem",
@@ -620,6 +656,7 @@ const trinkets = [
     image: BASE + "force_emblem.png",
     stats: { luck: 20, effect: "Force Earned +" },
     acquisition: "Rispadar Chest - Path to the Castle",
+    rarity: "legendary",
   },
   {
     name: "Level Emblem",
@@ -628,6 +665,7 @@ const trinkets = [
     image: BASE + "level_emblem.png",
     stats: { luck: 20, effect: "Experience Points Earned +" },
     acquisition: "God of War, Geraldtine Reward",
+    rarity: "legendary",
   },
   {
     name: "KEIZO Emblem",
@@ -641,6 +679,7 @@ const trinkets = [
       effect: "Proof of Proficiency",
     },
     acquisition: "Reward for completing all Arena Battle Cups",
+    rarity: "legendary",
   },
 ];
 

@@ -53,6 +53,7 @@ const shields = [
     acquisition: "Pekkochira Formula",
     materials: ["Sponge Cake", "Bat Wings", "Key Mold A"],
     materialAmount: [1, 1, 1],
+    rarity: "rare",
   },
   {
     name: "Scutum",
@@ -109,6 +110,7 @@ const shields = [
     acquisition: "Bridion Swamp Formula",
     materials: ["Pancakes", "Poinsettia", "Copper Ingot"],
     materialAmount: [2, 1, 1],
+    rarity: "rare",
   },
   {
     name: "Copper Shield",
@@ -164,6 +166,7 @@ const shields = [
     acquisition: "Belkade Volcano Formula",
     materials: ["Apple Pie", "Demon Horn", "Iron Ingot"],
     materialAmount: [1, 2, 1],
+    rarity: "rare",
   },
   {
     name: "Iron Buckler",
@@ -218,6 +221,7 @@ const shields = [
     acquisition: "Elizas / Sea Serpent Cave Formula",
     materials: ["Strawberry Crepe", "Sashimi", "Gold Ingot"],
     materialAmount: [2, 1, 1],
+    rarity: "rare",
   },
   {
     name: "Gold Buckler",
@@ -276,6 +280,7 @@ const shields = [
       "Damascus Ingot",
     ],
     materialAmount: [2, 1, 1],
+    rarity: "rare",
   },
   {
     name: "Stone Statue's Shield",
@@ -343,6 +348,7 @@ const shields = [
     acquisition: "Urugut Mountain / Elysium Formula",
     materials: ["Hot Chocolate", "Mirror Fragment", "Mithril"],
     materialAmount: [2, 1, 1],
+    rarity: "rare",
   },
   {
     name: "Lion Shield",
@@ -399,6 +405,7 @@ const shields = [
     acquisition: "Anesta Town / Belkade Mining Town Mokyun Shop",
     materials: ["Soft Serve Matcha Ice Cream", "Insect Feet", "Adamantite"],
     materialAmount: [2, 1, 1],
+    rarity: "rare",
   },
   {
     name: "Machine Shield",
@@ -455,6 +462,7 @@ const shields = [
     acquisition: "Tokyo / Research Lab Formula",
     materials: ["Jam Cookie", "Spring", "Orichalcum"],
     materialAmount: [2, 1, 1],
+    rarity: "legendary",
   },
   {
     name: "Dewprism",
@@ -467,6 +475,7 @@ const shields = [
     full_resistance: 300,
     skill: "God's Left Hand",
     acquisition: "Sealed Demon, Star Scourge Legion Reward",
+    rarity: "legendary",
   },
   {
     name: "Divine Shield Atrocious Fate",
@@ -479,6 +488,7 @@ const shields = [
     full_resistance: 11,
     skill: "Enhance Performance",
     acquisition: "Mokyun Gacha Reward",
+    rarity: "legendary",
   },
 ];
 
