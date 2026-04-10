@@ -10,12 +10,12 @@ import { useState } from "react";
 
 export default function MainScreen() {
   const location = useLocation();
-  const path = location.pathname.toLowerCase();
   const current = location.pathname.replace("/", "").toUpperCase();
   const [sidebarOpen, setSidebarOpen] = useState(false);
 
   return (
     <div className="app-container">
+      {/* Button for Mobile */}
       <button
         className="menu-button"
         onClick={() =>
@@ -24,6 +24,7 @@ export default function MainScreen() {
       >
         ☰
       </button>
+
       <Sidebar open={sidebarOpen} />
 
       <div className="main-content" onClick={() => setSidebarOpen(false)}>
@@ -37,6 +38,7 @@ export default function MainScreen() {
           </div>
         )}
 
+        {/* Routes, displays component based on path*/}
         <Routes>
           <Route path="/equip" element={<EquipScreen />} />
           <Route path="/equip/:equipName" element={<EquipScreen />} />

@@ -14,6 +14,7 @@ export default function EquipScreen() {
   const [closing, setClosing] = useState(false);
   const [searchQuery, setSearchQuery] = useState("");
 
+  //  Close modal with animation before navigating back to main equip screen
   const closeModal = () => {
     setClosing(true);
 
@@ -44,9 +45,9 @@ export default function EquipScreen() {
           equip.skill.toLowerCase().includes(query)) ||
         equip.acquisition.toLowerCase().includes(query) ||
         equip?.materials?.some((material) =>
-          material.toLowerCase().includes(query.toLowerCase()),
+          material.toLowerCase().includes(query),
         ) ||
-        equip?.rarity?.toLowerCase().includes(query.toLowerCase())
+        equip?.rarity?.toLowerCase().includes(query)
       ) {
         return equip.name.toLowerCase();
       }
@@ -55,6 +56,7 @@ export default function EquipScreen() {
     });
   }
 
+  // When URL changes, find the corresponding equip, sets the tab to the first one that includes the equip, and selects the equip.
   useEffect(() => {
     if (!equipName) {
       setSelectedEquip(null);
@@ -87,7 +89,6 @@ export default function EquipScreen() {
             onClick={() => {
               setActiveTab(tab);
               setSelectedEquip(null);
-              navigate("/equip");
             }}
           >
             {tab}

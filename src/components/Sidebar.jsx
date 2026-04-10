@@ -10,6 +10,7 @@ export default function Sidebar({ open }) {
     open = true;
   }
 
+  //  Clicking an active button will navigate to home, clicking an inactive button will navigate to that page
   const handleClick = (label) => {
     const path = label.toLowerCase();
     const current = location.pathname;

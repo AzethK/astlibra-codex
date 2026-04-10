@@ -67,6 +67,7 @@ const LibraScreen = () => {
     { top: 50, left: 92 },
   ];
 
+  // Build a frequency map of effects for each side to identify duplicates
   const buildEffectMap = (effects) => {
     const map = {};
     effects.forEach((effect) => {
@@ -78,7 +79,7 @@ const LibraScreen = () => {
   const leftMap = buildEffectMap(leftEffects);
   const rightMap = buildEffectMap(rightEffects);
 
-  const getEffectClass = (effect, index, effects, sideMap) => {
+  const getEffectClass = (effect, index, effects) => {
     const isGood = effect.includes("GOOD");
     const isEpic = effect.includes("EPIC");
 
@@ -138,7 +139,7 @@ const LibraScreen = () => {
       <div className="title">Libra</div>
       <h4>
         {isMobile ?
-          `Tab buttons to assign items, long tap to remove`
+          `Tap buttons to assign items, long tap to remove`
         : `Left-click buttons to assign items, right-click to remove`}
       </h4>
       <div className="balance-container">
@@ -181,7 +182,6 @@ const LibraScreen = () => {
                 effect,
                 index,
                 leftEffects,
-                leftMap,
               )}`}
             >
               {!effect.includes("GOOD") && !effect.includes("EPIC") ?
@@ -239,7 +239,6 @@ const LibraScreen = () => {
                 effect,
                 index,
                 rightEffects,
-                rightMap,
               )}`}
             >
               {!effect.includes("GOOD") && !effect.includes("EPIC") ?

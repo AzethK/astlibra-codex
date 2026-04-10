@@ -8,6 +8,8 @@ export default function EquipModal({ equip, onClose, closing, tab }) {
   const equipModalRef = useRef(null);
   const [modalPosition, setModalPosition] = useState(null);
   const navigate = useNavigate();
+
+  // Receives range/handling and renders based on the value and type of bar
   const renderBars = (value, type) => {
     return [1, 2, 3].map((i) => (
       <div
@@ -16,10 +18,12 @@ export default function EquipModal({ equip, onClose, closing, tab }) {
       />
     ));
   };
+
   const [selectedMaterial, setSelectedMaterial] = useState(null);
   const [itemClosing, setItemClosing] = useState(false);
 
-  // Get Equip Modal position to align the material modal
+  // Updates the position of the item modal to be next to the equip modal, and
+  // adds event listeners for scroll and resize to update the position accordingly
   useEffect(() => {
     const updatePosition = () => {
       if (equipModalRef.current) {
@@ -41,6 +45,7 @@ export default function EquipModal({ equip, onClose, closing, tab }) {
     };
   }, [selectedMaterial]);
 
+  // Formats stat labels for trinket effects
   const formatStatLabel = (key) => {
     const map = {
       attack: "Attack Power",
@@ -110,24 +115,16 @@ export default function EquipModal({ equip, onClose, closing, tab }) {
                     {typeof value === "number" ?
                       <span
                         className={`stat-value ${
-                          typeof value === "string" ?
-                            value.startsWith("No") ?
-                              "stat-negative"
-                            : "stat-effect"
-                          : value < 0 ? "stat-negative"
-                          : ""
+                          value < 0 ? "stat-negative" : ""
                         }`}
                       >
                         {value}
                       </span>
                     : <span
                         className={`stat-value ${
-                          typeof value === "string" ?
-                            value.startsWith("No") ?
-                              "stat-negative"
-                            : "stat-effect"
-                          : value < 0 ? "stat-negative"
-                          : ""
+                          value.startsWith("No") ? "stat-negative" : (
+                            "stat-effect"
+                          )
                         }`}
                       >
                         {value}
