@@ -1,8 +1,9 @@
-import React, { useState } from "react";
+import React, { use, useState } from "react";
 import LibraModal from "./LibraModal";
 
 const LibraScreen = () => {
   const [activePan, setActivePan] = useState(null);
+  const [enhancedPan, setEnhancedPan] = useState(Array(10).fill(null));
   const [panItems, setPanItems] = useState(Array(10).fill(null));
   const [modalOpen, setModalOpen] = useState(false);
   const isMobile = window.innerWidth <= 768;
@@ -28,7 +29,8 @@ const LibraScreen = () => {
   const getEffectPriority = (effect) => {
     if (effect.includes("GOOD")) return 2;
     if (effect.includes("EPIC")) return 1;
-    return 0;
+    if (effect.includes("★")) return 0;
+    return 3;
   };
 
   const sortEffects = (effects) => {
@@ -37,19 +39,40 @@ const LibraScreen = () => {
     });
   };
 
-  const leftItems = panItems.slice(0, 5).filter(Boolean);
-  const rightItems = panItems.slice(5, 10).filter(Boolean);
+  // Map pan items to their respective sides and filter out nulls while keeping track of original indices
+  const leftItems = panItems
+    .slice(0, 5)
+    .map((item, index) => ({ item, index }))
+    .filter(({ item }) => item);
 
-  const getEffects = (items) => {
-    return items.flatMap((item) => item.libra?.effects || []);
+  const rightItems = panItems
+    .slice(5, 10)
+    .map((item, index) => ({ item, index: index + 5 })) // offset
+    .filter(({ item }) => item);
+
+  const getEffects = (items, enhancedPan) => {
+    return items.flatMap(({ item, index }) => {
+      const effects = item.libra?.effects || [];
+
+      return effects.map((effect) => {
+        if (
+          enhancedPan[index] &&
+          !effect.includes("(GOOD)") &&
+          !effect.includes("(EPIC)")
+        ) {
+          return effect + " [★]";
+        }
+        return effect;
+      });
+    });
   };
 
   const getKarma = (items) => {
-    return items.reduce((sum, item) => sum + (item.libra?.karma || 0), 0);
+    return items.reduce((sum, { item }) => sum + (item.libra?.karma || 0), 0);
   };
 
-  const leftEffects = sortEffects(getEffects(leftItems));
-  const rightEffects = sortEffects(getEffects(rightItems));
+  const leftEffects = sortEffects(getEffects(leftItems, enhancedPan));
+  const rightEffects = sortEffects(getEffects(rightItems, enhancedPan));
 
   const leftPans = [
     { top: 50, left: 7 },
@@ -82,11 +105,13 @@ const LibraScreen = () => {
   const getEffectClass = (effect, index, effects) => {
     const isGood = effect.includes("GOOD");
     const isEpic = effect.includes("EPIC");
+    const isStar = effect.includes("★");
 
     const baseClass =
       isGood ? "libra-good"
       : isEpic ? "libra-epic"
-      : "libra-star";
+      : isStar ? "libra-star"
+      : "libra-normal";
 
     // Count occurrences BEFORE this index (same box)
     const previousCount = effects
@@ -137,10 +162,19 @@ const LibraScreen = () => {
   return (
     <div className="libra-container">
       <div className="title">Libra</div>
-      <h4>
+      <h4 style={{ textAlign: "center" }}>
         {isMobile ?
-          `Tap buttons to assign items, long tap to remove`
-        : `Left-click buttons to assign items, right-click to remove`}
+          <>
+            Tap buttons to assign items, long tap to remove.
+            <br />
+            Tap buttons under pans to toggle enhancement.
+          </>
+        : <>
+            Left-click buttons to assign items, right-click to remove.
+            <br />
+            Click buttons under pans to toggle enhancement.
+          </>
+        }
       </h4>
       <div className="balance-container">
         <div className="balance-ruler">
@@ -184,9 +218,7 @@ const LibraScreen = () => {
                 leftEffects,
               )}`}
             >
-              {!effect.includes("GOOD") && !effect.includes("EPIC") ?
-                effect + "[★]"
-              : effect}
+              {effect}
             </div>
           ))}
         </div>
@@ -213,6 +245,18 @@ const LibraScreen = () => {
                   {panItems[index].libra?.karma || 0}
                 </span>
               )}
+              <button
+                className="pan pan-enhance-label"
+                onClick={() => {
+                  setEnhancedPan((prev) => {
+                    const newArr = [...prev];
+                    newArr[index] = !newArr[index];
+                    return newArr;
+                  });
+                }}
+              >
+                {enhancedPan[index] ? "★" : ""}
+              </button>
 
               <button
                 className="pan pan-card"
@@ -241,9 +285,7 @@ const LibraScreen = () => {
                 rightEffects,
               )}`}
             >
-              {!effect.includes("GOOD") && !effect.includes("EPIC") ?
-                effect + "[★]"
-              : effect}
+              {effect}
             </div>
           ))}
         </div>
