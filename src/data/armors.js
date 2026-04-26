@@ -513,7 +513,7 @@ const armors = [
     maxst: 10,
     magical_power: 10,
     skill: "Gravity Daze",
-    acquisition: "God of Courage, Beatrice Reward",
+    acquisition: "Goddess of Courage, Beatrice Reward",
     rarity: "legendary",
   },
   {

@@ -664,7 +664,7 @@ const trinkets = [
       "This artifact multiplies experience points earned from defeating enemies by 1.3 times.",
     image: BASE + "level_emblem.png",
     stats: { luck: 20, effect: "Experience Points Earned +" },
-    acquisition: "God of War, Geraldtine Reward",
+    acquisition: "God of War, Geraldine Reward",
     rarity: "legendary",
   },
   {

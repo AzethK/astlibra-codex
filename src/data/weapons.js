@@ -1048,7 +1048,7 @@ const weapons = [
     handling: 3,
     weight: 432,
     skill: "Enhance Performance",
-    acquisition: "God of War, Gerdaltine Reward",
+    acquisition: "God of War, Geraldine Reward",
     rarity: "legendary",
   },
   {
