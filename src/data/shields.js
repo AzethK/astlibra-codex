@@ -454,7 +454,7 @@ const shields = [
     description:
       "A beautiful shield supposedly used by a goddess. It smells good for some reason.",
     image: BASE + "anastasis.png",
-    defense: 1240,
+    defense: 240,
     guard: 90,
     weight: 10,
     full_resistance: 20,
