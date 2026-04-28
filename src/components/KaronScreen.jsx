@@ -60,7 +60,8 @@ export default function KaronScreen() {
         karon.name.toLowerCase().includes(query) ||
         (karon.acquisition &&
           typeof karon.acquisition === "string" &&
-          karon.acquisition.toLowerCase().includes(query))
+          karon.acquisition.toLowerCase().includes(query)) ||
+        karon.altName?.toLowerCase().includes(query)
       ) {
         return karon.name.toLowerCase();
       }
