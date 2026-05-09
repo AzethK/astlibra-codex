@@ -2517,7 +2517,7 @@ const items = [
   {
     name: "Monkfish Liver",
     description:
-      "Monkfish liver, also known as the foie gras of the sea. This ugly fish can be eaten entirely, except for the bones, eye, and teeth..",
+      "Monkfish liver, also known as the foie gras of the sea. This ugly fish can be eaten entirely, except for the bones, eye, and teeth.",
     image: BASE + "monkfish_liver.png",
     acquisition: "Drop from Monkfish (Sea Serpent Cave)",
     type: "Demon Materials",
