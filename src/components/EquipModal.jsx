@@ -48,8 +48,8 @@ export default function EquipModal({ equip, onClose, closing, tab }) {
   // Formats stat labels for trinket effects
   const formatStatLabel = (key) => {
     const map = {
-      attack: "Attack Power",
-      defense: "Defense Power",
+      atk: "Attack Power",
+      def: "Defense Power",
       luck: "Luck",
       agility: "Agility",
       adaptability: "Adaptability",
