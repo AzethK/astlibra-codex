@@ -24,6 +24,28 @@ export default function EquipScreen() {
     }, 200);
   };
 
+  const formatStatLabel = (key) => {
+    const map = {
+      atk: "Attack Power",
+      def: "Defense Power",
+      luck: "Luck",
+      agility: "Agility",
+      adaptability: "Adaptability",
+      guard: "Guard",
+      maxhp: "Max HP",
+      maxst: "Max ST",
+      magical_power: "Magical Power",
+      parares: "Paralysis Resistance",
+      petrires: "Petrifaction Resistance",
+      bleedres: "Bleeding Resistance",
+      blindres: "Blind Resistance",
+      poisonres: "Poison Resistance",
+      effect: "Effect",
+    };
+
+    return map[key] || key.charAt(0).toUpperCase() + key.slice(1);
+  };
+
   const tabData = {
     WEAPONS: weapons,
     SHIELDS: shields,
@@ -50,8 +72,11 @@ export default function EquipScreen() {
         equip?.rarity?.toLowerCase().includes(query) ||
         (equip.stats &&
           Object.entries(equip.stats).some(([key, value]) =>
-            `${key}`.toLowerCase().includes(query),
-          ))
+            `${formatStatLabel(key)}`.toLowerCase().includes(query),
+          )) ||
+        (equip.stats &&
+          equip.stats.effect &&
+          equip.stats.effect.toLowerCase().includes(query))
       ) {
         return equip.name.toLowerCase();
       }
