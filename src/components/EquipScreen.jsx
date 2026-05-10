@@ -47,7 +47,11 @@ export default function EquipScreen() {
         equip?.materials?.some((material) =>
           material.toLowerCase().includes(query),
         ) ||
-        equip?.rarity?.toLowerCase().includes(query)
+        equip?.rarity?.toLowerCase().includes(query) ||
+        (equip.stats &&
+          Object.entries(equip.stats).some(([key, value]) =>
+            `${key}`.toLowerCase().includes(query),
+          ))
       ) {
         return equip.name.toLowerCase();
       }
